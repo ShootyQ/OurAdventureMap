@@ -16,7 +16,9 @@ order, story and optional note. Change `sample` to `false`. Use `YYYY-MM-DD`,
 `YYYY-MM` or `YYYY` for dates. Memories without dates appear at the end of the
 timeline. Omit `coordinates` to keep a memory on the timeline without assigning
 a map pin. For a season or relative date, use `dateLabel` for the wording shown
-on the site and `sortDate` to place it in the timeline.
+on the site and `sortDate` to place it in the timeline. Year-only entries
+appear after dated entries in that year unless you supply a `sortDate`.
+Set `featured` to `true` to give a milestone a highlighted frame in the story.
 
 Choose a `type` from `milestone`, `adventure`, `favorite`, `dream`, or
 `secret`. Dream entries appear in the Someday section. To record a completed

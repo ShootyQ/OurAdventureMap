@@ -235,6 +235,15 @@ nav a[aria-current="page"] {
 .story-entry .handwritten { margin: 8px 0; }
 
 .story-entry.current-memory::before { background: #946e3d; box-shadow: 0 0 0 4px #b18a4f22; }
+.story-entry.featured-memory {
+  margin: 8px 0 30px;
+  padding: clamp(14px, 3vw, 29px);
+  background: #faf5e7;
+  border: 1px solid #d7c8a9;
+  box-shadow: 0 8px 20px #493c2210;
+}
+.featured-memory::before { width: 9px; height: 9px; border-color: #946e3d; background: #b18a4f; }
+.featured-memory .entry-place { color: #725731; font-weight: 700; }
 .story-actions {
   display: flex;
   flex-wrap: wrap;

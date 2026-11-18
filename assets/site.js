@@ -147,7 +147,11 @@ function renderTimeline(places) {
   const picker = byId('chapter-picker');
   const entries = places.filter(({ type }) => type !== 'dream' && type !== 'secret');
   const steps = [];
-  const sortDate = (place) => place.sortDate || place.date || '9999';
+  const sortDate = (place) => {
+    if (place.sortDate) return place.sortDate;
+    if (!place.date) return '9999';
+    return place.date.length === 4 ? place.date + '-12-31' : place.date;
+  };
   entries.sort((first, second) => sortDate(first).localeCompare(sortDate(second)));
   const observer = 'IntersectionObserver' in window
     ? new IntersectionObserver((changes) => {
@@ -176,6 +180,7 @@ function renderTimeline(places) {
       picker.add(new Option(label, chapter.id));
     }
     const row = element('li', '', 'story-entry');
+    if (place.featured) row.classList.add('featured-memory');
     const copy = element('div', '', 'story-entry-copy');
     const date = element(!place.sample && place.date ? 'time' : 'span', displayDate(place), 'entry-place');
     if (date.tagName === 'TIME') date.dateTime = place.date;

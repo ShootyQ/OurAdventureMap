@@ -42,7 +42,7 @@
         40.8136,
         -96.7026
       ],
-      "date": "2010",
+      "date": "2010-05",
       "story": "We graduated from Union College together in 2010. We were still friends then.",
       "photos": [
         {
@@ -64,7 +64,8 @@
       ],
       "date": "2011",
       "story": "I put a question on Facebook asking who wanted to visit me over break. Savannah drove from Lincoln to visit me in Owosso.",
-      "photos": []
+      "photos": [],
+      "sortDate": "2011-01"
     },
     {
       "id": "orlando-road-trip",
@@ -243,6 +244,27 @@
       ]
     },
     {
+      "id": "leaving-for-honeymoon",
+      "type": "adventure",
+      "title": "Off to the honeymoon",
+      "date": "2013-11",
+      "photos": [
+        {
+          "src": "assets/photos/2013/offtohoneymoonsanfranairport2013-62ea9a5e.webp",
+          "alt": "Personal photo from Off to the honeymoon",
+          "width": 480,
+          "height": 640
+        }
+      ],
+      "place": "San Francisco area, California",
+      "coordinates": [
+        37.6213,
+        -122.379
+      ],
+      "sortDate": "2013-11-24",
+      "dateLabel": "After the wedding"
+    },
+    {
       "id": "new-zealand-honeymoon",
       "type": "adventure",
       "title": "Four breakfasts in Auckland",
@@ -254,7 +276,7 @@
       "story": "We flew into Auckland so early that we ended up getting breakfast something like four times.",
       "photos": [],
       "sortDate": "2013-11-24",
-      "dateLabel": "After the wedding"
+      "dateLabel": "Honeymoon"
     },
     {
       "id": "rotorua-honeymoon",
@@ -274,6 +296,23 @@
           "height": 720
         }
       ],
+      "sortDate": "2013-11-24",
+      "dateLabel": "Honeymoon"
+    },
+    {
+      "id": "honeymoon-bike-ride",
+      "type": "favorite",
+      "title": "A honeymoon bike ride",
+      "date": "2013-11",
+      "photos": [
+        {
+          "src": "assets/photos/2013/newzealandhoneymoonridingbikenov2013-e4e9d854.webp",
+          "alt": "Personal photo from A honeymoon bike ride",
+          "width": 720,
+          "height": 960
+        }
+      ],
+      "place": "New Zealand",
       "sortDate": "2013-11-24",
       "dateLabel": "Honeymoon"
     },
@@ -314,29 +353,16 @@
       "note": "Our one request for the basement: more light!"
     },
     {
-      "id": "caribbean-cruise",
-      "type": "adventure",
-      "title": "The 2014 Caribbean cruise",
-      "place": "Caribbean",
-      "coordinates": [
-        17.4,
-        -69
-      ],
-      "date": "2014",
-      "story": "Our cruise included the Dominican Republic, Turks and Caicos, Half Moon Beach, Aruba, Bonaire, and Curaçao.",
-      "photos": []
-    },
-    {
       "id": "shakopee-home",
       "type": "milestone",
-      "title": "The Shakopee townhouse",
+      "title": "Our first big move: Georgia to Minnesota",
       "place": "Shakopee, Minnesota",
       "coordinates": [
         44.798,
         -93.5269
       ],
-      "date": "2015",
-      "story": "We moved to a townhouse in Shakopee and lived there for a year.",
+      "date": "2015-07",
+      "story": "We moved from Georgia to Minnesota and made a townhouse in Shakopee our home for the next year.",
       "photos": [
         {
           "src": "assets/photos/2015/2015townhouseshakopeemnjuly-5eea7c38.webp",
@@ -344,7 +370,8 @@
           "width": 639,
           "height": 960
         }
-      ]
+      ],
+      "featured": true
     },
     {
       "id": "brooklyn-park-home",
@@ -355,7 +382,7 @@
         45.0941,
         -93.3563
       ],
-      "date": "2016",
+      "date": "2016-07",
       "story": "After our year in Shakopee, we moved to Brooklyn Park.",
       "photos": [
         {
@@ -385,13 +412,13 @@
           "height": 1600
         }
       ],
-      "sortDate": "2017",
+      "sortDate": "2017-09",
       "dateLabel": "Fall 2017"
     },
     {
       "id": "violet-born",
       "type": "milestone",
-      "title": "Violet arrived",
+      "title": "We became parents. Violet arrived!",
       "date": "2018-06-01",
       "story": "Violet was born on June 1, 2018.",
       "photos": [
@@ -401,7 +428,8 @@
           "width": 1200,
           "height": 1600
         }
-      ]
+      ],
+      "featured": true
     },
     {
       "id": "expecting-twins",
@@ -416,16 +444,17 @@
           "height": 900
         }
       ],
-      "sortDate": "2021",
+      "sortDate": "2021-10",
       "dateLabel": "Fall 2021"
     },
     {
       "id": "twins-born",
       "type": "milestone",
-      "title": "Max and Ellie arrived",
+      "title": "Max and Ellie made us a family of five",
       "date": "2022-06-22",
       "story": "Max and Ellie were born on June 22, 2022.",
-      "photos": []
+      "photos": [],
+      "featured": true
     },
     {
       "id": "minnesota-overnights",
@@ -536,23 +565,24 @@
       "date": "2011-07",
       "photos": [
         {
-          "src": "assets/photos/2011/aug2011sacrament-970d5601.webp",
-          "alt": "Personal photo from Sacramento",
-          "width": 720,
-          "height": 540
-        },
-        {
           "src": "assets/photos/2011/july1-2011-wantedsacramentca-c3e95af8.webp",
           "alt": "Personal photo from Sacramento",
           "width": 336,
           "height": 603
+        },
+        {
+          "src": "assets/photos/2011/aug2011sacrament-970d5601.webp",
+          "alt": "Personal photo from Sacramento",
+          "width": 720,
+          "height": 540
         }
       ],
       "place": "Sacramento, California",
       "coordinates": [
         38.5816,
         -121.4944
-      ]
+      ],
+      "dateLabel": "July–August 2011"
     },
     {
       "id": "biltmore-2011",
@@ -650,40 +680,6 @@
       ]
     },
     {
-      "id": "leaving-for-honeymoon",
-      "type": "adventure",
-      "title": "Off to the honeymoon",
-      "date": "2013-11",
-      "photos": [
-        {
-          "src": "assets/photos/2013/offtohoneymoonsanfranairport2013-62ea9a5e.webp",
-          "alt": "Personal photo from Off to the honeymoon",
-          "width": 480,
-          "height": 640
-        }
-      ],
-      "place": "San Francisco area, California",
-      "coordinates": [
-        37.6213,
-        -122.379
-      ]
-    },
-    {
-      "id": "honeymoon-bike-ride",
-      "type": "favorite",
-      "title": "A honeymoon bike ride",
-      "date": "2013-11",
-      "photos": [
-        {
-          "src": "assets/photos/2013/newzealandhoneymoonridingbikenov2013-e4e9d854.webp",
-          "alt": "Personal photo from A honeymoon bike ride",
-          "width": 720,
-          "height": 960
-        }
-      ],
-      "place": "New Zealand"
-    },
-    {
       "id": "port-charlotte-2014",
       "type": "adventure",
       "title": "Port Charlotte",
@@ -719,7 +715,9 @@
       "coordinates": [
         38.4478,
         -123.1274
-      ]
+      ],
+      "dateLabel": "Summer 2014",
+      "sortDate": "2014-06"
     },
     {
       "id": "gatlinburg-cabins",
@@ -760,7 +758,8 @@
         33.749,
         -84.388
       ],
-      "dateLabel": "Spring 2015"
+      "dateLabel": "Spring 2015",
+      "sortDate": "2015-04"
     },
     {
       "id": "nc-balloon-2015",
@@ -810,7 +809,8 @@
         47.0227,
         -91.6707
       ],
-      "dateLabel": "Summer 2016"
+      "dateLabel": "Summer 2016",
+      "sortDate": "2016-08"
     },
     {
       "id": "minnetonka-2016",
@@ -872,19 +872,20 @@
       "date": "2018",
       "photos": [
         {
-          "src": "assets/photos/2018/may2018violetalmosthere-3e385fcd.webp",
-          "alt": "Personal photo from Waiting for Violet",
-          "width": 1067,
-          "height": 1600
-        },
-        {
           "src": "assets/photos/2018/violetsonographimagejan2018-bf187bef.webp",
           "alt": "Personal photo from Waiting for Violet",
           "width": 960,
           "height": 752
+        },
+        {
+          "src": "assets/photos/2018/may2018violetalmosthere-3e385fcd.webp",
+          "alt": "Personal photo from Waiting for Violet",
+          "width": 1067,
+          "height": 1600
         }
       ],
-      "dateLabel": "January–May 2018"
+      "dateLabel": "January–May 2018",
+      "sortDate": "2018-01"
     },
     {
       "id": "tampa-babymoon-2018",
@@ -944,6 +945,12 @@
       "title": "Christmas 2019",
       "date": "2019-12",
       "photos": [
+        {
+          "src": "assets/photos/2013/jan2012-3ofus-ef876cee.webp",
+          "alt": "Andy and Savannah with Violet at Christmas 2019",
+          "width": 1500,
+          "height": 1499
+        },
         {
           "src": "assets/photos/2019/christmast2019-43021bcc.webp",
           "alt": "Personal photo from Christmas 2019",
@@ -1026,7 +1033,7 @@
     {
       "id": "caribbean-cruise-2024",
       "type": "adventure",
-      "title": "The January Caribbean cruise",
+      "title": "Our Caribbean cruise",
       "date": "2024-01",
       "photos": [
         {
@@ -1052,7 +1059,8 @@
       "coordinates": [
         17.4,
         -69
-      ]
+      ],
+      "story": "Our cruise included the Dominican Republic, Turks and Caicos, Half Moon Beach, Aruba, Bonaire, and Curaçao."
     },
     {
       "id": "san-diego-2024",
@@ -1264,21 +1272,6 @@
           "alt": "Personal photo from the 2012 folder",
           "width": 1200,
           "height": 1600
-        }
-      ]
-    },
-    {
-      "id": "photo-roll-2013",
-      "type": "favorite",
-      "title": "From the 2013 photo roll",
-      "sortDate": "2013-12-31",
-      "dateLabel": "2013 folder",
-      "photos": [
-        {
-          "src": "assets/photos/2013/jan2012-3ofus-ef876cee.webp",
-          "alt": "Personal photo from the 2013 folder",
-          "width": 1500,
-          "height": 1499
         }
       ]
     },
