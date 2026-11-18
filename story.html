@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f3e8">
+  <meta name="description" content="The story so far, from our first photo together onward.">
+  <title>The Story So Far · Our Adventure Map</title>
+  <link rel="stylesheet" href="assets/site.css">
+  <script defer src="assets/site.js"></script>
+</head>
+<body class="story-page">
+  <header class="masthead">
+    <div class="shell masthead-inner">
+      <a class="brand" href="./#explore"><span class="brand-mark" aria-hidden="true">✧</span> Our Adventure Map</a>
+      <nav aria-label="Journal">
+        <a href="./#explore">The Map</a><a href="story.html" aria-current="page">The Story</a><a href="./#someday">Someday</a><a href="./#letter">The Letter</a>
+      </nav>
+      <span class="dedication">For Savannah</span>
+    </div>
+  </header>
+  <main>
+    <section class="shell story-cover" aria-labelledby="story-title">
+      <div class="story-cover-copy">
+        <p class="eyebrow"><span></span> THE STORY SO FAR</p>
+        <h1 id="story-title">One thing led<br> to <em>another.</em></h1>
+        <p class="intro-copy">The big days and the little moments in between.</p>
+        <a class="primary" href="#chapters">From the beginning <span aria-hidden="true">↓</span></a>
+      </div>
+      <figure class="cover-photo">
+        <img src="assets/photos/2013/mp-9629-f6f047cc.webp" alt="An outdoor portrait of Savannah and Andy on their wedding day" fetchpriority="high">
+        <figcaption><span>Our wedding day</span><time datetime="2013-11-24">November 24, 2013</time></figcaption>
+      </figure>
+    </section>
+    <section class="story-chapters" id="chapters" aria-label="Our timeline">
+      <div class="shell story-inner">
+        <div class="chapter-toolbar" hidden>
+          <label for="chapter-picker">Jump to a year</label>
+          <select id="chapter-picker"><option value="">Choose a chapter</option></select>
+        </div>
+        <p id="story-message" role="status">Opening the journal…</p>
+        <div id="timeline-list"></div>
+        <p class="story-end"><a class="primary" href="./#letter">Read the letter <span aria-hidden="true">→</span></a></p>
+      </div>
+    </section>
+  </main>
+  <footer class="shell footer"><span>Our Adventure Map</span><a href="./#explore">Back to the map ↑</a></footer>
+  <dialog id="memory" aria-labelledby="memory-title">
+    <article class="memory-content">
+      <form method="dialog"><button class="close" aria-label="Close memory">×</button></form>
+      <p class="eyebrow" id="memory-type"></p>
+      <h2 id="memory-title"></h2>
+      <p id="memory-meta"></p>
+      <div id="gallery" hidden></div>
+      <p id="memory-story"></p>
+      <p class="handwritten" id="memory-note"></p>
+      <button class="text-button" id="memory-map" type="button">Find on the map →</button>
+    </article>
+  </dialog>
+</body>
+</html>

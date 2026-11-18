@@ -37,7 +37,7 @@ function displayDate(place) {
   return place.sample ? 'Sample entry' : place.dateLabel || formatDate(place.date);
 }
 
-function openMemory(place) {
+function openMemory(place, photoIndex = 0) {
   activePlace = place;
   byId('memory-type').textContent = types[place.type].label;
   byId('memory-title').textContent = place.title;
@@ -46,7 +46,7 @@ function openMemory(place) {
   byId('memory-story').hidden = !place.story;
   byId('memory-note').textContent = place.note || '';
   byId('memory-note').hidden = !place.note;
-  byId('memory-map').hidden = !map || !place.coordinates;
+  byId('memory-map').hidden = !place.coordinates || (!map && !byId('timeline-list'));
   const photos = place.photos || [];
   byId('gallery-controls')?.remove();
   gallery.replaceChildren(...photos.map((photo, index) => {
@@ -66,7 +66,7 @@ function openMemory(place) {
   gallery.hidden = photos.length === 0;
   if (photos.length > 1) addGalleryControls();
   memory.showModal();
-  gallery.scrollLeft = 0;
+  gallery.scrollLeft = photoIndex * (gallery.clientWidth + 12);
 }
 
 function addGalleryControls() {
@@ -96,7 +96,14 @@ function viewOnMap(place) {
   markers.get(place.coordinates.join(',')).getElement()?.focus({ preventScroll: true });
 }
 
-byId('memory-map').addEventListener('click', () => viewOnMap(activePlace));
+function mapLink(place) {
+  return './?memory=' + encodeURIComponent(place.id) + '#map-section';
+}
+
+byId('memory-map').addEventListener('click', () => {
+  if (map) viewOnMap(activePlace);
+  else window.location.assign(mapLink(activePlace));
+});
 
 function memoryButton(place) {
   const count = place.photos?.length || 0;
@@ -108,20 +115,91 @@ function memoryButton(place) {
   return button;
 }
 
-function renderJournal({ places, letter }) {
-  byId('sample-notice').hidden = !places.some(({ sample }) => sample);
+function storyPhotos(place, observer) {
+  const photos = element('div', '', 'story-photos');
+  for (const [index, photo] of place.photos.slice(0, 2).entries()) {
+    const frame = element('figure', '', 'story-print');
+    const button = element('button');
+    button.type = 'button';
+    button.setAttribute('aria-label', `Open photo ${index + 1}: ${photo.alt || place.title}`);
+    const image = element('img');
+    image.loading = 'lazy';
+    image.decoding = 'async';
+    image.alt = photo.alt || '';
+    image.src = photo.src;
+    button.append(image);
+    button.addEventListener('click', () => openMemory(place, index));
+    frame.append(button);
+    if (photo.caption) frame.append(element('figcaption', photo.caption));
+    photos.append(frame);
+    observer?.observe(frame);
+  }
+  return photos;
+}
+
+function renderTimeline(places) {
+  const timeline = byId('timeline-list');
+  const picker = byId('chapter-picker');
   const entries = places.filter(({ type }) => type !== 'dream' && type !== 'secret');
   const sortDate = (place) => place.sortDate || place.date || '9999';
   entries.sort((first, second) => sortDate(first).localeCompare(sortDate(second)));
+  const observer = 'IntersectionObserver' in window
+    ? new IntersectionObserver((changes) => {
+      for (const change of changes) {
+        if (!change.isIntersecting) continue;
+        if (!motion.matches) change.target.classList.add('photo-arrived');
+        observer.unobserve(change.target);
+      }
+    }, { threshold: 0.18 })
+    : null;
+  let currentYear;
+  let list;
   for (const place of entries) {
-    const row = element('li');
+    const year = sortDate(place).slice(0, 4);
+    if (year !== currentYear) {
+      currentYear = year;
+      const chapter = element('section', '', 'story-chapter');
+      chapter.id = year === '9999' ? 'little-things' : 'year-' + year;
+      const label = year === '9999' ? 'Little things' : year;
+      const heading = element('h2', label, 'chapter-year');
+      heading.id = chapter.id + '-title';
+      chapter.setAttribute('aria-labelledby', heading.id);
+      list = element('ol', '', 'story-list');
+      chapter.append(heading, list);
+      timeline.append(chapter);
+      picker.add(new Option(label, chapter.id));
+    }
+    const row = element('li', '', 'story-entry');
+    const copy = element('div', '', 'story-entry-copy');
     const date = element(!place.sample && place.date ? 'time' : 'span', displayDate(place), 'entry-place');
     if (date.tagName === 'TIME') date.dateTime = place.date;
-    const title = element('div');
-    title.append(element('h3', place.title), element('span', place.place, 'entry-place'));
-    row.append(date, title, memoryButton(place));
-    byId('timeline-list').append(row);
+    if (date.textContent) copy.append(date);
+    copy.append(element('h3', place.title));
+    if (place.place) copy.append(element('p', place.place, 'story-location'));
+    if (place.story) copy.append(element('p', place.story, 'story-excerpt'));
+    if (place.note) copy.append(element('p', place.note, 'handwritten'));
+    const actions = element('div', '', 'story-actions');
+    if (place.photos?.length) actions.append(memoryButton(place));
+    if (place.coordinates) {
+      const link = element('a', 'Find on the map →');
+      link.href = mapLink(place);
+      actions.append(link);
+    }
+    if (actions.children.length) copy.append(actions);
+    row.append(copy);
+    if (place.photos?.length) row.append(storyPhotos(place, observer));
+    list.append(row);
   }
+  byId('story-message').hidden = entries.length > 0;
+  byId('story-message').textContent = 'The story is waiting for its first memory.';
+  if (picker.options.length > 1) {
+    picker.parentElement.hidden = false;
+    picker.addEventListener('change', () => byId(picker.value)?.scrollIntoView());
+  }
+  byId(window.location.hash.slice(1))?.scrollIntoView({ behavior: 'instant' });
+}
+
+function renderJournal({ places, letter }) {
   for (const place of places.filter(({ type }) => type === 'dream')) {
     const card = element('article');
     const label = [place.place, displayDate(place)].filter(Boolean).join(' · ');
@@ -253,14 +331,22 @@ async function readJson(path) {
 }
 
 async function start() {
-  const message = byId('map-message');
+  const storyPage = byId('timeline-list');
+  const message = byId(storyPage ? 'story-message' : 'map-message');
   try {
     const journal = await readJson('data/journal.json');
+    if (storyPage) {
+      renderTimeline(journal.places);
+      return;
+    }
     renderJournal(journal);
     await initMap(journal);
     message.hidden = true;
+    const requested = new URLSearchParams(window.location.search).get('memory');
+    const place = mappedPlaces.find(({ id }) => id === requested);
+    if (place) viewOnMap(place);
   } catch (error) {
-    message.textContent = 'The atlas couldn’t be opened.';
+    message.textContent = storyPage ? 'The journal couldn’t be opened.' : 'The atlas couldn’t be opened.';
     console.error(error);
   }
 }
