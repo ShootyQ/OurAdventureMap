@@ -24,7 +24,12 @@
       ],
       "date": "2007-09",
       "story": "We met at Union College in September 2007 and became friends. We spent a lot of time together over the next few years.",
-      "photos": []
+      "photos": [
+        {
+          "src": "assets/photos/2007/2007firstimagetogetherasfriendslincoln-5d691245.webp",
+          "alt": "Our first photo together as friends in Lincoln"
+        }
+      ]
     },
     {
       "id": "graduation",
@@ -37,7 +42,12 @@
       ],
       "date": "2010",
       "story": "We graduated from Union College together in 2010. We were still friends then.",
-      "photos": []
+      "photos": [
+        {
+          "src": "assets/photos/2010/lincolngrad2010may-d9cac77d.webp",
+          "alt": "Our graduation in Lincoln"
+        }
+      ]
     },
     {
       "id": "owosso-visit",
@@ -63,7 +73,16 @@
       ],
       "date": "2011-03",
       "story": "Savannah flew to North Carolina. We drove from Hendersonville to Orlando, then all the way up to Michigan, where she flew out.",
-      "photos": []
+      "photos": [
+        {
+          "src": "assets/photos/2011/marchtripbeforedating2-7ad247e8.webp",
+          "alt": "A photo from our March road trip before we started dating"
+        },
+        {
+          "src": "assets/photos/2011/tripmarchbeforedating-fcd73d65.webp",
+          "alt": "A photo from our March road trip before we started dating"
+        }
+      ]
     },
     {
       "id": "started-dating",
@@ -76,7 +95,12 @@
       ],
       "date": "2011-04",
       "story": "I visited Savannah in Lincoln in April 2011, and that’s when we started dating. For our first date, we went to the Nebraska State Capitol and got ice cream downtown.",
-      "photos": []
+      "photos": [
+        {
+          "src": "assets/photos/2011/firstdateapril-a92652be.webp",
+          "alt": "A photo from our first date in Lincoln"
+        }
+      ]
     },
     {
       "id": "first-dating-anniversary",
@@ -89,7 +113,12 @@
       ],
       "date": "2012-04",
       "story": "We celebrated one year of dating at the Grove Park Inn in Asheville.",
-      "photos": []
+      "photos": [
+        {
+          "src": "assets/photos/2012/oneyearapril-2fa98ca9.webp",
+          "alt": "Our first dating anniversary at the Grove Park Inn"
+        }
+      ]
     },
     {
       "id": "alleia-proposal",
@@ -102,7 +131,12 @@
       ],
       "date": "2013-02",
       "story": "I got down on one knee at Alleia, asked Savannah to marry me, and she said yes. We were both a little sad that nobody noticed.",
-      "photos": [],
+      "photos": [
+        {
+          "src": "assets/photos/2013/webeengagedfeb2013february-2204fec8.webp",
+          "alt": "A photo from February 2013 celebrating our engagement"
+        }
+      ],
       "note": "We still joke about the free dessert we never got."
     },
     {
@@ -115,7 +149,24 @@
         -82.5515
       ],
       "story": "We took engagement photos on the Biltmore grounds and in downtown Asheville.",
-      "photos": [],
+      "photos": [
+        {
+          "src": "assets/photos/2013/engagement-andy-savannah-8416-792b77a7.webp",
+          "alt": "One of our engagement portraits in Asheville"
+        },
+        {
+          "src": "assets/photos/2013/engagement-andy-savannah-8482-53257b25.webp",
+          "alt": "One of our engagement portraits in Asheville"
+        },
+        {
+          "src": "assets/photos/2013/engagement-andy-savannah-8566-45ef98ce.webp",
+          "alt": "One of our engagement portraits in Asheville"
+        },
+        {
+          "src": "assets/photos/2013/engagement-andy-savannah-8876-d99a1322.webp",
+          "alt": "One of our engagement portraits in Asheville"
+        }
+      ],
       "sortDate": "2013-02",
       "dateLabel": "2013"
     },
@@ -130,7 +181,32 @@
       ],
       "date": "2013-11-24",
       "story": "We got married in Middletown and held our reception at Pacific Union College.",
-      "photos": []
+      "photos": [
+        {
+          "src": "assets/photos/2013/mp-0267-80361f50.webp",
+          "alt": "Savannah and Andy facing each other during the wedding ceremony"
+        },
+        {
+          "src": "assets/photos/2013/mp-0302-f014d822.webp",
+          "alt": "Savannah and Andy kissing during the wedding ceremony"
+        },
+        {
+          "src": "assets/photos/2013/mp-9540-c823dd32.webp",
+          "alt": "Savannah and Andy walking together outside in their wedding clothes"
+        },
+        {
+          "src": "assets/photos/2013/mp-9629-f6f047cc.webp",
+          "alt": "An outdoor portrait of Savannah and Andy in their wedding clothes"
+        },
+        {
+          "src": "assets/photos/2013/mp-9814-1bb4e43c.webp",
+          "alt": "Savannah and Andy sitting together outside in their wedding clothes"
+        },
+        {
+          "src": "assets/photos/2013/mp-9939-851d30e0.webp",
+          "alt": "Savannah and Andy with their wedding party"
+        }
+      ]
     },
     {
       "id": "new-zealand-honeymoon",
@@ -156,7 +232,12 @@
         176.2497
       ],
       "story": "We drove from Auckland to Rotorua and spent four or five nights there on our honeymoon.",
-      "photos": [],
+      "photos": [
+        {
+          "src": "assets/photos/2013/2013newzealandrotorua-5298e3d5.webp",
+          "alt": "A honeymoon photo from Rotorua"
+        }
+      ],
       "sortDate": "2013-11-24",
       "dateLabel": "Honeymoon"
     },
@@ -184,7 +265,12 @@
         -84.3346
       ],
       "story": "We lived in a basement in Dunwoody from November 2013 to June 2015, and we both worked at Atlanta North School.",
-      "photos": [],
+      "photos": [
+        {
+          "src": "assets/photos/2015/maydunwoodygagoodbye-93fc8a8e.webp",
+          "alt": "Saying goodbye to Dunwoody"
+        }
+      ],
       "sortDate": "2013-11-24",
       "dateLabel": "November 2013",
       "note": "Our one request for the basement: more light!"
@@ -213,7 +299,12 @@
       ],
       "date": "2015",
       "story": "We moved to a townhouse in Shakopee and lived there for a year.",
-      "photos": []
+      "photos": [
+        {
+          "src": "assets/photos/2015/2015townhouseshakopeemnjuly-5eea7c38.webp",
+          "alt": "Our Shakopee townhouse"
+        }
+      ]
     },
     {
       "id": "brooklyn-park-home",
@@ -226,14 +317,28 @@
       ],
       "date": "2016",
       "story": "After our year in Shakopee, we moved to Brooklyn Park.",
-      "photos": []
+      "photos": [
+        {
+          "src": "assets/photos/2016/boughthousejuly2016-62dc1c76.webp",
+          "alt": "A photo from the year we moved to Brooklyn Park"
+        },
+        {
+          "src": "assets/photos/2016/madehousebetter2016-b894ca8f.webp",
+          "alt": "A photo from the year we moved to Brooklyn Park"
+        }
+      ]
     },
     {
       "id": "expecting-violet",
       "type": "milestone",
       "title": "We were expecting Violet",
       "story": "In the fall of 2017, we found out we were expecting Violet.",
-      "photos": [],
+      "photos": [
+        {
+          "src": "assets/photos/2017/violeybabyanncounce-nov-2017-394709bf.webp",
+          "alt": "Our November 2017 announcement that we were expecting Violet"
+        }
+      ],
       "sortDate": "2017",
       "dateLabel": "Fall 2017"
     },
@@ -243,14 +348,24 @@
       "title": "Violet arrived",
       "date": "2018-06-01",
       "story": "Violet was born on June 1, 2018.",
-      "photos": []
+      "photos": [
+        {
+          "src": "assets/photos/2018/june1violetborn-67ef34f0.webp",
+          "alt": "Violet on the day she was born"
+        }
+      ]
     },
     {
       "id": "expecting-twins",
       "type": "milestone",
       "title": "We were expecting Max and Ellie",
       "story": "In the fall of 2021, we found out we were expecting Max and Ellie.",
-      "photos": [],
+      "photos": [
+        {
+          "src": "assets/photos/2021/christmastwinsontheway-92388a39.webp",
+          "alt": "Our Christmas announcement that the twins were on the way"
+        }
+      ],
       "sortDate": "2021",
       "dateLabel": "Fall 2021"
     },
@@ -325,6 +440,797 @@
       "dateLabel": "Hoping for 2027",
       "story": "Savannah hopes to go to Vietnam on a mission trip in 2027.",
       "photos": []
+    },
+    {
+      "id": "lincoln-friends",
+      "type": "adventure",
+      "title": "Friends in Lincoln",
+      "date": "2010-03",
+      "photos": [
+        {
+          "src": "assets/photos/2010/marchtogether2010beforeevendatinglincoln-370bf59f.webp",
+          "alt": "Personal photo from Friends in Lincoln"
+        }
+      ],
+      "place": "Lincoln, Nebraska",
+      "coordinates": [
+        40.8136,
+        -96.7026
+      ]
+    },
+    {
+      "id": "hendersonville-2011",
+      "type": "adventure",
+      "title": "Hendersonville",
+      "date": "2011",
+      "photos": [
+        {
+          "src": "assets/photos/2011/2011hendonc-ff1374e4.webp",
+          "alt": "Personal photo from Hendersonville"
+        }
+      ],
+      "place": "Hendersonville, North Carolina",
+      "coordinates": [
+        35.3187,
+        -82.461
+      ]
+    },
+    {
+      "id": "sacramento-2011",
+      "type": "adventure",
+      "title": "Sacramento",
+      "date": "2011-07",
+      "photos": [
+        {
+          "src": "assets/photos/2011/aug2011sacrament-970d5601.webp",
+          "alt": "Personal photo from Sacramento"
+        },
+        {
+          "src": "assets/photos/2011/july1-2011-wantedsacramentca-c3e95af8.webp",
+          "alt": "Personal photo from Sacramento"
+        }
+      ],
+      "place": "Sacramento, California",
+      "coordinates": [
+        38.5816,
+        -121.4944
+      ]
+    },
+    {
+      "id": "biltmore-2011",
+      "type": "adventure",
+      "title": "Biltmore",
+      "date": "2011",
+      "photos": [
+        {
+          "src": "assets/photos/2011/biltmore2011-381baf44.webp",
+          "alt": "Personal photo from Biltmore"
+        }
+      ],
+      "place": "Asheville, North Carolina",
+      "coordinates": [
+        35.5406,
+        -82.552
+      ]
+    },
+    {
+      "id": "cades-cove-2012",
+      "type": "adventure",
+      "title": "Cades Cove",
+      "date": "2012-03",
+      "photos": [
+        {
+          "src": "assets/photos/2012/cadescovemarch-e1bba92c.webp",
+          "alt": "Personal photo from Cades Cove"
+        }
+      ],
+      "place": "Cades Cove, Tennessee",
+      "coordinates": [
+        35.592,
+        -83.823
+      ]
+    },
+    {
+      "id": "savannah-ga-2012",
+      "type": "adventure",
+      "title": "Savannah, Georgia",
+      "date": "2012-03",
+      "photos": [
+        {
+          "src": "assets/photos/2012/march2012savannahga-069ce5cd.webp",
+          "alt": "Personal photo from Savannah, Georgia"
+        }
+      ],
+      "place": "Savannah, Georgia",
+      "coordinates": [
+        32.0809,
+        -81.0912
+      ]
+    },
+    {
+      "id": "hendersonville-2012",
+      "type": "adventure",
+      "title": "A June photo in Hendersonville",
+      "date": "2012-06",
+      "photos": [
+        {
+          "src": "assets/photos/2012/babylucynchendersonville2012june-57c20978.webp",
+          "alt": "Personal photo from A June photo in Hendersonville"
+        }
+      ],
+      "place": "Hendersonville, North Carolina",
+      "coordinates": [
+        35.3187,
+        -82.461
+      ]
+    },
+    {
+      "id": "dc-christmas-2012",
+      "type": "adventure",
+      "title": "Christmas trip to Washington, DC",
+      "date": "2012-12",
+      "photos": [
+        {
+          "src": "assets/photos/2012/christmasdctrip-2012-b8eededd.webp",
+          "alt": "Personal photo from Christmas trip to Washington, DC"
+        }
+      ],
+      "place": "Washington, DC",
+      "coordinates": [
+        38.9072,
+        -77.0369
+      ]
+    },
+    {
+      "id": "leaving-for-honeymoon",
+      "type": "adventure",
+      "title": "Off to the honeymoon",
+      "date": "2013-11",
+      "photos": [
+        {
+          "src": "assets/photos/2013/offtohoneymoonsanfranairport2013-62ea9a5e.webp",
+          "alt": "Personal photo from Off to the honeymoon"
+        }
+      ],
+      "place": "San Francisco area, California",
+      "coordinates": [
+        37.6213,
+        -122.379
+      ]
+    },
+    {
+      "id": "honeymoon-bike-ride",
+      "type": "favorite",
+      "title": "A honeymoon bike ride",
+      "date": "2013-11",
+      "photos": [
+        {
+          "src": "assets/photos/2013/newzealandhoneymoonridingbikenov2013-e4e9d854.webp",
+          "alt": "Personal photo from A honeymoon bike ride"
+        }
+      ],
+      "place": "New Zealand"
+    },
+    {
+      "id": "port-charlotte-2014",
+      "type": "adventure",
+      "title": "Port Charlotte",
+      "date": "2014-03",
+      "photos": [
+        {
+          "src": "assets/photos/2014/march2014portcharlottefltrip-a59fbf0f.webp",
+          "alt": "Personal photo from Port Charlotte"
+        }
+      ],
+      "place": "Port Charlotte, Florida",
+      "coordinates": [
+        26.9762,
+        -82.0906
+      ]
+    },
+    {
+      "id": "goat-rock-2014",
+      "type": "adventure",
+      "title": "Summer at Goat Rock Beach",
+      "date": "2014",
+      "photos": [
+        {
+          "src": "assets/photos/2014/tripstocali2014goatroackbeachsummer-3223ecf2.webp",
+          "alt": "Personal photo from Summer at Goat Rock Beach"
+        }
+      ],
+      "place": "Goat Rock Beach, California",
+      "coordinates": [
+        38.4478,
+        -123.1274
+      ]
+    },
+    {
+      "id": "gatlinburg-cabins",
+      "type": "adventure",
+      "title": "Cabin trips in Gatlinburg",
+      "date": "2015",
+      "photos": [
+        {
+          "src": "assets/photos/2015/cabintrips2013-2015gatlinburgtn-2e09b659.webp",
+          "alt": "Personal photo from Cabin trips in Gatlinburg"
+        }
+      ],
+      "place": "Gatlinburg, Tennessee",
+      "coordinates": [
+        35.7143,
+        -83.5102
+      ],
+      "dateLabel": "2013–2015",
+      "sortDate": "2013"
+    },
+    {
+      "id": "atlanta-spring-2015",
+      "type": "adventure",
+      "title": "Spring in Atlanta",
+      "date": "2015",
+      "photos": [
+        {
+          "src": "assets/photos/2015/funinatlantaspring2015-a07264c7.webp",
+          "alt": "Personal photo from Spring in Atlanta"
+        }
+      ],
+      "place": "Atlanta, Georgia",
+      "coordinates": [
+        33.749,
+        -84.388
+      ],
+      "dateLabel": "Spring 2015"
+    },
+    {
+      "id": "nc-balloon-2015",
+      "type": "favorite",
+      "title": "A hot-air balloon in North Carolina",
+      "date": "2015-03",
+      "photos": [
+        {
+          "src": "assets/photos/2015/hotairbaloonmarch2015nc-66017e68.webp",
+          "alt": "Personal photo from A hot-air balloon in North Carolina"
+        }
+      ],
+      "place": "North Carolina"
+    },
+    {
+      "id": "virginia-wedding-2015",
+      "type": "favorite",
+      "title": "A wedding trip to Virginia",
+      "date": "2015",
+      "photos": [
+        {
+          "src": "assets/photos/2015/wenttoweddingvirginia-186516fa.webp",
+          "alt": "Personal photo from A wedding trip to Virginia"
+        }
+      ],
+      "place": "Virginia"
+    },
+    {
+      "id": "two-harbors-2016",
+      "type": "adventure",
+      "title": "Summer in Two Harbors",
+      "date": "2016",
+      "photos": [
+        {
+          "src": "assets/photos/2016/twoharborsmn2016summer-c1ca3432.webp",
+          "alt": "Personal photo from Summer in Two Harbors"
+        }
+      ],
+      "place": "Two Harbors, Minnesota",
+      "coordinates": [
+        47.0227,
+        -91.6707
+      ],
+      "dateLabel": "Summer 2016"
+    },
+    {
+      "id": "minnetonka-2016",
+      "type": "adventure",
+      "title": "Ice skating in Minnetonka",
+      "date": "2016-12",
+      "photos": [
+        {
+          "src": "assets/photos/2016/dec2016iceskateminnetonkamn-561ab5fa.webp",
+          "alt": "Personal photo from Ice skating in Minnetonka"
+        }
+      ],
+      "place": "Minnetonka, Minnesota",
+      "coordinates": [
+        44.9212,
+        -93.4687
+      ]
+    },
+    {
+      "id": "florida-wedding-2017",
+      "type": "favorite",
+      "title": "A wedding trip to Florida",
+      "date": "2017-02",
+      "photos": [
+        {
+          "src": "assets/photos/2017/floridaweddingfeb2017-82ded916.webp",
+          "alt": "Personal photo from A wedding trip to Florida"
+        }
+      ],
+      "place": "Florida"
+    },
+    {
+      "id": "renfest-2017",
+      "type": "adventure",
+      "title": "Minnesota Renaissance Festival",
+      "date": "2017-08",
+      "photos": [
+        {
+          "src": "assets/photos/2017/aug2017renfestmn-3f2b5b74.webp",
+          "alt": "Personal photo from Minnesota Renaissance Festival"
+        }
+      ],
+      "place": "Shakopee, Minnesota",
+      "coordinates": [
+        44.798,
+        -93.5269
+      ]
+    },
+    {
+      "id": "violet-on-the-way-2018",
+      "type": "favorite",
+      "title": "Waiting for Violet",
+      "date": "2018",
+      "photos": [
+        {
+          "src": "assets/photos/2018/may2018violetalmosthere-3e385fcd.webp",
+          "alt": "Personal photo from Waiting for Violet"
+        },
+        {
+          "src": "assets/photos/2018/violetsonographimagejan2018-bf187bef.webp",
+          "alt": "Personal photo from Waiting for Violet"
+        }
+      ],
+      "dateLabel": "January–May 2018"
+    },
+    {
+      "id": "tampa-babymoon-2018",
+      "type": "adventure",
+      "title": "Our Tampa babymoon",
+      "date": "2018-02",
+      "photos": [
+        {
+          "src": "assets/photos/2018/febbabymoontampa-07a2145e.webp",
+          "alt": "Personal photo from Our Tampa babymoon"
+        }
+      ],
+      "place": "Tampa, Florida",
+      "coordinates": [
+        27.9506,
+        -82.4572
+      ]
+    },
+    {
+      "id": "waco-2018",
+      "type": "adventure",
+      "title": "Waco",
+      "date": "2018-09",
+      "photos": [
+        {
+          "src": "assets/photos/2018/sept2018wacotx-a1a3a970.webp",
+          "alt": "Personal photo from Waco"
+        }
+      ],
+      "place": "Waco, Texas",
+      "coordinates": [
+        31.5493,
+        -97.1467
+      ]
+    },
+    {
+      "id": "painting-date-2019",
+      "type": "favorite",
+      "title": "A painting date",
+      "date": "2019",
+      "photos": [
+        {
+          "src": "assets/photos/2019/paintdate-2524acbf.webp",
+          "alt": "Personal photo from A painting date"
+        }
+      ]
+    },
+    {
+      "id": "christmas-2019",
+      "type": "favorite",
+      "title": "Christmas 2019",
+      "date": "2019-12",
+      "photos": [
+        {
+          "src": "assets/photos/2019/christmast2019-43021bcc.webp",
+          "alt": "Personal photo from Christmas 2019"
+        }
+      ]
+    },
+    {
+      "id": "orlando-2021",
+      "type": "adventure",
+      "title": "September in Orlando",
+      "date": "2021-09",
+      "photos": [
+        {
+          "src": "assets/photos/2021/septtriporlando-7ae47f8b.webp",
+          "alt": "Personal photo from September in Orlando"
+        }
+      ],
+      "place": "Orlando, Florida",
+      "coordinates": [
+        28.5383,
+        -81.3792
+      ]
+    },
+    {
+      "id": "hendersonville-2023",
+      "type": "adventure",
+      "title": "March in Hendersonville",
+      "date": "2023-03",
+      "photos": [
+        {
+          "src": "assets/photos/2023/marchhendersonvilletrip-869d98d7.webp",
+          "alt": "Personal photo from March in Hendersonville"
+        }
+      ],
+      "place": "Hendersonville, North Carolina",
+      "coordinates": [
+        35.3187,
+        -82.461
+      ]
+    },
+    {
+      "id": "new-smyrna-2023",
+      "type": "adventure",
+      "title": "New Smyrna Beach",
+      "date": "2023-09",
+      "photos": [
+        {
+          "src": "assets/photos/2023/septnewsmynrabeach-da36677f.webp",
+          "alt": "Personal photo from New Smyrna Beach"
+        }
+      ],
+      "place": "New Smyrna Beach, Florida",
+      "coordinates": [
+        29.0258,
+        -80.927
+      ]
+    },
+    {
+      "id": "date-night-home-2023",
+      "type": "favorite",
+      "title": "Date night at home",
+      "date": "2023-11",
+      "photos": [
+        {
+          "src": "assets/photos/2023/novdatenighthome-2d5b3e65.webp",
+          "alt": "Personal photo from Date night at home"
+        }
+      ]
+    },
+    {
+      "id": "caribbean-cruise-2024",
+      "type": "adventure",
+      "title": "The January Caribbean cruise",
+      "date": "2024-01",
+      "photos": [
+        {
+          "src": "assets/photos/2024/cruisejanturksandcaicos-6724db10.webp",
+          "alt": "Personal photo from The January Caribbean cruise"
+        },
+        {
+          "src": "assets/photos/2024/jancruise-292dae08.webp",
+          "alt": "Personal photo from The January Caribbean cruise"
+        },
+        {
+          "src": "assets/photos/2024/jancruisearuba-e3df1a59.webp",
+          "alt": "Personal photo from The January Caribbean cruise"
+        }
+      ],
+      "place": "Caribbean",
+      "coordinates": [
+        17.4,
+        -69
+      ]
+    },
+    {
+      "id": "san-diego-2024",
+      "type": "adventure",
+      "title": "April in San Diego",
+      "date": "2024-04",
+      "photos": [
+        {
+          "src": "assets/photos/2024/aprilsandiego-f07ac3db.webp",
+          "alt": "Personal photo from April in San Diego"
+        }
+      ],
+      "place": "San Diego, California",
+      "coordinates": [
+        32.7157,
+        -117.1611
+      ]
+    },
+    {
+      "id": "anoka-date-2025",
+      "type": "adventure",
+      "title": "Date night in Anoka",
+      "date": "2025-03",
+      "photos": [
+        {
+          "src": "assets/photos/2025/datenightanokamnmarch-29705214.webp",
+          "alt": "Personal photo from Date night in Anoka"
+        }
+      ],
+      "place": "Anoka, Minnesota",
+      "coordinates": [
+        45.1977,
+        -93.3872
+      ]
+    },
+    {
+      "id": "birthday-2025",
+      "type": "favorite",
+      "title": "Andy’s 40th",
+      "date": "2025-03",
+      "photos": [
+        {
+          "src": "assets/photos/2025/andy40march-9723e2ee.webp",
+          "alt": "Personal photo from Andy’s 40th"
+        }
+      ]
+    },
+    {
+      "id": "violet-graduation-2025",
+      "type": "favorite",
+      "title": "Violet’s kindergarten graduation",
+      "date": "2025-05",
+      "photos": [
+        {
+          "src": "assets/photos/2025/violetgraduatekmay-b9ddf213.webp",
+          "alt": "Personal photo from Violet’s kindergarten graduation"
+        }
+      ]
+    },
+    {
+      "id": "cedar-key-2025",
+      "type": "adventure",
+      "title": "July in Cedar Key",
+      "date": "2025-07",
+      "photos": [
+        {
+          "src": "assets/photos/2025/cedarkeyfljuly-0caa7f50.webp",
+          "alt": "Personal photo from July in Cedar Key"
+        }
+      ],
+      "place": "Cedar Key, Florida",
+      "coordinates": [
+        29.1386,
+        -83.0351
+      ]
+    },
+    {
+      "id": "nc-trip-2026",
+      "type": "favorite",
+      "title": "March trip to North Carolina",
+      "date": "2026-03",
+      "photos": [
+        {
+          "src": "assets/photos/2026/marchnctrip-37d3aaf8.webp",
+          "alt": "Personal photo from March trip to North Carolina"
+        }
+      ],
+      "place": "North Carolina"
+    },
+    {
+      "id": "seattle-2026",
+      "type": "adventure",
+      "title": "April in Seattle",
+      "date": "2026-04",
+      "photos": [
+        {
+          "src": "assets/photos/2026/aprilseattle-2-07776dc2.webp",
+          "alt": "Personal photo from April in Seattle"
+        },
+        {
+          "src": "assets/photos/2026/aprilseattle-a6eda9f0.webp",
+          "alt": "Personal photo from April in Seattle"
+        }
+      ],
+      "place": "Seattle, Washington",
+      "coordinates": [
+        47.6062,
+        -122.3321
+      ]
+    },
+    {
+      "id": "minneapolis-date-2026",
+      "type": "adventure",
+      "title": "Date night in Minneapolis",
+      "date": "2026-08",
+      "photos": [
+        {
+          "src": "assets/photos/2026/augdatenightminneapolis-91d9d5b0.webp",
+          "alt": "Personal photo from Date night in Minneapolis"
+        }
+      ],
+      "place": "Minneapolis, Minnesota",
+      "coordinates": [
+        44.9778,
+        -93.265
+      ]
+    },
+    {
+      "id": "twins-game-2026",
+      "type": "adventure",
+      "title": "A Twins game in August",
+      "date": "2026-08",
+      "photos": [
+        {
+          "src": "assets/photos/2026/augtwinsgame-5360447f.webp",
+          "alt": "Personal photo from A Twins game in August"
+        },
+        {
+          "src": "assets/photos/2026/augtwinsgame-2-f14f3767.webp",
+          "alt": "Personal photo from A Twins game in August"
+        }
+      ],
+      "place": "Minneapolis, Minnesota",
+      "coordinates": [
+        44.9778,
+        -93.265
+      ]
+    },
+    {
+      "id": "corn-maze-2026",
+      "type": "favorite",
+      "title": "October at the corn maze",
+      "date": "2026-10",
+      "photos": [
+        {
+          "src": "assets/photos/2026/octobercornmaze-12271c09.webp",
+          "alt": "Personal photo from October at the corn maze"
+        }
+      ]
+    },
+    {
+      "id": "photo-roll-2011",
+      "type": "favorite",
+      "title": "From the 2011 photo roll",
+      "sortDate": "2011-12-31",
+      "dateLabel": "2011 folder",
+      "photos": [
+        {
+          "src": "assets/photos/2011/2021-03-27-3-28f14d18.webp",
+          "alt": "Personal photo from the 2011 folder"
+        }
+      ]
+    },
+    {
+      "id": "photo-roll-2012",
+      "type": "favorite",
+      "title": "From the 2012 photo roll",
+      "sortDate": "2012-12-31",
+      "dateLabel": "2012 folder",
+      "photos": [
+        {
+          "src": "assets/photos/2012/20170428-161118-3b3ac425.webp",
+          "alt": "Personal photo from the 2012 folder"
+        }
+      ]
+    },
+    {
+      "id": "photo-roll-2013",
+      "type": "favorite",
+      "title": "From the 2013 photo roll",
+      "sortDate": "2013-12-31",
+      "dateLabel": "2013 folder",
+      "photos": [
+        {
+          "src": "assets/photos/2013/jan2012-3ofus-ef876cee.webp",
+          "alt": "Personal photo from the 2013 folder"
+        }
+      ]
+    },
+    {
+      "id": "photo-roll-2014",
+      "type": "favorite",
+      "title": "From the 2014 photo roll",
+      "sortDate": "2014-12-31",
+      "dateLabel": "2014 folder",
+      "photos": [
+        {
+          "src": "assets/photos/2014/lucyisawesome-0bf1a5fb.webp",
+          "alt": "Personal photo from the 2014 folder"
+        }
+      ]
+    },
+    {
+      "id": "photo-roll-2019",
+      "type": "favorite",
+      "title": "From the 2019 photo roll",
+      "sortDate": "2019-12-31",
+      "dateLabel": "2019 folder",
+      "photos": [
+        {
+          "src": "assets/photos/2019/withviolet2019-f9c77098.webp",
+          "alt": "Personal photo from the 2019 folder"
+        }
+      ]
+    },
+    {
+      "id": "photo-roll-2021",
+      "type": "favorite",
+      "title": "From the 2021 photo roll",
+      "sortDate": "2021-12-31",
+      "dateLabel": "2021 folder",
+      "photos": [
+        {
+          "src": "assets/photos/2021/bucswin-e7503d62.webp",
+          "alt": "Personal photo from the 2021 folder"
+        },
+        {
+          "src": "assets/photos/2021/justathome-58bcd780.webp",
+          "alt": "Personal photo from the 2021 folder"
+        },
+        {
+          "src": "assets/photos/2021/sept-60916727.webp",
+          "alt": "Personal photo from the 2021 folder"
+        }
+      ]
+    },
+    {
+      "id": "photo-roll-2022",
+      "type": "favorite",
+      "title": "From the 2022 photo roll",
+      "sortDate": "2022-12-31",
+      "dateLabel": "2022 folder",
+      "photos": [
+        {
+          "src": "assets/photos/2022/aug22-e8f85dda.webp",
+          "alt": "Personal photo from the 2022 folder"
+        },
+        {
+          "src": "assets/photos/2022/newcarmay-579d3bc6.webp",
+          "alt": "Personal photo from the 2022 folder"
+        },
+        {
+          "src": "assets/photos/2022/december-fd36e8c8.webp",
+          "alt": "Personal photo from the 2022 folder"
+        }
+      ]
+    },
+    {
+      "id": "photo-roll-2025",
+      "type": "favorite",
+      "title": "From the 2025 photo roll",
+      "sortDate": "2025-12-31",
+      "dateLabel": "2025 folder",
+      "photos": [
+        {
+          "src": "assets/photos/2025/december-b43d8ee0.webp",
+          "alt": "Personal photo from the 2025 folder"
+        }
+      ]
+    },
+    {
+      "id": "photo-roll-2026",
+      "type": "favorite",
+      "title": "From the 2026 photo roll",
+      "sortDate": "2026-12-31",
+      "dateLabel": "2026 folder",
+      "photos": [
+        {
+          "src": "assets/photos/2026/aprilmn-3f4aae99.webp",
+          "alt": "Personal photo from the 2026 folder"
+        },
+        {
+          "src": "assets/photos/2026/pxl-20260525-210521561-ts-000-e9a79504.webp",
+          "alt": "Personal photo from the 2026 folder"
+        }
+      ]
     }
   ]
 }

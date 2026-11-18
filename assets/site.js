@@ -42,14 +42,18 @@ function openMemory(place) {
   byId('memory-type').textContent = types[place.type].label;
   byId('memory-title').textContent = place.title;
   byId('memory-meta').textContent = [place.place, displayDate(place)].filter(Boolean).join(' · ');
-  byId('memory-story').textContent = place.story;
+  byId('memory-story').textContent = place.story || '';
+  byId('memory-story').hidden = !place.story;
   byId('memory-note').textContent = place.note || '';
+  byId('memory-note').hidden = !place.note;
   byId('memory-map').hidden = !map || !place.coordinates;
   const photos = place.photos || [];
   byId('gallery-controls')?.remove();
-  gallery.replaceChildren(...photos.map((photo) => {
+  gallery.replaceChildren(...photos.map((photo, index) => {
     const figure = element('figure');
     const image = element('img');
+    image.decoding = 'async';
+    if (index > 0) image.loading = 'lazy';
     image.src = photo.src;
     image.alt = photo.alt || '';
     image.addEventListener('error', () => {
@@ -95,9 +99,11 @@ function viewOnMap(place) {
 byId('memory-map').addEventListener('click', () => viewOnMap(activePlace));
 
 function memoryButton(place) {
-  const button = element('button', 'Open memory', 'text-button');
+  const count = place.photos?.length || 0;
+  const label = count ? `Open memory · ${count} ${count === 1 ? 'photo' : 'photos'}` : 'Open memory';
+  const button = element('button', label, 'text-button');
   button.type = 'button';
-  button.setAttribute('aria-label', 'Open memory: ' + place.title);
+  button.setAttribute('aria-label', `${label}: ${place.title}`);
   button.addEventListener('click', () => openMemory(place));
   return button;
 }
