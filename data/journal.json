@@ -434,8 +434,8 @@
     {
       "id": "expecting-twins",
       "type": "milestone",
-      "title": "We were expecting Max and Ellie",
-      "story": "In the fall of 2021, we found out we were expecting Max and Ellie.",
+      "title": "We found out we were having twins",
+      "story": "We thought we were having a miscarriage, so we went to the hospital. Instead, we found out we were having twins!",
       "photos": [
         {
           "src": "assets/photos/2021/christmastwinsontheway-92388a39.webp",
@@ -444,16 +444,30 @@
           "height": 900
         }
       ],
-      "sortDate": "2021-10",
-      "dateLabel": "Fall 2021"
+      "date": "2021-12"
     },
     {
       "id": "twins-born",
       "type": "milestone",
       "title": "Max and Ellie made us a family of five",
       "date": "2022-06-22",
-      "story": "Max and Ellie were born on June 22, 2022.",
-      "photos": [],
+      "story": "Max and Ellie were born on June 22, 2022. A few days later, we were home with both of them.",
+      "photos": [
+        {
+          "src": "assets/photos/2022/max-and-ellie-just-born.webp",
+          "alt": "Newborn Max and Ellie shortly after their birth",
+          "caption": "Just after they were born",
+          "width": 900,
+          "height": 1600
+        },
+        {
+          "src": "assets/photos/2022/max-and-ellie-at-home.webp",
+          "alt": "Max and Ellie at home a few days after their birth",
+          "caption": "Home a few days later",
+          "width": 900,
+          "height": 1600
+        }
+      ],
       "featured": true
     },
     {
