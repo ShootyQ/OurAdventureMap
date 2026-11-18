@@ -101,51 +101,19 @@ nav a[aria-current="page"] {
   text-underline-offset: 6px;
 }
 .story-cover {
-  max-width: 1140px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  gap: clamp(24px, 5vw, 75px);
-  padding-block: clamp(38px, 7vw, 106px);
+  max-width: 1260px;
+  padding-block: clamp(24px, 4vw, 54px) clamp(20px, 3vw, 42px);
 }
-.story-cover h1 {
-  font-size: clamp(52px, 6.5vw, 98px);
-  line-height: 1.02;
-}
-.story-cover .intro-copy { max-width: 36ch; }
-.cover-photo {
-  min-width: 0;
-  margin: 0;
-  padding: 10px 10px 0;
-  border: 1px solid var(--line);
-  background: #fffcf2;
-  box-shadow: 0 14px 34px #42362418;
-  transform: rotate(2deg);
-}
-.cover-photo img {
-  display: block;
-  width: 100%;
-  aspect-ratio: 1.36;
-  object-fit: cover;
-  object-position: center 39%;
-}
-.cover-photo figcaption {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: baseline;
-  gap: 0 12px;
-  padding: 6px 4px 8px;
-}
-.cover-photo figcaption span { font: 600 24px var(--hand); }
-.cover-photo time { color: var(--muted); font-size: 12px; }
+.story-cover .eyebrow { margin-bottom: 9px; }
+.story-cover h1 { font-size: clamp(40px, 5.4vw, 78px); line-height: 1.02; }
+.story-cover .intro-copy { max-width: none; margin: 12px 0 0; }
 .story-chapters {
   border-block: 1px solid var(--line);
   background: #f1ecdf;
 }
 .story-inner {
-  max-width: 1100px;
-  padding-block: 32px 50px;
+  max-width: 1260px;
+  padding-block: 18px 50px;
 }
 .chapter-toolbar {
   display: flex;
@@ -165,16 +133,73 @@ nav a[aria-current="page"] {
   border-radius: 0;
   padding: 7px 12px;
 }
-.story-chapter {
+.story-journey {
   display: grid;
-  grid-template-columns: clamp(90px, 12vw, 150px) 1fr;
-  gap: clamp(16px, 3.5vw, 44px);
+  grid-template-columns: minmax(0, 1.12fr) minmax(0, 1fr);
+  align-items: start;
+  gap: clamp(25px, 4vw, 58px);
+}
+.story-atlas {
+  position: sticky;
+  top: 18px;
+  z-index: 2;
+  min-width: 0;
+  background: #fbf8ed;
+  border: 1px solid #c4b99e;
+  padding: 0 8px 8px;
+  box-shadow: 0 12px 22px #4236241a;
+}
+.story-atlas-caption {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0 12px;
+  min-height: 42px;
+  padding: 5px 5px;
+}
+#journey-date { color: var(--muted); font-size: 11px; font-weight: 700; }
+#journey-date:empty { display: none; }
+#journey-location { font: 600 18px var(--serif); }
+.story-atlas-body { position: relative; border: 1px solid #a9bcb5; }
+#journey-map {
+  height: clamp(340px, 63vh, 680px);
+  isolation: isolate;
+  background: #cbdcda;
+  background-image: linear-gradient(#809d971b 1px, transparent 1px), linear-gradient(90deg, #809d971b 1px, transparent 1px);
+  background-size: 56px 56px;
+  font-family: var(--sans);
+}
+.journey-pin {
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  border: 2px solid white;
+  background: #9a654c;
+  color: white;
+  box-shadow: 0 2px 7px #253e3b70;
+  font: 18px Georgia, serif;
+}
+.story-atlas .compass { top: 9px; right: 12px; }
+.story-atlas .compass b { font-size: 32px; }
+.story-atlas .leaflet-tooltip {
+  border: 1px solid #c9c2ae;
+  background: #fffaf0;
+  color: var(--ink);
+  font: 700 12px var(--sans);
+}
+.story-atlas .leaflet-control-attribution {
+  background: #f9f6ecd9;
+  color: #435a51;
+  font-size: 9px;
+}
+.story-stream { min-width: 0; }
+.story-chapter {
   border-top: 1px solid var(--line);
-  padding-block: 24px 40px;
+  padding-block: 15px 34px;
   scroll-margin-top: 12px;
 }
 .chapter-year {
-  align-self: start;
+  margin-bottom: 14px;
   color: var(--olive);
   font-size: clamp(32px, 4vw, 60px);
 }
@@ -188,10 +213,8 @@ nav a[aria-current="page"] {
 .story-entry {
   position: relative;
   display: grid;
-  grid-template-columns: minmax(0, .9fr) minmax(0, 1.2fr);
-  align-items: center;
-  gap: 16px clamp(20px, 4vw, 52px);
-  padding-block: 12px 30px;
+  gap: 14px;
+  padding-block: 12px clamp(35px, 6vw, 75px);
 }
 .story-entry::before {
   content: "";
@@ -211,7 +234,7 @@ nav a[aria-current="page"] {
 .story-excerpt { margin: 8px 0; max-width: 55ch; }
 .story-entry .handwritten { margin: 8px 0; }
 
-.story-entry-copy:only-child { grid-column: 1 / -1; }
+.story-entry.current-memory::before { background: #946e3d; box-shadow: 0 0 0 4px #b18a4f22; }
 .story-actions {
   display: flex;
   flex-wrap: wrap;
@@ -257,12 +280,12 @@ nav a[aria-current="page"] {
 }
 .story-end { border-top: 1px solid var(--line); margin: 0; padding-top: 28px; text-align: center; }
 @media(max-width:710px) {
-  .story-cover { grid-template-columns: 1fr; gap: 26px; }
-  .story-cover h1 { font-size: clamp(48px, 11vw, 72px); }
-  .cover-photo { margin-inline: 5px; transform: rotate(1deg); }
-  .story-chapter { grid-template-columns: 1fr; gap: 14px; padding-bottom: 28px; }
-  .story-entry { grid-template-columns: 1fr; }
+  .story-cover h1 { font-size: clamp(39px, 10vw, 65px); }
+  .story-journey { grid-template-columns: 1fr; gap: 16px; }
+  .story-atlas { top: 0; }
+  #journey-map { height: clamp(140px, 28svh, 270px); }
+  .story-chapter { padding-bottom: 28px; scroll-margin-top: calc(clamp(140px, 28svh, 270px) + 77px); }
   .story-photos { gap: 7px; }
   .story-entry h3 { font-size: clamp(23px, 6vw, 30px); }
-  .chapter-toolbar { justify-content: flex-start; }
+  .chapter-toolbar { justify-content: flex-start; margin-bottom: 12px; }
 }

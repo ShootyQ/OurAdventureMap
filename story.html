@@ -6,7 +6,9 @@
   <meta name="theme-color" content="#f7f3e8">
   <meta name="description" content="The story so far, from our first photo together onward.">
   <title>The Story So Far · Our Adventure Map</title>
+  <link rel="stylesheet" href="assets/vendor/leaflet.css">
   <link rel="stylesheet" href="assets/site.css">
+  <script defer src="assets/vendor/leaflet.js"></script>
   <script defer src="assets/site.js"></script>
 </head>
 <body class="story-page">
@@ -21,16 +23,9 @@
   </header>
   <main>
     <section class="shell story-cover" aria-labelledby="story-title">
-      <div class="story-cover-copy">
-        <p class="eyebrow"><span></span> THE STORY SO FAR</p>
-        <h1 id="story-title">One thing led<br> to <em>another.</em></h1>
-        <p class="intro-copy">The big days and the little moments in between.</p>
-        <a class="primary" href="#chapters">From the beginning <span aria-hidden="true">↓</span></a>
-      </div>
-      <figure class="cover-photo">
-        <img src="assets/photos/2013/mp-9629-f6f047cc.webp" alt="An outdoor portrait of Savannah and Andy on their wedding day" fetchpriority="high">
-        <figcaption><span>Our wedding day</span><time datetime="2013-11-24">November 24, 2013</time></figcaption>
-      </figure>
+      <p class="eyebrow"><span></span> THE STORY SO FAR</p>
+      <h1 id="story-title">One thing led to <em>another.</em></h1>
+      <p class="intro-copy">Scroll through our memories and follow them on the map.</p>
     </section>
     <section class="story-chapters" id="chapters" aria-label="Our timeline">
       <div class="shell story-inner">
@@ -38,8 +33,23 @@
           <label for="chapter-picker">Jump to a year</label>
           <select id="chapter-picker"><option value="">Choose a chapter</option></select>
         </div>
-        <p id="story-message" role="status">Opening the journal…</p>
-        <div id="timeline-list"></div>
+        <div class="story-journey">
+          <aside class="story-atlas" aria-label="Story map">
+            <div class="story-atlas-caption">
+              <span id="journey-date">2007–2026</span>
+              <strong id="journey-location">Our Adventure Map</strong>
+            </div>
+            <div class="story-atlas-body">
+              <div id="journey-map" role="region" aria-label="Interactive map following the timeline"></div>
+              <div class="compass" aria-hidden="true"><span>N</span><b>✧</b></div>
+              <p class="map-message" id="journey-message" role="status">Opening the atlas…</p>
+            </div>
+          </aside>
+          <div class="story-stream">
+            <p id="story-message" role="status">Opening the journal…</p>
+            <div id="timeline-list"></div>
+          </div>
+        </div>
         <p class="story-end"><a class="primary" href="./#letter">Read the letter <span aria-hidden="true">→</span></a></p>
       </div>
     </section>

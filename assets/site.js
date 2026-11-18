@@ -141,6 +141,7 @@ function renderTimeline(places) {
   const timeline = byId('timeline-list');
   const picker = byId('chapter-picker');
   const entries = places.filter(({ type }) => type !== 'dream' && type !== 'secret');
+  const steps = [];
   const sortDate = (place) => place.sortDate || place.date || '9999';
   entries.sort((first, second) => sortDate(first).localeCompare(sortDate(second)));
   const observer = 'IntersectionObserver' in window
@@ -150,7 +151,7 @@ function renderTimeline(places) {
         if (!motion.matches) change.target.classList.add('photo-arrived');
         observer.unobserve(change.target);
       }
-    }, { threshold: 0.18 })
+    }, { threshold: 0.18, rootMargin: '0px 0px -8% 0px' })
     : null;
   let currentYear;
   let list;
@@ -189,6 +190,7 @@ function renderTimeline(places) {
     row.append(copy);
     if (place.photos?.length) row.append(storyPhotos(place, observer));
     list.append(row);
+    steps.push({ place, row });
   }
   byId('story-message').hidden = entries.length > 0;
   byId('story-message').textContent = 'The story is waiting for its first memory.';
@@ -196,7 +198,7 @@ function renderTimeline(places) {
     picker.parentElement.hidden = false;
     picker.addEventListener('change', () => byId(picker.value)?.scrollIntoView());
   }
-  byId(window.location.hash.slice(1))?.scrollIntoView({ behavior: 'instant' });
+  return steps;
 }
 
 function renderJournal({ places, letter }) {
@@ -278,7 +280,7 @@ function renderLegend() {
   }
 }
 
-function addAtlasLabels() {
+function addAtlasLabels(atlas) {
   const labels = [
     ['CANADA', [57, -113]], ['UNITED STATES', [39, -102]], ['MEXICO', [23, -102]],
     ['GREENLAND', [72, -42]], ['SOUTH AMERICA', [-13, -58]], ['EUROPE', [53, 19]],
@@ -293,7 +295,7 @@ function addAtlasLabels() {
         html: name, className: 'map-label' + (ocean ? ' ocean' : ''),
         iconSize: [120, 20], iconAnchor: [60, 10],
       }),
-    }).addTo(map);
+    }).addTo(atlas);
   }
 }
 
@@ -302,26 +304,112 @@ function resetMap() {
   map.setView(initialView.center, zoom);
 }
 
-async function initMap(journal) {
-  const world = await readJson('data/world.geojson');
-  initialView = journal.mapView;
-  map = L.map('map', {
+function createAtlas(id, world, options = {}) {
+  const atlas = L.map(id, {
     minZoom: 2, maxZoom: 9, scrollWheelZoom: false,
     maxBounds: [[-85, -180], [85, 180]], attributionControl: true,
+    ...options,
   });
-  resetMap();
-  map.attributionControl.setPrefix(false);
-  map.attributionControl.addAttribution('<a href="https://www.naturalearthdata.com/">Natural Earth</a> · <a href="https://leafletjs.com/">Leaflet</a>');
+  atlas.attributionControl.setPrefix(false);
+  atlas.attributionControl.addAttribution('<a href="https://www.naturalearthdata.com/">Natural Earth</a> · <a href="https://leafletjs.com/">Leaflet</a>');
   L.geoJSON(world, {
     interactive: false,
     style: { color: '#a3ad96', weight: 1, fillColor: '#e5e6ce', fillOpacity: 1 },
-  }).addTo(map);
-  addAtlasLabels();
+  }).addTo(atlas);
+  addAtlasLabels(atlas);
+  return atlas;
+}
+
+async function initMap(journal) {
+  initialView = journal.mapView;
+  map = createAtlas('map', await readJson('data/world.geojson'));
+  resetMap();
   mappedPlaces = journal.places.filter(({ coordinates }) => coordinates);
   renderLegend();
   refreshPins();
   byId('reset').disabled = false;
   byId('reset').addEventListener('click', resetMap);
+}
+
+async function initJourney(journal, steps) {
+  const message = byId('journey-message');
+  const [world, borders] = await Promise.all([
+    readJson('data/world.geojson'),
+    readJson('data/us-state-borders.geojson'),
+  ]);
+  const mobile = window.matchMedia('(max-width: 710px)');
+  const atlas = createAtlas('journey-map', world, {
+    minZoom: 1,
+    dragging: !window.matchMedia('(pointer: coarse)').matches,
+  });
+  L.geoJSON(borders, {
+    interactive: false,
+    style: { color: '#8f9d85', weight: 1, opacity: .7, dashArray: '3 3' },
+  }).addTo(atlas);
+  atlas.attributionControl.addAttribution('<a href="https://github.com/topojson/us-atlas">US Atlas</a>');
+  const overview = {
+    center: journal.mapView.center,
+    zoom: atlas.getSize().x < 460 ? 2 : 3,
+  };
+  atlas.setView(overview.center, overview.zoom);
+  message.hidden = true;
+  const panel = byId('journey-map').closest('.story-atlas');
+  const date = byId('journey-date');
+  const location = byId('journey-location');
+  const years = steps.map(({ place }) => (place.sortDate || place.date || '').slice(0, 4)).filter(Boolean);
+  const range = [...new Set([years.at(0), years.at(-1)])].filter(Boolean).join('–');
+  let active;
+  let pin;
+  let frame = 0;
+
+  function move(center, zoom) {
+    atlas.stop();
+    if (motion.matches) atlas.setView(center, zoom, { animate: false });
+    else atlas.flyTo(center, zoom, { duration: 0.85 });
+  }
+
+  function update() {
+    frame = 0;
+    const line = mobile.matches
+      ? Math.max(0, panel.getBoundingClientRect().bottom) + 75
+      : Math.min(window.innerHeight * .43, 340);
+    let next;
+    for (const step of steps) {
+      if (step.row.getBoundingClientRect().top > line) break;
+      next = step;
+    }
+    if (next === active) return;
+    active?.row.classList.remove('current-memory');
+    active = next;
+    active?.row.classList.add('current-memory');
+    pin?.remove();
+    const place = active?.place;
+    date.textContent = place ? displayDate(place) : range;
+    location.textContent = place
+      ? place.coordinates ? place.place || place.title : 'No pin for this memory'
+      : 'Our Adventure Map';
+    if (!place) {
+      move(overview.center, overview.zoom);
+    } else if (place.coordinates) {
+      const pinLabel = element('span', place.place || place.title);
+      pin = L.marker(place.coordinates, {
+        title: place.title,
+        icon: L.divIcon({ html: '✦', className: 'journey-pin', iconSize: [30, 30] }),
+      }).bindTooltip(pinLabel, { direction: 'top', offset: [0, -15], permanent: true });
+      pin.on('add', () => pin.getElement().setAttribute('aria-label', place.title));
+      pin.on('click', () => openMemory(place));
+      pin.addTo(atlas);
+      move(place.coordinates, place.place === 'Caribbean' ? 5 : 6);
+    }
+  }
+
+  function scheduleUpdate() {
+    if (!frame) frame = window.requestAnimationFrame(update);
+  }
+  window.addEventListener('scroll', scheduleUpdate, { passive: true });
+  window.addEventListener('resize', scheduleUpdate);
+  date.textContent = range;
+  update();
 }
 
 async function readJson(path) {
@@ -336,7 +424,18 @@ async function start() {
   try {
     const journal = await readJson('data/journal.json');
     if (storyPage) {
-      renderTimeline(journal.places);
+      const steps = renderTimeline(journal.places);
+      const chapter = byId(window.location.hash.slice(1));
+      if (chapter) {
+        await document.fonts.ready;
+        chapter.scrollIntoView({ behavior: 'instant' });
+      }
+      try {
+        await initJourney(journal, steps);
+      } catch (error) {
+        byId('journey-message').textContent = 'The atlas couldn’t be opened.';
+        console.error(error);
+      }
       return;
     }
     renderJournal(journal);
