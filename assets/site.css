@@ -69,7 +69,7 @@ em{color:var(--olive);font-weight:500}
 .letter-section{border-block:1px solid #d3cebc;background:#eae9db;padding:65px 20px;text-align:center}
 .letter-paper{margin:auto;max-width:760px;background:var(--paper);border:1px solid #ccc2aa;padding:clamp(24px,6vw,65px);box-shadow:0 12px 28px #3b422514}
 .letter-star{font:38px Georgia,serif;color:#8a6e3c}
-.letter-copy{max-width:48ch;margin:25px auto 0;font:19px/1.65 Georgia,serif}
+.letter-copy{max-width:48ch;margin:25px auto 0;font:19px/1.65 Georgia,serif;white-space:pre-line}
 .footer{display:flex;justify-content:space-between;gap:15px;padding-block:20px;font-size:13px}
 dialog{padding:0;border:1px solid #c0b498;color:var(--ink);background:var(--paper);width:min(560px,calc(100% - 28px));max-height:88dvh;box-shadow:0 17px 50px #20332360}
 dialog::backdrop{background:#20352bc2}
