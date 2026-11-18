@@ -27,7 +27,9 @@
       "photos": [
         {
           "src": "assets/photos/2007/2007firstimagetogetherasfriendslincoln-5d691245.webp",
-          "alt": "Our first photo together as friends in Lincoln"
+          "alt": "Our first photo together as friends in Lincoln",
+          "width": 450,
+          "height": 600
         }
       ]
     },
@@ -45,7 +47,9 @@
       "photos": [
         {
           "src": "assets/photos/2010/lincolngrad2010may-d9cac77d.webp",
-          "alt": "Our graduation in Lincoln"
+          "alt": "Our graduation in Lincoln",
+          "width": 720,
+          "height": 478
         }
       ]
     },
@@ -76,11 +80,15 @@
       "photos": [
         {
           "src": "assets/photos/2011/marchtripbeforedating2-7ad247e8.webp",
-          "alt": "A photo from our March road trip before we started dating"
+          "alt": "A photo from our March road trip before we started dating",
+          "width": 462,
+          "height": 590
         },
         {
           "src": "assets/photos/2011/tripmarchbeforedating-fcd73d65.webp",
-          "alt": "A photo from our March road trip before we started dating"
+          "alt": "A photo from our March road trip before we started dating",
+          "width": 720,
+          "height": 540
         }
       ]
     },
@@ -98,7 +106,9 @@
       "photos": [
         {
           "src": "assets/photos/2011/firstdateapril-a92652be.webp",
-          "alt": "A photo from our first date in Lincoln"
+          "alt": "A photo from our first date in Lincoln",
+          "width": 720,
+          "height": 540
         }
       ]
     },
@@ -116,7 +126,9 @@
       "photos": [
         {
           "src": "assets/photos/2012/oneyearapril-2fa98ca9.webp",
-          "alt": "Our first dating anniversary at the Grove Park Inn"
+          "alt": "Our first dating anniversary at the Grove Park Inn",
+          "width": 960,
+          "height": 720
         }
       ]
     },
@@ -134,7 +146,9 @@
       "photos": [
         {
           "src": "assets/photos/2013/webeengagedfeb2013february-2204fec8.webp",
-          "alt": "A photo from February 2013 celebrating our engagement"
+          "alt": "A photo from February 2013 celebrating our engagement",
+          "width": 206,
+          "height": 206
         }
       ],
       "note": "We still joke about the free dessert we never got."
@@ -152,19 +166,27 @@
       "photos": [
         {
           "src": "assets/photos/2013/engagement-andy-savannah-8416-792b77a7.webp",
-          "alt": "One of our engagement portraits in Asheville"
+          "alt": "One of our engagement portraits in Asheville",
+          "width": 1067,
+          "height": 1600
         },
         {
           "src": "assets/photos/2013/engagement-andy-savannah-8482-53257b25.webp",
-          "alt": "One of our engagement portraits in Asheville"
+          "alt": "One of our engagement portraits in Asheville",
+          "width": 1600,
+          "height": 1067
         },
         {
           "src": "assets/photos/2013/engagement-andy-savannah-8566-45ef98ce.webp",
-          "alt": "One of our engagement portraits in Asheville"
+          "alt": "One of our engagement portraits in Asheville",
+          "width": 1067,
+          "height": 1600
         },
         {
           "src": "assets/photos/2013/engagement-andy-savannah-8876-d99a1322.webp",
-          "alt": "One of our engagement portraits in Asheville"
+          "alt": "One of our engagement portraits in Asheville",
+          "width": 1067,
+          "height": 1600
         }
       ],
       "sortDate": "2013-02",
@@ -184,27 +206,39 @@
       "photos": [
         {
           "src": "assets/photos/2013/mp-0267-80361f50.webp",
-          "alt": "Savannah and Andy facing each other during the wedding ceremony"
+          "alt": "Savannah and Andy facing each other during the wedding ceremony",
+          "width": 1067,
+          "height": 1600
         },
         {
           "src": "assets/photos/2013/mp-0302-f014d822.webp",
-          "alt": "Savannah and Andy kissing during the wedding ceremony"
+          "alt": "Savannah and Andy kissing during the wedding ceremony",
+          "width": 1600,
+          "height": 1067
         },
         {
           "src": "assets/photos/2013/mp-9540-c823dd32.webp",
-          "alt": "Savannah and Andy walking together outside in their wedding clothes"
+          "alt": "Savannah and Andy walking together outside in their wedding clothes",
+          "width": 1067,
+          "height": 1600
         },
         {
           "src": "assets/photos/2013/mp-9629-f6f047cc.webp",
-          "alt": "An outdoor portrait of Savannah and Andy in their wedding clothes"
+          "alt": "An outdoor portrait of Savannah and Andy in their wedding clothes",
+          "width": 1600,
+          "height": 1067
         },
         {
           "src": "assets/photos/2013/mp-9814-1bb4e43c.webp",
-          "alt": "Savannah and Andy sitting together outside in their wedding clothes"
+          "alt": "Savannah and Andy sitting together outside in their wedding clothes",
+          "width": 1600,
+          "height": 1067
         },
         {
           "src": "assets/photos/2013/mp-9939-851d30e0.webp",
-          "alt": "Savannah and Andy with their wedding party"
+          "alt": "Savannah and Andy with their wedding party",
+          "width": 1600,
+          "height": 1067
         }
       ]
     },
@@ -235,7 +269,9 @@
       "photos": [
         {
           "src": "assets/photos/2013/2013newzealandrotorua-5298e3d5.webp",
-          "alt": "A honeymoon photo from Rotorua"
+          "alt": "A honeymoon photo from Rotorua",
+          "width": 960,
+          "height": 720
         }
       ],
       "sortDate": "2013-11-24",
@@ -268,7 +304,9 @@
       "photos": [
         {
           "src": "assets/photos/2015/maydunwoodygagoodbye-93fc8a8e.webp",
-          "alt": "Saying goodbye to Dunwoody"
+          "alt": "Saying goodbye to Dunwoody",
+          "width": 540,
+          "height": 540
         }
       ],
       "sortDate": "2013-11-24",
@@ -302,7 +340,9 @@
       "photos": [
         {
           "src": "assets/photos/2015/2015townhouseshakopeemnjuly-5eea7c38.webp",
-          "alt": "Our Shakopee townhouse"
+          "alt": "Our Shakopee townhouse",
+          "width": 639,
+          "height": 960
         }
       ]
     },
@@ -320,11 +360,15 @@
       "photos": [
         {
           "src": "assets/photos/2016/boughthousejuly2016-62dc1c76.webp",
-          "alt": "A photo from the year we moved to Brooklyn Park"
+          "alt": "A photo from the year we moved to Brooklyn Park",
+          "width": 720,
+          "height": 960
         },
         {
           "src": "assets/photos/2016/madehousebetter2016-b894ca8f.webp",
-          "alt": "A photo from the year we moved to Brooklyn Park"
+          "alt": "A photo from the year we moved to Brooklyn Park",
+          "width": 1504,
+          "height": 1000
         }
       ]
     },
@@ -336,7 +380,9 @@
       "photos": [
         {
           "src": "assets/photos/2017/violeybabyanncounce-nov-2017-394709bf.webp",
-          "alt": "Our November 2017 announcement that we were expecting Violet"
+          "alt": "Our November 2017 announcement that we were expecting Violet",
+          "width": 1369,
+          "height": 1600
         }
       ],
       "sortDate": "2017",
@@ -351,7 +397,9 @@
       "photos": [
         {
           "src": "assets/photos/2018/june1violetborn-67ef34f0.webp",
-          "alt": "Violet on the day she was born"
+          "alt": "Violet on the day she was born",
+          "width": 1200,
+          "height": 1600
         }
       ]
     },
@@ -363,7 +411,9 @@
       "photos": [
         {
           "src": "assets/photos/2021/christmastwinsontheway-92388a39.webp",
-          "alt": "Our Christmas announcement that the twins were on the way"
+          "alt": "Our Christmas announcement that the twins were on the way",
+          "width": 1600,
+          "height": 900
         }
       ],
       "sortDate": "2021",
@@ -449,7 +499,9 @@
       "photos": [
         {
           "src": "assets/photos/2010/marchtogether2010beforeevendatinglincoln-370bf59f.webp",
-          "alt": "Personal photo from Friends in Lincoln"
+          "alt": "Personal photo from Friends in Lincoln",
+          "width": 720,
+          "height": 540
         }
       ],
       "place": "Lincoln, Nebraska",
@@ -466,7 +518,9 @@
       "photos": [
         {
           "src": "assets/photos/2011/2011hendonc-ff1374e4.webp",
-          "alt": "Personal photo from Hendersonville"
+          "alt": "Personal photo from Hendersonville",
+          "width": 1600,
+          "height": 957
         }
       ],
       "place": "Hendersonville, North Carolina",
@@ -483,11 +537,15 @@
       "photos": [
         {
           "src": "assets/photos/2011/aug2011sacrament-970d5601.webp",
-          "alt": "Personal photo from Sacramento"
+          "alt": "Personal photo from Sacramento",
+          "width": 720,
+          "height": 540
         },
         {
           "src": "assets/photos/2011/july1-2011-wantedsacramentca-c3e95af8.webp",
-          "alt": "Personal photo from Sacramento"
+          "alt": "Personal photo from Sacramento",
+          "width": 336,
+          "height": 603
         }
       ],
       "place": "Sacramento, California",
@@ -504,7 +562,9 @@
       "photos": [
         {
           "src": "assets/photos/2011/biltmore2011-381baf44.webp",
-          "alt": "Personal photo from Biltmore"
+          "alt": "Personal photo from Biltmore",
+          "width": 720,
+          "height": 540
         }
       ],
       "place": "Asheville, North Carolina",
@@ -521,7 +581,9 @@
       "photos": [
         {
           "src": "assets/photos/2012/cadescovemarch-e1bba92c.webp",
-          "alt": "Personal photo from Cades Cove"
+          "alt": "Personal photo from Cades Cove",
+          "width": 1032,
+          "height": 1032
         }
       ],
       "place": "Cades Cove, Tennessee",
@@ -538,7 +600,9 @@
       "photos": [
         {
           "src": "assets/photos/2012/march2012savannahga-069ce5cd.webp",
-          "alt": "Personal photo from Savannah, Georgia"
+          "alt": "Personal photo from Savannah, Georgia",
+          "width": 960,
+          "height": 720
         }
       ],
       "place": "Savannah, Georgia",
@@ -555,7 +619,9 @@
       "photos": [
         {
           "src": "assets/photos/2012/babylucynchendersonville2012june-57c20978.webp",
-          "alt": "Personal photo from A June photo in Hendersonville"
+          "alt": "Personal photo from A June photo in Hendersonville",
+          "width": 1366,
+          "height": 1366
         }
       ],
       "place": "Hendersonville, North Carolina",
@@ -572,7 +638,9 @@
       "photos": [
         {
           "src": "assets/photos/2012/christmasdctrip-2012-b8eededd.webp",
-          "alt": "Personal photo from Christmas trip to Washington, DC"
+          "alt": "Personal photo from Christmas trip to Washington, DC",
+          "width": 960,
+          "height": 617
         }
       ],
       "place": "Washington, DC",
@@ -589,7 +657,9 @@
       "photos": [
         {
           "src": "assets/photos/2013/offtohoneymoonsanfranairport2013-62ea9a5e.webp",
-          "alt": "Personal photo from Off to the honeymoon"
+          "alt": "Personal photo from Off to the honeymoon",
+          "width": 480,
+          "height": 640
         }
       ],
       "place": "San Francisco area, California",
@@ -606,7 +676,9 @@
       "photos": [
         {
           "src": "assets/photos/2013/newzealandhoneymoonridingbikenov2013-e4e9d854.webp",
-          "alt": "Personal photo from A honeymoon bike ride"
+          "alt": "Personal photo from A honeymoon bike ride",
+          "width": 720,
+          "height": 960
         }
       ],
       "place": "New Zealand"
@@ -619,7 +691,9 @@
       "photos": [
         {
           "src": "assets/photos/2014/march2014portcharlottefltrip-a59fbf0f.webp",
-          "alt": "Personal photo from Port Charlotte"
+          "alt": "Personal photo from Port Charlotte",
+          "width": 384,
+          "height": 512
         }
       ],
       "place": "Port Charlotte, Florida",
@@ -636,7 +710,9 @@
       "photos": [
         {
           "src": "assets/photos/2014/tripstocali2014goatroackbeachsummer-3223ecf2.webp",
-          "alt": "Personal photo from Summer at Goat Rock Beach"
+          "alt": "Personal photo from Summer at Goat Rock Beach",
+          "width": 960,
+          "height": 540
         }
       ],
       "place": "Goat Rock Beach, California",
@@ -653,7 +729,9 @@
       "photos": [
         {
           "src": "assets/photos/2015/cabintrips2013-2015gatlinburgtn-2e09b659.webp",
-          "alt": "Personal photo from Cabin trips in Gatlinburg"
+          "alt": "Personal photo from Cabin trips in Gatlinburg",
+          "width": 1600,
+          "height": 1063
         }
       ],
       "place": "Gatlinburg, Tennessee",
@@ -672,7 +750,9 @@
       "photos": [
         {
           "src": "assets/photos/2015/funinatlantaspring2015-a07264c7.webp",
-          "alt": "Personal photo from Spring in Atlanta"
+          "alt": "Personal photo from Spring in Atlanta",
+          "width": 720,
+          "height": 960
         }
       ],
       "place": "Atlanta, Georgia",
@@ -690,7 +770,9 @@
       "photos": [
         {
           "src": "assets/photos/2015/hotairbaloonmarch2015nc-66017e68.webp",
-          "alt": "Personal photo from A hot-air balloon in North Carolina"
+          "alt": "Personal photo from A hot-air balloon in North Carolina",
+          "width": 1600,
+          "height": 1063
         }
       ],
       "place": "North Carolina"
@@ -703,7 +785,9 @@
       "photos": [
         {
           "src": "assets/photos/2015/wenttoweddingvirginia-186516fa.webp",
-          "alt": "Personal photo from A wedding trip to Virginia"
+          "alt": "Personal photo from A wedding trip to Virginia",
+          "width": 720,
+          "height": 960
         }
       ],
       "place": "Virginia"
@@ -716,7 +800,9 @@
       "photos": [
         {
           "src": "assets/photos/2016/twoharborsmn2016summer-c1ca3432.webp",
-          "alt": "Personal photo from Summer in Two Harbors"
+          "alt": "Personal photo from Summer in Two Harbors",
+          "width": 960,
+          "height": 720
         }
       ],
       "place": "Two Harbors, Minnesota",
@@ -734,7 +820,9 @@
       "photos": [
         {
           "src": "assets/photos/2016/dec2016iceskateminnetonkamn-561ab5fa.webp",
-          "alt": "Personal photo from Ice skating in Minnetonka"
+          "alt": "Personal photo from Ice skating in Minnetonka",
+          "width": 1200,
+          "height": 1600
         }
       ],
       "place": "Minnetonka, Minnesota",
@@ -751,7 +839,9 @@
       "photos": [
         {
           "src": "assets/photos/2017/floridaweddingfeb2017-82ded916.webp",
-          "alt": "Personal photo from A wedding trip to Florida"
+          "alt": "Personal photo from A wedding trip to Florida",
+          "width": 720,
+          "height": 960
         }
       ],
       "place": "Florida"
@@ -764,7 +854,9 @@
       "photos": [
         {
           "src": "assets/photos/2017/aug2017renfestmn-3f2b5b74.webp",
-          "alt": "Personal photo from Minnesota Renaissance Festival"
+          "alt": "Personal photo from Minnesota Renaissance Festival",
+          "width": 1080,
+          "height": 1080
         }
       ],
       "place": "Shakopee, Minnesota",
@@ -781,11 +873,15 @@
       "photos": [
         {
           "src": "assets/photos/2018/may2018violetalmosthere-3e385fcd.webp",
-          "alt": "Personal photo from Waiting for Violet"
+          "alt": "Personal photo from Waiting for Violet",
+          "width": 1067,
+          "height": 1600
         },
         {
           "src": "assets/photos/2018/violetsonographimagejan2018-bf187bef.webp",
-          "alt": "Personal photo from Waiting for Violet"
+          "alt": "Personal photo from Waiting for Violet",
+          "width": 960,
+          "height": 752
         }
       ],
       "dateLabel": "January–May 2018"
@@ -798,7 +894,9 @@
       "photos": [
         {
           "src": "assets/photos/2018/febbabymoontampa-07a2145e.webp",
-          "alt": "Personal photo from Our Tampa babymoon"
+          "alt": "Personal photo from Our Tampa babymoon",
+          "width": 1600,
+          "height": 1200
         }
       ],
       "place": "Tampa, Florida",
@@ -815,7 +913,9 @@
       "photos": [
         {
           "src": "assets/photos/2018/sept2018wacotx-a1a3a970.webp",
-          "alt": "Personal photo from Waco"
+          "alt": "Personal photo from Waco",
+          "width": 960,
+          "height": 720
         }
       ],
       "place": "Waco, Texas",
@@ -832,7 +932,9 @@
       "photos": [
         {
           "src": "assets/photos/2019/paintdate-2524acbf.webp",
-          "alt": "Personal photo from A painting date"
+          "alt": "Personal photo from A painting date",
+          "width": 1200,
+          "height": 1600
         }
       ]
     },
@@ -844,7 +946,9 @@
       "photos": [
         {
           "src": "assets/photos/2019/christmast2019-43021bcc.webp",
-          "alt": "Personal photo from Christmas 2019"
+          "alt": "Personal photo from Christmas 2019",
+          "width": 1600,
+          "height": 1280
         }
       ]
     },
@@ -856,7 +960,9 @@
       "photos": [
         {
           "src": "assets/photos/2021/septtriporlando-7ae47f8b.webp",
-          "alt": "Personal photo from September in Orlando"
+          "alt": "Personal photo from September in Orlando",
+          "width": 1600,
+          "height": 900
         }
       ],
       "place": "Orlando, Florida",
@@ -873,7 +979,9 @@
       "photos": [
         {
           "src": "assets/photos/2023/marchhendersonvilletrip-869d98d7.webp",
-          "alt": "Personal photo from March in Hendersonville"
+          "alt": "Personal photo from March in Hendersonville",
+          "width": 1600,
+          "height": 900
         }
       ],
       "place": "Hendersonville, North Carolina",
@@ -890,7 +998,9 @@
       "photos": [
         {
           "src": "assets/photos/2023/septnewsmynrabeach-da36677f.webp",
-          "alt": "Personal photo from New Smyrna Beach"
+          "alt": "Personal photo from New Smyrna Beach",
+          "width": 1600,
+          "height": 900
         }
       ],
       "place": "New Smyrna Beach, Florida",
@@ -907,7 +1017,9 @@
       "photos": [
         {
           "src": "assets/photos/2023/novdatenighthome-2d5b3e65.webp",
-          "alt": "Personal photo from Date night at home"
+          "alt": "Personal photo from Date night at home",
+          "width": 1600,
+          "height": 900
         }
       ]
     },
@@ -919,15 +1031,21 @@
       "photos": [
         {
           "src": "assets/photos/2024/cruisejanturksandcaicos-6724db10.webp",
-          "alt": "Personal photo from The January Caribbean cruise"
+          "alt": "Personal photo from The January Caribbean cruise",
+          "width": 1600,
+          "height": 1280
         },
         {
           "src": "assets/photos/2024/jancruise-292dae08.webp",
-          "alt": "Personal photo from The January Caribbean cruise"
+          "alt": "Personal photo from The January Caribbean cruise",
+          "width": 1600,
+          "height": 900
         },
         {
           "src": "assets/photos/2024/jancruisearuba-e3df1a59.webp",
-          "alt": "Personal photo from The January Caribbean cruise"
+          "alt": "Personal photo from The January Caribbean cruise",
+          "width": 1600,
+          "height": 900
         }
       ],
       "place": "Caribbean",
@@ -944,7 +1062,9 @@
       "photos": [
         {
           "src": "assets/photos/2024/aprilsandiego-f07ac3db.webp",
-          "alt": "Personal photo from April in San Diego"
+          "alt": "Personal photo from April in San Diego",
+          "width": 1600,
+          "height": 900
         }
       ],
       "place": "San Diego, California",
@@ -961,7 +1081,9 @@
       "photos": [
         {
           "src": "assets/photos/2025/datenightanokamnmarch-29705214.webp",
-          "alt": "Personal photo from Date night in Anoka"
+          "alt": "Personal photo from Date night in Anoka",
+          "width": 900,
+          "height": 1600
         }
       ],
       "place": "Anoka, Minnesota",
@@ -978,7 +1100,9 @@
       "photos": [
         {
           "src": "assets/photos/2025/andy40march-9723e2ee.webp",
-          "alt": "Personal photo from Andy’s 40th"
+          "alt": "Personal photo from Andy’s 40th",
+          "width": 1600,
+          "height": 900
         }
       ]
     },
@@ -990,7 +1114,9 @@
       "photos": [
         {
           "src": "assets/photos/2025/violetgraduatekmay-b9ddf213.webp",
-          "alt": "Personal photo from Violet’s kindergarten graduation"
+          "alt": "Personal photo from Violet’s kindergarten graduation",
+          "width": 1600,
+          "height": 900
         }
       ]
     },
@@ -1002,7 +1128,9 @@
       "photos": [
         {
           "src": "assets/photos/2025/cedarkeyfljuly-0caa7f50.webp",
-          "alt": "Personal photo from July in Cedar Key"
+          "alt": "Personal photo from July in Cedar Key",
+          "width": 1600,
+          "height": 900
         }
       ],
       "place": "Cedar Key, Florida",
@@ -1019,7 +1147,9 @@
       "photos": [
         {
           "src": "assets/photos/2026/marchnctrip-37d3aaf8.webp",
-          "alt": "Personal photo from March trip to North Carolina"
+          "alt": "Personal photo from March trip to North Carolina",
+          "width": 1600,
+          "height": 900
         }
       ],
       "place": "North Carolina"
@@ -1032,11 +1162,15 @@
       "photos": [
         {
           "src": "assets/photos/2026/aprilseattle-2-07776dc2.webp",
-          "alt": "Personal photo from April in Seattle"
+          "alt": "Personal photo from April in Seattle",
+          "width": 1600,
+          "height": 900
         },
         {
           "src": "assets/photos/2026/aprilseattle-a6eda9f0.webp",
-          "alt": "Personal photo from April in Seattle"
+          "alt": "Personal photo from April in Seattle",
+          "width": 1600,
+          "height": 900
         }
       ],
       "place": "Seattle, Washington",
@@ -1053,7 +1187,9 @@
       "photos": [
         {
           "src": "assets/photos/2026/augdatenightminneapolis-91d9d5b0.webp",
-          "alt": "Personal photo from Date night in Minneapolis"
+          "alt": "Personal photo from Date night in Minneapolis",
+          "width": 1200,
+          "height": 1600
         }
       ],
       "place": "Minneapolis, Minnesota",
@@ -1070,11 +1206,15 @@
       "photos": [
         {
           "src": "assets/photos/2026/augtwinsgame-5360447f.webp",
-          "alt": "Personal photo from A Twins game in August"
+          "alt": "Personal photo from A Twins game in August",
+          "width": 1600,
+          "height": 1200
         },
         {
           "src": "assets/photos/2026/augtwinsgame-2-f14f3767.webp",
-          "alt": "Personal photo from A Twins game in August"
+          "alt": "Personal photo from A Twins game in August",
+          "width": 1600,
+          "height": 1200
         }
       ],
       "place": "Minneapolis, Minnesota",
@@ -1091,7 +1231,9 @@
       "photos": [
         {
           "src": "assets/photos/2026/octobercornmaze-12271c09.webp",
-          "alt": "Personal photo from October at the corn maze"
+          "alt": "Personal photo from October at the corn maze",
+          "width": 1600,
+          "height": 1200
         }
       ]
     },
@@ -1104,7 +1246,9 @@
       "photos": [
         {
           "src": "assets/photos/2011/2021-03-27-3-28f14d18.webp",
-          "alt": "Personal photo from the 2011 folder"
+          "alt": "Personal photo from the 2011 folder",
+          "width": 449,
+          "height": 606
         }
       ]
     },
@@ -1117,7 +1261,9 @@
       "photos": [
         {
           "src": "assets/photos/2012/20170428-161118-3b3ac425.webp",
-          "alt": "Personal photo from the 2012 folder"
+          "alt": "Personal photo from the 2012 folder",
+          "width": 1200,
+          "height": 1600
         }
       ]
     },
@@ -1130,7 +1276,9 @@
       "photos": [
         {
           "src": "assets/photos/2013/jan2012-3ofus-ef876cee.webp",
-          "alt": "Personal photo from the 2013 folder"
+          "alt": "Personal photo from the 2013 folder",
+          "width": 1500,
+          "height": 1499
         }
       ]
     },
@@ -1143,7 +1291,9 @@
       "photos": [
         {
           "src": "assets/photos/2014/lucyisawesome-0bf1a5fb.webp",
-          "alt": "Personal photo from the 2014 folder"
+          "alt": "Personal photo from the 2014 folder",
+          "width": 720,
+          "height": 960
         }
       ]
     },
@@ -1156,7 +1306,9 @@
       "photos": [
         {
           "src": "assets/photos/2019/withviolet2019-f9c77098.webp",
-          "alt": "Personal photo from the 2019 folder"
+          "alt": "Personal photo from the 2019 folder",
+          "width": 512,
+          "height": 640
         }
       ]
     },
@@ -1169,15 +1321,21 @@
       "photos": [
         {
           "src": "assets/photos/2021/bucswin-e7503d62.webp",
-          "alt": "Personal photo from the 2021 folder"
+          "alt": "Personal photo from the 2021 folder",
+          "width": 1600,
+          "height": 900
         },
         {
           "src": "assets/photos/2021/justathome-58bcd780.webp",
-          "alt": "Personal photo from the 2021 folder"
+          "alt": "Personal photo from the 2021 folder",
+          "width": 1600,
+          "height": 900
         },
         {
           "src": "assets/photos/2021/sept-60916727.webp",
-          "alt": "Personal photo from the 2021 folder"
+          "alt": "Personal photo from the 2021 folder",
+          "width": 1600,
+          "height": 900
         }
       ]
     },
@@ -1190,15 +1348,21 @@
       "photos": [
         {
           "src": "assets/photos/2022/aug22-e8f85dda.webp",
-          "alt": "Personal photo from the 2022 folder"
+          "alt": "Personal photo from the 2022 folder",
+          "width": 1600,
+          "height": 1200
         },
         {
           "src": "assets/photos/2022/newcarmay-579d3bc6.webp",
-          "alt": "Personal photo from the 2022 folder"
+          "alt": "Personal photo from the 2022 folder",
+          "width": 1600,
+          "height": 900
         },
         {
           "src": "assets/photos/2022/december-fd36e8c8.webp",
-          "alt": "Personal photo from the 2022 folder"
+          "alt": "Personal photo from the 2022 folder",
+          "width": 1600,
+          "height": 900
         }
       ]
     },
@@ -1211,7 +1375,9 @@
       "photos": [
         {
           "src": "assets/photos/2025/december-b43d8ee0.webp",
-          "alt": "Personal photo from the 2025 folder"
+          "alt": "Personal photo from the 2025 folder",
+          "width": 900,
+          "height": 1600
         }
       ]
     },
@@ -1224,11 +1390,15 @@
       "photos": [
         {
           "src": "assets/photos/2026/aprilmn-3f4aae99.webp",
-          "alt": "Personal photo from the 2026 folder"
+          "alt": "Personal photo from the 2026 folder",
+          "width": 1600,
+          "height": 900
         },
         {
           "src": "assets/photos/2026/pxl-20260525-210521561-ts-000-e9a79504.webp",
-          "alt": "Personal photo from the 2026 folder"
+          "alt": "Personal photo from the 2026 folder",
+          "width": 1600,
+          "height": 1200
         }
       ]
     }

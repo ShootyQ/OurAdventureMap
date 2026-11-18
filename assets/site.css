@@ -255,6 +255,10 @@ nav a[aria-current="page"] {
   gap: 10px;
 }
 .story-print {
+  --print-height: clamp(220px, 52svh, 520px);
+  align-self: start;
+  width: min(100%, calc(var(--print-height) * var(--print-ratio, 1.5) + 14px));
+  min-width: 0;
   margin: 0;
   padding: 6px;
   background: #fffcf2;
@@ -265,9 +269,9 @@ nav a[aria-current="page"] {
 .story-print img {
   display: block;
   width: 100%;
-  aspect-ratio: 4 / 3;
-  max-height: 360px;
-  object-fit: cover;
+  height: auto;
+  max-height: var(--print-height);
+  object-fit: contain;
   background: #e8e2d1;
 }
 .story-print button:hover img { filter: brightness(1.04); }

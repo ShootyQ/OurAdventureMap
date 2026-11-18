@@ -125,6 +125,11 @@ function storyPhotos(place, observer) {
     const image = element('img');
     image.loading = 'lazy';
     image.decoding = 'async';
+    if (photo.width && photo.height) {
+      image.width = photo.width;
+      image.height = photo.height;
+      frame.style.setProperty('--print-ratio', photo.width / photo.height);
+    }
     image.alt = photo.alt || '';
     image.src = photo.src;
     button.append(image);
