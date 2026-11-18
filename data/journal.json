@@ -1,0 +1,41 @@
+{
+  "mapView": { "center": [42, -75], "zoom": 3 },
+  "letter": [
+    "Savannah,",
+    "If I could go back to any of these places, I’d want to go with you. The places are worth remembering because you’re the person I got to share them with.",
+    "This little map will keep growing. I’m glad I get to find out what goes on it next with you.",
+    "Happy anniversary, my love."
+  ],
+  "places": [
+    {
+      "id": "first-date", "type": "milestone", "title": "First date", "place": "Chicago, Illinois",
+      "coordinates": [41.88, -87.63], "date": "2000-01-01", "sample": true,
+      "story": "Replace this example with the place you first went out together and what you remember about that day.",
+      "note": "", "photos": []
+    },
+    {
+      "id": "road-trip", "type": "adventure", "title": "A road trip", "place": "Asheville, North Carolina",
+      "coordinates": [35.60, -82.55], "date": "2001-01-01", "sample": true,
+      "story": "Add a favorite trip, including the detours you still talk about.",
+      "note": "", "photos": []
+    },
+    {
+      "id": "favorite-spot", "type": "favorite", "title": "A favorite little spot", "place": "Portland, Maine",
+      "coordinates": [43.66, -70.26], "date": "2002-01-01", "sample": true,
+      "story": "Add an ordinary place that matters to both of you.",
+      "note": "", "photos": []
+    },
+    {
+      "id": "someday-iceland", "type": "dream", "title": "A someday road trip", "place": "Reykjavík, Iceland",
+      "coordinates": [64.15, -21.94], "sample": true,
+      "story": "An example of a place to dream about together.",
+      "note": "", "photos": []
+    },
+    {
+      "id": "small-surprise", "type": "secret", "title": "A note tucked in the map", "place": "Bermuda",
+      "coordinates": [32.30, -64.78], "sample": true,
+      "story": "Replace this sample with an inside joke, a photograph, or a little note for Savannah to discover.",
+      "note": "", "photos": []
+    }
+  ]
+}
