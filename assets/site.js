@@ -15,6 +15,7 @@ const filters = new Set(Object.keys(types));
 let map;
 let initialView;
 let activePlace;
+let mappedPlaces = [];
 
 function element(tag, content, className) {
   const node = document.createElement(tag);
@@ -33,7 +34,7 @@ function formatDate(date) {
 }
 
 function displayDate(place) {
-  return place.sample ? 'Sample entry' : formatDate(place.date);
+  return place.sample ? 'Sample entry' : place.dateLabel || formatDate(place.date);
 }
 
 function openMemory(place) {
@@ -43,7 +44,7 @@ function openMemory(place) {
   byId('memory-meta').textContent = [place.place, displayDate(place)].filter(Boolean).join(' · ');
   byId('memory-story').textContent = place.story;
   byId('memory-note').textContent = place.note || '';
-  byId('memory-map').hidden = !map;
+  byId('memory-map').hidden = !map || !place.coordinates;
   const photos = place.photos || [];
   byId('gallery-controls')?.remove();
   gallery.replaceChildren(...photos.map((photo) => {
@@ -88,7 +89,7 @@ function viewOnMap(place) {
   refreshPins();
   byId('map-section').scrollIntoView({ block: 'center' });
   map.setView(place.coordinates, Math.max(map.getZoom(), 6));
-  markers.get(place.id).getElement()?.focus({ preventScroll: true });
+  markers.get(place.coordinates.join(',')).getElement()?.focus({ preventScroll: true });
 }
 
 byId('memory-map').addEventListener('click', () => viewOnMap(activePlace));
@@ -104,7 +105,8 @@ function memoryButton(place) {
 function renderJournal({ places, letter }) {
   byId('sample-notice').hidden = !places.some(({ sample }) => sample);
   const entries = places.filter(({ type }) => type !== 'dream' && type !== 'secret');
-  entries.sort((first, second) => (first.date || '9999').localeCompare(second.date || '9999'));
+  const sortDate = (place) => place.sortDate || place.date || '9999';
+  entries.sort((first, second) => sortDate(first).localeCompare(sortDate(second)));
   for (const place of entries) {
     const row = element('li');
     const date = element(!place.sample && place.date ? 'time' : 'span', displayDate(place), 'entry-place');
@@ -124,29 +126,50 @@ function renderJournal({ places, letter }) {
     card.append(button);
     byId('dream-list').append(card);
   }
+  if (!byId('dream-list').children.length) {
+    byId('dream-list').append(element('p', 'There’s room here for wherever we dream of going next.'));
+  }
   byId('letter-copy').replaceChildren(...letter.map((paragraph) => element('p', paragraph)));
 }
 
-function createPin(place) {
-  const type = types[place.type];
-  const pin = element('div', '', 'map-pin ' + place.type);
-  pin.style.setProperty('--pin', type.color);
-  pin.append(element('span', type.symbol));
-  const title = place.type === 'secret' ? type.label : place.title + (place.sample ? ' (sample)' : '');
-  const marker = L.marker(place.coordinates, {
-    icon: L.divIcon({ html: pin, className: '', iconSize: [30, 30], iconAnchor: [14, 28] }),
-    title,
-  });
-  marker.on('add', () => marker.getElement().setAttribute('aria-label', title));
-  marker.on('click', () => openMemory(place));
-  markers.set(place.id, marker);
-  marker.journalType = place.type;
-}
-
 function refreshPins() {
-  for (const marker of markers.values()) {
-    if (filters.has(marker.journalType)) marker.addTo(map);
-    else marker.remove();
+  for (const marker of markers.values()) marker.remove();
+  markers.clear();
+  const groups = new Map();
+  for (const place of mappedPlaces) {
+    if (!filters.has(place.type)) continue;
+    const key = place.coordinates.join(',');
+    if (!groups.has(key)) groups.set(key, []);
+    groups.get(key).push(place);
+  }
+  for (const [key, places] of groups) {
+    const [place] = places;
+    const type = types[place.type];
+    const grouped = places.length > 1;
+    const pin = element('div', '', 'map-pin ' + place.type);
+    pin.style.setProperty('--pin', type.color);
+    pin.append(element('span', grouped ? String(places.length) : type.symbol));
+    const title = grouped ? place.place + ' · ' + places.length + ' memories'
+      : place.type === 'secret' ? type.label : place.title + (place.sample ? ' (sample)' : '');
+    const marker = L.marker(place.coordinates, {
+      icon: L.divIcon({ html: pin, className: '', iconSize: [30, 30], iconAnchor: [14, 28] }),
+      title,
+    });
+    marker.on('add', () => marker.getElement().setAttribute('aria-label', title));
+    if (grouped) {
+      const list = element('div', '', 'pin-memories');
+      list.append(element('strong', place.place));
+      for (const entry of places) {
+        const button = memoryButton(entry);
+        button.textContent = entry.title;
+        list.append(button);
+      }
+      marker.bindPopup(list);
+    } else {
+      marker.on('click', () => openMemory(place));
+    }
+    marker.addTo(map);
+    markers.set(key, marker);
   }
   for (const button of byId('legend').children) {
     button.setAttribute('aria-pressed', String(filters.has(button.dataset.type)));
@@ -210,7 +233,7 @@ async function initMap(journal) {
     style: { color: '#a3ad96', weight: 1, fillColor: '#e5e6ce', fillOpacity: 1 },
   }).addTo(map);
   addAtlasLabels();
-  journal.places.forEach(createPin);
+  mappedPlaces = journal.places.filter(({ coordinates }) => coordinates);
   renderLegend();
   refreshPins();
   byId('reset').disabled = false;

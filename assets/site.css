@@ -90,3 +90,4 @@ dialog::backdrop{background:#20352bc2}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation:none!important}}
 .primary span,.map-pin.adventure span{font-family:"DejaVu Sans",system-ui,sans-serif}
 .map-pin.adventure span{font-size:10px}
+.pin-memories .text-button{display:block;padding:6px 0;color:var(--ink)}

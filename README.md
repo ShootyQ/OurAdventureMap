@@ -14,7 +14,9 @@ Edit [data/journal.json](data/journal.json). Copy an entry from `places`, give i
 a unique `id` and fill in its title, place, coordinates in latitude–longitude
 order, story and optional note. Change `sample` to `false`. Use `YYYY-MM-DD`,
 `YYYY-MM` or `YYYY` for dates. Memories without dates appear at the end of the
-timeline.
+timeline. Omit `coordinates` to keep a memory on the timeline without assigning
+a map pin. For a season or relative date, use `dateLabel` for the wording shown
+on the site and `sortDate` to place it in the timeline.
 
 Choose a `type` from `milestone`, `adventure`, `favorite`, `dream`, or
 `secret`. Dream entries appear in the Someday section. To record a completed

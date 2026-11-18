@@ -1,5 +1,11 @@
 {
-  "mapView": { "center": [42, -75], "zoom": 3 },
+  "mapView": {
+    "center": [
+      39,
+      -96
+    ],
+    "zoom": 3
+  },
   "letter": [
     "Savannah,",
     "If I could go back to any of these places, I’d want to go with you. The places are worth remembering because you’re the person I got to share them with.",
@@ -8,34 +14,317 @@
   ],
   "places": [
     {
-      "id": "first-date", "type": "milestone", "title": "First date", "place": "Chicago, Illinois",
-      "coordinates": [41.88, -87.63], "date": "2000-01-01", "sample": true,
-      "story": "Replace this example with the place you first went out together and what you remember about that day.",
-      "note": "", "photos": []
+      "id": "union-college",
+      "type": "milestone",
+      "title": "Where we first met",
+      "place": "Lincoln, Nebraska",
+      "coordinates": [
+        40.8136,
+        -96.7026
+      ],
+      "date": "2007-09",
+      "story": "We met at Union College in September 2007 and became friends. We spent a lot of time together over the next few years.",
+      "photos": []
     },
     {
-      "id": "road-trip", "type": "adventure", "title": "A road trip", "place": "Asheville, North Carolina",
-      "coordinates": [35.60, -82.55], "date": "2001-01-01", "sample": true,
-      "story": "Add a favorite trip, including the detours you still talk about.",
-      "note": "", "photos": []
+      "id": "graduation",
+      "type": "milestone",
+      "title": "Graduation day",
+      "place": "Lincoln, Nebraska",
+      "coordinates": [
+        40.8136,
+        -96.7026
+      ],
+      "date": "2010",
+      "story": "We graduated from Union College together in 2010. We were still friends then.",
+      "photos": []
     },
     {
-      "id": "favorite-spot", "type": "favorite", "title": "A favorite little spot", "place": "Portland, Maine",
-      "coordinates": [43.66, -70.26], "date": "2002-01-01", "sample": true,
-      "story": "Add an ordinary place that matters to both of you.",
-      "note": "", "photos": []
+      "id": "owosso-visit",
+      "type": "milestone",
+      "title": "Who wants to visit over break?",
+      "place": "Owosso, Michigan",
+      "coordinates": [
+        42.9978,
+        -84.1766
+      ],
+      "date": "2011",
+      "story": "I put a question on Facebook asking who wanted to visit me over break. Savannah drove from Lincoln to visit me in Owosso.",
+      "photos": []
     },
     {
-      "id": "someday-iceland", "type": "dream", "title": "A someday road trip", "place": "Reykjavík, Iceland",
-      "coordinates": [64.15, -21.94], "sample": true,
-      "story": "An example of a place to dream about together.",
-      "note": "", "photos": []
+      "id": "orlando-road-trip",
+      "type": "adventure",
+      "title": "North Carolina to Florida to Michigan",
+      "place": "Orlando, Florida",
+      "coordinates": [
+        28.5383,
+        -81.3792
+      ],
+      "date": "2011-03",
+      "story": "Savannah flew to North Carolina. We drove from Hendersonville to Orlando, then all the way up to Michigan, where she flew out.",
+      "photos": []
     },
     {
-      "id": "small-surprise", "type": "secret", "title": "A note tucked in the map", "place": "Bermuda",
-      "coordinates": [32.30, -64.78], "sample": true,
-      "story": "Replace this sample with an inside joke, a photograph, or a little note for Savannah to discover.",
-      "note": "", "photos": []
+      "id": "started-dating",
+      "type": "milestone",
+      "title": "Our first date",
+      "place": "Nebraska State Capitol · Lincoln, Nebraska",
+      "coordinates": [
+        40.8081,
+        -96.6996
+      ],
+      "date": "2011-04",
+      "story": "I visited Savannah in Lincoln in April 2011, and that’s when we started dating. For our first date, we went to the Nebraska State Capitol and got ice cream downtown.",
+      "photos": []
+    },
+    {
+      "id": "first-dating-anniversary",
+      "type": "milestone",
+      "title": "One year of dating",
+      "place": "Grove Park Inn · Asheville, North Carolina",
+      "coordinates": [
+        35.6203,
+        -82.5427
+      ],
+      "date": "2012-04",
+      "story": "We celebrated one year of dating at the Grove Park Inn in Asheville.",
+      "photos": []
+    },
+    {
+      "id": "alleia-proposal",
+      "type": "milestone",
+      "title": "She said yes at Alleia",
+      "place": "Chattanooga, Tennessee",
+      "coordinates": [
+        35.0456,
+        -85.3097
+      ],
+      "date": "2013-02",
+      "story": "I got down on one knee at Alleia, asked Savannah to marry me, and she said yes. We were both a little sad that nobody noticed.",
+      "photos": [],
+      "note": "We still joke about the free dessert we never got."
+    },
+    {
+      "id": "engagement-photos",
+      "type": "milestone",
+      "title": "Engagement photos in Asheville",
+      "place": "Asheville, North Carolina",
+      "coordinates": [
+        35.5951,
+        -82.5515
+      ],
+      "story": "We took engagement photos on the Biltmore grounds and in downtown Asheville.",
+      "photos": [],
+      "sortDate": "2013-02",
+      "dateLabel": "2013"
+    },
+    {
+      "id": "wedding",
+      "type": "milestone",
+      "title": "Our wedding day",
+      "place": "Middletown, California",
+      "coordinates": [
+        38.7524,
+        -122.6149
+      ],
+      "date": "2013-11-24",
+      "story": "We got married in Middletown and held our reception at Pacific Union College.",
+      "photos": []
+    },
+    {
+      "id": "new-zealand-honeymoon",
+      "type": "adventure",
+      "title": "Four breakfasts in Auckland",
+      "place": "Auckland, New Zealand",
+      "coordinates": [
+        -36.8485,
+        174.7633
+      ],
+      "story": "We flew into Auckland so early that we ended up getting breakfast something like four times.",
+      "photos": [],
+      "sortDate": "2013-11-24",
+      "dateLabel": "After the wedding"
+    },
+    {
+      "id": "rotorua-honeymoon",
+      "type": "adventure",
+      "title": "A few nights in Rotorua",
+      "place": "Rotorua, New Zealand",
+      "coordinates": [
+        -38.1368,
+        176.2497
+      ],
+      "story": "We drove from Auckland to Rotorua and spent four or five nights there on our honeymoon.",
+      "photos": [],
+      "sortDate": "2013-11-24",
+      "dateLabel": "Honeymoon"
+    },
+    {
+      "id": "sydney-wedding",
+      "type": "milestone",
+      "title": "Our second wedding",
+      "place": "Sydney, Australia",
+      "coordinates": [
+        -33.8688,
+        151.2093
+      ],
+      "story": "We flew from New Zealand to Sydney for a second wedding with Savannah’s Australian family. I was there for 48 hours before flying back, and Savannah stayed longer.",
+      "photos": [],
+      "sortDate": "2013-11-24",
+      "dateLabel": "After New Zealand"
+    },
+    {
+      "id": "first-home",
+      "type": "milestone",
+      "title": "Our first home together",
+      "place": "Dunwoody, Georgia",
+      "coordinates": [
+        33.9462,
+        -84.3346
+      ],
+      "story": "We lived in a basement in Dunwoody from November 2013 to June 2015, and we both worked at Atlanta North School.",
+      "photos": [],
+      "sortDate": "2013-11-24",
+      "dateLabel": "November 2013",
+      "note": "Our one request for the basement: more light!"
+    },
+    {
+      "id": "caribbean-cruise",
+      "type": "adventure",
+      "title": "The 2014 Caribbean cruise",
+      "place": "Caribbean",
+      "coordinates": [
+        17.4,
+        -69
+      ],
+      "date": "2014",
+      "story": "Our cruise included the Dominican Republic, Turks and Caicos, Half Moon Beach, Aruba, Bonaire, and Curaçao.",
+      "photos": []
+    },
+    {
+      "id": "shakopee-home",
+      "type": "milestone",
+      "title": "The Shakopee townhouse",
+      "place": "Shakopee, Minnesota",
+      "coordinates": [
+        44.798,
+        -93.5269
+      ],
+      "date": "2015",
+      "story": "We moved to a townhouse in Shakopee and lived there for a year.",
+      "photos": []
+    },
+    {
+      "id": "brooklyn-park-home",
+      "type": "milestone",
+      "title": "We moved to Brooklyn Park",
+      "place": "Brooklyn Park, Minnesota",
+      "coordinates": [
+        45.0941,
+        -93.3563
+      ],
+      "date": "2016",
+      "story": "After our year in Shakopee, we moved to Brooklyn Park.",
+      "photos": []
+    },
+    {
+      "id": "expecting-violet",
+      "type": "milestone",
+      "title": "We were expecting Violet",
+      "story": "In the fall of 2017, we found out we were expecting Violet.",
+      "photos": [],
+      "sortDate": "2017",
+      "dateLabel": "Fall 2017"
+    },
+    {
+      "id": "violet-born",
+      "type": "milestone",
+      "title": "Violet arrived",
+      "date": "2018-06-01",
+      "story": "Violet was born on June 1, 2018.",
+      "photos": []
+    },
+    {
+      "id": "expecting-twins",
+      "type": "milestone",
+      "title": "We were expecting Max and Ellie",
+      "story": "In the fall of 2021, we found out we were expecting Max and Ellie.",
+      "photos": [],
+      "sortDate": "2021",
+      "dateLabel": "Fall 2021"
+    },
+    {
+      "id": "twins-born",
+      "type": "milestone",
+      "title": "Max and Ellie arrived",
+      "date": "2022-06-22",
+      "story": "Max and Ellie were born on June 22, 2022.",
+      "photos": []
+    },
+    {
+      "id": "minnesota-overnights",
+      "type": "favorite",
+      "title": "One night away",
+      "place": "Minnesota",
+      "story": "For dates and anniversaries, we love getting away for one night at a bed-and-breakfast or a downtown hotel.",
+      "photos": []
+    },
+    {
+      "id": "takeout-favorites",
+      "type": "favorite",
+      "title": "Our takeout favorites",
+      "story": "We love Thai takeout and Red Robin delivery.",
+      "photos": []
+    },
+    {
+      "id": "dream-europe",
+      "type": "dream",
+      "title": "Explore Europe together",
+      "place": "Europe",
+      "coordinates": [
+        48.5,
+        13
+      ],
+      "story": "We’d love to take a trip to Europe together.",
+      "photos": []
+    },
+    {
+      "id": "dream-caribbean",
+      "type": "dream",
+      "title": "Another Caribbean cruise",
+      "place": "Caribbean",
+      "coordinates": [
+        16.2,
+        -72
+      ],
+      "story": "We’d love another Caribbean cruise, with the family or just the two of us.",
+      "photos": []
+    },
+    {
+      "id": "dream-yellowstone",
+      "type": "dream",
+      "title": "Head out to Yellowstone",
+      "place": "Yellowstone area",
+      "coordinates": [
+        44.6,
+        -110.5
+      ],
+      "story": "We’d like to explore the Yellowstone area. This one feels the most likely to happen.",
+      "photos": []
+    },
+    {
+      "id": "dream-vietnam",
+      "type": "dream",
+      "title": "Savannah’s Vietnam mission trip",
+      "place": "Vietnam",
+      "coordinates": [
+        16.0,
+        107.7
+      ],
+      "dateLabel": "Hoping for 2027",
+      "story": "Savannah hopes to go to Vietnam on a mission trip in 2027.",
+      "photos": []
     }
   ]
 }
