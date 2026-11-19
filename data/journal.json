@@ -1082,7 +1082,16 @@
       "title": "Violet turns one",
       "date": "2019-06-01",
       "featured": true,
-      "story": "We left in late May and came back in early June, visiting our families in North Carolina and at Cohutta Springs. In the middle of that trip we celebrated Violet’s first birthday. Somehow, a whole year had gone by since that last day of school."
+      "story": "We left in late May and came back in early June, visiting our families in North Carolina and at Cohutta Springs. In the middle of that trip we celebrated Violet’s first birthday. Somehow, a whole year had gone by since that last day of school.",
+      "photos": [
+        {
+          "src": "assets/photos/2019/violet-first-birthday.webp",
+          "alt": "Savannah helps Violet, in a tiny party hat, open a birthday present",
+          "caption": "Celebrating Violet’s first birthday.",
+          "width": 1200,
+          "height": 1600
+        }
+      ]
     },
     {
       "id": "fort-frances-2019",
@@ -1093,8 +1102,17 @@
         48.609,
         -93.395
       ],
-      "date": "2019",
-      "story": "We went up to International Falls, crossed into Fort Frances, and drove about half an hour northeast. We stopped by the water with Violet. It’s still her only international trip so far."
+      "date": "2019-07-27",
+      "story": "We went up to International Falls, crossed into Fort Frances, and drove about half an hour northeast. We stopped by the water with Violet. It’s still her only international trip so far.",
+      "photos": [
+        {
+          "src": "assets/photos/2019/savannah-violet-fort-frances.webp",
+          "alt": "Savannah holds Violet’s hands at the water’s edge",
+          "caption": "By the water northeast of Fort Frances, Ontario.",
+          "width": 1600,
+          "height": 1200
+        }
+      ]
     },
     {
       "id": "christmas-2019",
@@ -1102,6 +1120,13 @@
       "title": "Christmas in North Carolina and Cohutta Springs",
       "date": "2019-12-25",
       "photos": [
+        {
+          "src": "assets/photos/2019/violet-christmas-hendersonville.webp",
+          "alt": "Violet holds a hairbrush in front of the Christmas tree",
+          "caption": "Christmas in Hendersonville, North Carolina.",
+          "width": 1600,
+          "height": 1200
+        },
         {
           "src": "assets/photos/2013/jan2012-3ofus-ef876cee.webp",
           "alt": "Andy and Savannah with Violet at Christmas 2019",
