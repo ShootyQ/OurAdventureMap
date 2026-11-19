@@ -1160,6 +1160,21 @@
       "story": "COVID made for a lot more time at home. We hunkered down, and playing games with the Bonjours was one of the bright spots of a pretty quiet year."
     },
     {
+      "id": "swing-day-2020",
+      "type": "favorite",
+      "title": "An afternoon on the swings",
+      "date": "2020-05-31",
+      "photos": [
+        {
+          "src": "assets/photos/2020/violet-on-the-swings.webp",
+          "alt": "Violet in a blue swing with an adult on the swing beside her",
+          "caption": "A May afternoon on the swings.",
+          "width": 1600,
+          "height": 900
+        }
+      ]
+    },
+    {
       "id": "north-dakota-wedding-2020",
       "type": "adventure",
       "title": "A North Dakota trip for Kelly’s wedding",
@@ -1176,9 +1191,17 @@
       "id": "date-near-home-2020",
       "type": "favorite",
       "title": "A date close to home",
-      "sortDate": "2020-07-31",
-      "dateLabel": "Late July 2020",
-      "story": "At the end of July, Savannah and I went on a date close to home. We’d spent plenty of time at home together that year, but getting out for a little time just the two of us still felt like an occasion."
+      "story": "At the end of July, Savannah and I went on a date close to home. We’d spent plenty of time at home together that year, but getting out for a little time just the two of us still felt like an occasion.",
+      "date": "2020-07-31",
+      "photos": [
+        {
+          "src": "assets/photos/2020/late-july-date.webp",
+          "alt": "Andy and Savannah smiling together in a selfie",
+          "caption": "Just the two of us on our late-July date.",
+          "width": 1600,
+          "height": 900
+        }
+      ]
     },
     {
       "id": "orlando-2020",
@@ -1201,8 +1224,17 @@
         28.953,
         -80.839
       ],
-      "date": "2020-08",
-      "story": "On that August Florida trip we headed out to Mary McLeod Bethune Beach Park. It was good to trade the usual view from home for sand and ocean for a while."
+      "date": "2020-08-08",
+      "story": "On that August Florida trip we headed out to Mary McLeod Bethune Beach Park. It was good to trade the usual view from home for sand and ocean for a while.",
+      "photos": [
+        {
+          "src": "assets/photos/2020/bethune-beach-family.webp",
+          "alt": "Andy, Savannah, and Violet sitting together in beach chairs",
+          "caption": "A beach day at Mary McLeod Bethune Beach Park.",
+          "width": 1600,
+          "height": 900
+        }
+      ]
     },
     {
       "id": "minnesota-zoo-2020",
@@ -1213,8 +1245,32 @@
         44.7678,
         -93.1953
       ],
-      "date": "2020-09",
-      "story": "In September we took Violet to the Minnesota Zoo. It was a chance to get out together and let her see some animals up close."
+      "date": "2020-09-05",
+      "story": "In September we took Violet to the Minnesota Zoo. It was a chance to get out together and let her see some animals up close.",
+      "photos": [
+        {
+          "src": "assets/photos/2020/minnesota-zoo-family.webp",
+          "alt": "Andy and Savannah standing beside Violet in her stroller at the zoo",
+          "caption": "The three of us at the Minnesota Zoo.",
+          "width": 1600,
+          "height": 900
+        }
+      ]
+    },
+    {
+      "id": "breakfast-for-two-2020",
+      "type": "favorite",
+      "title": "Breakfast for two",
+      "date": "2020-11-23",
+      "photos": [
+        {
+          "src": "assets/photos/2020/november-breakfast-for-two.webp",
+          "alt": "Two breakfast plates on a tray with coffee and orange juice",
+          "caption": "Breakfast for two in November.",
+          "width": 1600,
+          "height": 900
+        }
+      ]
     },
     {
       "id": "cohutta-christmas-2020",
@@ -1225,8 +1281,17 @@
         34.94,
         -84.745
       ],
-      "date": "2020-12",
-      "story": "That Christmas we headed south to spend the holiday with Savannah’s family at Cohutta Springs. After a quiet year at home, it was good to finish it together in Georgia."
+      "date": "2020-12-25",
+      "story": "That Christmas we headed south to spend the holiday with Savannah’s family at Cohutta Springs. After a quiet year at home, it was good to finish it together in Georgia.",
+      "photos": [
+        {
+          "src": "assets/photos/2020/christmas-cohutta-springs.webp",
+          "alt": "Savannah and Violet opening a present together on the couch",
+          "caption": "Christmas morning at Cohutta Springs.",
+          "width": 1600,
+          "height": 900
+        }
+      ]
     },
     {
       "id": "orlando-2021",
