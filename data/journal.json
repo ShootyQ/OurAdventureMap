@@ -71,7 +71,8 @@
       "Violet had a big year of her own. We took her to Duluth to ride with Thomas the Tank Engine, and she started Pre-K at MCA. Then came Halloween, with all three kids in costume."
     ],
     "2023": [
-      "We went back to Hendersonville in March and made it to New Smyrna Beach in September. By November, one of the dates worth remembering was right at home."
+      "Max and Ellie turned one in June, and the house felt busier by the week. We still made it to Hendersonville in March and New Smyrna Beach in September. In between, there was plenty to remember at home, from Violet’s dress-up outfits to the twins finding new places to sit and new ways to fall asleep.",
+      "That fall we celebrated ten years of marriage. I think back to our wedding and our honeymoon, and then I look at the three kids who fill up our days now. A lot has changed since 2013. I still love getting a little time with Savannah, even when date night is right at home."
     ],
     "2024": [
       "We started the year with a Caribbean cruise. A few months later we were on the other coast for a trip to San Diego."
@@ -1650,6 +1651,38 @@
       "story": "We kept Christmas low-key that year and stayed in Minnesota. We went to Savannah’s parents’ place in Forest Lake and spent the holiday with family. It was nice to have a Christmas without a long drive."
     },
     {
+      "id": "twins-playing-2023",
+      "type": "favorite",
+      "title": "Max and Ellie at play",
+      "date": "2023-02-28",
+      "story": "Max and Ellie were getting bigger, and by February they were both up at the activity table. Two little faces looking up at the same time was worth a picture.",
+      "photos": [
+        {
+          "src": "assets/photos/2023/twins-at-play-february.webp",
+          "alt": "Max and Ellie smiling together behind a colorful activity table",
+          "caption": "Two little faces at the activity table.",
+          "width": 1600,
+          "height": 900
+        }
+      ]
+    },
+    {
+      "id": "violet-dress-up-2023",
+      "type": "favorite",
+      "title": "Violet’s dress-up outfit",
+      "date": "2023-03-05",
+      "story": "Some of the best photos are the ones we get without going anywhere. This was one of Violet’s outfits, complete with a green hat and a whole lot of color.",
+      "photos": [
+        {
+          "src": "assets/photos/2023/violet-dress-up-march.webp",
+          "alt": "Violet dressed in a green hat and layers of colorful clothes",
+          "caption": "Violet all dressed up at home.",
+          "width": 900,
+          "height": 1600
+        }
+      ]
+    },
+    {
       "id": "hendersonville-2023",
       "type": "adventure",
       "title": "March in Hendersonville",
@@ -1657,7 +1690,15 @@
       "photos": [
         {
           "src": "assets/photos/2023/marchhendersonvilletrip-869d98d7.webp",
-          "alt": "Personal photo from March in Hendersonville",
+          "alt": "Andy, Savannah, and the three kids sitting together on a bench by spring flowers downtown",
+          "width": 1600,
+          "height": 900,
+          "caption": "All five of us in downtown Hendersonville."
+        },
+        {
+          "src": "assets/photos/2023/andy-savannah-north-carolina.webp",
+          "alt": "Andy and Savannah smiling together in front of a brick wall",
+          "caption": "A photo of just the two of us on our March trip to North Carolina.",
           "width": 1600,
           "height": 900
         }
@@ -1666,6 +1707,62 @@
       "coordinates": [
         35.3187,
         -82.461
+      ],
+      "story": "We went back to Hendersonville in March. We got a picture of all five of us downtown, and there’s one of just Savannah and me from the same North Carolina trip. I’m glad we got both."
+    },
+    {
+      "id": "june-afternoon-2023",
+      "type": "favorite",
+      "title": "A June afternoon outside",
+      "date": "2023-06-18",
+      "story": "The twins were about to turn one. In the middle of that busy summer, I’m glad we took a picture of the two of us sitting outside together.",
+      "photos": [
+        {
+          "src": "assets/photos/2023/june-afternoon-with-savannah.webp",
+          "alt": "Savannah and Andy smiling at an outdoor table",
+          "caption": "Savannah and me on a June afternoon.",
+          "width": 1600,
+          "height": 900
+        }
+      ]
+    },
+    {
+      "id": "kids-at-home-august-2023",
+      "type": "favorite",
+      "title": "The little things at home",
+      "date": "2023-08-07",
+      "story": "August gave us two pictures that sum up life with the kids pretty well. In one, a little face is smiling out from an open cupboard. In the other, nap time wins right there at the high chair.",
+      "photos": [
+        {
+          "src": "assets/photos/2023/august-cupboard-hideout.webp",
+          "alt": "One of the twins smiling from inside an open kitchen cupboard",
+          "caption": "An unexpected place to sit.",
+          "width": 900,
+          "height": 1600
+        },
+        {
+          "src": "assets/photos/2023/august-high-chair-nap.webp",
+          "alt": "One of the twins asleep at the high-chair tray beside some food",
+          "caption": "When nap time comes before the last bite.",
+          "width": 1600,
+          "height": 900
+        }
+      ]
+    },
+    {
+      "id": "family-table-2023",
+      "type": "favorite",
+      "title": "All five around the table",
+      "date": "2023-09-03",
+      "story": "There are five of us squeezed into this photo from an outdoor table in September. It’s the kind of picture I’m always glad we stopped to take.",
+      "photos": [
+        {
+          "src": "assets/photos/2023/september-family-table.webp",
+          "alt": "Savannah taking a selfie with Andy and all three kids around an outdoor table",
+          "caption": "All five of us around the table.",
+          "width": 1600,
+          "height": 900
+        }
       ]
     },
     {
@@ -1676,30 +1773,51 @@
       "photos": [
         {
           "src": "assets/photos/2023/septnewsmynrabeach-da36677f.webp",
-          "alt": "Personal photo from New Smyrna Beach",
+          "alt": "Andy, Savannah, and the three kids sitting on driftwood beside the ocean",
           "width": 1600,
-          "height": 900
+          "height": 900,
+          "caption": "All five of us at New Smyrna Beach."
         }
       ],
       "place": "New Smyrna Beach, Florida",
       "coordinates": [
         29.0258,
         -80.927
-      ]
+      ],
+      "story": "We got back to New Smyrna Beach in September. We managed to get all five of us into one photo on a piece of driftwood, with the waves rolling in behind us."
     },
     {
       "id": "date-night-home-2023",
       "type": "favorite",
       "title": "Date night at home",
-      "date": "2023-11",
+      "date": "2023-10-27",
       "photos": [
         {
           "src": "assets/photos/2023/novdatenighthome-2d5b3e65.webp",
-          "alt": "Personal photo from Date night at home",
+          "alt": "Andy and Savannah standing together at home in red outfits",
           "width": 1600,
-          "height": 900
+          "height": 900,
+          "caption": "A fall date night at home."
         }
-      ]
+      ],
+      "story": "One fall date night was right at home. With three little kids and a full house, it felt good to set aside an evening for just us."
+    },
+    {
+      "id": "tenth-anniversary-2023",
+      "type": "milestone",
+      "title": "Ten years married",
+      "date": "2023-11-24",
+      "story": "Ten years since that wedding day in 2013. We’d gone from planning a wedding and flying to New Zealand to raising Violet, Max, and Ellie. The days are a lot louder now, and I love the life we’ve made together. Happy ten years, Savannah.",
+      "photos": [
+        {
+          "src": "assets/photos/2013/mp-9540-c823dd32.webp",
+          "alt": "Savannah and Andy walking together outside in their wedding clothes",
+          "width": 1067,
+          "height": 1600,
+          "caption": "Back where it started, on our wedding day in 2013."
+        }
+      ],
+      "featured": true
     },
     {
       "id": "caribbean-cruise-2024",
