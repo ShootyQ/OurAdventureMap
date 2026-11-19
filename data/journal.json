@@ -764,6 +764,10 @@
       "type": "adventure",
       "title": "A chilly spring break in St. Augustine",
       "place": "St. Augustine, Florida",
+      "coordinates": [
+        29.8947,
+        -81.3145
+      ],
       "date": "2014-03",
       "story": "For our first spring break as a married couple, we went to St. Augustine. It was cold, and the Airbnb was the size of a postage stamp."
     },
