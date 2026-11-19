@@ -1214,7 +1214,16 @@
         -81.3792
       ],
       "date": "2020-08",
-      "story": "We went to Orlando in August and made time for the coast, too. After so much time close to home, it was a welcome change of scenery."
+      "story": "We went to Orlando in August and made time for the coast, too. After so much time close to home, it was a welcome change of scenery.",
+      "photos": [
+        {
+          "src": "assets/photos/2020/orlando-kids-crawling.webp",
+          "alt": "Two kids crawling side by side across a living room floor",
+          "caption": "The kids crawling together on our August 2020 Florida trip.",
+          "width": 1600,
+          "height": 1200
+        }
+      ]
     },
     {
       "id": "bethune-beach-2020",
