@@ -21,24 +21,29 @@
   "soundtrack": [
     {
       "title": "Rhythm of Love",
-      "artist": "Plain White T’s"
+      "artist": "Plain White T’s",
+      "spotifyUrl": "https://open.spotify.com/track/6MDTpYxPFL0wtFd0pjfKws"
     },
     {
       "title": "Gabriel’s Oboe",
       "artist": "Ennio Morricone",
-      "cue": "wedding"
+      "cue": "wedding",
+      "spotifyUrl": "https://open.spotify.com/track/6opPrJUpq4Pl5c84eCwLmo"
     },
     {
       "title": "Lucky",
-      "artist": "Jason Mraz & Colbie Caillat"
+      "artist": "Jason Mraz & Colbie Caillat",
+      "spotifyUrl": "https://open.spotify.com/track/0IktbUcnAGrvD03AWnz3Q8"
     },
     {
       "title": "Dynamite",
-      "artist": "Taio Cruz"
+      "artist": "Taio Cruz",
+      "spotifyUrl": "https://open.spotify.com/track/1DqdF42leyFIzqNDv9CjId"
     },
     {
       "title": "Let It Go",
-      "artist": "Idina Menzel"
+      "artist": "Idina Menzel",
+      "spotifyUrl": "https://open.spotify.com/track/0qcr5FMsEO85NAQjrlDRKo"
     }
   ],
   "chapterIntroductions": {
