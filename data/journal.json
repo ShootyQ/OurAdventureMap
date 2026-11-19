@@ -63,7 +63,8 @@
       "My parents came to visit that summer, and we also made it to North Dakota with Savannah’s parents for Kelly’s wedding. Between the stretches at home, we found time for a date close by, a Florida beach day, and a trip to the zoo before heading to Georgia for Christmas."
     ],
     "2021": [
-      "We spent part of September in Orlando. By December we had some news that took us by surprise. We were expecting twins."
+      "We headed to North Carolina in the spring, then had Savannah’s parents with us in Minnesota for a hundred days. By summer we were making the most of the Twin Cities with Violet. A playground, a place to splash, a trip to the Renaissance Festival. She was up for all of it, and so were we.",
+      "Fall took us to Omaha for Savannah’s friend Kelly’s wedding and then to Florida for Disney and the beach. We kept Christmas close to home in Minnesota. And by the end of the year, we had some big news. We were expecting twins!"
     ],
     "2022": [
       "Max and Ellie arrived in June. A few days later we brought them both home, and we were a family of five."
@@ -1260,17 +1261,23 @@
     {
       "id": "breakfast-for-two-2020",
       "type": "favorite",
-      "title": "Breakfast for two",
+      "title": "Anniversary breakfast for two in Stillwater",
       "date": "2020-11-23",
       "photos": [
         {
           "src": "assets/photos/2020/november-breakfast-for-two.webp",
           "alt": "Two breakfast plates on a tray with coffee and orange juice",
-          "caption": "Breakfast for two in November.",
+          "caption": "Anniversary breakfast at a bed and breakfast in Stillwater.",
           "width": 1600,
           "height": 900
         }
-      ]
+      ],
+      "place": "Stillwater, Minnesota",
+      "coordinates": [
+        45.056,
+        -92.8088
+      ],
+      "story": "For our anniversary, Savannah and I stayed at a bed and breakfast in Stillwater. Waking up to a tray of breakfast for two was a sweet way to celebrate."
     },
     {
       "id": "cohutta-christmas-2020",
@@ -1294,23 +1301,205 @@
       ]
     },
     {
-      "id": "orlando-2021",
+      "id": "hendersonville-2021",
       "type": "adventure",
-      "title": "September in Orlando",
-      "date": "2021-09",
+      "title": "A spring visit to Hendersonville",
+      "place": "Hendersonville, North Carolina",
+      "coordinates": [
+        35.3187,
+        -82.461
+      ],
+      "date": "2021-03-11",
       "photos": [
         {
-          "src": "assets/photos/2021/septtriporlando-7ae47f8b.webp",
-          "alt": "Personal photo from September in Orlando",
+          "src": "assets/photos/2021/hendersonville-mower-ride.webp",
+          "alt": "Violet watches as her grandpa drives a riding mower with Savannah riding behind",
+          "caption": "Dad and Savannah on the mower in Hendersonville.",
           "width": 1600,
           "height": 900
+        }
+      ],
+      "story": "We went back to North Carolina that spring to see my family. Dad got the riding mower out, Savannah went along for the ride, and Violet got a front-row view from the yard."
+    },
+    {
+      "id": "pisgah-hike-2021",
+      "type": "adventure",
+      "title": "A hike in Pisgah National Forest",
+      "place": "Pisgah National Forest, North Carolina",
+      "coordinates": [
+        35.28,
+        -82.76
+      ],
+      "date": "2021-03-14",
+      "photos": [
+        {
+          "src": "assets/photos/2021/pisgah-hike.webp",
+          "alt": "Andy and Savannah smiling together on a wooded hiking trail",
+          "caption": "A spring hike in Pisgah National Forest.",
+          "width": 1600,
+          "height": 900
+        }
+      ],
+      "story": "Savannah and I got out for a hike in Pisgah National Forest while we were in North Carolina. A little time together out in the woods was a good way to spend a spring morning."
+    },
+    {
+      "id": "hundred-days-2021",
+      "type": "adventure",
+      "title": "A hundred days together in Minnesota",
+      "sortDate": "2021-04",
+      "dateLabel": "Spring 2021",
+      "story": "Savannah’s parents came to Minnesota that spring and lived with us for a hundred days. We got to share the everyday parts of life with them, and Violet got a whole stretch of grandparent time."
+    },
+    {
+      "id": "violet-summer-2021",
+      "type": "adventure",
+      "title": "Violet’s summer around the Twin Cities",
+      "place": "Twin Cities, Minnesota",
+      "sortDate": "2021-07",
+      "dateLabel": "Summer 2021",
+      "photos": [
+        {
+          "src": "assets/photos/2021/violet-splash-pad.webp",
+          "alt": "Violet in a white dress walking through a splash pad",
+          "caption": "A July splash-pad day.",
+          "width": 1600,
+          "height": 900
+        },
+        {
+          "src": "assets/photos/2021/violet-july-smile.webp",
+          "alt": "Violet smiling outdoors with a purple bow in her hair",
+          "caption": "Violet out and about in July.",
+          "width": 1600,
+          "height": 900
+        },
+        {
+          "src": "assets/photos/2021/violet-summer-outdoors.webp",
+          "alt": "Violet smiling while sitting on a rock in the shade",
+          "caption": "A shady spot to sit for a minute.",
+          "width": 1600,
+          "height": 900
+        },
+        {
+          "src": "assets/photos/2021/violet-summer-ride.webp",
+          "alt": "Violet wearing a pink helmet and riding a blue tricycle",
+          "caption": "Out for a ride.",
+          "width": 1600,
+          "height": 900
+        },
+        {
+          "src": "assets/photos/2021/savannah-violet-august.webp",
+          "alt": "Savannah and Violet sitting together on the grass in front of bright flowers",
+          "caption": "An August outing with Mom.",
+          "width": 1600,
+          "height": 900
+        }
+      ],
+      "story": "We had so much fun with Violet that summer. We took her to playgrounds and swimming ponds, found places to splash, and spent as much time outside as we could. It was the kind of summer where an outing close to home could be the best part of the day."
+    },
+    {
+      "id": "renaissance-festival-2021",
+      "type": "adventure",
+      "title": "The Renaissance Festival with Violet",
+      "place": "Minnesota Renaissance Festival, Shakopee",
+      "coordinates": [
+        44.743,
+        -93.598
+      ],
+      "date": "2021-09-12",
+      "photos": [
+        {
+          "src": "assets/photos/2021/violet-renaissance-festival.webp",
+          "alt": "Violet standing beside a pirate figure at the Renaissance Festival",
+          "caption": "Violet and a pirate at the Renaissance Festival.",
+          "width": 900,
+          "height": 1600
+        }
+      ],
+      "story": "We kept our run of outings going into September with a trip to the Renaissance Festival. Violet even stopped for a picture with a pirate."
+    },
+    {
+      "id": "omaha-kelly-wedding-2021",
+      "type": "adventure",
+      "title": "Dancing at Kelly’s wedding",
+      "place": "Omaha, Nebraska",
+      "coordinates": [
+        41.2565,
+        -95.9345
+      ],
+      "date": "2021-09-19",
+      "photos": [
+        {
+          "src": "assets/photos/2021/violet-dancing-omaha-wedding.webp",
+          "alt": "Violet dancing hand in hand with a woman at the wedding reception",
+          "caption": "Violet on the dance floor at Kelly’s wedding in Omaha.",
+          "width": 900,
+          "height": 1600
+        }
+      ],
+      "story": "We went to Omaha in September for Savannah’s friend Kelly’s wedding. Violet made her way onto the dance floor, and watching her dance was one of my favorite parts of the night."
+    },
+    {
+      "id": "orlando-2021",
+      "type": "adventure",
+      "title": "Disney and the beach with Violet",
+      "date": "2021-10",
+      "photos": [
+        {
+          "src": "assets/photos/2021/disney-with-violet.webp",
+          "alt": "Violet grinning beside Savannah and Andy at Disney",
+          "caption": "All three of us at Disney.",
+          "width": 1600,
+          "height": 900
+        },
+        {
+          "src": "assets/photos/2021/violet-beach-kisses.webp",
+          "alt": "Andy and Savannah leaning in to kiss Violet at the beach",
+          "caption": "Kisses from both sides for our girl.",
+          "width": 1600,
+          "height": 900
+        },
+        {
+          "src": "assets/photos/2021/october-family-beach.webp",
+          "alt": "Andy and Savannah standing with Violet where the waves meet the sand",
+          "caption": "An October evening by the water.",
+          "width": 1600,
+          "height": 900
+        },
+        {
+          "src": "assets/photos/2021/septtriporlando-7ae47f8b.webp",
+          "alt": "Andy and Savannah holding Violet at the shoreline",
+          "width": 1600,
+          "height": 900,
+          "caption": "The three of us by the ocean in October."
         }
       ],
       "place": "Orlando, Florida",
       "coordinates": [
         28.5383,
         -81.3792
-      ]
+      ],
+      "story": "The three of us went to Disney, and we made time for the beach, too. There’s a photo of us kissing Violet from both sides with the ocean behind her. We love our girl so much. Getting to share these adventures with her was the best part of the trip."
+    },
+    {
+      "id": "forest-lake-christmas-2021",
+      "type": "adventure",
+      "title": "A quiet Christmas in Forest Lake",
+      "place": "Forest Lake, Minnesota",
+      "coordinates": [
+        45.2789,
+        -92.9852
+      ],
+      "date": "2021-12-25",
+      "photos": [
+        {
+          "src": "assets/photos/2021/forest-lake-christmas.webp",
+          "alt": "Family sitting together on a couch beside a lit Christmas tree",
+          "caption": "Christmas with Savannah’s family in Forest Lake.",
+          "width": 1600,
+          "height": 900
+        }
+      ],
+      "story": "We kept Christmas low-key that year and stayed in Minnesota. We went to Savannah’s parents’ place in Forest Lake and spent the holiday with family. It was nice to have a Christmas without a long drive."
     },
     {
       "id": "hendersonville-2023",
