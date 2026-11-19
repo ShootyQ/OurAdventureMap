@@ -21,7 +21,7 @@ jobs:
       - name: Stage public files
         run: |
           mkdir public
-          cp index.html story.html journey.html public/
+          cp index.html story.html journey.html atlas.html public/
           cp -R assets data public/
       - uses: actions/upload-pages-artifact@v5
         with:

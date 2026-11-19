@@ -6,7 +6,10 @@ A static anniversary journal for Savannah built with HTML, CSS, JavaScript and L
 
 Run `python3 -m http.server 8000` from the repository root and open
 `http://localhost:8000`. Serve the directory over HTTP so the browser can load
-the journal JSON and the map.
+the journal JSON and the map. The home page opens the continuous album at
+`journey.html`. The original atlas and timeline are available at `atlas.html`
+and `story.html`. The album groups dated memories by year automatically and
+uses `chapterIntroductions` for each year’s opening text.
 
 ## Add memories
 

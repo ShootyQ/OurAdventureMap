@@ -20,6 +20,11 @@ let basemap;
 let geography;
 let cueMusic;
 let openPrint;
+let viewedPhotos = [];
+let photoIndex = 0;
+let readingStops = [];
+let activeStop;
+const picker = byId('album-index');
 const clamp = (n) => Math.max(0, Math.min(1, n));
 
 async function readJson(path) {
@@ -28,12 +33,18 @@ async function readJson(path) {
   return response.json();
 }
 
-function photoButton(photo, caption, className = '') {
+function photoButton(photo, caption, className = '', group = [photo]) {
   const button = document.createElement('button');
   button.type = 'button';
   button.className = 'print ' + className;
   button.setAttribute('aria-label', 'Enlarge photograph: ' + photo.alt);
-  const img = new Image(photo.width, photo.height);
+  const img = new Image();
+  if (photo.width && photo.height) {
+    img.width = photo.width;
+    img.height = photo.height;
+    button.style.setProperty('--photo-ratio', photo.width / photo.height);
+  }
+  if (!['front','back'].includes(className)) img.loading = 'lazy';
   img.src = photo.src;
   img.alt = photo.alt;
   img.decoding = 'async';
@@ -45,15 +56,37 @@ function photoButton(photo, caption, className = '') {
   }
   button.addEventListener('click', () => {
     openPrint = button;
-    byId('full-photo').src = photo.src;
-    byId('full-photo').alt = photo.alt;
-    byId('full-caption').textContent = caption || photo.caption || photo.alt;
+    viewedPhotos = group;
+    photoIndex = group.indexOf(photo);
+    showPhoto();
     byId('photo-view').showModal();
   });
   return button;
 }
 
+function showPhoto() {
+  const photo = viewedPhotos[photoIndex];
+  byId('full-photo').src = photo.src;
+  byId('full-photo').alt = photo.alt;
+  byId('full-caption').textContent = photo.caption || photo.alt;
+  byId('photo-controls').hidden = viewedPhotos.length < 2;
+  byId('photo-count').textContent = (photoIndex + 1) + ' / ' + viewedPhotos.length;
+}
+
+function turnPhoto(direction) {
+  photoIndex = (photoIndex + direction + viewedPhotos.length) % viewedPhotos.length;
+  showPhoto();
+}
+
 const viewer = byId('photo-view');
+byId('photo-prev').onclick = () => turnPhoto(-1);
+byId('photo-next').onclick = () => turnPhoto(1);
+viewer.addEventListener('keydown', event => {
+  if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
+    event.preventDefault();
+    turnPhoto(event.key === 'ArrowLeft' ? -1 : 1);
+  }
+});
 viewer.querySelector('button').addEventListener('click', () => viewer.close());
 viewer.addEventListener('click', event => {
   if (event.target === viewer) viewer.close();
@@ -160,9 +193,7 @@ function drawRoute(progress) {
 }
 
 let pending = false;
-function render() {
-  pending = false;
-  const bar = document.querySelector('.folio-bar').offsetHeight;
+function renderCover(bar) {
   const travel = road.offsetHeight - stage.offsetHeight;
   const progress = compact.matches ? 0 : clamp((bar-road.getBoundingClientRect().top)/Math.max(1,travel));
   const cut = Number(progress > .48);
@@ -173,10 +204,10 @@ function render() {
   itinerary.style.opacity = routeOpacity;
   itinerary.style.visibility = routeOpacity > 0 ? 'visible' : 'hidden';
   itinerary.inert = routeOpacity < .5;
-  const destination = progress > .9 ? '#lincoln' : '#road-route';
+  const destination = progress > .9 ? '#album' : '#road-route';
   if (roadLink.hash !== destination) {
     roadLink.hash = destination;
-    roadLink.textContent = progress > .9 ? 'Continue to Lincoln ↓' : 'Follow the drive ↓';
+    roadLink.textContent = progress > .9 ? 'Begin the album ↓' : 'Follow the drive ↓';
   }
   const [pinX,pinY] = point(stops[0].lon,stops[0].lat);
   const t = reduced.matches ? cut : progress;
@@ -185,17 +216,40 @@ function render() {
   prints.style.transformOrigin = '0 0';
   prints.style.transform = compact.matches ? '' : 'translate('+shiftX+'px,'+shiftY+'px) scale('+(1-.73*t)+')';
   drawRoute(compact.matches ? 1 : reduced.matches ? cut : progress);
-  const trigger = bar + window.innerHeight * .42;
-  let current = 'road';
-  for (const id of ['lincoln','wedding']) {
-    if (byId(id).getBoundingClientRect().top <= trigger) current = id;
+}
+
+function render() {
+  pending = false;
+  const bar = document.querySelector('.folio-bar').offsetHeight;
+  if (road.getBoundingClientRect().bottom > 0) renderCover(bar);
+  const trigger = bar + Math.min(innerHeight * .19, 140);
+  // In a two-column spread, follow the left memory first and the right halfway down.
+  let low = 0, high = readingStops.length;
+  while (low < high) {
+    const mid = Math.floor((low + high) / 2);
+    const row = readingStops[mid].row;
+    const bounds = row.getBoundingClientRect();
+    const previous = row.previousElementSibling;
+    const rightColumn = row.classList.contains('album-memory') &&
+      previous?.getBoundingClientRect().top === bounds.top;
+    const start = bounds.top + (rightColumn ? bounds.height / 2 : 0);
+    if (start <= trigger) low = mid + 1;
+    else high = mid;
   }
+  const stop = readingStops[Math.max(0, low - 1)];
+  if (!stop || stop === activeStop) return;
+  activeStop = stop;
+  picker.value = stop.chapter;
+  mapToggle.hidden = ['someday', 'letter'].includes(stop.chapter);
   for (const link of document.querySelectorAll('.folio-bar nav a')) {
-    if (link.hash === '#'+current) link.setAttribute('aria-current','location');
+    if (link.hash === '#' + stop.row.id) link.setAttribute('aria-current', 'location');
     else link.removeAttribute('aria-current');
   }
-  const memory = {road:'orlando-road-trip', lincoln:'started-dating', wedding:'wedding'};
-  cueMusic?.({id:memory[current]});
+  if (stop.place) cueMusic?.(stop.place);
+  if (mapDialog.open && !compact.matches) {
+    if (stop.chapter === 'someday' || stop.chapter === 'letter') mapDialog.close();
+    else updatePlace(stop.place);
+  }
 }
 function schedule() {
   if (pending) return;
@@ -206,23 +260,223 @@ window.addEventListener('scroll',schedule,{passive:true});
 new ResizeObserver(() => { buildMap(); schedule(); }).observe(stage);
 reduced.addEventListener('change',schedule);
 
-async function loadJournal() {
-  const journal = await readJson('data/journal.json');
-  const steps = ['orlando-road-trip','started-dating','wedding'].map(id => ({
-    place: journal.places.find(entry => entry.id === id)
-  }));
-  const [trip, date, wedding] = steps.map(step => step.place);
-  prints.append(photoButton(trip.photos[0], 'On the road', 'back'), photoButton(trip.photos[1], 'Our spring break, 2011', 'front'));
-  byId('date-print').append(photoButton(date.photos[0],'Our first date in Lincoln'));
-  byId('date-story').textContent = date.story;
-  byId('wedding-story').textContent = wedding.story;
-  const [vows, kiss, ...portraits] = wedding.photos;
-  byId('ceremony').append(photoButton(vows),photoButton(kiss));
-  byId('wedding-prints').append(...portraits.map(photo => photoButton(photo)));
-  cueMusic = initStoryMusic(journal.soundtrack,steps,journal.spotifyPlaylistUrl);
-  schedule();
+function node(tag, className, text) {
+  const el = document.createElement(tag);
+  if (className) el.className = className;
+  if (text) el.textContent = text;
+  return el;
 }
-loadJournal().catch(() => { byId('journey-error').hidden = false; });
-Promise.all([readJson('data/world.geojson'),readJson('data/us-state-borders.geojson')])
+
+const geographyReady = Promise.all([readJson('data/world.geojson'), readJson('data/us-state-borders.geojson')])
   .then(data => { geography = data; buildMap(); schedule(); })
   .catch(() => { canvas.hidden = true; });
+
+const mapDialog = byId('place-view');
+const mapToggle = byId('follow-map');
+let atlas, pin, mappedPlace;
+
+function showPlace(place) {
+  if (!place) return;
+  if (!mapDialog.open) {
+    if (compact.matches) mapDialog.showModal();
+    else mapDialog.show();
+  }
+  mapToggle.setAttribute('aria-expanded', 'true');
+  updatePlace(place);
+}
+
+async function updatePlace(place) {
+  if (!place) return;
+  mappedPlace = place;
+  byId('place-name').textContent = place.title;
+  byId('place-location').textContent = place.place || (place.coordinates ? '' : 'Location unrecorded');
+  byId('album-map').hidden = !place.coordinates;
+  if (!place.coordinates) return;
+  await geographyReady;
+  if (!mapDialog.open || mappedPlace !== place) return;
+  if (!geography) {
+    byId('album-map').hidden = true;
+    byId('map-error').hidden = false;
+    return;
+  }
+  if (!atlas) {
+    atlas = createAtlas('album-map', geography[0], {center:place.coordinates, zoom:5});
+    L.geoJSON(geography[1], {interactive: false, style: {color:'#aaa991',weight:1}}).addTo(atlas);
+    pin = L.circleMarker(place.coordinates, {radius:7, color:'#fff9e8', weight:2, fillColor:'#a85136', fillOpacity:1}).addTo(atlas);
+  }
+  atlas.invalidateSize();
+  atlas.setView(place.coordinates, 5, {animate:false});
+  pin.setLatLng(place.coordinates).bringToFront();
+}
+
+mapToggle.onclick = () => {
+  if (mapDialog.open) mapDialog.close();
+  else showPlace(activeStop?.place);
+};
+mapDialog.addEventListener('close', () => mapToggle.setAttribute('aria-expanded', 'false'));
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape' && mapDialog.open && !viewer.open) mapDialog.close();
+});
+compact.addEventListener('change', () => { if (mapDialog.open) mapDialog.close(); });
+
+function locationLabel(place) {
+  const label = place.place || 'View on map';
+  if (!place.coordinates) return node('span', '', place.place);
+  const button = node('button', 'album-location', label);
+  button.type = 'button';
+  button.setAttribute('aria-label', 'Show ' + label + ' on the map');
+  button.onclick = () => showPlace(place);
+  return button;
+}
+
+function memoryCard(place) {
+  const card = node('article', 'album-memory');
+  card.id = place.id;
+  const photos = place.photos || [];
+  if (place.featured) card.classList.add('milestone-spread');
+  const copy = node('div', 'memory-copy');
+  if (displayDate(place)) copy.append(node('p', 'dateline', displayDate(place)));
+  copy.append(node('h3', '', place.title));
+  if (place.place || place.coordinates) copy.append(locationLabel(place));
+  if (place.story) copy.append(node('p', 'memory-story', place.story));
+  if (place.note) copy.append(node('p', 'inscription', place.note));
+  card.append(copy);
+  if (place.id === 'orlando-road-trip') {
+    const link = node('a', 'text-link', 'Revisit the drive ↑');
+    link.href = '#road';
+    copy.append(link);
+  } else if (photos.length) {
+    const gallery = node('div', 'album-photos');
+    if (photos.length === 1) gallery.classList.add('single-print');
+    for (const photo of photos) gallery.append(photoButton(photo, photo.caption, '', photos));
+    card.append(gallery);
+  }
+  return card;
+}
+
+const chapterNames = {
+  2007:'When we were friends.', 2010:'Back in Lincoln.', 2011:'A little closer.',
+  2012:'The miles between us.', 2013:'She said yes.', 2014:'Just married.',
+  2015:'North to Minnesota.', 2016:'A home of our own.', 2017:'Room for one more.',
+  2018:'Hello, Violet.', 2019:'Her first candle.', 2020:'Close to home.',
+  2021:'A summer with our girl.', 2022:'Hello, Max and Ellie.', 2023:'Ten years married.',
+  2024:'Out to sea.', 2025:'Days worth celebrating.', 2026:'Everywhere with you.'
+};
+
+function createChapter(year, introductions) {
+  const chapter = node('section', 'album-chapter');
+  const dated = year !== '9999';
+  chapter.id = dated ? 'year-' + year : 'little-things';
+  const head = node('header', 'chapter-head album-inner');
+  const title = node('h2', '', chapterNames[year] || (dated ? year : 'The little things.'));
+  title.id = chapter.id + '-title';
+  chapter.setAttribute('aria-labelledby', title.id);
+  const titleBlock = node('div');
+  if (dated && chapterNames[year]) titleBlock.append(node('p', 'chapter-year-mark', year));
+  titleBlock.append(title);
+  const intro = node('div', 'chapter-prose');
+  for (const line of introductions || []) intro.append(node('p', '', line));
+  head.append(titleBlock, intro);
+  chapter.append(head);
+  picker.add(new Option(dated ? year : 'Little things', chapter.id));
+  byId('album').append(chapter);
+  return chapter;
+}
+
+function addClosing(journal) {
+  const dreams = journal.places.filter(place => place.type === 'dream');
+  if (dreams.length) {
+    const section = byId('someday');
+    section.hidden = false;
+    for (const place of dreams) {
+      const item = node('article');
+      item.id = place.id;
+      if (place.dateLabel) item.append(node('p', 'dateline', place.dateLabel));
+      item.append(node('h3', '', place.title));
+      if (place.place || place.coordinates) item.append(locationLabel(place));
+      if (place.story) item.append(node('p', '', place.story));
+      if (place.note) item.append(node('p', 'inscription', place.note));
+      for (const photo of place.photos || []) item.append(photoButton(photo, photo.caption, '', place.photos));
+      byId('dreams').append(item);
+    }
+    picker.add(new Option('Someday', section.id));
+    readingStops.push({chapter:section.id, row:section, place:readingStops.at(-1).place});
+  }
+  if (journal.letter?.length) {
+    const section = byId('letter');
+    section.hidden = false;
+    const [salutation, ...lines] = journal.letter;
+    byId('letter-heading').textContent = salutation;
+    for (const line of lines) byId('letter-paragraphs').append(node('p', '', line));
+    picker.add(new Option('The letter', section.id));
+    readingStops.push({chapter:section.id, row:section, place:readingStops.at(-1).place});
+  }
+}
+
+async function loadJournal() {
+  const journal = await readJson('data/journal.json');
+  const entries = journal.places.filter(place => !['dream','secret'].includes(place.type))
+    .sort((a,b) => sortDate(a).localeCompare(sortDate(b)));
+  const trip = entries.find(place => place.id === 'orlando-road-trip');
+  const covers = trip?.photos || [];
+  for (const [i, photo] of covers.slice(0,2).entries()) {
+    prints.append(photoButton(photo, i ? 'Our spring break, 2011' : 'On the road', i ? 'front' : 'back', covers));
+  }
+  readingStops.push({chapter:'road', row:road, place:trip});
+  const dateScene = byId('lincoln');
+  const weddingScene = byId('wedding');
+  dateScene.remove();
+  weddingScene.remove();
+  let year, chapter, spread;
+  for (const place of entries) {
+    const nextYear = sortDate(place).slice(0, 4);
+    if (nextYear !== year) {
+      year = nextYear;
+      chapter = createChapter(year, journal.chapterIntroductions?.[year]);
+      readingStops.push({chapter:chapter.id, row:chapter, place});
+      spread = null;
+    }
+    let row;
+    const photos = place.photos || [];
+    if (place.id === 'started-dating' || place.id === 'wedding') {
+      const firstDate = place.id === 'started-dating';
+      row = firstDate ? dateScene : weddingScene;
+      chapter.append(row);
+      row.querySelector('.dateline span').replaceWith(locationLabel(place));
+      byId(firstDate ? 'date-story' : 'wedding-story').textContent = place.story || '';
+      photos.forEach((photo,i) => {
+        const host = firstDate ? 'date-print' : i < 2 ? 'ceremony' : 'wedding-prints';
+        byId(host).append(photoButton(photo, firstDate && !i ? 'Our first date in Lincoln' : '', '', photos));
+      });
+      spread = null;
+    } else {
+      if (!spread || place.featured) {
+        spread = node('div', 'album-spread album-inner');
+        chapter.append(spread);
+      }
+      row = memoryCard(place);
+      spread.append(row);
+      if (place.featured) spread = null;
+    }
+    readingStops.push({chapter:chapter.id, row, place});
+  }
+  addClosing(journal);
+  mapToggle.hidden = false;
+  cueMusic = initStoryMusic(journal.soundtrack, entries.map(place => ({place})), journal.spotifyPlaylistUrl);
+  const target = byId(location.hash.slice(1));
+  if (target) {
+    await document.fonts.ready;
+    if (target.id === location.hash.slice(1)) target.scrollIntoView({behavior:'instant'});
+  }
+  schedule();
+}
+
+picker.addEventListener('change', () => {
+  const target = byId(picker.value);
+  if (target) {
+    history.pushState(null, '', '#' + target.id);
+    target.scrollIntoView({behavior:'instant'});
+    schedule();
+  }
+});
+loadJournal().catch(() => { byId('journey-error').hidden = false; });

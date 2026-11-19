@@ -5,21 +5,31 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#eee8d8">
   <title>The Whole Way Back · Our Adventure Map</title>
+  <link rel="stylesheet" href="assets/vendor/leaflet.css">
   <link rel="stylesheet" href="assets/site.css">
   <link rel="stylesheet" href="assets/journey.css">
   <script defer src="assets/story-music.js?v=2"></script>
+  <script defer src="assets/vendor/leaflet.js"></script>
+  <script defer src="assets/journal-utils.js"></script>
   <script defer src="assets/journey.js"></script>
 </head>
 <body class="journey">
   <header class="folio-bar">
     <a class="signature" href="#road" aria-label="Andy and Savannah, back to the beginning">A<span>&amp;</span>S</a>
-    <nav aria-label="Journey chapters"><a href="#road" aria-current="location">The road trip</a><a href="#lincoln">Lincoln</a><a href="#wedding">Our wedding</a></nav>
+    <nav aria-label="Journey chapters"><a href="#road" aria-current="location">The road trip</a><a href="#wedding">Our wedding</a>
+      <button id="follow-map" type="button" aria-expanded="false" aria-controls="place-view" hidden>Map</button>
+      <label class="album-index"><span class="sr-only">Jump to a chapter</span>
+        <select id="album-index"><option value="road">Chapters</option></select>
+      </label></nav>
     <div id="story-music" hidden>
       <button id="enable-music" type="button" aria-pressed="false">Enable music</button>
-      <details hidden><summary>Playlist</summary><a id="story-spotify-playlist" hidden>Open our playlist in Spotify</a><ol id="story-playlist"></ol></details>
       <div id="story-player" hidden><details id="story-player-panel" open><summary id="story-track-name">Story music</summary>
         <p role="status" id="story-music-status"></p><div id="spotify-player"></div>
         <div class="story-player-actions"><a id="story-spotify-link" target="_blank" rel="noopener noreferrer">Open in Spotify</a><button id="stop-story-music" class="text-button" type="button">Turn off music</button></div>
+        <details class="album-playlist"><summary>Our playlist</summary>
+          <a id="story-spotify-playlist" target="_blank" rel="noopener noreferrer" hidden>Open our playlist in Spotify</a>
+          <ol id="story-playlist"></ol>
+        </details>
       </details></div>
     </div>
   </header>
@@ -36,19 +46,20 @@
         <div class="prints" id="road-prints"></div>
         <div class="road-itinerary"><p class="dateline">On the road together</p><h2>One more<br><em>week together.</em></h2>
           <p>We’d had so much fun hanging out in Michigan that we wanted more time together. Savannah flew to North Carolina. We drove down to Florida, back to my family in Hendersonville, then up to Michigan together.</p>
-          <a class="text-link" href="#lincoln">Our first date <span aria-hidden="true">→</span></a>
+          <a class="text-link" href="#album">From the beginning <span aria-hidden="true">→</span></a>
         </div>
         <div class="road-foot"><span>North Carolina <i>→</i> Florida <i>→</i> Michigan</span><a href="#road-route">Follow the drive ↓</a></div>
       </div>
       <span id="road-route" aria-hidden="true"></span>
     </section>
+    <div id="album"></div>
     <section id="lincoln" class="lincoln scene">
       <div class="scene-inner">
         <div class="lincoln-picture" id="date-print"></div>
         <div class="scene-copy"><p class="dateline">April 2011 <span>Lincoln, Nebraska</span></p>
           <h2>Ice cream<br><em>downtown.</em></h2>
           <p id="date-story"></p>
-          <a class="text-link" href="#wedding">Our wedding day <span aria-hidden="true">↓</span></a>
+
         </div>
       </div>
     </section>
@@ -57,10 +68,25 @@
         <h2>Our wedding <em>day.</em></h2><p id="wedding-story"></p></div>
       <div class="wedding-pair" id="ceremony"></div>
       <div id="wedding-prints" class="wedding-strip"></div>
-      <footer><a class="text-link" href="#road">↑ Back to the beginning</a><a class="text-link" href="story.html#year-2013">Continue in our journal →</a></footer>
+
     </section>
+    <section id="someday" class="album-someday" hidden><div class="album-inner">
+      <p class="dateline">Someday</p><h2>Places still to <em>go.</em></h2><div id="dreams"></div>
+    </div></section>
+    <section id="letter" class="album-letter" aria-labelledby="letter-heading" hidden><div class="letter-sheet">
+      <h2 id="letter-heading"></h2><div id="letter-paragraphs"></div>
+    </div></section>
+    <footer class="album-footer"><a class="text-link" href="#road">↑ Back to the beginning</a><a class="text-link" href="atlas.html">Explore the atlas →</a></footer>
     <p id="journey-error" hidden role="alert">The photographs couldn’t be loaded. <a href="story.html">Open the journal</a></p>
   </main>
-  <dialog id="photo-view" aria-label="Photograph"><button class="close-photo" type="button" aria-label="Close photograph">Close ×</button><figure><img id="full-photo" alt=""><figcaption id="full-caption"></figcaption></figure></dialog>
+  <dialog id="place-view" aria-labelledby="place-name">
+    <form method="dialog"><button class="close" aria-label="Close map">×</button></form>
+    <h2 id="place-name"></h2><p id="place-location"></p>
+    <div id="album-map" aria-label="Memory location"></div>
+    <p id="map-error" hidden>The map couldn’t be loaded.</p>
+  </dialog>
+  <dialog id="photo-view" aria-label="Photograph"><button class="close-photo" type="button" aria-label="Close photograph">Close ×</button><figure><img id="full-photo" alt=""><figcaption id="full-caption" aria-live="polite"></figcaption></figure>
+    <div id="photo-controls" hidden><button id="photo-prev" aria-label="Previous photograph">←</button><span id="photo-count"></span><button id="photo-next" aria-label="Next photograph">→</button></div>
+  </dialog>
 </body>
 </html>

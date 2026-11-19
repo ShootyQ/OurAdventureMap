@@ -98,3 +98,103 @@
   .wedding-strip { grid-template-columns: 1fr 1fr; align-items: end; }
 }
 @media (prefers-reduced-motion:reduce) { html { scroll-behavior: auto; } }
+
+/* The yearly spreads use the same paper, type and photographic borders as the cover. */
+#album, .album-memory { scroll-margin-top: calc(var(--bar) + 12px); }
+.sr-only { position:absolute; width:1px; height:1px; overflow:hidden; clip-path:inset(50%); white-space:nowrap; }
+.folio-bar nav { align-items:center; }
+.album-index select {
+  border:0; background:transparent; font:inherit; color:inherit; cursor:pointer; padding:5px 0;
+}
+.album-inner { width:min(1160px,85%); margin-inline:auto; }
+.album-chapter { background:#f8f4eb; padding-bottom:clamp(36px,5vw,80px); }
+.album-chapter:nth-child(even) { background:#efeada; }
+.chapter-head {
+  display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); align-items:center;
+  gap:clamp(32px,7vw,104px); padding:clamp(60px,7vw,115px) 0 clamp(30px,4vw,62px);
+  border-bottom:1px solid #9b927a66;
+}
+.chapter-year-mark {
+  display:flex; align-items:center; gap:15px; margin:0 0 13px; color:var(--red);
+  font:italic 500 clamp(30px,3vw,52px)/1 var(--serif); letter-spacing:-.05em;
+}
+.chapter-year-mark::before { content:''; width:40px; border-top:1px solid currentColor; }
+.chapter-head h2, .album-someday h2 { font-size:clamp(46px,5.2vw,90px); line-height:.99; }
+.chapter-prose p, .memory-story { margin:0 0 .75em; line-height:1.7; max-width:60ch; text-wrap:pretty; }
+.chapter-prose p:first-child::first-letter { font:500 1.35em/1 var(--serif); }
+.chapter-prose p:last-child, .memory-story:last-child { margin-bottom:0; }
+.album-spread + .album-spread { padding-top:0; }
+.album-spread {
+  display:grid; grid-template-columns:repeat(2,minmax(0,1fr));
+  column-gap:clamp(32px,7vw,100px); row-gap:clamp(42px,5vw,82px); padding-block:clamp(30px,4vw,66px);
+}
+.album-memory { min-width:0; }
+.album-memory .dateline { margin-bottom:12px; color:#685d4c; }
+.album-memory h3, #dreams h3 { font:500 clamp(29px,2.65vw,48px)/1.08 var(--serif); letter-spacing:-.045em; text-wrap:balance; }
+.memory-copy > .album-location, .memory-copy > span { display:inline-block; margin:7px 0 0; }
+.memory-copy .memory-story { margin-top:14px; }
+.album-location {
+  border:0; padding:0; background:none; color:inherit; font:inherit;
+  text-align:start; text-decoration:underline; text-decoration-style:dotted; text-underline-offset:4px;
+}
+.album-location:hover { text-decoration-style:solid; }
+.album-location::before { content:'⌖'; margin-right:.4em; color:var(--red); }
+.memory-copy .album-location,.memory-copy > span { font:500 13px/1.5 var(--sans); }
+.lincoln .album-location::before { color:#dfbd88; }
+.album-photos {
+  display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); align-items:center;
+  gap:clamp(8px,1vw,16px); margin:24px 2% 0;
+}
+.album-photos.single-print { display:block; }
+.album-photos .print { width:min(100%,calc(clamp(215px,24vw,335px) * var(--photo-ratio,1.4) + 22px)); max-width:100%; margin:auto; transform:rotate(-1.4deg); }
+.album-memory:nth-child(even) .print, .album-photos .print:nth-child(even) { transform:rotate(1.4deg); }
+.album-photos img { width:100%; height:auto; }
+.album-photos .print span { font-size:clamp(17px,1.4vw,23px); }
+.album-memory:last-child:nth-child(odd), .milestone-spread {
+  grid-column:1/-1; display:grid; grid-template-columns:minmax(0,.92fr) minmax(0,1.15fr); align-items:center; gap:7%;
+}
+.album-memory:last-child:nth-child(odd) .album-photos,.milestone-spread .album-photos { margin-top:0; }
+.milestone-spread {
+  padding:clamp(28px,4.5vw,68px); background:#263e34; color:#fff7e5; border-radius:2px;
+}
+.milestone-spread .dateline, .milestone-spread .album-location::before { color:#e2be8d; }
+.milestone-spread .inscription { color:#e2be8d; }
+.milestone-spread h3 { font-size:clamp(40px,4.3vw,68px); }
+.milestone-spread .album-photos { margin-inline:0; }
+.album-someday { background:#233c32; color:#faf1da; padding:clamp(60px,7vw,110px) 0; }
+.album-someday em,.album-someday .dateline,.album-someday .album-location::before { color:#e3be8c; }
+#dreams { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:32px 8%; margin-top:48px; }
+#dreams article { padding-top:22px; border-top:1px solid #c6c6ad7a; }
+#dreams .dateline { margin-bottom:6px; }
+#dreams .album-location { margin-top:10px; font-size:13px; }
+.album-letter { padding:clamp(54px,8vw,140px) 6%; background:#e8e2d1; }
+.letter-sheet { max-width:740px; margin:auto; background:#fffaf0; border:1px solid #d2c7ae; box-shadow:4px 12px 30px #634d2d24; padding:clamp(28px,5vw,80px); }
+.letter-sheet h2 { color:var(--red); font:600 clamp(44px,5vw,74px)/1.1 var(--hand); }
+.letter-sheet p { font:500 clamp(17px,1.4vw,21px)/1.65 var(--serif); white-space:pre-line; }
+.letter-sheet p:last-child { color:var(--red); font:600 34px/1.1 var(--hand); }
+.album-footer { display:flex; justify-content:space-between; gap:20px; padding:20px 7%; }
+#place-view { position:fixed; padding:25px; width:min(800px,94vw); }
+#place-view h2 { font-size:clamp(28px,4vw,48px); padding-right:20px; }
+#place-location { margin:6px 0 12px; }
+#album-map { height:min(53vh,430px); background:#cfdfd9; }
+#photo-controls { display:flex; gap:14px; align-items:center; justify-content:center; font:600 12px var(--sans); }
+#photo-controls button { background:none; color:inherit; border:0; font-size:22px; }
+#photo-view:has(#photo-controls:not([hidden])) #full-photo { max-height:68vh; }
+@media(max-width:740px) {
+  .album-inner { width:86%; }
+  .chapter-head { grid-template-columns:1fr; gap:20px; }
+  .album-spread { grid-template-columns:1fr; }
+  .album-memory:last-child:nth-child(odd), .milestone-spread { display:block; }
+  .album-memory:last-child:nth-child(odd) .album-photos, .milestone-spread .album-photos { margin-top:22px; }
+  .album-index select { max-width:76px; }
+  .folio-bar nav a[href="#wedding"] { display:none; }
+  #dreams { grid-template-columns:1fr; }
+}
+#follow-map { font:inherit; background:none; padding:5px 0; border:0; border-bottom:1px solid transparent; }
+#follow-map[aria-expanded="true"] { border-color:var(--red); }
+@media(min-width:741px) and (min-height:556px) {
+  #place-view { z-index:7; inset:auto auto 16px 16px; margin:0; padding:16px; width:clamp(280px,26vw,380px); }
+  #place-view h2 { font-size:24px; }
+  #place-location { font-size:12px; }
+  #album-map { height:clamp(140px,22vh,235px); }
+}
