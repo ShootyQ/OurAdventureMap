@@ -58,6 +58,10 @@
       "Life was mostly quiet at home. We made it south to see family and celebrate Violet’s first birthday, and north far enough to take her across the Canadian border.",
       "Fall picked up when I went back to teaching part time in the mornings and cared for other kids in the afternoons. At Christmas we headed back to North Carolina and Cohutta Springs to be with our families."
     ],
+    "2020": [
+      "2020 was a quiet year for some reason. Hmm… oh, right. COVID! We hunkered down at home and played games with the Bonjours.",
+      "My parents came to visit that summer, and we also made it to North Dakota with Savannah’s parents for Kelly’s wedding. Between the stretches at home, we found time for a date close by, a Florida beach day, and a trip to the zoo before heading to Georgia for Christmas."
+    ],
     "2021": [
       "We spent part of September in Orlando. By December we had some news that took us by surprise. We were expecting twins."
     ],
@@ -1146,6 +1150,83 @@
         -82.461
       ],
       "story": "We spent Christmas with our families in North Carolina and at Cohutta Springs. Christmas Day was in Hendersonville."
+    },
+    {
+      "id": "game-nights-2020",
+      "type": "favorite",
+      "title": "Hunkering down with game nights",
+      "sortDate": "2020-03",
+      "dateLabel": "2020",
+      "story": "COVID made for a lot more time at home. We hunkered down, and playing games with the Bonjours was one of the bright spots of a pretty quiet year."
+    },
+    {
+      "id": "north-dakota-wedding-2020",
+      "type": "adventure",
+      "title": "A North Dakota trip for Kelly’s wedding",
+      "place": "Minot and Bottineau, North Dakota",
+      "coordinates": [
+        48.8272,
+        -100.4457
+      ],
+      "sortDate": "2020-07",
+      "dateLabel": "Summer 2020",
+      "story": "My parents came to visit that summer. We also took a trip with Savannah’s parents to Minot and Bottineau for her cousin Kelly’s wedding. In a year when we spent so much time at home, it was good to have a wedding to celebrate with family."
+    },
+    {
+      "id": "date-near-home-2020",
+      "type": "favorite",
+      "title": "A date close to home",
+      "sortDate": "2020-07-31",
+      "dateLabel": "Late July 2020",
+      "story": "At the end of July, Savannah and I went on a date close to home. We’d spent plenty of time at home together that year, but getting out for a little time just the two of us still felt like an occasion."
+    },
+    {
+      "id": "orlando-2020",
+      "type": "adventure",
+      "title": "August in Orlando",
+      "place": "Orlando, Florida",
+      "coordinates": [
+        28.5383,
+        -81.3792
+      ],
+      "date": "2020-08",
+      "story": "We went to Orlando in August and made time for the coast, too. After so much time close to home, it was a welcome change of scenery."
+    },
+    {
+      "id": "bethune-beach-2020",
+      "type": "adventure",
+      "title": "A day at Bethune Beach",
+      "place": "Mary McLeod Bethune Beach Park, Florida",
+      "coordinates": [
+        28.953,
+        -80.839
+      ],
+      "date": "2020-08",
+      "story": "On that August Florida trip we headed out to Mary McLeod Bethune Beach Park. It was good to trade the usual view from home for sand and ocean for a while."
+    },
+    {
+      "id": "minnesota-zoo-2020",
+      "type": "adventure",
+      "title": "A September trip to the Minnesota Zoo",
+      "place": "Minnesota Zoo, Apple Valley, Minnesota",
+      "coordinates": [
+        44.7678,
+        -93.1953
+      ],
+      "date": "2020-09",
+      "story": "In September we took Violet to the Minnesota Zoo. It was a chance to get out together and let her see some animals up close."
+    },
+    {
+      "id": "cohutta-christmas-2020",
+      "type": "favorite",
+      "title": "Christmas at Cohutta Springs",
+      "place": "Cohutta Springs, Georgia",
+      "coordinates": [
+        34.94,
+        -84.745
+      ],
+      "date": "2020-12",
+      "story": "That Christmas we headed south to spend the holiday with Savannah’s family at Cohutta Springs. After a quiet year at home, it was good to finish it together in Georgia."
     },
     {
       "id": "orlando-2021",
