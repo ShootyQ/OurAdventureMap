@@ -125,8 +125,8 @@ nav a[aria-current="page"] {
 #spotify-player iframe {
   display: block;
   width: 100%;
-  height: 152px;
   border: 0;
+  border-radius: 12px;
   margin-bottom: 8px;
 }
 .story-chapters {

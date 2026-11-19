@@ -27,7 +27,7 @@ function loadSpotifyApi() {
   return spotifyApiRequest;
 }
 
-function initStoryMusic(tracks, steps) {
+function initStoryMusic(tracks, steps, playlistUrl) {
   if (!tracks?.length) return;
   const section = document.getElementById('story-music');
   const toggle = document.getElementById('enable-music');
@@ -44,8 +44,13 @@ function initStoryMusic(tracks, steps) {
     chapterTracks.set(place.id, chapterTrack);
   }
 
+  function spotifyId(url, type) {
+    const share = url?.match(/^https:\/\/open\.spotify\.com\/(track|playlist)\/([a-zA-Z0-9]{22})(?:[?#]|$)/);
+    return share?.[1] === type ? share?.[2] : undefined;
+  }
+
   function trackId(track) {
-    return track.spotifyUrl?.match(/^https:\/\/open\.spotify\.com\/track\/([a-zA-Z0-9]{22})(?:[?#]|$)/)?.[1];
+    return spotifyId(track.spotifyUrl, 'track');
   }
 
   function trackLink(track) {
@@ -65,31 +70,48 @@ function initStoryMusic(tracks, steps) {
     playlist.append(item);
   }
 
-  const hasPlayer = tracks.some(trackId);
+  const playlistId = spotifyId(playlistUrl, 'playlist');
+  const playlistLink = document.getElementById('story-spotify-playlist');
+  if (playlistId) {
+    playlistLink.href = 'https://open.spotify.com/playlist/' + playlistId;
+    playlistLink.hidden = false;
+  }
+
+  const hasPlayer = playlistId || tracks.some(trackId);
   toggle.textContent = hasPlayer ? 'Enable music' : 'Show music links';
 
   let enabled = false;
   let selected = tracks[0];
   let controller;
+  let activeUri;
   let revision = 0;
 
   function disposePlayer() {
     controller?.destroy();
     controller = undefined;
+    activeUri = undefined;
     host.replaceChildren();
   }
 
   async function playSelection() {
-    const version = ++revision;
-    const id = trackId(selected);
-    spotifyLink.href = trackLink(selected);
+    const directTrack = trackId(selected);
+    const type = directTrack ? 'track' : 'playlist';
+    const id = directTrack ?? playlistId;
+    spotifyLink.href = directTrack || !playlistId ? trackLink(selected) : playlistLink.href;
     if (!id) {
+      revision++;
       disposePlayer();
       status.textContent = selected.title + ' · Open Spotify to play.';
       return;
     }
-    status.textContent = selected.title + ' · Press Play below if it doesn’t start.';
-    const uri = 'spotify:track:' + id;
+
+    const uri = 'spotify:' + type + ':' + id;
+    if (uri === activeUri) return;
+    activeUri = uri;
+    const version = ++revision;
+    const label = directTrack ? selected.title : 'Our Spotify playlist';
+    const height = directTrack ? 152 : 352;
+    status.textContent = label + ' · Press Play below if it doesn’t start.';
     if (controller) {
       controller.loadUri(uri);
       controller.play();
@@ -101,7 +123,7 @@ function initStoryMusic(tracks, steps) {
       if (!enabled || version !== revision) return;
       const target = document.createElement('div');
       host.replaceChildren(target);
-      api.createController(target, { uri, width: '100%', height: 152 }, (embed) => {
+      api.createController(target, { uri, width: '100%', height }, (embed) => {
         if (!enabled || version !== revision) {
           embed.destroy();
           return;
@@ -113,10 +135,11 @@ function initStoryMusic(tracks, steps) {
       });
     } catch {
       if (!enabled || version !== revision) return;
-      status.textContent = selected.title + ' · Press Play in the Spotify player or open Spotify.';
+      status.textContent = label + ' · Press Play in the Spotify player or open Spotify.';
       const iframe = document.createElement('iframe');
-      iframe.title = 'Spotify player for ' + selected.title;
-      iframe.src = 'https://open.spotify.com/embed/track/' + id;
+      iframe.title = label;
+      iframe.src = 'https://open.spotify.com/embed/' + type + '/' + id;
+      iframe.height = height;
       iframe.allow = 'autoplay; encrypted-media; fullscreen; picture-in-picture';
       host.replaceChildren(iframe);
     }

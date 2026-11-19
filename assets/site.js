@@ -440,7 +440,7 @@ async function start() {
     const journal = await readJson('data/journal.json');
     if (storyPage) {
       const steps = renderTimeline(journal.places, journal.chapterIntroductions);
-      const cueMusic = initStoryMusic(journal.soundtrack, steps);
+      const cueMusic = initStoryMusic(journal.soundtrack, steps, journal.spotifyPlaylistUrl);
       const chapter = byId(window.location.hash.slice(1));
       if (chapter) {
         await document.fonts.ready;

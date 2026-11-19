@@ -44,11 +44,11 @@ Edit `letter` to personalize the closing letter. Set `mapView.center` and
 
 ## Story music
 
-Edit `soundtrack` in `data/journal.json` to reorder the five songs. Add a track’s
-Spotify Share URL as `spotifyUrl` to use the official embedded player. The
-first song is the opening track. Set `cue` to a memory ID to switch tracks
-when that memory comes into view after enabling music. Songs without a cue
-after the opening track appear in the playlist for manual listening.
+Set `spotifyPlaylistUrl` in `data/journal.json` to the Spotify playlist Share URL.
+Spotify controls the playlist order. To cue a specific recording, add its track
+Share URL as `spotifyUrl` in `soundtrack`. The first entry can override the
+opening playlist, and a track with a `cue` switches playback at that memory
+after music is enabled. The rest of `soundtrack` provides links for manual listening.
 
 ## Publish
 
