@@ -345,7 +345,7 @@ async function initMap(journal) {
   byId('reset').addEventListener('click', resetMap);
 }
 
-async function initJourney(journal, steps) {
+async function initJourney(journal, steps, cueMusic) {
   const message = byId('journey-message');
   const [world, borders] = await Promise.all([
     readJson('data/world.geojson'),
@@ -398,6 +398,7 @@ async function initJourney(journal, steps) {
     active?.row.classList.add('current-memory');
     pin?.remove();
     const place = active?.place;
+    cueMusic?.(place);
     date.textContent = place ? displayDate(place) : range;
     location.textContent = place
       ? place.coordinates ? place.place || place.title : 'No pin for this memory'
@@ -439,13 +440,14 @@ async function start() {
     const journal = await readJson('data/journal.json');
     if (storyPage) {
       const steps = renderTimeline(journal.places, journal.chapterIntroductions);
+      const cueMusic = initStoryMusic(journal.soundtrack, steps);
       const chapter = byId(window.location.hash.slice(1));
       if (chapter) {
         await document.fonts.ready;
         chapter.scrollIntoView({ behavior: 'instant' });
       }
       try {
-        await initJourney(journal, steps);
+        await initJourney(journal, steps, cueMusic);
       } catch (error) {
         byId('journey-message').textContent = 'The atlas couldn’t be opened.';
         console.error(error);

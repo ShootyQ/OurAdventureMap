@@ -42,6 +42,14 @@ optional caption.
 Edit `letter` to personalize the closing letter. Set `mapView.center` and
 `mapView.zoom` to change where the atlas opens.
 
+## Story music
+
+Edit `soundtrack` in `data/journal.json` to reorder the five songs. Add a track’s
+Spotify Share URL as `spotifyUrl` to use the official embedded player. The
+first song is the opening track. Set `cue` to a memory ID to switch tracks
+when that memory comes into view after enabling music. Songs without a cue
+after the opening track appear in the playlist for manual listening.
+
 ## Publish
 
 In GitHub, open **Settings → Pages** and select **GitHub Actions** as the

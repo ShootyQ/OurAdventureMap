@@ -17,6 +17,29 @@
     "Happy 13th Anniversary.",
     "Love,\nAndy"
   ],
+  "soundtrack": [
+    {
+      "title": "Rhythm of Love",
+      "artist": "Plain White T’s"
+    },
+    {
+      "title": "Gabriel’s Oboe",
+      "artist": "Ennio Morricone",
+      "cue": "wedding"
+    },
+    {
+      "title": "Lucky",
+      "artist": "Jason Mraz & Colbie Caillat"
+    },
+    {
+      "title": "Dynamite",
+      "artist": "Taio Cruz"
+    },
+    {
+      "title": "Let It Go",
+      "artist": "Idina Menzel"
+    }
+  ],
   "chapterIntroductions": {
     "2007": [
       "We met at Union College in Lincoln that September and became friends. For the next few years, that was the whole story."

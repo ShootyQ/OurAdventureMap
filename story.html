@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="assets/vendor/leaflet.css">
   <link rel="stylesheet" href="assets/site.css">
   <script defer src="assets/vendor/leaflet.js"></script>
+  <script defer src="assets/story-music.js"></script>
   <script defer src="assets/site.js"></script>
 </head>
 <body class="story-page">
@@ -26,6 +27,18 @@
       <p class="eyebrow"><span></span> THE STORY SO FAR</p>
       <h1 id="story-title">One thing led to <em>another.</em></h1>
       <p class="intro-copy">Scroll through our memories and follow them on the map.</p>
+      <section id="story-music" aria-label="Story music" hidden>
+        <button id="enable-music" class="text-button" type="button" aria-pressed="false">Enable music</button>
+        <details>
+          <summary>Playlist</summary>
+          <ol id="story-playlist"></ol>
+        </details>
+        <div id="story-player" hidden>
+          <p id="story-music-status" role="status"></p>
+          <div id="spotify-player"></div>
+          <a id="story-spotify-link" target="_blank" rel="noopener noreferrer">Open in Spotify</a>
+        </div>
+      </section>
     </section>
     <section class="story-chapters" id="chapters" aria-label="Our timeline">
       <div class="shell story-inner">

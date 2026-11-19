@@ -107,6 +107,28 @@ nav a[aria-current="page"] {
 .story-cover .eyebrow { margin-bottom: 9px; }
 .story-cover h1 { font-size: clamp(40px, 5.4vw, 78px); line-height: 1.02; }
 .story-cover .intro-copy { max-width: none; margin: 12px 0 0; }
+#story-music {
+  margin-top: 16px;
+  color: var(--muted);
+}
+#enable-music, #story-music summary {
+  cursor: pointer;
+}
+#story-music details {
+  display: inline-block;
+  margin-left: 14px;
+  vertical-align: top;
+}
+#story-music details ol { margin: 6px 0 10px; padding-left: 22px; }
+#story-player { max-width: 460px; margin-top: 10px; }
+#story-music-status { margin: 0 0 6px; }
+#spotify-player iframe {
+  display: block;
+  width: 100%;
+  height: 152px;
+  border: 0;
+  margin-bottom: 8px;
+}
 .story-chapters {
   border-block: 1px solid var(--line);
   background: #f1ecdf;
