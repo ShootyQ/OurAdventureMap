@@ -1831,15 +1831,20 @@
       "type": "favorite",
       "title": "A June afternoon outside",
       "date": "2023-06-18",
-      "story": "The twins were about to turn one. In the middle of that busy summer, I’m glad we took a picture of the two of us sitting outside together.",
+      "story": "The twins were about to turn one. In the middle of that busy summer, I’m glad we took a picture of the two of us sitting outside at home.",
       "photos": [
         {
           "src": "assets/photos/2023/june-afternoon-with-savannah.webp",
           "alt": "Savannah and Andy smiling at an outdoor table",
-          "caption": "Savannah and me on a June afternoon.",
+          "caption": "Savannah and me outside at home on a June afternoon.",
           "width": 1600,
           "height": 900
         }
+      ],
+      "place": "Brooklyn Park area, Minnesota",
+      "coordinates": [
+        45.0941,
+        -93.3563
       ]
     },
     {
@@ -1873,17 +1878,22 @@
     {
       "id": "family-table-2023",
       "type": "favorite",
-      "title": "All five around the table",
+      "title": "A Dairy Queen stop near New Smyrna Beach",
       "date": "2023-09-03",
-      "story": "There are five of us squeezed into this photo from an outdoor table in September. It’s the kind of picture I’m always glad we stopped to take.",
+      "story": "On our September trip, we stopped at a Dairy Queen near New Smyrna Beach. All five of us squeezed into a picture around the outdoor table.",
       "photos": [
         {
           "src": "assets/photos/2023/september-family-table.webp",
           "alt": "Savannah taking a selfie with Andy and all three kids around an outdoor table",
-          "caption": "All five of us around the table.",
+          "caption": "All five of us at Dairy Queen near New Smyrna Beach.",
           "width": 1600,
           "height": 900
         }
+      ],
+      "place": "New Smyrna Beach area, Florida",
+      "coordinates": [
+        29.0258,
+        -80.927
       ]
     },
     {
@@ -2403,17 +2413,24 @@
     {
       "id": "photo-roll-2019",
       "type": "favorite",
-      "title": "From the 2019 photo roll",
-      "sortDate": "2019-12-31",
-      "dateLabel": "2019 folder",
+      "title": "Family photos at Clifton E. French Regional Park",
+      "sortDate": "2019-05",
+      "dateLabel": "Around May 2019",
       "photos": [
         {
           "src": "assets/photos/2019/withviolet2019-f9c77098.webp",
           "alt": "Andy and Savannah holding Violet together outdoors",
           "width": 512,
-          "height": 640
+          "height": 640,
+          "caption": "The three of us at Clifton E. French Regional Park."
         }
-      ]
+      ],
+      "place": "Clifton E. French Regional Park, Plymouth, Minnesota",
+      "coordinates": [
+        45.0205,
+        -93.4253
+      ],
+      "story": "The three of us went to Clifton E. French Regional Park for a family photo shoot. I think it was in May. Violet was still little enough for us to hold her between us."
     },
     {
       "id": "photo-roll-2021",
