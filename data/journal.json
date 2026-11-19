@@ -44,16 +44,19 @@
       "In the spring I took a job at Minnetonka Christian Academy, and we started packing. By July we’d traded Georgia for Minnesota and were settling into our townhouse in Shakopee."
     ],
     "2016": [
-      "After a year in Shakopee, we moved to Brooklyn Park. That year’s memories take us from summer in Two Harbors to ice skating in Minnetonka in December."
+      "After a year in Shakopee, we moved to Brooklyn Park. My parents came up that summer and we headed up the North Shore to Two Harbors and Grand Marais.",
+      "By fall we were both working full time, Savannah had exciting news at work, and we were making our new house feel like home."
     ],
     "2017": [
-      "We went to a wedding in Florida and spent a day at the Minnesota Renaissance Festival. Then in the fall we found out we were expecting Violet."
+      "We spent a summer week in Springfield with Savannah’s parents. Bigger than any trip that year was the decision to start a family. By fall, we had news of our own to celebrate, even if my Bucs didn’t give me much to cheer about."
     ],
     "2018": [
-      "We squeezed in a Tampa babymoon before Violet arrived on June 1. The year we became parents also took us to Waco in September."
+      "Getting ready for Violet meant getting the house ready, moving my office, and making a big decision about work. Then June 1 came, and suddenly we were parents.",
+      "By fall we were in full baby mode at home. Our routines looked different with Violet in the house, and we were getting used to life as a family of three."
     ],
     "2019": [
-      "A painting date and Christmas are two of the moments that made it into this year’s photo roll."
+      "Life was mostly quiet at home. We made it south to see family and celebrate Violet’s first birthday, and north far enough to take her across the Canadian border.",
+      "Fall picked up when I went back to teaching part time in the mornings and cared for other kids in the afternoons. At Christmas we headed back to North Carolina and Cohutta Springs to be with our families."
     ],
     "2021": [
       "We spent part of September in Orlando. By December we had some news that took us by surprise. We were expecting twins."
@@ -445,48 +448,49 @@
         -93.3563
       ],
       "date": "2016-07",
-      "story": "After our year in Shakopee, we moved to Brooklyn Park.",
+      "story": "After a year in Shakopee, we bought our house in Brooklyn Park in July. We were excited to have a place of our own and loved settling in.",
       "photos": [
         {
           "src": "assets/photos/2016/boughthousejuly2016-62dc1c76.webp",
-          "alt": "A photo from the year we moved to Brooklyn Park",
+          "alt": "Andy and Savannah together the summer they bought their Brooklyn Park house",
           "width": 720,
-          "height": 960
-        },
-        {
-          "src": "assets/photos/2016/madehousebetter2016-b894ca8f.webp",
-          "alt": "A photo from the year we moved to Brooklyn Park",
-          "width": 1504,
-          "height": 1000
+          "height": 960,
+          "caption": "The summer we bought our Brooklyn Park house."
         }
       ]
     },
     {
       "id": "expecting-violet",
       "type": "milestone",
-      "title": "We were expecting Violet",
-      "story": "In the fall of 2017, we found out we were expecting Violet.",
+      "title": "We found out we were having Violet",
+      "story": "We’d decided to start a family that year, and the day we went to see the Vikings at their new stadium was the day we found out we were having Violet. Apparently the Vikings celebrated by beating my Bucs. I had much better news to take home.",
       "photos": [
         {
           "src": "assets/photos/2017/violeybabyanncounce-nov-2017-394709bf.webp",
           "alt": "Our November 2017 announcement that we were expecting Violet",
           "width": 1369,
-          "height": 1600
+          "height": 1600,
+          "caption": "The announcement we shared that November."
         }
       ],
       "sortDate": "2017-09",
-      "dateLabel": "Fall 2017"
+      "dateLabel": "Fall 2017",
+      "place": "U.S. Bank Stadium, Minneapolis, Minnesota",
+      "coordinates": [
+        44.9736,
+        -93.2575
+      ]
     },
     {
       "id": "violet-born",
       "type": "milestone",
       "title": "We became parents. Violet arrived!",
       "date": "2018-06-01",
-      "story": "Violet was born on June 1, 2018.",
+      "story": "June 1 was the last day of school. I’d gone in that morning, and Savannah’s parents must have called me half a dozen times. “Come home now!” Then, “It’s okay, come home, but it’s not as urgent.” Then, “Get here!” And then, “Wait, it’s okay.” Violet was born that afternoon, and we absolutely fell in love with her.",
       "photos": [
         {
           "src": "assets/photos/2018/june1violetborn-67ef34f0.webp",
-          "alt": "Violet on the day she was born",
+          "alt": "Andy and Savannah with newborn Violet on June 1, 2018",
           "width": 1200,
           "height": 1600
         }
@@ -867,12 +871,12 @@
     {
       "id": "two-harbors-2016",
       "type": "adventure",
-      "title": "Summer in Two Harbors",
+      "title": "Summer on the North Shore",
       "date": "2016",
       "photos": [
         {
           "src": "assets/photos/2016/twoharborsmn2016summer-c1ca3432.webp",
-          "alt": "Personal photo from Summer in Two Harbors",
+          "alt": "Andy and Savannah outside Betty’s Pies in Two Harbors",
           "width": 960,
           "height": 720
         }
@@ -883,7 +887,38 @@
         -91.6707
       ],
       "dateLabel": "Summer 2016",
-      "sortDate": "2016-08"
+      "sortDate": "2016-08",
+      "story": "My parents came up that summer, and we went to Two Harbors and Grand Marais together."
+    },
+    {
+      "id": "brooklyn-park-renovation-2016",
+      "type": "favorite",
+      "title": "Making the house ours",
+      "place": "Brooklyn Park, Minnesota",
+      "coordinates": [
+        45.0941,
+        -93.3563
+      ],
+      "sortDate": "2016-09",
+      "dateLabel": "Fall 2016",
+      "photos": [
+        {
+          "src": "assets/photos/2016/madehousebetter2016-b894ca8f.webp",
+          "alt": "Two people working in the kitchen during the Brooklyn Park renovation",
+          "width": 1504,
+          "height": 1000,
+          "caption": "Redoing the kitchen with help from Savannah’s parents."
+        }
+      ],
+      "story": "Savannah’s parents stayed with us for a couple of weeks before moving to Chattanooga, Tennessee. They helped us paint, redo the kitchen, and get the house set up. We were both working full time that fall, and it felt good to come home to a place we were making our own."
+    },
+    {
+      "id": "savannah-promotion-2016",
+      "type": "milestone",
+      "title": "Savannah’s promotion",
+      "sortDate": "2016-09",
+      "dateLabel": "Fall 2016",
+      "story": "Savannah was promoted to HR and Communications Director at the Minnesota Conference of Seventh-day Adventists that fall. It was exciting news, and she still works there today!"
     },
     {
       "id": "minnetonka-2016",
@@ -920,6 +955,33 @@
       "place": "Florida"
     },
     {
+      "id": "together-april-2017",
+      "type": "favorite",
+      "title": "An April photo of us",
+      "photos": [
+        {
+          "src": "assets/photos/2012/20170428-161118-3b3ac425.webp",
+          "alt": "Andy and Savannah sitting together for a selfie",
+          "width": 1200,
+          "height": 1600
+        }
+      ],
+      "date": "2017-04-28"
+    },
+    {
+      "id": "springfield-2017",
+      "type": "adventure",
+      "title": "A week in Springfield",
+      "place": "Springfield, Illinois",
+      "coordinates": [
+        39.7817,
+        -89.6501
+      ],
+      "sortDate": "2017-07",
+      "dateLabel": "Summer 2017",
+      "story": "We spent a week that summer in Springfield, Illinois, with Savannah’s parents."
+    },
+    {
       "id": "renfest-2017",
       "type": "adventure",
       "title": "Minnesota Renaissance Festival",
@@ -946,19 +1008,21 @@
       "photos": [
         {
           "src": "assets/photos/2018/violetsonographimagejan2018-bf187bef.webp",
-          "alt": "Personal photo from Waiting for Violet",
+          "alt": "Violet’s January ultrasound showing her profile",
           "width": 960,
           "height": 752
         },
         {
           "src": "assets/photos/2018/may2018violetalmosthere-3e385fcd.webp",
-          "alt": "Personal photo from Waiting for Violet",
+          "alt": "Savannah and Andy with Lucy while they were waiting for Violet",
           "width": 1067,
-          "height": 1600
+          "height": 1600,
+          "caption": "May 2018, with Violet almost here."
         }
       ],
       "dateLabel": "January–May 2018",
-      "sortDate": "2018-01"
+      "sortDate": "2018-01",
+      "story": "With Violet on the way, we started getting the house ready. My office moved for the first of what turned out to be many times so that room could become her nursery. Somewhere in all that excitement I dropped a bombshell. I was burned out and didn’t want to be principal anymore, so I resigned to stay home with Violet."
     },
     {
       "id": "tampa-babymoon-2018",
@@ -1002,7 +1066,7 @@
       "id": "painting-date-2019",
       "type": "favorite",
       "title": "A painting date",
-      "date": "2019",
+      "date": "2019-03-13",
       "photos": [
         {
           "src": "assets/photos/2019/paintdate-2524acbf.webp",
@@ -1013,10 +1077,30 @@
       ]
     },
     {
+      "id": "violet-first-birthday-2019",
+      "type": "milestone",
+      "title": "Violet turns one",
+      "date": "2019-06-01",
+      "featured": true,
+      "story": "We left in late May and came back in early June, visiting our families in North Carolina and at Cohutta Springs. In the middle of that trip we celebrated Violet’s first birthday. Somehow, a whole year had gone by since that last day of school."
+    },
+    {
+      "id": "fort-frances-2019",
+      "type": "adventure",
+      "title": "Violet’s first trip to Canada",
+      "place": "Fort Frances area, Ontario",
+      "coordinates": [
+        48.609,
+        -93.395
+      ],
+      "date": "2019",
+      "story": "We went up to International Falls, crossed into Fort Frances, and drove about half an hour northeast. We stopped by the water with Violet. It’s still her only international trip so far."
+    },
+    {
       "id": "christmas-2019",
       "type": "favorite",
-      "title": "Christmas 2019",
-      "date": "2019-12",
+      "title": "Christmas in North Carolina and Cohutta Springs",
+      "date": "2019-12-25",
       "photos": [
         {
           "src": "assets/photos/2013/jan2012-3ofus-ef876cee.webp",
@@ -1026,11 +1110,17 @@
         },
         {
           "src": "assets/photos/2019/christmast2019-43021bcc.webp",
-          "alt": "Personal photo from Christmas 2019",
+          "alt": "Andy, Savannah, and Violet sitting together in front of a brick wall at Christmas",
           "width": 1600,
           "height": 1280
         }
-      ]
+      ],
+      "place": "Hendersonville, North Carolina",
+      "coordinates": [
+        35.3187,
+        -82.461
+      ],
+      "story": "We spent Christmas with our families in North Carolina and at Cohutta Springs. Christmas Day was in Hendersonville."
     },
     {
       "id": "orlando-2021",
@@ -1334,21 +1424,6 @@
       ]
     },
     {
-      "id": "photo-roll-2012",
-      "type": "favorite",
-      "title": "From the 2012 photo roll",
-      "sortDate": "2012-12-31",
-      "dateLabel": "2012 folder",
-      "photos": [
-        {
-          "src": "assets/photos/2012/20170428-161118-3b3ac425.webp",
-          "alt": "Personal photo from the 2012 folder",
-          "width": 1200,
-          "height": 1600
-        }
-      ]
-    },
-    {
       "id": "photo-roll-2014",
       "type": "favorite",
       "title": "From the 2014 photo roll",
@@ -1393,7 +1468,7 @@
       "photos": [
         {
           "src": "assets/photos/2019/withviolet2019-f9c77098.webp",
-          "alt": "Personal photo from the 2019 folder",
+          "alt": "Andy and Savannah holding Violet together outdoors",
           "width": 512,
           "height": 640
         }
