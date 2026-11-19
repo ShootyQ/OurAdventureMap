@@ -722,12 +722,13 @@
     {
       "id": "hendersonville-2012",
       "type": "adventure",
-      "title": "A June photo in Hendersonville",
-      "date": "2012-06",
+      "title": "I got Lucy",
+      "date": "2012-06-01",
+      "story": "I got Lucy, and she quickly became Savannah’s dog!",
       "photos": [
         {
           "src": "assets/photos/2012/babylucynchendersonville2012june-57c20978.webp",
-          "alt": "Personal photo from A June photo in Hendersonville",
+          "alt": "Lucy as a puppy in Hendersonville",
           "width": 1366,
           "height": 1366
         }
