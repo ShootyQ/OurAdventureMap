@@ -67,7 +67,8 @@
       "Fall took us to Omaha for Savannah’s friend Kelly’s wedding and then to Florida for Disney and the beach. We kept Christmas close to home in Minnesota. And by the end of the year, we had some big news. We were expecting twins!"
     ],
     "2022": [
-      "Max and Ellie arrived in June. A few days later we brought them both home, and we were a family of five."
+      "Max and Ellie arrived on June 22. A few days later we brought them both home, and all of a sudden we were a family of five. We stayed close to home for most of the rest of the year. Two growing babies kept us plenty busy.",
+      "Violet had a big year of her own. We took her to Duluth to ride with Thomas the Tank Engine, and she started Pre-K at MCA. Then came Halloween, with all three kids in costume."
     ],
     "2023": [
       "We went back to Hendersonville in March and made it to New Smyrna Beach in September. By November, one of the dates worth remembering was right at home."
@@ -518,11 +519,27 @@
       "date": "2021-12"
     },
     {
+      "id": "new-car-2022",
+      "type": "favorite",
+      "title": "A new car in May",
+      "date": "2022-05-13",
+      "photos": [
+        {
+          "src": "assets/photos/2022/newcarmay-579d3bc6.webp",
+          "alt": "Andy, Savannah, and Violet next to a car with a yellow bow",
+          "width": 1600,
+          "height": 900,
+          "caption": "Our new car in May."
+        }
+      ],
+      "story": "We got a new car in May, while we were still waiting for Max and Ellie."
+    },
+    {
       "id": "twins-born",
       "type": "milestone",
       "title": "Max and Ellie made us a family of five",
       "date": "2022-06-22",
-      "story": "Max and Ellie were born on June 22, 2022. A few days later, we were home with both of them.",
+      "story": "Max and Ellie were born on June 22. A few days later we were home with both of them, getting used to having two newborns and three kids under one roof. We didn’t go far for most of the year. There was plenty happening right there at home.",
       "photos": [
         {
           "src": "assets/photos/2022/max-and-ellie-just-born.webp",
@@ -540,6 +557,128 @@
         }
       ],
       "featured": true
+    },
+    {
+      "id": "family-of-five-august-2022",
+      "type": "favorite",
+      "title": "All five of us on the couch",
+      "date": "2022-08",
+      "photos": [
+        {
+          "src": "assets/photos/2022/aug22-e8f85dda.webp",
+          "alt": "Andy, Savannah, and Violet on the couch with baby Max and Ellie",
+          "width": 1600,
+          "height": 1200,
+          "caption": "All five of us together in August."
+        }
+      ],
+      "story": "We spent a lot of that summer at home as Max and Ellie grew. Here’s all five of us squeezed onto the couch, with Violet right in the middle."
+    },
+    {
+      "id": "thomas-duluth-2022",
+      "type": "adventure",
+      "title": "A ride with Thomas in Duluth",
+      "date": "2022-08-12",
+      "place": "Duluth, Minnesota",
+      "coordinates": [
+        46.782,
+        -92.105
+      ],
+      "photos": [
+        {
+          "src": "assets/photos/2022/thomas-train-duluth.webp",
+          "alt": "Violet and Savannah smiling by the window on the train",
+          "caption": "All aboard for Thomas the Tank Engine in Duluth.",
+          "width": 1600,
+          "height": 900
+        }
+      ],
+      "story": "We made it up to Duluth for a ride with Thomas the Tank Engine. After so much time close to home, a train ride was a fun change of pace for Violet and for us."
+    },
+    {
+      "id": "violet-pre-k-2022",
+      "type": "milestone",
+      "title": "Violet starts Pre-K",
+      "date": "2022-08-24",
+      "place": "Minnetonka, Minnesota",
+      "coordinates": [
+        44.9212,
+        -93.4687
+      ],
+      "photos": [
+        {
+          "src": "assets/photos/2022/violet-first-day-pre-k.webp",
+          "alt": "Violet wearing a pink backpack and holding a first-day-of-school sign",
+          "caption": "Violet’s first day of Pre-K at MCA.",
+          "width": 900,
+          "height": 1600
+        }
+      ],
+      "story": "Violet started Pre-K at Minnetonka Christian Academy. We took a first-day photo with her backpack and sign. The twins were changing by the week, and here was Violet off to school already."
+    },
+    {
+      "id": "twins-growing-2022",
+      "type": "favorite",
+      "title": "Look how much they’d grown",
+      "date": "2022-09-10",
+      "photos": [
+        {
+          "src": "assets/photos/2022/max-and-ellie-september.webp",
+          "alt": "Max and Ellie propped up beside each other on white cushions",
+          "caption": "Max and Ellie in September.",
+          "width": 1600,
+          "height": 900
+        }
+      ],
+      "story": "By September, Max and Ellie could sit propped up next to each other for a photo. It was fun to see how much they’d changed since those first pictures in June."
+    },
+    {
+      "id": "halloween-2022",
+      "type": "favorite",
+      "title": "Halloween with all three",
+      "date": "2022-10-30",
+      "photos": [
+        {
+          "src": "assets/photos/2022/first-halloween-family-of-five.webp",
+          "alt": "Violet in a cream-colored hat between the twins in green and yellow costumes",
+          "caption": "Violet, Max, and Ellie dressed up for Halloween.",
+          "width": 1600,
+          "height": 900
+        }
+      ],
+      "story": "Our first Halloween with three kids meant three costumes. We got them all together long enough for a photo, with Violet in the middle and the twins on either side."
+    },
+    {
+      "id": "december-family-2022",
+      "type": "favorite",
+      "title": "Together in December",
+      "date": "2022-12-01",
+      "photos": [
+        {
+          "src": "assets/photos/2022/december-fd36e8c8.webp",
+          "alt": "The family sitting together beside a decorated Christmas tree",
+          "width": 1600,
+          "height": 900,
+          "caption": "A family photo in December."
+        }
+      ],
+      "story": "We got everyone together for a family photo by the Christmas tree."
+    },
+    {
+      "id": "bubble-bath-2022",
+      "type": "favorite",
+      "title": "A mountain of bubbles",
+      "date": "2022-12-26",
+      "photos": [
+        {
+          "src": "assets/photos/2022/december-bubble-bath.webp",
+          "alt": "A mound of white bath bubbles with just the top of a head peeking through",
+          "caption": "A very bubbly end to December.",
+          "width": 1600,
+          "height": 900
+        }
+      ],
+      "story": "Some of the photos from that year are just everyday moments. This one is mostly bubbles."
     },
     {
       "id": "minnesota-overnights",
@@ -1865,33 +2004,6 @@
         {
           "src": "assets/photos/2021/sept-60916727.webp",
           "alt": "Personal photo from the 2021 folder",
-          "width": 1600,
-          "height": 900
-        }
-      ]
-    },
-    {
-      "id": "photo-roll-2022",
-      "type": "favorite",
-      "title": "From the 2022 photo roll",
-      "sortDate": "2022-12-31",
-      "dateLabel": "2022 folder",
-      "photos": [
-        {
-          "src": "assets/photos/2022/aug22-e8f85dda.webp",
-          "alt": "Personal photo from the 2022 folder",
-          "width": 1600,
-          "height": 1200
-        },
-        {
-          "src": "assets/photos/2022/newcarmay-579d3bc6.webp",
-          "alt": "Personal photo from the 2022 folder",
-          "width": 1600,
-          "height": 900
-        },
-        {
-          "src": "assets/photos/2022/december-fd36e8c8.webp",
-          "alt": "Personal photo from the 2022 folder",
           "width": 1600,
           "height": 900
         }
