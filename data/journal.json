@@ -49,7 +49,13 @@
   ],
   "chapterIntroductions": {
     "2007": [
-      "We met at Union College in Lincoln that September and became friends. For the next few years, that was the whole story."
+      "Savannah and I were both at Union College in Lincoln. Back then, we were just getting to know each other."
+    ],
+    "2008": [
+      "Savannah started dating someone else after that, and the two of us stayed friends. As it turned out, we’d be seeing quite a bit of each other."
+    ],
+    "2009": [
+      "During the 2009–2010 school year we were both busy with different groups of friends. We still had our occasional coffee dates, just the two of us catching up."
     ],
     "2010": [
       "We were still friends when we graduated from Union College. Lincoln gave us a place to come back to, and there were still friends there to see."
@@ -119,20 +125,78 @@
     {
       "id": "union-college",
       "type": "milestone",
-      "title": "Where we first met",
+      "title": "At the Joiners’ house",
       "place": "Lincoln, Nebraska",
       "coordinates": [
         40.8136,
         -96.7026
       ],
       "date": "2007-09",
-      "story": "We met at Union College in September 2007 and became friends. We spent a lot of time together over the next few years.",
+      "story": "I first met Savannah at the Joiners’ house in Lincoln that September, and we became friends. She came over to my basement apartment and I cooked chicken for her. The chicken was probably terrible.",
       "photos": [
         {
           "src": "assets/photos/2007/2007firstimagetogetherasfriendslincoln-5d691245.webp",
           "alt": "Our first photo together as friends in Lincoln",
           "width": 450,
           "height": 600
+        }
+      ]
+    },
+    {
+      "id": "lincoln-roommates",
+      "type": "favorite",
+      "title": "Guess who my roommate was",
+      "date": "2008",
+      "dateLabel": "2008–2009",
+      "place": "Lincoln, Nebraska",
+      "coordinates": [
+        40.8136,
+        -96.7026
+      ],
+      "story": "From 2008 to 2009, I roomed with the guy Savannah was dating. I got to see her a lot that year!"
+    },
+    {
+      "id": "trying-to-look-cool",
+      "type": "favorite",
+      "title": "Us, trying to look cool",
+      "date": "2009",
+      "place": "Lincoln, Nebraska",
+      "coordinates": [
+        40.8136,
+        -96.7026
+      ],
+      "photos": [
+        {
+          "src": "assets/photos/2009/suits-and-ties.webp",
+          "alt": "Two friends in suits and ties, grinning at each other.",
+          "caption": "All dressed up.",
+          "width": 395,
+          "height": 522
+        },
+        {
+          "src": "assets/photos/2009/three-friends.webp",
+          "alt": "Three friends standing shoulder to shoulder in black dresses.",
+          "width": 600,
+          "height": 420
+        },
+        {
+          "src": "assets/photos/2009/sidewalk-pose.webp",
+          "alt": "A friend in dark clothes and sunglasses looking back at the camera outside a building.",
+          "width": 604,
+          "height": 453
+        },
+        {
+          "src": "assets/photos/2009/jackets-and-sunglasses.webp",
+          "alt": "Three friends posing in jackets, one in sunglasses and another with a curly mustache.",
+          "caption": "We really committed to the look.",
+          "width": 604,
+          "height": 453
+        },
+        {
+          "src": "assets/photos/2009/formalwear-outtake.webp",
+          "alt": "Three friends in formalwear, one reaching a hand between the other two as they pose.",
+          "width": 600,
+          "height": 420
         }
       ]
     },
@@ -2401,6 +2465,13 @@
           "alt": "Personal photo from the 2011 folder",
           "width": 449,
           "height": 606
+        },
+        {
+          "src": "assets/photos/2011/behind-the-flowers.webp",
+          "alt": "Savannah and Andy leaning together behind a red rose and white flowers.",
+          "caption": "July 2011, peeking out from behind the flowers.",
+          "width": 1600,
+          "height": 902
         }
       ]
     },

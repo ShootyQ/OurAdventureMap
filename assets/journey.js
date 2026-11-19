@@ -355,7 +355,8 @@ function memoryCard(place) {
 }
 
 const chapterNames = {
-  2007:'When we were friends.', 2010:'Back in Lincoln.', 2011:'A little closer.',
+  2007:'When we were friends.', 2008:'The roommate connection.', 2009:'Coffee now and then.',
+  2010:'Back in Lincoln.', 2011:'A little closer.',
   2012:'The miles between us.', 2013:'She said yes.', 2014:'Just married.',
   2015:'North to Minnesota.', 2016:'A home of our own.', 2017:'Room for one more.',
   2018:'Hello, Violet.', 2019:'Her first candle.', 2020:'Close to home.',
