@@ -17,6 +17,63 @@
     "Happy 13th Anniversary.",
     "Love,\nAndy"
   ],
+  "chapterIntroductions": {
+    "2007": [
+      "We met at Union College in Lincoln that September and became friends. For the next few years, that was the whole story."
+    ],
+    "2010": [
+      "We were still friends when we graduated from Union College. Lincoln gave us a place to come back to, and there were still friends there to see."
+    ],
+    "2011": [
+      "We had so much fun together in Michigan that we wanted more time together. Spring break gave us a road trip, April gave us a first date, and by summer we were getting to know each other’s families.",
+      "Savannah took a job in North Carolina and lived close to my parents. That fall I was working in Michigan, so we visited as often as we could."
+    ],
+    "2012": [
+      "We started the year twelve hours apart, making time for trips to Savannah and Cades Cove. In the spring I took a job in Dunwoody, Georgia, and suddenly the drive between us was only three and a half hours.",
+      "That summer we spent time together while I was staying with my parents in North Carolina, and we visited California. By Christmas I was already planning to propose."
+    ],
+    "2013": [
+      "Once Savannah said yes in February, there were engagement photos, bridal showers, a wedding to plan, and a honeymoon to dream about. The wedding came together, and then we were off to New Zealand.",
+      "We drove the coast, went sightseeing, made time for a spa and date nights, and even caught a Hunger Games movie. We loved the chais, and I was always on the lookout for fish and chips and another mince pie. Then we flew to Sydney for a second wedding with Savannah’s Australian family."
+    ],
+    "2014": [
+      "Our first year married, we both worked at Atlanta North School. I taught fifth and sixth grade, and Savannah was the registrar. We went out to eat, played games, walked Lucy, and spent time with family in North Carolina and California.",
+      "Florida gave us two very different trips. Spring break meant cold weather in St. Augustine and a tiny Airbnb. Summer meant a long stay in Port Charlotte with a pool and Lucy along for the trip. By fall we were back at school."
+    ],
+    "2015": [
+      "In the spring I took a job at Minnetonka Christian Academy, and we started packing. By July we’d traded Georgia for Minnesota and were settling into our townhouse in Shakopee."
+    ],
+    "2016": [
+      "After a year in Shakopee, we moved to Brooklyn Park. That year’s memories take us from summer in Two Harbors to ice skating in Minnetonka in December."
+    ],
+    "2017": [
+      "We went to a wedding in Florida and spent a day at the Minnesota Renaissance Festival. Then in the fall we found out we were expecting Violet."
+    ],
+    "2018": [
+      "We squeezed in a Tampa babymoon before Violet arrived on June 1. The year we became parents also took us to Waco in September."
+    ],
+    "2019": [
+      "A painting date and Christmas are two of the moments that made it into this year’s photo roll."
+    ],
+    "2021": [
+      "We spent part of September in Orlando. By December we had some news that took us by surprise. We were expecting twins."
+    ],
+    "2022": [
+      "Max and Ellie arrived in June. A few days later we brought them both home, and we were a family of five."
+    ],
+    "2023": [
+      "We went back to Hendersonville in March and made it to New Smyrna Beach in September. By November, one of the dates worth remembering was right at home."
+    ],
+    "2024": [
+      "We started the year with a Caribbean cruise. A few months later we were on the other coast for a trip to San Diego."
+    ],
+    "2025": [
+      "There was plenty to celebrate, from my fortieth birthday to Violet’s kindergarten graduation. By July we were making summer memories in Cedar Key."
+    ],
+    "2026": [
+      "We went to North Carolina in March and Seattle in April. Back in Minnesota, August brought a Minneapolis date night and a Twins game, and October brought the corn maze."
+    ]
+  },
   "places": [
     {
       "id": "union-college",
@@ -82,7 +139,7 @@
         -81.3792
       ],
       "date": "2011-03",
-      "story": "Savannah flew to North Carolina. We drove from Hendersonville to Orlando, then all the way up to Michigan, where she flew out.",
+      "story": "We’d had so much fun hanging out in Michigan that we wanted more time together. For spring break, Savannah flew to North Carolina and we drove down to Florida. I remember holding hands the whole way down and the whole way back. We spent time with my family in North Carolina, then drove to Michigan together, where Savannah flew out.",
       "photos": [
         {
           "src": "assets/photos/2011/marchtripbeforedating2-7ad247e8.webp",
@@ -278,7 +335,7 @@
         -36.8485,
         174.7633
       ],
-      "story": "We flew into Auckland so early that we ended up getting breakfast something like four times.",
+      "story": "We flew into Auckland so early that we ended up getting breakfast something like four times. We kept joking about it for the rest of the honeymoon.",
       "photos": [],
       "sortDate": "2013-11-24",
       "dateLabel": "Honeymoon"
@@ -601,7 +658,8 @@
         38.5816,
         -121.4944
       ],
-      "dateLabel": "July–August 2011"
+      "dateLabel": "July–August 2011",
+      "story": "After we started dating, we spent time at each other’s homes that summer. I flew to California to meet Savannah’s family and got introduced to every family friend for a thorough “inspection.”"
     },
     {
       "id": "biltmore-2011",
@@ -658,7 +716,8 @@
       "coordinates": [
         32.0809,
         -81.0912
-      ]
+      ],
+      "story": "While we were still dating long-distance, we took a trip to Savannah, Georgia, with Savannah’s mom."
     },
     {
       "id": "hendersonville-2012",
@@ -696,13 +755,21 @@
       "coordinates": [
         38.9072,
         -77.0369
-      ]
+      ],
+      "story": "We spent Christmas in DC with Savannah’s parents, visiting the Capitol and seeing friends. Savannah thought I might propose. I was already planning it, but I hadn’t asked yet."
+    },
+    {
+      "id": "st-augustine-2014",
+      "type": "adventure",
+      "title": "A chilly spring break in St. Augustine",
+      "place": "St. Augustine, Florida",
+      "date": "2014-03",
+      "story": "For our first spring break as a married couple, we went to St. Augustine. It was cold, and the Airbnb was the size of a postage stamp."
     },
     {
       "id": "port-charlotte-2014",
       "type": "adventure",
       "title": "Port Charlotte",
-      "date": "2014-03",
       "photos": [
         {
           "src": "assets/photos/2014/march2014portcharlottefltrip-a59fbf0f.webp",
@@ -715,7 +782,10 @@
       "coordinates": [
         26.9762,
         -82.0906
-      ]
+      ],
+      "story": "That summer we took a much longer Florida trip. We stayed at a friend’s house in Port Charlotte with a pool, just us and Lucy. We went to the beach, saw friends, and went out to eat.",
+      "sortDate": "2014-07",
+      "dateLabel": "Summer 2014"
     },
     {
       "id": "goat-rock-2014",
@@ -737,27 +807,6 @@
       ],
       "dateLabel": "Summer 2014",
       "sortDate": "2014-06"
-    },
-    {
-      "id": "gatlinburg-cabins",
-      "type": "adventure",
-      "title": "Cabin trips in Gatlinburg",
-      "date": "2015",
-      "photos": [
-        {
-          "src": "assets/photos/2015/cabintrips2013-2015gatlinburgtn-2e09b659.webp",
-          "alt": "Personal photo from Cabin trips in Gatlinburg",
-          "width": 1600,
-          "height": 1063
-        }
-      ],
-      "place": "Gatlinburg, Tennessee",
-      "coordinates": [
-        35.7143,
-        -83.5102
-      ],
-      "dateLabel": "2013–2015",
-      "sortDate": "2013"
     },
     {
       "id": "atlanta-spring-2015",
@@ -1308,6 +1357,27 @@
           "height": 960
         }
       ]
+    },
+    {
+      "id": "gatlinburg-cabins",
+      "type": "adventure",
+      "title": "Cabin trips in Gatlinburg",
+      "photos": [
+        {
+          "src": "assets/photos/2015/cabintrips2013-2015gatlinburgtn-2e09b659.webp",
+          "alt": "Personal photo from Cabin trips in Gatlinburg",
+          "width": 1600,
+          "height": 1063
+        }
+      ],
+      "place": "Gatlinburg, Tennessee",
+      "coordinates": [
+        35.7143,
+        -83.5102
+      ],
+      "dateLabel": "2013–2015",
+      "sortDate": "2014-12-31",
+      "story": "After we got married, we took several cabin trips to Gatlinburg with my parents, my sister, and my brother-in-law."
     },
     {
       "id": "photo-roll-2019",

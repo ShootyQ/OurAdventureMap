@@ -203,6 +203,11 @@ nav a[aria-current="page"] {
   color: var(--olive);
   font-size: clamp(32px, 4vw, 60px);
 }
+.chapter-intro {
+  max-width: 62ch;
+  margin: 0 0 14px;
+}
+.chapter-intro + .story-list { margin-top: 22px; }
 .story-list {
   list-style: none;
   margin: 0;

@@ -142,7 +142,7 @@ function storyPhotos(place, observer) {
   return photos;
 }
 
-function renderTimeline(places) {
+function renderTimeline(places, chapterIntroductions = {}) {
   const timeline = byId('timeline-list');
   const picker = byId('chapter-picker');
   const entries = places.filter(({ type }) => type !== 'dream' && type !== 'secret');
@@ -175,7 +175,11 @@ function renderTimeline(places) {
       heading.id = chapter.id + '-title';
       chapter.setAttribute('aria-labelledby', heading.id);
       list = element('ol', '', 'story-list');
-      chapter.append(heading, list);
+      chapter.append(heading);
+      for (const paragraph of chapterIntroductions[year] ?? []) {
+        chapter.append(element('p', paragraph, 'chapter-intro'));
+      }
+      chapter.append(list);
       timeline.append(chapter);
       picker.add(new Option(label, chapter.id));
     }
@@ -434,7 +438,7 @@ async function start() {
   try {
     const journal = await readJson('data/journal.json');
     if (storyPage) {
-      const steps = renderTimeline(journal.places);
+      const steps = renderTimeline(journal.places, journal.chapterIntroductions);
       const chapter = byId(window.location.hash.slice(1));
       if (chapter) {
         await document.fonts.ready;
