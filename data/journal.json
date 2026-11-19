@@ -76,7 +76,7 @@
       "After Halloween costumes and an anniversary date with paint, we finished the year at my parents’ place in Hendersonville for Christmas."
     ],
     "2024": [
-      "We started the year with a Caribbean cruise. A few months later we were on the other coast for a trip to San Diego."
+      "We started the year with a Caribbean cruise. There were evenings aboard together, a sunny stop at Half Moon Cay, a kiss by the water on Grand Turk, and a photo at the I Love Aruba sign. A few months later we headed to San Diego."
     ],
     "2025": [
       "There was plenty to celebrate, from my fortieth birthday to Violet’s kindergarten graduation. By July we were making summer memories in Cedar Key."
@@ -385,9 +385,13 @@
           "height": 960
         }
       ],
-      "place": "New Zealand",
+      "place": "New Zealand (region)",
       "sortDate": "2013-11-24",
-      "dateLabel": "Honeymoon"
+      "dateLabel": "Honeymoon",
+      "coordinates": [
+        -41.2,
+        172.5
+      ]
     },
     {
       "id": "sydney-wedding",
@@ -503,7 +507,12 @@
           "height": 1600
         }
       ],
-      "featured": true
+      "featured": true,
+      "place": "Twin Cities area, Minnesota",
+      "coordinates": [
+        44.955,
+        -93.2
+      ]
     },
     {
       "id": "expecting-twins",
@@ -518,7 +527,12 @@
           "height": 900
         }
       ],
-      "date": "2021-12"
+      "date": "2021-12",
+      "place": "Brooklyn Park area, Minnesota",
+      "coordinates": [
+        45.0941,
+        -93.3563
+      ]
     },
     {
       "id": "new-car-2022",
@@ -534,7 +548,12 @@
           "caption": "Our new car in May."
         }
       ],
-      "story": "We got a new car in May, while we were still waiting for Max and Ellie."
+      "story": "We got a new car in May, while we were still waiting for Max and Ellie.",
+      "place": "Brooklyn Park area, Minnesota",
+      "coordinates": [
+        45.0941,
+        -93.3563
+      ]
     },
     {
       "id": "twins-born",
@@ -553,12 +572,17 @@
         {
           "src": "assets/photos/2022/max-and-ellie-at-home.webp",
           "alt": "Max and Ellie at home a few days after their birth",
-          "caption": "Home a few days later",
+          "caption": "Home in the Brooklyn Park area a few days later.",
           "width": 900,
           "height": 1600
         }
       ],
-      "featured": true
+      "featured": true,
+      "place": "Twin Cities area, Minnesota",
+      "coordinates": [
+        44.955,
+        -93.2
+      ]
     },
     {
       "id": "family-of-five-august-2022",
@@ -574,7 +598,12 @@
           "caption": "All five of us together in August."
         }
       ],
-      "story": "We spent a lot of that summer at home as Max and Ellie grew. Here’s all five of us squeezed onto the couch, with Violet right in the middle."
+      "story": "We spent a lot of that summer at home as Max and Ellie grew. Here’s all five of us squeezed onto the couch, with Violet right in the middle.",
+      "place": "Brooklyn Park area, Minnesota",
+      "coordinates": [
+        45.0941,
+        -93.3563
+      ]
     },
     {
       "id": "thomas-duluth-2022",
@@ -632,7 +661,12 @@
           "height": 900
         }
       ],
-      "story": "By September, Max and Ellie could sit propped up next to each other for a photo. It was fun to see how much they’d changed since those first pictures in June."
+      "story": "By September, Max and Ellie could sit propped up next to each other for a photo. It was fun to see how much they’d changed since those first pictures in June.",
+      "place": "Brooklyn Park area, Minnesota",
+      "coordinates": [
+        45.0941,
+        -93.3563
+      ]
     },
     {
       "id": "halloween-2022",
@@ -648,7 +682,12 @@
           "height": 900
         }
       ],
-      "story": "Our first Halloween with three kids meant three costumes. We got them all together long enough for a photo, with Violet in the middle and the twins on either side."
+      "story": "Our first Halloween with three kids meant three costumes. We got them all together long enough for a photo, with Violet in the middle and the twins on either side.",
+      "place": "Brooklyn Park area, Minnesota",
+      "coordinates": [
+        45.0941,
+        -93.3563
+      ]
     },
     {
       "id": "december-family-2022",
@@ -664,7 +703,12 @@
           "caption": "A family photo in December."
         }
       ],
-      "story": "We got everyone together for a family photo by the Christmas tree."
+      "story": "We got everyone together for a family photo by the Christmas tree.",
+      "place": "Brooklyn Park area, Minnesota",
+      "coordinates": [
+        45.0941,
+        -93.3563
+      ]
     },
     {
       "id": "bubble-bath-2022",
@@ -680,7 +724,12 @@
           "height": 900
         }
       ],
-      "story": "Some of the photos from that year are just everyday moments. This one is mostly bubbles."
+      "story": "Some of the photos from that year are just everyday moments. This one is mostly bubbles.",
+      "place": "Brooklyn Park area, Minnesota",
+      "coordinates": [
+        45.0941,
+        -93.3563
+      ]
     },
     {
       "id": "minnesota-overnights",
@@ -997,7 +1046,11 @@
           "height": 1063
         }
       ],
-      "place": "North Carolina"
+      "place": "North Carolina (region)",
+      "coordinates": [
+        35.56,
+        -79.39
+      ]
     },
     {
       "id": "virginia-wedding-2015",
@@ -1012,7 +1065,11 @@
           "height": 960
         }
       ],
-      "place": "Virginia"
+      "place": "Virginia (region)",
+      "coordinates": [
+        37.52,
+        -78.85
+      ]
     },
     {
       "id": "two-harbors-2016",
@@ -1098,7 +1155,11 @@
           "height": 960
         }
       ],
-      "place": "Florida"
+      "place": "Florida (region)",
+      "coordinates": [
+        27.85,
+        -81.59
+      ]
     },
     {
       "id": "together-april-2017",
@@ -1168,7 +1229,12 @@
       ],
       "dateLabel": "January–May 2018",
       "sortDate": "2018-01",
-      "story": "With Violet on the way, we started getting the house ready. My office moved for the first of what turned out to be many times so that room could become her nursery. Somewhere in all that excitement I dropped a bombshell. I was burned out and didn’t want to be principal anymore, so I resigned to stay home with Violet."
+      "story": "With Violet on the way, we started getting the house ready. My office moved for the first of what turned out to be many times so that room could become her nursery. Somewhere in all that excitement I dropped a bombshell. I was burned out and didn’t want to be principal anymore, so I resigned to stay home with Violet.",
+      "place": "Twin Cities area, Minnesota",
+      "coordinates": [
+        44.955,
+        -93.2
+      ]
     },
     {
       "id": "tampa-babymoon-2018",
@@ -1220,6 +1286,11 @@
           "width": 1200,
           "height": 1600
         }
+      ],
+      "place": "Minneapolis area, Minnesota",
+      "coordinates": [
+        44.9778,
+        -93.265
       ]
     },
     {
@@ -1237,6 +1308,11 @@
           "width": 1200,
           "height": 1600
         }
+      ],
+      "place": "Cohutta Springs, Georgia",
+      "coordinates": [
+        34.94,
+        -84.745
       ]
     },
     {
@@ -1314,6 +1390,11 @@
           "width": 1600,
           "height": 900
         }
+      ],
+      "place": "Twin Cities area, Minnesota",
+      "coordinates": [
+        44.955,
+        -93.2
       ]
     },
     {
@@ -1343,6 +1424,11 @@
           "width": 1600,
           "height": 900
         }
+      ],
+      "place": "Brooklyn Park area, Minnesota",
+      "coordinates": [
+        45.0941,
+        -93.3563
       ]
     },
     {
@@ -1504,7 +1590,7 @@
       "id": "violet-summer-2021",
       "type": "adventure",
       "title": "Violet’s summer around the Twin Cities",
-      "place": "Twin Cities, Minnesota",
+      "place": "Twin Cities and west metro, Minnesota",
       "sortDate": "2021-07",
       "dateLabel": "Summer 2021",
       "photos": [
@@ -1512,13 +1598,6 @@
           "src": "assets/photos/2021/violet-splash-pad.webp",
           "alt": "Violet in a white dress walking through a splash pad",
           "caption": "A July splash-pad day.",
-          "width": 1600,
-          "height": 900
-        },
-        {
-          "src": "assets/photos/2021/violet-july-smile.webp",
-          "alt": "Violet smiling outdoors with a purple bow in her hair",
-          "caption": "Violet out and about in July.",
           "width": 1600,
           "height": 900
         },
@@ -1535,6 +1614,33 @@
           "caption": "Out for a ride.",
           "width": 1600,
           "height": 900
+        }
+      ],
+      "story": "We had so much fun with Violet that summer. We took her to playgrounds and swimming ponds, found places to splash, and spent as much time outside as we could. It was the kind of summer where an outing close to home could be the best part of the day.",
+      "coordinates": [
+        45.03,
+        -93.49
+      ]
+    },
+    {
+      "id": "violet-central-minnesota-2021",
+      "type": "favorite",
+      "title": "Summer outings in Central Minnesota",
+      "sortDate": "2021-07-12",
+      "dateLabel": "July and August 2021",
+      "place": "St. Cloud area, Minnesota",
+      "coordinates": [
+        45.56,
+        -94.16
+      ],
+      "story": "A couple more pictures of Violet from that summer, including one with Mom among the flowers.",
+      "photos": [
+        {
+          "src": "assets/photos/2021/violet-july-smile.webp",
+          "alt": "Violet smiling outdoors with a purple bow in her hair",
+          "caption": "Violet out and about in July.",
+          "width": 1600,
+          "height": 900
         },
         {
           "src": "assets/photos/2021/savannah-violet-august.webp",
@@ -1543,8 +1649,7 @@
           "width": 1600,
           "height": 900
         }
-      ],
-      "story": "We had so much fun with Violet that summer. We took her to playgrounds and swimming ponds, found places to splash, and spent as much time outside as we could. It was the kind of summer where an outing close to home could be the best part of the day."
+      ]
     },
     {
       "id": "renaissance-festival-2021",
@@ -1665,6 +1770,11 @@
           "width": 1600,
           "height": 900
         }
+      ],
+      "place": "Brooklyn Park area, Minnesota",
+      "coordinates": [
+        45.0941,
+        -93.3563
       ]
     },
     {
@@ -1681,6 +1791,11 @@
           "width": 900,
           "height": 1600
         }
+      ],
+      "place": "Brooklyn Park area, Minnesota",
+      "coordinates": [
+        45.0941,
+        -93.3563
       ]
     },
     {
@@ -1748,6 +1863,11 @@
           "width": 1600,
           "height": 900
         }
+      ],
+      "place": "Brooklyn Park area, Minnesota",
+      "coordinates": [
+        45.0941,
+        -93.3563
       ]
     },
     {
@@ -1801,7 +1921,12 @@
           "caption": "A fall date night at home."
         }
       ],
-      "story": "One fall date night was right at home. With three little kids and a full house, it felt good to set aside an evening for just us."
+      "story": "One fall date night was right at home. With three little kids and a full house, it felt good to set aside an evening for just us.",
+      "place": "Brooklyn Park area, Minnesota",
+      "coordinates": [
+        45.0941,
+        -93.3563
+      ]
     },
     {
       "id": "halloween-2023",
@@ -1817,6 +1942,11 @@
           "width": 1600,
           "height": 900
         }
+      ],
+      "place": "Brooklyn Park area, Minnesota",
+      "coordinates": [
+        45.0941,
+        -93.3563
       ]
     },
     {
@@ -1838,10 +1968,15 @@
           "alt": "Savannah and Andy walking together outside in their wedding clothes",
           "width": 1067,
           "height": 1600,
-          "caption": "Back where it started, on our wedding day in 2013."
+          "caption": "Back where it started, on our 2013 wedding day in Middletown, California."
         }
       ],
-      "featured": true
+      "featured": true,
+      "place": "Brooklyn Park area, Minnesota",
+      "coordinates": [
+        45.0941,
+        -93.3563
+      ]
     },
     {
       "id": "hendersonville-christmas-2023",
@@ -1879,28 +2014,52 @@
       ]
     },
     {
+      "id": "caribbean-cruise-flight-2024",
+      "type": "adventure",
+      "title": "Off on our Caribbean cruise",
+      "date": "2024-01-23",
+      "place": "Minneapolis–Saint Paul International Airport, Minnesota",
+      "coordinates": [
+        44.8848,
+        -93.2223
+      ],
+      "story": "Our cruise adventure started with a flight out of the Twin Cities. We got a picture of the two of us together before we headed south.",
+      "photos": [
+        {
+          "src": "assets/photos/2024/jancruise-292dae08.webp",
+          "alt": "Andy and Savannah smiling in their airplane seats",
+          "width": 1600,
+          "height": 900,
+          "caption": "The flight out to start our cruise."
+        }
+      ]
+    },
+    {
       "id": "caribbean-cruise-2024",
       "type": "adventure",
       "title": "Our Caribbean cruise",
-      "date": "2024-01",
+      "date": "2024-01-24",
       "photos": [
         {
-          "src": "assets/photos/2024/cruisejanturksandcaicos-6724db10.webp",
-          "alt": "Personal photo from The January Caribbean cruise",
-          "width": 1600,
-          "height": 1280
+          "src": "assets/photos/2024/cruise-dinner-savannah.webp",
+          "alt": "Savannah smiling across the table with dinner in front of her",
+          "caption": "Dinner aboard the ship.",
+          "width": 900,
+          "height": 1600
         },
         {
-          "src": "assets/photos/2024/jancruise-292dae08.webp",
-          "alt": "Personal photo from The January Caribbean cruise",
+          "src": "assets/photos/2024/cruise-evening-together.webp",
+          "alt": "Savannah and Andy smiling together under blue lighting",
+          "caption": "An evening together on the ship.",
           "width": 1600,
           "height": 900
         },
         {
-          "src": "assets/photos/2024/jancruisearuba-e3df1a59.webp",
-          "alt": "Personal photo from The January Caribbean cruise",
-          "width": 1600,
-          "height": 900
+          "src": "assets/photos/2024/cruise-evening-portrait.webp",
+          "alt": "Savannah dressed for an evening aboard the cruise ship",
+          "caption": "Savannah on a cruise evening.",
+          "width": 900,
+          "height": 1600
         }
       ],
       "place": "Caribbean",
@@ -1908,7 +2067,84 @@
         17.4,
         -69
       ],
-      "story": "Our cruise included the Dominican Republic, Turks and Caicos, Half Moon Beach, Aruba, Bonaire, and Curaçao."
+      "story": "We set out on a January cruise with stops in the Bahamas, Turks and Caicos, the Dominican Republic, Aruba, Bonaire, and Curaçao. Some of my favorite pictures from the trip are from the evenings aboard, when we had time for dinner and a little time just for us."
+    },
+    {
+      "id": "half-moon-cay-2024",
+      "type": "adventure",
+      "title": "Taking it easy at Half Moon Cay",
+      "date": "2024-01-25",
+      "place": "Half Moon Cay, Bahamas",
+      "coordinates": [
+        24.58,
+        -75.95
+      ],
+      "story": "We got off the ship for a stop at Half Moon Cay and took some time to sit back and enjoy the sunshine.",
+      "photos": [
+        {
+          "src": "assets/photos/2024/half-moon-cay-lounging.webp",
+          "alt": "Savannah in sunglasses relaxing on a waterfront lounge seat",
+          "caption": "A sunny stop at Half Moon Cay.",
+          "width": 900,
+          "height": 1600
+        }
+      ]
+    },
+    {
+      "id": "grand-turk-2024",
+      "type": "adventure",
+      "title": "A day on Grand Turk",
+      "date": "2024-01-26",
+      "place": "Grand Turk, Turks and Caicos",
+      "coordinates": [
+        21.43,
+        -71.14
+      ],
+      "story": "We had time to relax on Grand Turk, and we got a few photos together by the water. My favorite is the one where we stopped for a kiss with the sky behind us.",
+      "photos": [
+        {
+          "src": "assets/photos/2024/grand-turk-kiss.webp",
+          "alt": "Savannah and Andy kissing on a rocky shore under a blue sky",
+          "caption": "A kiss on the shore of Grand Turk.",
+          "width": 900,
+          "height": 1600
+        },
+        {
+          "src": "assets/photos/2024/grand-turk-lounge-chair.webp",
+          "alt": "Savannah reclining in a lounge chair on Grand Turk",
+          "caption": "Taking it easy on Grand Turk.",
+          "width": 1600,
+          "height": 900
+        },
+        {
+          "src": "assets/photos/2024/cruisejanturksandcaicos-6724db10.webp",
+          "alt": "Savannah and Andy dressed up on a boardwalk overlooking the ocean",
+          "width": 1600,
+          "height": 1280,
+          "caption": "A photo of the two of us on Grand Turk."
+        }
+      ]
+    },
+    {
+      "id": "aruba-2024",
+      "type": "adventure",
+      "title": "Our stop in Aruba",
+      "date": "2024-01-31",
+      "place": "Oranjestad, Aruba",
+      "coordinates": [
+        12.52,
+        -70.04
+      ],
+      "story": "We made it to Aruba near the end of January and stopped for a picture at the I Love Aruba sign.",
+      "photos": [
+        {
+          "src": "assets/photos/2024/jancruisearuba-e3df1a59.webp",
+          "alt": "The I Love Aruba sign with palm trees behind it",
+          "width": 1600,
+          "height": 900,
+          "caption": "Our stop in Aruba."
+        }
+      ]
     },
     {
       "id": "san-diego-2024",
@@ -1960,6 +2196,11 @@
           "width": 1600,
           "height": 900
         }
+      ],
+      "place": "Northwest Twin Cities, Minnesota",
+      "coordinates": [
+        45.07,
+        -93.29
       ]
     },
     {
@@ -1974,6 +2215,11 @@
           "width": 1600,
           "height": 900
         }
+      ],
+      "place": "Minnetonka area, Minnesota",
+      "coordinates": [
+        44.9212,
+        -93.4687
       ]
     },
     {
@@ -2005,10 +2251,15 @@
           "src": "assets/photos/2026/marchnctrip-37d3aaf8.webp",
           "alt": "Personal photo from March trip to North Carolina",
           "width": 1600,
-          "height": 900
+          "height": 900,
+          "caption": "A car photo from the drive to North Carolina, taken in northeastern Iowa."
         }
       ],
-      "place": "North Carolina"
+      "place": "Road to North Carolina · northeastern Iowa",
+      "coordinates": [
+        43.06,
+        -92.32
+      ]
     },
     {
       "id": "seattle-2026",
@@ -2091,6 +2342,11 @@
           "width": 1600,
           "height": 1200
         }
+      ],
+      "place": "Northwest Twin Cities, Minnesota",
+      "coordinates": [
+        45.1,
+        -93.4
       ]
     },
     {
@@ -2184,6 +2440,11 @@
           "width": 1600,
           "height": 900
         }
+      ],
+      "place": "Twin Cities area, Minnesota",
+      "coordinates": [
+        44.955,
+        -93.2
       ]
     },
     {
@@ -2199,26 +2460,50 @@
           "width": 900,
           "height": 1600
         }
+      ],
+      "place": "Brooklyn Park area, Minnesota",
+      "coordinates": [
+        45.0941,
+        -93.3563
       ]
     },
     {
-      "id": "photo-roll-2026",
+      "id": "may-picnic-2026",
       "type": "favorite",
-      "title": "From the 2026 photo roll",
-      "sortDate": "2026-12-31",
-      "dateLabel": "2026 folder",
+      "title": "A May picnic",
+      "date": "2026-05-09",
+      "place": "North Twin Cities metro, Minnesota",
+      "coordinates": [
+        45.3,
+        -93.12
+      ],
       "photos": [
         {
           "src": "assets/photos/2026/aprilmn-3f4aae99.webp",
-          "alt": "Personal photo from the 2026 folder",
+          "alt": "Family and friends gathered outdoors for a picnic",
           "width": 1600,
-          "height": 900
-        },
+          "height": 900,
+          "caption": "A May picnic north of the Twin Cities."
+        }
+      ]
+    },
+    {
+      "id": "st-croix-outing-2026",
+      "type": "favorite",
+      "title": "An outing in the St. Croix Valley",
+      "date": "2026-05-25",
+      "place": "St. Croix Valley · Taylors Falls area",
+      "coordinates": [
+        45.4,
+        -92.65
+      ],
+      "photos": [
         {
           "src": "assets/photos/2026/pxl-20260525-210521561-ts-000-e9a79504.webp",
-          "alt": "Personal photo from the 2026 folder",
+          "alt": "Andy and Savannah smiling together under a covered patio",
           "width": 1600,
-          "height": 1200
+          "height": 1200,
+          "caption": "A May outing in the St. Croix Valley."
         }
       ]
     }
