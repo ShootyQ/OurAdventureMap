@@ -33,15 +33,20 @@ function initStoryMusic(tracks, steps, playlistUrl) {
   const toggle = document.getElementById('enable-music');
   const playlist = document.getElementById('story-playlist');
   const player = document.getElementById('story-player');
+  const panel = document.getElementById('story-player-panel');
+  const trackName = document.getElementById('story-track-name');
+  const stop = document.getElementById('stop-story-music');
   const status = document.getElementById('story-music-status');
   const spotifyLink = document.getElementById('story-spotify-link');
   const host = document.getElementById('spotify-player');
   const cues = new Map(tracks.filter((track) => track.cue).map((track) => [track.cue, track]));
-  const chapterTracks = new Map();
-  let chapterTrack = tracks[0];
-  for (const { place } of steps) {
-    chapterTrack = cues.get(place.id) ?? chapterTrack;
-    chapterTracks.set(place.id, chapterTrack);
+  const chapterCues = new Map();
+  const openingCue = { track: tracks[0], position: -1 };
+  let chapterCue = openingCue;
+  for (const [position, { place }] of steps.entries()) {
+    const track = cues.get(place.id);
+    if (track) chapterCue = { track, position };
+    chapterCues.set(place.id, chapterCue);
   }
 
   function spotifyId(url, type) {
@@ -81,7 +86,8 @@ function initStoryMusic(tracks, steps, playlistUrl) {
   toggle.textContent = hasPlayer ? 'Enable music' : 'Show music links';
 
   let enabled = false;
-  let selected = tracks[0];
+  let visibleCue = openingCue;
+  let selectedCue = openingCue;
   let controller;
   let activeUri;
   let revision = 0;
@@ -94,11 +100,13 @@ function initStoryMusic(tracks, steps, playlistUrl) {
   }
 
   async function playSelection() {
+    const selected = selectedCue.track;
     const directTrack = trackId(selected);
     const type = directTrack ? 'track' : 'playlist';
     const id = directTrack ?? playlistId;
     spotifyLink.href = directTrack || !playlistId ? trackLink(selected) : playlistLink.href;
     if (!id) {
+      trackName.textContent = selected.title;
       revision++;
       disposePlayer();
       status.textContent = selected.title + ' · Open Spotify to play.';
@@ -107,16 +115,13 @@ function initStoryMusic(tracks, steps, playlistUrl) {
 
     const uri = 'spotify:' + type + ':' + id;
     if (uri === activeUri) return;
-    activeUri = uri;
     const version = ++revision;
+    disposePlayer();
+    activeUri = uri;
     const label = directTrack ? selected.title : 'Our Spotify playlist';
     const height = directTrack ? 152 : 352;
-    status.textContent = label + ' · Press Play below if it doesn’t start.';
-    if (controller) {
-      controller.loadUri(uri);
-      controller.play();
-      return;
-    }
+    trackName.textContent = label;
+    status.textContent = 'Press Play below if the music doesn’t start.';
 
     try {
       const api = await loadSpotifyApi();
@@ -135,7 +140,7 @@ function initStoryMusic(tracks, steps, playlistUrl) {
       });
     } catch {
       if (!enabled || version !== revision) return;
-      status.textContent = label + ' · Press Play in the Spotify player or open Spotify.';
+      status.textContent = 'Press Play in the Spotify player or open Spotify.';
       const iframe = document.createElement('iframe');
       iframe.title = label;
       iframe.src = 'https://open.spotify.com/embed/' + type + '/' + id;
@@ -153,18 +158,21 @@ function initStoryMusic(tracks, steps, playlistUrl) {
       : (enabled ? 'Hide music links' : 'Show music links');
     player.hidden = !enabled;
     if (enabled) {
+      panel.open = true;
+      selectedCue = visibleCue;
       void playSelection();
     } else {
       revision++;
       disposePlayer();
     }
   });
+  stop.addEventListener('click', () => toggle.click());
   section.hidden = false;
 
   return (place) => {
-    const next = chapterTracks.get(place?.id) ?? tracks[0];
-    if (next === selected) return;
-    selected = next;
-    if (enabled) void playSelection();
+    visibleCue = chapterCues.get(place?.id) ?? openingCue;
+    if (!enabled || visibleCue.position <= selectedCue.position) return;
+    selectedCue = visibleCue;
+    void playSelection();
   };
 }

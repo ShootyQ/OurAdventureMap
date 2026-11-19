@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="assets/vendor/leaflet.css">
   <link rel="stylesheet" href="assets/site.css">
   <script defer src="assets/vendor/leaflet.js"></script>
-  <script defer src="assets/story-music.js"></script>
+  <script defer src="assets/story-music.js?v=2"></script>
   <script defer src="assets/site.js"></script>
 </head>
 <body class="story-page">
@@ -35,9 +35,15 @@
           <ol id="story-playlist"></ol>
         </details>
         <div id="story-player" hidden>
-          <p id="story-music-status" role="status"></p>
-          <div id="spotify-player"></div>
-          <a id="story-spotify-link" target="_blank" rel="noopener noreferrer">Open in Spotify</a>
+          <details id="story-player-panel" open>
+            <summary id="story-track-name">Story music</summary>
+            <p id="story-music-status" role="status"></p>
+            <div id="spotify-player"></div>
+            <div class="story-player-actions">
+              <a id="story-spotify-link" target="_blank" rel="noopener noreferrer">Open in Spotify</a>
+              <button id="stop-story-music" class="text-button" type="button">Turn off music</button>
+            </div>
+          </details>
         </div>
       </section>
     </section>

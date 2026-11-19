@@ -48,7 +48,8 @@ Set `spotifyPlaylistUrl` in `data/journal.json` to the Spotify playlist Share UR
 Spotify controls the playlist order. To cue a specific recording, add its track
 Share URL as `spotifyUrl` in `soundtrack`. The first entry can override the
 opening playlist, and a track with a `cue` switches playback at that memory
-after music is enabled. The rest of `soundtrack` provides links for manual listening.
+after music is enabled. Cues advance as you scroll forward. The rest of
+`soundtrack` provides links for manual listening.
 
 ## Publish
 
