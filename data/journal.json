@@ -1367,7 +1367,37 @@
         44.8877,
         -94.3697
       ],
-      "story": "The Bowers family got together in Hutchinson, Minnesota. Somehow we made it through a whole family reunion without a group photo. The closest thing we have is a picture of just me. Why me? Your guess is as good as mine."
+      "story": "The Bowers family got together in Hutchinson, Minnesota. Somehow we made it through a whole family reunion without a group photo. What we do have is this shot of two of us out for a walk.",
+      "photos": [
+        {
+          "src": "assets/photos/2015/bowers-family-reunion.webp",
+          "alt": "Andy and another reunion guest walking across a lawn in Hutchinson.",
+          "width": 1125,
+          "height": 901,
+          "caption": "A family reunion, as documented by two guys crossing a lawn."
+        }
+      ]
+    },
+    {
+      "id": "shakopee-first-winter-2015",
+      "type": "favorite",
+      "title": "Our first Minnesota winter",
+      "date": "2015-11",
+      "place": "Shakopee, Minnesota",
+      "coordinates": [
+        44.798,
+        -93.5269
+      ],
+      "story": "By November, we were still in our Shakopee townhouse and getting our first taste of a Minnesota winter. We bundled up and went out for a picture in the snow. Georgia suddenly felt a long way away.",
+      "photos": [
+        {
+          "src": "assets/photos/2015/first-winter-shakopee.webp",
+          "alt": "Andy and Savannah in winter hats hugging beside a snow-covered evergreen in Shakopee.",
+          "width": 798,
+          "height": 1200,
+          "caption": "First Minnesota winter. We were already taking the hats seriously."
+        }
+      ]
     },
     {
       "id": "two-harbors-2016",
@@ -1419,7 +1449,21 @@
       "title": "Savannah’s promotion",
       "sortDate": "2016-09",
       "dateLabel": "Fall 2016",
-      "story": "Savannah was promoted to HR and Communications Director at the Minnesota Conference of Seventh-day Adventists that fall. It was exciting news, and she still works there today!"
+      "place": "Red Wing, Minnesota · first sermon",
+      "coordinates": [
+        44.5625,
+        -92.5338
+      ],
+      "story": "Savannah was promoted to HR and Communications Director at the Minnesota Conference of Seventh-day Adventists that fall. It was exciting news, and she still works there today! Her new role took her to churches around Minnesota. On a visit to Red Wing the following March, she preached for the first time.",
+      "photos": [
+        {
+          "src": "assets/photos/2017/savannah-first-sermon-red-wing.webp",
+          "alt": "Savannah preaching at a wooden pulpit in Red Wing, Minnesota.",
+          "width": 1200,
+          "height": 900,
+          "caption": "Savannah’s first sermon in Red Wing on March 18, 2017."
+        }
+      ]
     },
     {
       "id": "minnetonka-2016",
