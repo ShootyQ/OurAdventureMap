@@ -7,6 +7,22 @@ const prints = byId('road-prints');
 const canvas = byId('route-map');
 const opening = road.querySelector('.road-copy');
 const itinerary = road.querySelector('.road-itinerary');
+const lifeMap = byId('life-map');
+const lifeCanvas = byId('life-map-canvas');
+const lifePhotos = byId('life-map-photos');
+const roadFoot = road.querySelector('.road-foot > span');
+// Offsets keep the prints clear of neighboring pins. The dots mark the journal coordinates.
+const lifeStops = [
+  ['union-college', 'Lincoln, NE', -7.5, 2],
+  ['teaching-in-owosso-2010', 'Owosso, MI', 8, 0],
+  ['wedding', 'Middletown, CA', 1, 8],
+  ['brooklyn-park-home', 'Brooklyn Park, MN', -2, -8],
+  ['waco-2018', 'Waco, TX', -3, 4],
+  ['pisgah-hike-2021', 'Pisgah, NC', 9, 4],
+  ['orlando-2021', 'Orlando, FL', -4, 7],
+  ['grand-turk-2024', 'Grand Turk', 3, -6],
+  ['seattle-2026', 'Seattle, WA', 5, -7],
+];
 const roadLink = road.querySelector('.road-foot a');
 const compact = matchMedia('(max-width: 740px), (max-height: 555px)');
 const reduced = matchMedia('(prefers-reduced-motion: reduce)');
@@ -16,6 +32,7 @@ const stops = [
   { name: 'Owosso', lat: 43.0, lon: -84.18 },
   { name: 'Lincoln', lat: 40.81, lon: -96.68 },
 ];
+const lifePins = [];
 let basemap;
 let geography;
 let cueMusic;
@@ -112,9 +129,28 @@ function buildMap() {
   ctx.scale(density, density);
   ctx.fillStyle = '#cddcd3';
   ctx.fillRect(0, 0, w, h);
+  paintGeography(ctx, (lon, lat) => point(lon, lat, w, h));
+  ctx.fillStyle = '#637966a6';
+  ctx.font = 'italic 16px Georgia';
+  ctx.fillText('Atlantic Ocean', ...point(-75,32));
+  ctx.fillText('Gulf of Mexico', ...point(-89,27));
+  ctx.font = '11px Georgia';
+  for (const [text,lon,lat] of [['M I C H I G A N',-87,44.8],['F L O R I D A',-82,27.3],['V I R G I N I A',-81,37.4],['K E N T U C K Y',-87,37.6],['I O W A',-94,42.2]]) {
+    ctx.fillText(text,...point(lon,lat));
+  }
+  const wash = ctx.createLinearGradient(0, 0, w, 0);
+  wash.addColorStop(.04, '#f6efdd');
+  wash.addColorStop(.29, '#f6efddf5');
+  wash.addColorStop(.46, '#f6efddbc');
+  wash.addColorStop(.77, '#f6efdd15');
+  ctx.fillStyle = wash;
+  ctx.fillRect(0, 0, w, h);
+}
+
+function paintGeography(ctx, project) {
   function trace(coords) {
     coords.forEach(([lon, lat], index) => {
-      const [x,y] = point(lon, lat, w, h);
+      const [x,y] = project(lon, lat);
       if (index === 0) ctx.moveTo(x,y);
       else ctx.lineTo(x,y);
     });
@@ -142,21 +178,58 @@ function buildMap() {
   for (let lon = -165; lon < -40; lon += 5) trace([[lon,10],[lon,70]]);
   for (let lat = 10; lat < 70; lat += 5) trace([[-165,lat],[-40,lat]]);
   ctx.stroke();
-  ctx.fillStyle = '#637966a6';
-  ctx.font = 'italic 16px Georgia';
-  ctx.fillText('Atlantic Ocean', ...point(-75,32));
-  ctx.fillText('Gulf of Mexico', ...point(-89,27));
-  ctx.font = '11px Georgia';
-  for (const [text,lon,lat] of [['M I C H I G A N',-87,44.8],['F L O R I D A',-82,27.3],['V I R G I N I A',-81,37.4],['K E N T U C K Y',-87,37.6],['I O W A',-94,42.2]]) {
-    ctx.fillText(text,...point(lon,lat));
-  }
-  const wash = ctx.createLinearGradient(0, 0, w, 0);
-  wash.addColorStop(.04, '#f6efdd');
-  wash.addColorStop(.29, '#f6efddf5');
-  wash.addColorStop(.46, '#f6efddbc');
-  wash.addColorStop(.77, '#f6efdd15');
-  ctx.fillStyle = wash;
+}
+
+function overviewPoint(lon, lat) {
+  return [(lon + 132) / 68, (54 - lat) / 38];
+}
+
+function buildLifeMap() {
+  if (!geography) return;
+  const w = lifeCanvas.clientWidth;
+  const h = lifeCanvas.clientHeight;
+  if (!w || !h) return;
+  const density = Math.min(devicePixelRatio || 1, 2);
+  lifeCanvas.width = Math.round(w * density);
+  lifeCanvas.height = Math.round(h * density);
+  const ctx = lifeCanvas.getContext('2d');
+  ctx.scale(density, density);
+  ctx.fillStyle = '#cddcd3';
   ctx.fillRect(0, 0, w, h);
+  paintGeography(ctx, (lon, lat) => {
+    const [x, y] = overviewPoint(lon, lat);
+    return [x * w, y * h];
+  });
+  ctx.beginPath();
+  for (const [x, y, photoX, photoY] of lifePins) {
+    ctx.moveTo(x * w, y * h);
+    ctx.lineTo(photoX * w, photoY * h);
+  }
+  ctx.strokeStyle = '#a85136';
+  ctx.lineWidth = 1;
+  ctx.stroke();
+}
+
+function addLifePhotos(entries) {
+  for (const [id, label, offsetX, offsetY] of lifeStops) {
+    const place = entries.find(memory => memory.id === id);
+    const photo = place?.photos?.[0];
+    if (!photo || !place.coordinates) continue;
+    const [lat, lon] = place.coordinates;
+    const [x, y] = overviewPoint(lon, lat);
+    const photoX = x + offsetX / 100;
+    const photoY = y + offsetY / 100;
+    lifePins.push([x, y, photoX, photoY]);
+    const marker = node('div', 'life-map-marker');
+    marker.style.setProperty('--pin-x', x * 100 + '%');
+    marker.style.setProperty('--pin-y', y * 100 + '%');
+    marker.style.setProperty('--photo-x', photoX * 100 + '%');
+    marker.style.setProperty('--photo-y', photoY * 100 + '%');
+    const button = photoButton(photo, label, 'life-print', place.photos);
+    button.setAttribute('aria-label', label + ' · ' + photo.alt);
+    marker.append(button);
+    lifePhotos.append(marker);
+  }
 }
 
 function drawRoute(progress) {
@@ -204,10 +277,18 @@ function renderCover(bar) {
   itinerary.style.opacity = routeOpacity;
   itinerary.style.visibility = routeOpacity > 0 ? 'visible' : 'hidden';
   itinerary.inert = routeOpacity < .5;
-  const destination = progress > .9 ? '#album' : '#road-route';
+  canvas.style.opacity = compact.matches ? 1 : 1 - routeOpacity;
+  lifeMap.style.opacity = routeOpacity;
+  lifeMap.style.visibility = routeOpacity > 0 ? 'visible' : 'hidden';
+  lifeMap.inert = itinerary.inert;
+  prints.style.opacity = compact.matches ? 1 : 1 - routeOpacity;
+  prints.inert = !compact.matches && routeOpacity >= .5;
+  const overviewVisible = routeOpacity >= .5;
+  roadFoot.hidden = overviewVisible;
+  const destination = overviewVisible ? '#year-2007' : '#road-route';
   if (roadLink.hash !== destination) {
     roadLink.hash = destination;
-    roadLink.textContent = progress > .9 ? 'Begin the album ↓' : 'Follow the drive ↓';
+    roadLink.textContent = overviewVisible ? 'Begin in Lincoln ↓' : 'Explore our story ↓';
   }
   const [pinX,pinY] = point(stops[0].lon,stops[0].lat);
   const t = reduced.matches ? cut : progress;
@@ -258,6 +339,7 @@ function schedule() {
 }
 window.addEventListener('scroll',schedule,{passive:true});
 new ResizeObserver(() => { buildMap(); schedule(); }).observe(stage);
+new ResizeObserver(buildLifeMap).observe(lifeMap);
 reduced.addEventListener('change',schedule);
 
 function node(tag, className, text) {
@@ -268,7 +350,7 @@ function node(tag, className, text) {
 }
 
 const geographyReady = Promise.all([readJson('data/world.geojson'), readJson('data/us-state-borders.geojson')])
-  .then(data => { geography = data; buildMap(); schedule(); })
+  .then(data => { geography = data; buildMap(); buildLifeMap(); schedule(); })
   .catch(() => { canvas.hidden = true; });
 
 const mapDialog = byId('place-view');
@@ -418,6 +500,8 @@ async function loadJournal() {
   const journal = await readJson('data/journal.json');
   const entries = journal.places.filter(place => !['dream','secret'].includes(place.type))
     .sort((a,b) => sortDate(a).localeCompare(sortDate(b)));
+  addLifePhotos(entries);
+  buildLifeMap();
   const trip = entries.find(place => place.id === 'orlando-road-trip');
   const covers = trip?.photos || [];
   for (const [i, photo] of covers.slice(0,2).entries()) {

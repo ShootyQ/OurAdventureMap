@@ -24,7 +24,7 @@
 .road-stage {
   height: calc(100svh - var(--bar)); min-height: 480px;
   position: sticky; top: var(--bar); isolation: isolate; overflow: hidden;
-  background: linear-gradient(90deg,#f6efdd,#e4e5d5);
+  background: #f6efdd;
 }
 #route-map { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
 .road-copy,.road-itinerary { position: absolute; left: 7.5%; top: 46%; width: 39%; transform: translateY(-50%); }
@@ -198,4 +198,75 @@
   #place-view h2 { font-size:24px; }
   #place-location { font-size:12px; }
   #album-map { height:clamp(140px,22vh,235px); }
+}
+
+.road-itinerary { max-width: 440px; width: 31%; }
+.road-itinerary h2 { font-size: clamp(42px, 4.8vw, 85px); }
+.road-itinerary > p:not(.dateline) { font-size: clamp(15px, 1.27vw, 21px); }
+.life-map {
+  position: absolute;
+  right: 2.5%;
+  width: min(55.5%, calc((100svh - var(--bar) - 96px) * 1.8));
+  top: 48%;
+  transform: translateY(-50%);
+  aspect-ratio: 1.8;
+  background: #cddcd3;
+  border: 1px solid #9ba690;
+  box-shadow: 0 12px 28px #4c533115;
+  visibility: hidden;
+}
+#life-map-canvas, .life-map-photos { position: absolute; inset: 0; width: 100%; height: 100%; }
+.life-map-marker::before {
+  content: '';
+  position: absolute;
+  left: var(--pin-x);
+  top: var(--pin-y);
+  transform: translate(-50%, -50%);
+  width: 7px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: var(--red);
+  box-shadow: 0 0 0 1px var(--cream);
+}
+.life-map .life-print {
+  position: absolute;
+  left: var(--photo-x);
+  top: var(--photo-y);
+  width: clamp(58px, 6.2vw, 110px);
+  padding: 3px 3px 4px;
+  transform: translate(-50%, -50%) rotate(-3deg);
+}
+.life-map-marker:nth-child(even) .life-print { transform: translate(-50%, -50%) rotate(3deg); }
+.life-map .life-print:is(:hover, :focus-visible) { z-index: 1; transform: translate(-50%, -50%) scale(1.1); }
+.life-map .life-print img { aspect-ratio: 1.5; object-fit: cover; object-position: center 35%; }
+.life-map .life-print span { font: 600 clamp(8px, .76vw, 13px)/1.15 var(--sans); }
+
+@media (min-width: 741px) and (min-height: 556px) {
+  .road-itinerary { left: 5.4%; }
+  .road-foot { justify-content: flex-end; }
+  .road-foot > span { margin-right: auto; }
+}
+
+@media (max-width: 740px), (max-height: 555px) {
+  .road-itinerary { width: 100%; }
+  .life-map {
+    position: relative;
+    inset: auto;
+    width: 100%;
+    transform: none;
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+    aspect-ratio: auto;
+    margin-top: 26px;
+  }
+  #life-map-canvas, .life-map-marker::before { display: none; }
+  .life-map-photos { position: static; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+  .life-map .life-print, .life-map-marker:nth-child(even) .life-print, .life-map .life-print:is(:hover, :focus-visible) {
+    position: static;
+    width: 100%;
+    transform: none;
+    height: 100%;
+  }
+  .life-map .life-print span { font-size: 10px; }
 }
