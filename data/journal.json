@@ -247,7 +247,23 @@
         42.9978,
         -84.1766
       ],
-      "story": "After graduation, I took a teaching job in Owosso, Michigan, where I taught the upper grades."
+      "story": "After graduation, I took a teaching job in Owosso, Michigan, where I taught the upper grades.",
+      "photos": [
+        {
+          "src": "assets/photos/2010/owosso-apartment.webp",
+          "alt": "A low brick apartment building beside a lawn and an evergreen.",
+          "caption": "My apartment in Owosso.",
+          "width": 720,
+          "height": 540
+        },
+        {
+          "src": "assets/photos/2010/owosso-blue-car.webp",
+          "alt": "A blue car with gold wheels parked on the grass.",
+          "caption": "My car in Michigan.",
+          "width": 206,
+          "height": 206
+        }
+      ]
     },
     {
       "id": "off-campus-lincoln-2010",
@@ -260,7 +276,23 @@
         40.8136,
         -96.7026
       ],
-      "story": "Savannah stayed in Lincoln and lived off campus with her friends Brenda and April as she finished out her time there."
+      "story": "Savannah stayed in Lincoln and lived off campus with her friends Brenda and April as she finished out her time there.",
+      "photos": [
+        {
+          "src": "assets/photos/2010/lincoln-friends-on-the-grass.webp",
+          "alt": "Three friends lying in the grass in front of pine trees.",
+          "caption": "Savannah and friends in Lincoln.",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "src": "assets/photos/2010/lincoln-night-in.webp",
+          "alt": "Friends hanging out indoors with video game instruments.",
+          "caption": "A night in with friends.",
+          "width": 816,
+          "height": 488
+        }
+      ]
     },
     {
       "id": "owosso-visit",
