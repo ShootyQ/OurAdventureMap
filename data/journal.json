@@ -90,7 +90,7 @@
     ],
     "2018": [
       "Getting ready for Violet meant getting the house ready, moving my office, and making a big decision about work. Then June 1 came, and suddenly we were parents.",
-      "By fall we were in full baby mode at home. Our routines looked different with Violet in the house, and we were getting used to life as a family of three."
+      "By fall we were in full baby mode at home, figuring out life as a family of three. Violet and I made a few trips to see Grandma and Grandpa. Before long we were taking her to Waco with Savannah’s family and learning what a long road trip with a baby was like on the way to Thanksgiving in Kansas."
     ],
     "2019": [
       "Life was mostly quiet at home. We made it south to see family and celebrate Violet’s first birthday, and north far enough to take her across the Canadian border.",
@@ -1632,18 +1632,41 @@
       "type": "adventure",
       "title": "Waco",
       "date": "2018-09",
+      "story": "Violet and I had made a few trips to see Grandma and Grandpa that fall, but Waco was our first real trip as a family of three. We went with Savannah’s family, checked out the Magnolia Market silos, and saw some of Waco. The B&B was questionable. The food, as usual, was worth talking about.",
       "photos": [
         {
           "src": "assets/photos/2018/sept2018wacotx-a1a3a970.webp",
-          "alt": "Personal photo from Waco",
+          "alt": "Andy, Savannah, baby Violet, and Savannah’s parents beneath the Miles to Magnolia sign in Waco.",
           "width": 960,
-          "height": 720
+          "height": 720,
+          "caption": "Violet’s first trip to Magnolia, with Grandma and Grandpa."
         }
       ],
       "place": "Waco, Texas",
       "coordinates": [
         31.5493,
         -97.1467
+      ]
+    },
+    {
+      "id": "shawnee-thanksgiving-2018",
+      "type": "adventure",
+      "title": "Thanksgiving in Shawnee",
+      "date": "2018-11",
+      "place": "Shawnee, Kansas",
+      "coordinates": [
+        39.0228,
+        -94.7152
+      ],
+      "story": "For Thanksgiving we drove to Shawnee, Kansas, to see my Uncle Kent, Aunt Debbie, my cousin Stephanie, and Tanner, who’s now Stephanie’s husband. It was our first big road trip with Violet. Getting to spend the holiday together and bring her along for it made the drive worth it.",
+      "photos": [
+        {
+          "src": "assets/photos/2018/shawnee-thanksgiving.webp",
+          "alt": "The family posing together with baby Violet while a dog sits in front of them.",
+          "width": 833,
+          "height": 960,
+          "caption": "Thanksgiving in Shawnee. Even the dog made the family photo."
+        }
       ]
     },
     {
