@@ -1271,12 +1271,14 @@
     {
       "id": "goat-rock-2014",
       "type": "adventure",
-      "title": "Summer at Goat Rock Beach",
+      "title": "A summer road trip through Northern California",
       "date": "2014",
+      "story": "Our first stop with Savannah’s family was for a flat tire. We spent the start of our California road trip waiting for someone to fix it. Once we got rolling, we made it to Crescent City, stopped all along the coast, and camped among the redwoods. One night in the forest we got so cold that Savannah and I held on to each other for dear life. Savannah usually likes her space when she sleeps. Turns out there’s a temperature at which I’m welcome back.",
       "photos": [
         {
           "src": "assets/photos/2014/tripstocali2014goatroackbeachsummer-3223ecf2.webp",
-          "alt": "Personal photo from Summer at Goat Rock Beach",
+          "alt": "Savannah and me with our arms around each other on a bluff above the rocky Pacific coast.",
+          "caption": "A stop at Goat Rock Beach. This cuddle was voluntary.",
           "width": 960,
           "height": 540
         }
