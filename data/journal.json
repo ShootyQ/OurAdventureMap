@@ -159,6 +159,28 @@
       "story": "From 2008 to 2009, I roomed with the guy Savannah was dating. I got to see her a lot that year!"
     },
     {
+      "id": "lincoln-puddle-jumping",
+      "type": "favorite",
+      "title": "Coffee and a downpour",
+      "date": "2008",
+      "dateLabel": "2008–2009",
+      "place": "Lincoln, Nebraska",
+      "coordinates": [
+        40.8136,
+        -96.7026
+      ],
+      "story": "Savannah and I got coffee at The Mill. It was pouring on the walk back, so we started jumping in the puddles. This was way before we started dating. I have no idea who took this picture, but I’m glad somebody did. It’s still one of my favorite memories of us.",
+      "photos": [
+        {
+          "src": "assets/photos/2008/jumping-in-puddles.webp",
+          "alt": "Andy and Savannah mid-jump in a rain puddle, with parked cars behind them.",
+          "caption": "The walk back from The Mill. We were already soaked.",
+          "width": 451,
+          "height": 600
+        }
+      ]
+    },
+    {
       "id": "trying-to-look-cool",
       "type": "favorite",
       "title": "Us, trying to look cool",

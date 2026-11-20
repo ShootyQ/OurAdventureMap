@@ -302,11 +302,7 @@
 /* College years: use the width of the page for a story or a contact sheet. */
 @media(min-width:741px) {
   #year-2008 .album-spread { padding-block:24px; }
-  #lincoln-roommates { display:block; }
-  #lincoln-roommates .memory-copy { display:grid; grid-template-columns:1fr 1fr; gap:6px 7%; align-items:center; }
-  #lincoln-roommates .dateline,#lincoln-roommates h3,#lincoln-roommates .album-location { grid-column:1; }
-  #lincoln-roommates .album-location { justify-self:start; }
-  #lincoln-roommates .memory-story { grid-area:1/2/span 3; margin:0; }
+  #lincoln-roommates { align-self:center; }
   #trying-to-look-cool { display:block; }
   #trying-to-look-cool .album-photos { grid-template-columns:repeat(3,minmax(0,1fr)); margin:26px 0 0; }
   #owosso-visit { align-content:center; }
