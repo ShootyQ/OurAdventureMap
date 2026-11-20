@@ -221,6 +221,7 @@ function addLifePhotos(entries) {
     const photoY = y + offsetY / 100;
     lifePins.push([x, y, photoX, photoY]);
     const marker = node('div', 'life-map-marker');
+    marker.dataset.memory = id;
     marker.style.setProperty('--pin-x', x * 100 + '%');
     marker.style.setProperty('--pin-y', y * 100 + '%');
     marker.style.setProperty('--photo-x', photoX * 100 + '%');
@@ -427,7 +428,8 @@ function memoryCard(place) {
     const link = node('a', 'text-link', 'Revisit the drive ↑');
     link.href = '#road';
     copy.append(link);
-  } else if (photos.length) {
+  }
+  if (photos.length) {
     const gallery = node('div', 'album-photos');
     if (photos.length === 1) gallery.classList.add('single-print');
     for (const photo of photos) gallery.append(photoButton(photo, photo.caption, '', photos));

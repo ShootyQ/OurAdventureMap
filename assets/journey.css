@@ -240,6 +240,7 @@
 .life-map-marker:nth-child(even) .life-print { transform: translate(-50%, -50%) rotate(3deg); }
 .life-map .life-print:is(:hover, :focus-visible) { z-index: 1; transform: translate(-50%, -50%) scale(1.1); }
 .life-map .life-print img { aspect-ratio: 1.5; object-fit: cover; object-position: center 35%; }
+.life-map-marker[data-memory="wedding"] .life-print img { object-position: center top; }
 .life-map .life-print span { font: 600 clamp(8px, .76vw, 13px)/1.15 var(--sans); }
 
 @media (min-width: 741px) and (min-height: 556px) {
