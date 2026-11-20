@@ -301,26 +301,58 @@ function renderCover(bar) {
 }
 
 const prelude = byId('wedding-prelude');
-const invitationStage = prelude.querySelector('.invitation-stage');
+// Start each reveal when the print itself comes into view, including after an anchor jump.
+function prepareReveal(scene, print, replayLabel) {
+  const button = scene.querySelector('.replay-reveal');
+  function play() {
+    scene.classList.remove('unveiled');
+    void print.offsetWidth; // Restart from the folded state on replay.
+    scene.classList.add('unveiled');
+    button.textContent = replayLabel;
+  }
+  button.addEventListener('click', play);
+  if (!('IntersectionObserver' in window)) {
+    play();
+    return;
+  }
+  const observer = new IntersectionObserver(entries => {
+    if (entries.some(entry => entry.isIntersecting)) {
+      play();
+      observer.disconnect();
+    }
+  }, {threshold: 0.32});
+  observer.observe(print);
+}
 
-function turnInvitation(bar) {
-  if (reduced.matches) return;
-  const bounds = prelude.getBoundingClientRect();
-  if (bounds.bottom < 0 || bounds.top > innerHeight) return;
-  const travel = bounds.height - invitationStage.offsetHeight;
-  const progress = clamp((bar - bounds.top) / Math.max(1, travel));
-  const turn = clamp((progress - .08) / .8);
-  // Ease the leaves apart and let the photograph settle before the next spread.
-  const eased = turn * turn * (3 - 2 * turn);
-  invitationStage.style.setProperty('--turn', eased);
-  invitationStage.style.setProperty('--seal', 1 - clamp(progress / .24));
+function birthAnnouncement(place) {
+  const twins = place.id === 'twins-born';
+  const scene = node('article', 'birth-announcement ' + (twins ? 'twins' : 'violet'));
+  scene.id = place.id;
+  const copy = node('div', 'arrival-copy');
+  copy.append(node('p', 'dateline', displayDate(place)),
+    node('h3', '', twins ? 'Max & Ellie' : 'Violet'),
+    node('p', 'arrival-line', twins ? 'And then there were five.' : 'The day we became parents.'),
+    locationLabel(place), node('p', 'memory-story', place.story));
+  const button = node('button', 'replay-reveal', 'Open birth announcement');
+  button.type = 'button';
+  copy.append(button);
+  const prints = node('div', 'arrival-prints');
+  for (const photo of place.photos) prints.append(photoButton(photo, photo.caption, '', place.photos));
+  for (const initial of (twins ? ['M', 'E'] : ['V'])) {
+    const sleeve = node('div', 'arrival-sleeve');
+    sleeve.setAttribute('aria-hidden', 'true');
+    sleeve.append(node('span', '', initial));
+    prints.append(sleeve);
+  }
+  scene.append(copy, prints);
+  prepareReveal(scene, prints, 'Replay birth announcement');
+  return scene;
 }
 
 function render() {
   pending = false;
   const bar = document.querySelector('.folio-bar').offsetHeight;
   if (road.getBoundingClientRect().bottom > 0) renderCover(bar);
-  turnInvitation(bar);
   const trigger = bar + Math.min(innerHeight * .19, 140);
   // In a two-column spread, follow the left memory first and the right halfway down.
   let low = 0, high = readingStops.length;
@@ -341,7 +373,7 @@ function render() {
   picker.value = stop.chapter;
   mapToggle.hidden = ['someday', 'letter'].includes(stop.chapter);
   for (const link of document.querySelectorAll('.folio-bar nav a')) {
-    if (link.hash === '#' + stop.row.id) link.setAttribute('aria-current', 'location');
+    if (link.hash === '#' + stop.row.id || (link.hash === '#wedding-prelude' && stop.place?.id === 'wedding')) link.setAttribute('aria-current', 'location');
     else link.removeAttribute('aria-current');
   }
   if (stop.place) cueMusic?.(stop.place);
@@ -546,7 +578,11 @@ async function loadJournal() {
     if (place.id === 'started-dating' || place.id === 'wedding') {
       const firstDate = place.id === 'started-dating';
       row = firstDate ? dateScene : weddingScene;
-      if (!firstDate) chapter.append(prelude);
+      if (!firstDate) {
+        chapter.append(prelude);
+        prepareReveal(prelude, prelude.querySelector('.invitation'), 'Replay invitation');
+        readingStops.push({chapter:chapter.id, row:prelude, place});
+      }
       chapter.append(row);
       row.querySelector('.dateline span').replaceWith(locationLabel(place));
       if (firstDate) {
@@ -562,14 +598,23 @@ async function loadJournal() {
         byId(host).append(photoButton(photo, photo.caption, '', photos));
       });
       spread = null;
+    } else if (place.id === 'violet-born' || place.id === 'twins-born') {
+      row = birthAnnouncement(place);
+      chapter.append(row);
+      spread = null;
     } else {
-      if (!spread || place.featured) {
+      const photoSpread = year >= '2015' && photos.length >= 3;
+      if (!spread || place.featured || photoSpread) {
         spread = node('div', 'album-spread album-inner');
         chapter.append(spread);
       }
       row = memoryCard(place);
+      if (photoSpread) {
+        row.classList.add('contact-sheet');
+        row.style.setProperty('--columns', photos.length);
+      }
       spread.append(row);
-      if (place.featured) spread = null;
+      if (place.featured || photoSpread) spread = null;
     }
     readingStops.push({chapter:chapter.id, row, place});
   }

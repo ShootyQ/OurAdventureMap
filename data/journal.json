@@ -710,7 +710,8 @@
           "src": "assets/photos/2015/2015townhouseshakopeemnjuly-5eea7c38.webp",
           "alt": "Our Shakopee townhouse",
           "width": 639,
-          "height": 960
+          "height": 960,
+          "caption": "The door to our first place in Minnesota."
         }
       ],
       "featured": true
@@ -769,7 +770,8 @@
           "src": "assets/photos/2018/june1violetborn-67ef34f0.webp",
           "alt": "Andy and Savannah with newborn Violet on June 1, 2018",
           "width": 1200,
-          "height": 1600
+          "height": 1600,
+          "caption": "The three of us, just a few hours into being a family."
         }
       ],
       "featured": true,
@@ -789,7 +791,8 @@
           "src": "assets/photos/2021/christmastwinsontheway-92388a39.webp",
           "alt": "Our Christmas announcement that the twins were on the way",
           "width": 1600,
-          "height": 900
+          "height": 900,
+          "caption": "Violet had news to share that Christmas. Two babies on the way!"
         }
       ],
       "date": "2021-12",
@@ -1255,9 +1258,10 @@
       "photos": [
         {
           "src": "assets/photos/2014/march2014portcharlottefltrip-a59fbf0f.webp",
-          "alt": "Personal photo from Port Charlotte",
+          "alt": "Savannah and Andy smiling together in the Florida sunshine.",
           "width": 384,
-          "height": 512
+          "height": 512,
+          "caption": "A little Florida sunshine on our long summer break."
         }
       ],
       "place": "Port Charlotte, Florida",
@@ -1409,7 +1413,8 @@
           "src": "assets/photos/2016/twoharborsmn2016summer-c1ca3432.webp",
           "alt": "Andy and Savannah outside Betty’s Pies in Two Harbors",
           "width": 960,
-          "height": 720
+          "height": 720,
+          "caption": "A kiss outside Betty’s Pies on the North Shore."
         }
       ],
       "place": "Two Harbors, Minnesota",
@@ -1473,16 +1478,18 @@
       "photos": [
         {
           "src": "assets/photos/2016/dec2016iceskateminnetonkamn-561ab5fa.webp",
-          "alt": "Personal photo from Ice skating in Minnetonka",
+          "alt": "Savannah and Andy wearing winter hats beside the ice.",
           "width": 1200,
-          "height": 1600
+          "height": 1600,
+          "caption": "Hats on for a December skate in Minnetonka."
         }
       ],
       "place": "Minnetonka, Minnesota",
       "coordinates": [
         44.9212,
         -93.4687
-      ]
+      ],
+      "story": "That December we bundled up and went skating in Minnetonka. Looking at our hats in this picture, I’d say we were getting the hang of dressing for Minnesota."
     },
     {
       "id": "florida-wedding-2017",
@@ -1492,16 +1499,18 @@
       "photos": [
         {
           "src": "assets/photos/2017/floridaweddingfeb2017-82ded916.webp",
-          "alt": "Personal photo from A wedding trip to Florida",
+          "alt": "Andy and Savannah standing together under strings of lights at a Florida wedding.",
           "width": 720,
-          "height": 960
+          "height": 960,
+          "caption": "A quiet moment for the two of us under the wedding lights."
         }
       ],
       "place": "Florida (region)",
       "coordinates": [
         27.85,
         -81.59
-      ]
+      ],
+      "story": "A wedding took us down to Florida in February. I like this picture of us all dressed up, with the lights in the trees behind Savannah."
     },
     {
       "id": "together-april-2017",
@@ -1512,7 +1521,8 @@
           "src": "assets/photos/2012/20170428-161118-3b3ac425.webp",
           "alt": "Andy and Savannah sitting together for a selfie",
           "width": 1200,
-          "height": 1600
+          "height": 1600,
+          "caption": "Cheek to cheek on an April afternoon."
         }
       ],
       "date": "2017-04-28"
@@ -1554,9 +1564,10 @@
       "photos": [
         {
           "src": "assets/photos/2017/aug2017renfestmn-3f2b5b74.webp",
-          "alt": "Personal photo from Minnesota Renaissance Festival",
+          "alt": "Andy and Savannah posing with costumed festivalgoers.",
           "width": 1080,
-          "height": 1080
+          "height": 1080,
+          "caption": "In good company at the Renaissance Festival."
         }
       ],
       "place": "Shakopee, Minnesota",
@@ -1575,7 +1586,8 @@
           "src": "assets/photos/2018/violetsonographimagejan2018-bf187bef.webp",
           "alt": "Violet’s January ultrasound showing her profile",
           "width": 960,
-          "height": 752
+          "height": 752,
+          "caption": "Violet’s little profile, months before we got to kiss that nose."
         },
         {
           "src": "assets/photos/2018/violets-crib.webp",
@@ -1616,16 +1628,18 @@
       "photos": [
         {
           "src": "assets/photos/2018/febbabymoontampa-07a2145e.webp",
-          "alt": "Personal photo from Our Tampa babymoon",
+          "alt": "Andy and Savannah taking a sunny outdoor selfie in Tampa.",
           "width": 1600,
-          "height": 1200
+          "height": 1200,
+          "caption": "A Tampa afternoon with our littlest travel companion still on board."
         }
       ],
       "place": "Tampa, Florida",
       "coordinates": [
         27.9506,
         -82.4572
-      ]
+      ],
+      "story": "Back home, my office was turning into a nursery. Down in Tampa we still looked like a couple on vacation, but by then every picture of the two of us had Violet in it, too."
     },
     {
       "id": "waco-2018",
@@ -1677,16 +1691,18 @@
       "photos": [
         {
           "src": "assets/photos/2019/paintdate-2524acbf.webp",
-          "alt": "Personal photo from A painting date",
+          "alt": "Andy and Savannah each holding a painted canvas with a blue sky.",
           "width": 1200,
-          "height": 1600
+          "height": 1600,
+          "caption": "Two canvases, two takes on the same sky."
         }
       ],
       "place": "Minneapolis area, Minnesota",
       "coordinates": [
         44.9778,
         -93.265
-      ]
+      ],
+      "story": "In a year spent mostly at home with Violet, we made time for a painting date. We started with the same scene and came away with two different skies to hang up."
     },
     {
       "id": "violet-first-birthday-2019",
@@ -1748,13 +1764,15 @@
           "src": "assets/photos/2013/jan2012-3ofus-ef876cee.webp",
           "alt": "Andy and Savannah with Violet at Christmas 2019",
           "width": 1500,
-          "height": 1499
+          "height": 1499,
+          "caption": "Violet and her red Christmas bow."
         },
         {
           "src": "assets/photos/2019/christmast2019-43021bcc.webp",
           "alt": "Andy, Savannah, and Violet sitting together in front of a brick wall at Christmas",
           "width": 1600,
-          "height": 1280
+          "height": 1280,
+          "caption": "All three of us, with Violet right in the middle."
         }
       ],
       "place": "Hendersonville, North Carolina",
@@ -1790,7 +1808,8 @@
       "coordinates": [
         44.955,
         -93.2
-      ]
+      ],
+      "story": "That spring we spent a lot of our time close to home. An afternoon on the swings with Violet counted as a pretty good outing."
     },
     {
       "id": "north-dakota-wedding-2020",
@@ -2559,16 +2578,18 @@
       "photos": [
         {
           "src": "assets/photos/2024/aprilsandiego-f07ac3db.webp",
-          "alt": "Personal photo from April in San Diego",
+          "alt": "Andy and Savannah standing together in front of greenery in San Diego.",
           "width": 1600,
-          "height": 900
+          "height": 900,
+          "caption": "Together in the sunshine in San Diego."
         }
       ],
       "place": "San Diego, California",
       "coordinates": [
         32.7157,
         -117.1611
-      ]
+      ],
+      "story": "A few months after the cruise, Savannah and I got some April sunshine in San Diego. I like this picture of us tucked in close with green leaves filling the frame behind us."
     },
     {
       "id": "anoka-date-2025",
@@ -2578,9 +2599,10 @@
       "photos": [
         {
           "src": "assets/photos/2025/datenightanokamnmarch-29705214.webp",
-          "alt": "Personal photo from Date night in Anoka",
+          "alt": "Andy and Savannah dressed up and seated together in Anoka.",
           "width": 900,
-          "height": 1600
+          "height": 1600,
+          "caption": "All dressed up for a night out in Anoka."
         }
       ],
       "place": "Anoka, Minnesota",
@@ -2597,16 +2619,18 @@
       "photos": [
         {
           "src": "assets/photos/2025/andy40march-9723e2ee.webp",
-          "alt": "Personal photo from Andy’s 40th",
+          "alt": "Andy and a group of friends posing behind large birthday signs.",
           "width": 1600,
-          "height": 900
+          "height": 900,
+          "caption": "Forty, in numbers big enough to read from the parking lot."
         }
       ],
       "place": "Northwest Twin Cities, Minnesota",
       "coordinates": [
         45.07,
         -93.29
-      ]
+      ],
+      "story": "I turned forty in March. In case anybody missed the occasion, there was an enormous 40 beside us when we lined up for the picture."
     },
     {
       "id": "violet-graduation-2025",
@@ -2616,16 +2640,18 @@
       "photos": [
         {
           "src": "assets/photos/2025/violetgraduatekmay-b9ddf213.webp",
-          "alt": "Personal photo from Violet’s kindergarten graduation",
+          "alt": "Violet wearing a blue graduation cap with her family standing around her.",
           "width": 1600,
-          "height": 900
+          "height": 900,
+          "caption": "Our kindergarten graduate, with quite a cheering section."
         }
       ],
       "place": "Minnetonka area, Minnesota",
       "coordinates": [
         44.9212,
         -93.4687
-      ]
+      ],
+      "story": "It feels like we were just getting Violet ready for her first day of Pre-K at MCA. Now here she was at kindergarten graduation, in a blue cap, with two generations of family lined up behind her."
     },
     {
       "id": "cedar-key-2025",
@@ -2635,16 +2661,18 @@
       "photos": [
         {
           "src": "assets/photos/2025/cedarkeyfljuly-0caa7f50.webp",
-          "alt": "Personal photo from July in Cedar Key",
+          "alt": "Savannah and Andy taking a selfie with palm trees behind them.",
           "width": 1600,
-          "height": 900
+          "height": 900,
+          "caption": "Palm trees and a July afternoon in Cedar Key."
         }
       ],
       "place": "Cedar Key, Florida",
       "coordinates": [
         29.1386,
         -83.0351
-      ]
+      ],
+      "story": "July took us down to Cedar Key. Between the palm trees behind Savannah and the grin on my face, this one pretty much sums up how I feel about a summer day in Florida with her."
     },
     {
       "id": "nc-trip-2026",
@@ -2674,22 +2702,25 @@
       "photos": [
         {
           "src": "assets/photos/2026/aprilseattle-2-07776dc2.webp",
-          "alt": "Personal photo from April in Seattle",
+          "alt": "Andy and Savannah seated beside a window overlooking the water.",
           "width": 1600,
-          "height": 900
+          "height": 900,
+          "caption": "Seattle from our seats by the window."
         },
         {
           "src": "assets/photos/2026/aprilseattle-a6eda9f0.webp",
-          "alt": "Personal photo from April in Seattle",
+          "alt": "Andy and Savannah wearing sunglasses by the Seattle waterfront.",
           "width": 1600,
-          "height": 900
+          "height": 900,
+          "caption": "Out by the water, with the shoreline behind us."
         }
       ],
       "place": "Seattle, Washington",
       "coordinates": [
         47.6062,
         -122.3321
-      ]
+      ],
+      "story": "We spent part of April in Seattle. Between the view through the big windows and the picture we took out in the sunshine, the water found its way into both of our souvenirs."
     },
     {
       "id": "minneapolis-date-2026",
@@ -2699,9 +2730,10 @@
       "photos": [
         {
           "src": "assets/photos/2026/augdatenightminneapolis-91d9d5b0.webp",
-          "alt": "Personal photo from Date night in Minneapolis",
+          "alt": "Andy and Savannah smiling together with city buildings behind them.",
           "width": 1200,
-          "height": 1600
+          "height": 1600,
+          "caption": "Just the two of us downtown in Minneapolis."
         }
       ],
       "place": "Minneapolis, Minnesota",
@@ -2718,22 +2750,25 @@
       "photos": [
         {
           "src": "assets/photos/2026/augtwinsgame-5360447f.webp",
-          "alt": "Personal photo from A Twins game in August",
+          "alt": "The family together in the ballpark seats.",
           "width": 1600,
-          "height": 1200
+          "height": 1200,
+          "caption": "Our crew in the stands before the game."
         },
         {
           "src": "assets/photos/2026/augtwinsgame-2-f14f3767.webp",
-          "alt": "Personal photo from A Twins game in August",
+          "alt": "The family leaning in for a selfie under the stadium lights.",
           "width": 1600,
-          "height": 1200
+          "height": 1200,
+          "caption": "Stadium lights on, kids still smiling."
         }
       ],
       "place": "Minneapolis, Minnesota",
       "coordinates": [
         44.9778,
         -93.265
-      ]
+      ],
+      "story": "We brought all three kids out to see the Twins. In the first picture you can see the rows of seats behind us. In the next, the stadium lights are on and we’ve somehow got everybody looking at the camera again."
     },
     {
       "id": "corn-maze-2026",
@@ -2743,16 +2778,18 @@
       "photos": [
         {
           "src": "assets/photos/2026/octobercornmaze-12271c09.webp",
-          "alt": "Personal photo from October at the corn maze",
+          "alt": "Andy, Savannah, and their three children crowding into a photo beneath a clear sky.",
           "width": 1600,
-          "height": 1200
+          "height": 1200,
+          "caption": "Blue skies and all five of us at the corn maze."
         }
       ],
       "place": "Northwest Twin Cities, Minnesota",
       "coordinates": [
         45.1,
         -93.4
-      ]
+      ],
+      "story": "By October it was corn maze weather. We squeezed all five of us into one sunny picture, with children peeking into the frame from just about every direction."
     },
     {
       "id": "photo-roll-2011",
@@ -2779,9 +2816,10 @@
       "photos": [
         {
           "src": "assets/photos/2014/lucyisawesome-0bf1a5fb.webp",
-          "alt": "Personal photo from the 2014 folder",
+          "alt": "Lucy resting her chin on the back of a car seat.",
           "width": 720,
-          "height": 960
+          "height": 960,
+          "caption": "Lucy found a perfectly good headrest."
         }
       ]
     },
@@ -2792,9 +2830,10 @@
       "photos": [
         {
           "src": "assets/photos/2015/cabintrips2013-2015gatlinburgtn-2e09b659.webp",
-          "alt": "Personal photo from Cabin trips in Gatlinburg",
+          "alt": "Family members sitting in chairs along a cabin porch.",
           "width": 1600,
-          "height": 1063
+          "height": 1063,
+          "caption": "A full porch at the cabin in Gatlinburg."
         }
       ],
       "place": "Gatlinburg, Tennessee",
@@ -2837,21 +2876,24 @@
       "photos": [
         {
           "src": "assets/photos/2021/bucswin-e7503d62.webp",
-          "alt": "Personal photo from the 2021 folder",
+          "alt": "Andy, Savannah, and Violet smiling in Bucs colors.",
           "width": 1600,
-          "height": 900
+          "height": 900,
+          "caption": "Three happy faces after a Bucs win."
         },
         {
           "src": "assets/photos/2021/justathome-58bcd780.webp",
-          "alt": "Personal photo from the 2021 folder",
+          "alt": "Andy and Savannah leaning their heads together at home.",
           "width": 1600,
-          "height": 900
+          "height": 900,
+          "caption": "A little time at home together."
         },
         {
           "src": "assets/photos/2021/sept-60916727.webp",
-          "alt": "Personal photo from the 2021 folder",
+          "alt": "Savannah and Andy posing in dress clothes outdoors.",
           "width": 1600,
-          "height": 900
+          "height": 900,
+          "caption": "Dressed up and standing still long enough for a photo."
         }
       ],
       "place": "Twin Cities area, Minnesota",
@@ -2869,9 +2911,10 @@
       "photos": [
         {
           "src": "assets/photos/2025/december-b43d8ee0.webp",
-          "alt": "Personal photo from the 2025 folder",
+          "alt": "The family gathered by a wreath in red and white holiday outfits.",
           "width": 900,
-          "height": 1600
+          "height": 1600,
+          "caption": "Five of us in Christmas colors."
         }
       ],
       "place": "Brooklyn Park area, Minnesota",

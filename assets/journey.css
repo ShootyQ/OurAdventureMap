@@ -215,7 +215,7 @@
   .album-memory:last-child:nth-child(odd), .milestone-spread { display:block; }
   .album-memory:last-child:nth-child(odd) .album-photos, .milestone-spread .album-photos { margin-top:22px; }
   .album-index select { max-width:76px; }
-  .folio-bar nav a[href="#wedding"] { display:none; }
+  .folio-bar nav a[href="#wedding-prelude"] { display:none; }
   #dreams { grid-template-columns:1fr; }
 }
 #follow-map { font:inherit; background:none; padding:5px 0; border:0; border-bottom:1px solid transparent; }
@@ -316,9 +316,9 @@
   #alleia-proposal .album-photos { margin:0; }
 }
 
-#wedding-prelude { height:168svh; scroll-margin-top:var(--bar); background:#302328; }
+#wedding-prelude { scroll-margin-top:var(--bar); background:#302328; }
 .invitation-stage {
-  --turn:0; --seal:1; position:sticky; top:var(--bar); height:calc(100svh - var(--bar));
+  --turn:0; --seal:1; position:relative; min-height:min(710px,calc(100svh - var(--bar))); padding:36px 0;
   display:grid; place-content:center; justify-items:center; gap:clamp(14px,3vh,34px);
   overflow:hidden; background:radial-gradient(ellipse at 50% 40%,#69484b,#38262d 65%,#302328);
 }
@@ -354,9 +354,92 @@
 }
 @media(prefers-reduced-motion:reduce) {
   #wedding-prelude { height:auto; }
-  .invitation-stage { position:relative; top:0; height:auto; padding:clamp(32px,5vw,70px) 0; }
+  .invitation-stage { position:relative; top:0; min-height:0; padding:clamp(32px,5vw,70px) 0; }
   .invitation-reveal img { transform:none; }
   .invitation-left,.invitation-seal { display:none; }
   .invitation-right { transform:none; left:0; width:41%; }
   .invitation-reveal { left:41%; }
+}
+
+.invitation-actions { display:flex; align-items:center; flex-wrap:wrap; justify-content:center; gap:24px; }
+.replay-reveal {
+  border:1px solid currentColor; border-radius:2em; padding:9px 17px;
+  font:600 13px/1.35 var(--sans); background:transparent; color:inherit; cursor:pointer;
+}
+.invitation-actions .replay-reveal { color:#fff2dd; }
+.wedding-heading .text-link { margin-top:20px; }
+.unveiled .invitation-left { animation:unfold-left 2.8s both; }
+.unveiled .invitation-right { animation:unfold-right 2.8s both; }
+.unveiled .invitation-seal { animation:break-seal 1.4s both; }
+@keyframes unfold-left { 0%,28% { transform:rotateY(0); } 100% { transform:rotateY(-118deg); } }
+@keyframes unfold-right { 0%,34% { transform:rotateY(0); } 100% { transform:rotateY(118deg); } }
+@keyframes break-seal { 0%,48% { opacity:1; } 100% { opacity:0; transform:translate(-50%,-65%) rotate(-20deg) scale(.85); } }
+
+.birth-announcement {
+  --ink:#523f55; --stock:#f6e9ee; --rim:#a3828d; --pale:#fff8ef;
+  position:relative; isolation:isolate; overflow:hidden; scroll-margin-top:var(--bar);
+  display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1.06fr); align-items:center;
+  column-gap:6%; padding:clamp(52px,6vw,100px) max(7.5%,calc((100% - 1160px)/2));
+  color:var(--ink); background:radial-gradient(ellipse at 82% 15%,var(--pale),transparent 65%),var(--stock);
+}
+.birth-announcement.twins { --ink:#254b49; --stock:#dfeae4; --rim:#779a8b; --pale:#fbf6dc; }
+.birth-announcement::before {
+  content:''; position:absolute; inset:clamp(10px,1.4vw,24px); border:3px double var(--rim); opacity:.65; pointer-events:none;
+}
+.arrival-copy .dateline { color:var(--ink); }
+.arrival-copy .dateline::before { border-color:var(--rim); }
+.arrival-copy h3 { margin:0; font:italic 500 clamp(64px,7.6vw,130px)/1 var(--serif); letter-spacing:-.065em; }
+.arrival-line { margin:.35em 0 1em; font:500 clamp(22px,2.4vw,36px)/1.15 var(--serif); }
+.arrival-copy .memory-story { font-size:clamp(15px,1.1vw,18px); margin:16px 0 20px; }
+.arrival-copy .album-location { font-size:14px; }
+.arrival-prints { position:relative; display:flex; justify-content:center; align-items:center; padding:26px 14px; perspective:900px; }
+.arrival-prints .print { flex:0 1 auto; min-width:0; width:min(75%,310px); transform:rotate(2deg); }
+.twins .arrival-prints .print { width:50%; transform:translateY(-12px) rotate(-4deg); }
+.twins .arrival-prints .print + .print { transform:translateY(16px) rotate(4deg); }
+.arrival-prints .print span { font-size:clamp(16px,1.5vw,23px); }
+.arrival-sleeve {
+  position:absolute; inset:0; display:grid; place-items:center; pointer-events:none;
+  background:linear-gradient(148deg,transparent 49.8%,var(--rim) 50%,transparent 50.2%) left top/50% 96% no-repeat,
+             linear-gradient(212deg,transparent 49.8%,var(--rim) 50%,transparent 50.2%) right top/50% 96% no-repeat,var(--pale);
+  border:4px double var(--rim); box-shadow:0 10px 24px #54433326;
+}
+.arrival-sleeve span {
+  display:grid; place-items:center; width:2.3em; aspect-ratio:1; border:3px double var(--rim); border-radius:50%;
+  background:var(--stock); font:italic 500 clamp(30px,4vw,58px)/1 var(--serif);
+}
+.unveiled .arrival-sleeve { animation:lift-sleeve 2.3s both; }
+.unveiled .arrival-prints .print { animation:develop-print 2.6s both; }
+.twins .arrival-sleeve { right:50%; transform-origin:left bottom; }
+.twins .arrival-sleeve + .arrival-sleeve { left:50%; right:0; transform-origin:right bottom; }
+.twins.unveiled .arrival-sleeve { --fan:-24deg; animation:part-cards 2.4s both; }
+.twins.unveiled .arrival-sleeve + .arrival-sleeve { --fan:24deg; animation-delay:.18s; }
+.twins.unveiled .print + .print { animation-delay:.25s; }
+@keyframes part-cards {
+  0%,26% { opacity:1; transform:none; }
+  88%,100% { opacity:0; transform:rotate(var(--fan)) translateY(-18%); visibility:hidden; }
+}
+@keyframes lift-sleeve {
+  0%,24% { opacity:1; transform:none; }
+  85%,100% { opacity:0; transform:translateY(25%) rotateX(-30deg); visibility:hidden; }
+}
+@keyframes develop-print {
+  0%,25% { opacity:.2; translate:0 24px; filter:sepia(.7); }
+  100% { opacity:1; translate:0 0; filter:none; }
+}
+@media(min-width:741px) {
+  .album-spread > .album-memory.contact-sheet { display:block; }
+  .contact-sheet .album-photos { grid-template-columns:repeat(var(--columns),minmax(0,1fr)); margin:28px 0 0; }
+  .contact-sheet .memory-story { max-width:80ch; }
+  .album-memory:not(:has(.album-photos)):not(#lincoln-roommates) { align-self:center; }
+  .album-memory:only-child:not(:has(.album-photos)):not(#lincoln-roommates) {
+    display:block; max-width:760px; border-inline-start:2px solid #ad9273; padding-inline-start:4%;
+  }
+}
+@media(max-width:740px) {
+  .birth-announcement { grid-template-columns:minmax(0,1fr); gap:16px; padding:42px 8%; }
+  .arrival-prints { padding:18px 8px; }
+}
+@media(prefers-reduced-motion:reduce) {
+  .unveiled .invitation-leaf,.unveiled .invitation-seal,.unveiled .arrival-sleeve,.unveiled .arrival-prints .print { animation:none; }
+  .arrival-sleeve,.replay-reveal { display:none; }
 }
