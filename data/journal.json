@@ -78,7 +78,8 @@
       "Florida gave us two very different trips. Spring break meant cold weather in St. Augustine and a tiny Airbnb. Summer meant a long stay in Port Charlotte with a pool and Lucy along for the trip. By fall we were back at school."
     ],
     "2015": [
-      "In the spring I took a job at Minnetonka Christian Academy, and we started packing. By July we’d traded Georgia for Minnesota and were settling into our townhouse in Shakopee."
+      "We started the year in Georgia and spent the spring working at Atlanta North School in Dunwoody. Somewhere between Spirit Week and the end of the school year, I took a job at Minnetonka Christian Academy and we started packing.",
+      "By July we were settling into our townhouse in Shakopee. We got together for the Bowers family reunion in Hutchinson that year, and in October we headed to Virginia for my cousin Jessica’s wedding."
     ],
     "2016": [
       "After a year in Shakopee, we moved to Brooklyn Park. My parents came up that summer and we headed up the North Shore to Two Harbors and Grand Marais.",
@@ -1294,33 +1295,37 @@
     {
       "id": "atlanta-spring-2015",
       "type": "adventure",
-      "title": "Spring in Atlanta",
+      "title": "Spirit Week in Dunwoody",
       "date": "2015",
+      "story": "We spent the spring working at Atlanta North School in Dunwoody. I taught fifth and sixth grade and Savannah worked as the registrar. For Spirit Week, we both dressed up as our future selves. We’d only been married a little over a year, but we were already trying out retirement.",
       "photos": [
         {
           "src": "assets/photos/2015/funinatlantaspring2015-a07264c7.webp",
-          "alt": "Personal photo from Spring in Atlanta",
+          "alt": "Andy and Savannah posing in old-age costumes for school Spirit Week.",
+          "caption": "Still young enough to have to go to work the next day.",
           "width": 720,
           "height": 960
         }
       ],
-      "place": "Atlanta, Georgia",
+      "place": "Dunwoody, Georgia",
       "coordinates": [
-        33.749,
-        -84.388
+        33.9462,
+        -84.3346
       ],
       "dateLabel": "Spring 2015",
       "sortDate": "2015-04"
     },
     {
-      "id": "nc-balloon-2015",
+      "id": "nc-balloon-2014",
       "type": "favorite",
-      "title": "A hot-air balloon in North Carolina",
-      "date": "2015-03",
+      "title": "Dad’s Father’s Day balloon ride",
+      "date": "2014",
+      "story": "For Dad’s Father’s Day gift, the five of us went up in a hot-air balloon in North Carolina. Dad, my sister, my brother-in-law, Savannah, and I all piled into the basket. It was such a fun way to spend time together, and we got to see North Carolina from a whole new angle.",
       "photos": [
         {
           "src": "assets/photos/2015/hotairbaloonmarch2015nc-66017e68.webp",
-          "alt": "Personal photo from A hot-air balloon in North Carolina",
+          "alt": "Savannah in a knit hat looking wide-eyed at the camera from the balloon basket.",
+          "caption": "Savannah’s face says it all. We’re really doing this.",
           "width": 1600,
           "height": 1063
         }
@@ -1334,12 +1339,14 @@
     {
       "id": "virginia-wedding-2015",
       "type": "favorite",
-      "title": "A wedding trip to Virginia",
-      "date": "2015",
+      "title": "Jessica’s wedding in Virginia",
+      "date": "2015-10",
+      "story": "In October, Savannah and I headed to Virginia for my cousin Jessica’s wedding. It was good to catch up with family and spend the evening celebrating Jessica. We even remembered to get a picture of the two of us dressed up.",
       "photos": [
         {
           "src": "assets/photos/2015/wenttoweddingvirginia-186516fa.webp",
-          "alt": "Personal photo from A wedding trip to Virginia",
+          "alt": "Andy and Savannah dressed up and smiling together at the wedding reception.",
+          "caption": "A night out in Virginia to celebrate Jessica.",
           "width": 720,
           "height": 960
         }
@@ -1349,6 +1356,18 @@
         37.52,
         -78.85
       ]
+    },
+    {
+      "id": "bowers-reunion-2015",
+      "type": "favorite",
+      "title": "The Bowers family reunion",
+      "date": "2015",
+      "place": "Hutchinson, Minnesota",
+      "coordinates": [
+        44.8877,
+        -94.3697
+      ],
+      "story": "The Bowers family got together in Hutchinson, Minnesota. Somehow we made it through a whole family reunion without a group photo. The closest thing we have is a picture of just me. Why me? Your guess is as good as mine."
     },
     {
       "id": "two-harbors-2016",
