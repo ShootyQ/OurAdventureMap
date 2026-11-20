@@ -58,7 +58,7 @@
       "During the 2009–2010 school year we were both busy with different groups of friends. We still had our occasional coffee dates, just the two of us catching up."
     ],
     "2010": [
-      "We stood up in Wael and Kristy’s wedding and graduated from Union College together that May.",
+      "We stood up in Wael and Kristi’s wedding and graduated from Union College together that May.",
       "By fall I was teaching in Michigan and Savannah was still in Lincoln. I don’t think we talked much that fall. We were both getting settled in our own lives."
     ],
     "2011": [
@@ -205,11 +205,33 @@
     {
       "id": "wael-and-kristys-wedding",
       "type": "adventure",
-      "title": "Wael and Kristy’s wedding",
-      "photos": [],
+      "title": "Wael and Kristi’s wedding",
+      "photos": [
+        {
+          "src": "assets/photos/2010/wael-kristi-wedding-party.webp",
+          "alt": "Andy and Savannah in the wedding party with Wael and Kristi",
+          "caption": "Both of us in Wael and Kristi’s wedding party.",
+          "width": 720,
+          "height": 482
+        },
+        {
+          "src": "assets/photos/2010/savannah-dancing-at-kristis-wedding.webp",
+          "alt": "Savannah dancing with a friend at the wedding reception",
+          "caption": "Savannah and a friend on the dance floor.",
+          "width": 720,
+          "height": 478
+        },
+        {
+          "src": "assets/photos/2010/savannah-and-kristi.webp",
+          "alt": "Savannah and Kristi standing together with their bouquets",
+          "caption": "Savannah with Kristi.",
+          "width": 482,
+          "height": 720
+        }
+      ],
       "sortDate": "2010-04",
       "dateLabel": "Before graduation",
-      "story": "Before we graduated, Savannah and I got to spend some time together at Wael and Kristy’s wedding. She was a bridesmaid and I was a groomsman."
+      "story": "Before we graduated, Savannah and I got to spend some time together at Wael and Kristi’s wedding. She was a bridesmaid and I was a groomsman."
     },
     {
       "id": "graduation",
