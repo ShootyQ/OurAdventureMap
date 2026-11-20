@@ -512,6 +512,8 @@ async function loadJournal() {
   readingStops.push({chapter:'road', row:road, place:trip});
   const dateScene = byId('lincoln');
   const weddingScene = byId('wedding');
+  const prelude = byId('wedding-prelude');
+  prelude.remove();
   dateScene.remove();
   weddingScene.remove();
   let year, chapter, spread;
@@ -528,6 +530,18 @@ async function loadJournal() {
     if (place.id === 'started-dating' || place.id === 'wedding') {
       const firstDate = place.id === 'started-dating';
       row = firstDate ? dateScene : weddingScene;
+      if (!firstDate) {
+        chapter.append(prelude);
+        if ('IntersectionObserver' in window) {
+          const reveal = new IntersectionObserver(([entry]) => {
+            if (entry.isIntersecting) {
+              prelude.classList.add('in-view');
+              reveal.disconnect();
+            }
+          }, {threshold: 0.35});
+          reveal.observe(prelude);
+        }
+      }
       chapter.append(row);
       row.querySelector('.dateline span').replaceWith(locationLabel(place));
       if (firstDate) {

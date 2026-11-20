@@ -315,3 +315,26 @@
   #alleia-proposal { grid-column:1/-1; display:grid; grid-template-columns:1fr 1fr; gap:7%; align-items:center; }
   #alleia-proposal .album-photos { margin:0; }
 }
+
+#wedding-prelude {
+  scroll-margin-top:var(--bar);
+  display:grid; justify-items:center; gap:12px;
+  padding:clamp(28px,4vw,60px) 6%;
+  background:#efe5d7; color:#422d33; text-align:center;
+  border-block:1px solid #c6b598;
+}
+#wedding-prelude p { margin:0; font:500 clamp(23px,2.4vw,38px)/1.22 var(--serif); }
+#wedding-prelude em { color:#914f40; }
+.wedding-bands { position:relative; width:72px; height:40px; }
+.wedding-bands::before,.wedding-bands::after {
+  content:''; position:absolute; top:4px; width:36px; height:30px;
+  border:3px double #987137; border-radius:50%;
+}
+.wedding-bands::before { left:6px; transform:rotate(-24deg); }
+.wedding-bands::after { right:6px; transform:rotate(24deg); }
+@media (prefers-reduced-motion:no-preference) {
+  #wedding-prelude.in-view .wedding-bands::before { animation:band-left .95s ease-out both; }
+  #wedding-prelude.in-view .wedding-bands::after { animation:band-right .95s ease-out both; }
+  @keyframes band-left { from { transform:translateX(-32px) rotate(-85deg); } }
+  @keyframes band-right { from { transform:translateX(32px) rotate(85deg); } }
+}
