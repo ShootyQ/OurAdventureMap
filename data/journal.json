@@ -179,13 +179,15 @@
           "src": "assets/photos/2009/three-friends.webp",
           "alt": "Three friends standing shoulder to shoulder in black dresses.",
           "width": 600,
-          "height": 420
+          "height": 420,
+          "caption": "Three black dresses, three very different expressions."
         },
         {
           "src": "assets/photos/2009/sidewalk-pose.webp",
           "alt": "A friend in dark clothes and sunglasses looking back at the camera outside a building.",
           "width": 604,
-          "height": 453
+          "height": 453,
+          "caption": "Practicing the casual look."
         },
         {
           "src": "assets/photos/2009/jackets-and-sunglasses.webp",
@@ -198,7 +200,8 @@
           "src": "assets/photos/2009/formalwear-outtake.webp",
           "alt": "Three friends in formalwear, one reaching a hand between the other two as they pose.",
           "width": 600,
-          "height": 420
+          "height": 420,
+          "caption": "So much for keeping a straight face."
         },
         {
           "src": "assets/photos/2009/behind-the-flowers.webp",
@@ -256,13 +259,15 @@
           "src": "assets/photos/2010/lincolngrad2010may-d9cac77d.webp",
           "alt": "Andy and Savannah at their Union College graduation in Lincoln",
           "width": 720,
-          "height": 478
+          "height": 478,
+          "caption": "Caps on, programs in hand."
         },
         {
           "src": "assets/photos/2010/marchtogether2010beforeevendatinglincoln-370bf59f.webp",
           "alt": "Another photo of Andy and Savannah at their graduation in May 2010",
           "width": 720,
-          "height": 540
+          "height": 540,
+          "caption": "Walking in together at Union."
         }
       ]
     },
@@ -354,13 +359,15 @@
           "src": "assets/photos/2011/marchtripbeforedating2-7ad247e8.webp",
           "alt": "A photo from our March road trip before we started dating",
           "width": 462,
-          "height": 590
+          "height": 590,
+          "caption": "Two seat belts and a lot of miles ahead of us."
         },
         {
           "src": "assets/photos/2011/tripmarchbeforedating-fcd73d65.webp",
           "alt": "A photo from our March road trip before we started dating",
           "width": 720,
-          "height": 540
+          "height": 540,
+          "caption": "Spring break, a month before our first date."
         }
       ]
     },
@@ -408,7 +415,8 @@
           "src": "assets/photos/2012/oneyearapril-2fa98ca9.webp",
           "alt": "Our first dating anniversary at the Grove Park Inn",
           "width": 960,
-          "height": 720
+          "height": 720,
+          "caption": "Dinner for two at the Grove Park Inn."
         }
       ]
     },
@@ -428,7 +436,8 @@
           "src": "assets/photos/2013/webeengagedfeb2013february-2204fec8.webp",
           "alt": "A photo from February 2013 celebrating our engagement",
           "width": 206,
-          "height": 206
+          "height": 206,
+          "caption": "The ring Savannah wore home from Alleia."
         }
       ],
       "note": "We still joke about the free dessert we never got."
@@ -448,25 +457,29 @@
           "src": "assets/photos/2013/engagement-andy-savannah-8416-792b77a7.webp",
           "alt": "One of our engagement portraits in Asheville",
           "width": 1067,
-          "height": 1600
+          "height": 1600,
+          "caption": "A kiss in the shade in Asheville."
         },
         {
           "src": "assets/photos/2013/engagement-andy-savannah-8482-53257b25.webp",
           "alt": "One of our engagement portraits in Asheville",
           "width": 1600,
-          "height": 1067
+          "height": 1067,
+          "caption": "Side by side at the fountain."
         },
         {
           "src": "assets/photos/2013/engagement-andy-savannah-8566-45ef98ce.webp",
           "alt": "One of our engagement portraits in Asheville",
           "width": 1067,
-          "height": 1600
+          "height": 1600,
+          "caption": "An afternoon holding hands in the park."
         },
         {
           "src": "assets/photos/2013/engagement-andy-savannah-8876-d99a1322.webp",
           "alt": "One of our engagement portraits in Asheville",
           "width": 1067,
-          "height": 1600
+          "height": 1600,
+          "caption": "One knee down for the camera this time."
         }
       ],
       "sortDate": "2013-02",
@@ -488,38 +501,46 @@
           "src": "assets/photos/2013/mp-0267-80361f50.webp",
           "alt": "Savannah and Andy facing each other during the wedding ceremony",
           "width": 1067,
-          "height": 1600
+          "height": 1600,
+          "caption": "My uncle Dennis tied the knot for us.",
+          "weddingPlacement": "vows"
         },
         {
           "src": "assets/photos/2013/mp-0302-f014d822.webp",
           "alt": "Savannah and Andy kissing during the wedding ceremony",
           "width": 1600,
-          "height": 1067
+          "height": 1067,
+          "caption": "Our first kiss as husband and wife.",
+          "weddingPlacement": "cover"
         },
         {
           "src": "assets/photos/2013/mp-9540-c823dd32.webp",
           "alt": "Savannah and Andy seeing each other in their wedding clothes outside her house",
           "width": 1067,
           "height": 1600,
-          "caption": "Our first look in front of Savannah’s house."
+          "caption": "Our first look in front of Savannah’s house.",
+          "weddingPlacement": "first-look"
         },
         {
           "src": "assets/photos/2013/mp-9629-f6f047cc.webp",
           "alt": "An outdoor portrait of Savannah and Andy in their wedding clothes",
           "width": 1600,
-          "height": 1067
+          "height": 1067,
+          "caption": "One more picture by the barn, with our wedding party in the distance."
         },
         {
           "src": "assets/photos/2013/mp-9814-1bb4e43c.webp",
           "alt": "Savannah and Andy sitting together outside in their wedding clothes",
           "width": 1600,
-          "height": 1067
+          "height": 1067,
+          "caption": "A quiet moment on the bench before the ceremony."
         },
         {
           "src": "assets/photos/2013/mp-9939-851d30e0.webp",
           "alt": "Savannah and Andy with their wedding party",
           "width": 1600,
-          "height": 1067
+          "height": 1067,
+          "caption": "The whole wedding party, all in one frame."
         }
       ]
     },
@@ -533,7 +554,8 @@
           "src": "assets/photos/2013/offtohoneymoonsanfranairport2013-62ea9a5e.webp",
           "alt": "Personal photo from Off to the honeymoon",
           "width": 480,
-          "height": 640
+          "height": 640,
+          "caption": "Passports out. Next stop, Auckland."
         }
       ],
       "place": "San Francisco area, California",
@@ -581,7 +603,8 @@
           "src": "assets/photos/2013/2013newzealandrotorua-5298e3d5.webp",
           "alt": "A honeymoon photo from Rotorua",
           "width": 960,
-          "height": 720
+          "height": 720,
+          "caption": "The two of us in the hills around Rotorua."
         }
       ],
       "sortDate": "2013-11-24",
@@ -597,7 +620,8 @@
           "src": "assets/photos/2013/newzealandhoneymoonridingbikenov2013-e4e9d854.webp",
           "alt": "Personal photo from A honeymoon bike ride",
           "width": 720,
-          "height": 960
+          "height": 960,
+          "caption": "Helmets on for our honeymoon bike ride."
         }
       ],
       "place": "New Zealand (region)",
@@ -661,7 +685,8 @@
           "src": "assets/photos/2015/maydunwoodygagoodbye-93fc8a8e.webp",
           "alt": "Saying goodbye to Dunwoody",
           "width": 540,
-          "height": 540
+          "height": 540,
+          "caption": "Saying goodbye to our first place in Dunwoody."
         }
       ],
       "sortDate": "2013-11-24",
@@ -1064,13 +1089,15 @@
           "src": "assets/photos/2011/july1-2011-wantedsacramentca-c3e95af8.webp",
           "alt": "Personal photo from Sacramento",
           "width": 336,
-          "height": 603
+          "height": 603,
+          "caption": "Wanted in California, apparently."
         },
         {
           "src": "assets/photos/2011/aug2011sacrament-970d5601.webp",
           "alt": "Personal photo from Sacramento",
           "width": 720,
-          "height": 540
+          "height": 540,
+          "caption": "My visit to Savannah’s family in Sacramento."
         }
       ],
       "place": "Sacramento, California",
@@ -1091,7 +1118,8 @@
           "src": "assets/photos/2011/biltmore2011-381baf44.webp",
           "alt": "Personal photo from Biltmore",
           "width": 720,
-          "height": 540
+          "height": 540,
+          "caption": "A picture on the lawn with Biltmore behind us."
         }
       ],
       "place": "Asheville, North Carolina",
@@ -1111,7 +1139,8 @@
           "src": "assets/photos/2012/cadescovemarch-e1bba92c.webp",
           "alt": "Personal photo from Cades Cove",
           "width": 1032,
-          "height": 1032
+          "height": 1032,
+          "caption": "Together in Cades Cove, between those long drives."
         }
       ],
       "place": "Cades Cove, Tennessee",
@@ -1130,7 +1159,8 @@
           "src": "assets/photos/2012/march2012savannahga-069ce5cd.webp",
           "alt": "Personal photo from Savannah, Georgia",
           "width": 960,
-          "height": 720
+          "height": 720,
+          "caption": "Savannah in Savannah. I got to come along, too."
         }
       ],
       "place": "Savannah, Georgia",
@@ -1151,7 +1181,8 @@
           "src": "assets/photos/2012/babylucynchendersonville2012june-57c20978.webp",
           "alt": "Lucy as a puppy in Hendersonville",
           "width": 1366,
-          "height": 1366
+          "height": 1366,
+          "caption": "I got Lucy. Lucy picked Savannah."
         }
       ],
       "place": "Hendersonville, North Carolina",
@@ -1170,7 +1201,8 @@
           "src": "assets/photos/2012/christmasdctrip-2012-b8eededd.webp",
           "alt": "Personal photo from Christmas trip to Washington, DC",
           "width": 960,
-          "height": 617
+          "height": 617,
+          "caption": "Christmas in D.C., looking across the water at the Washington Monument."
         }
       ],
       "place": "Washington, DC",
@@ -2615,7 +2647,8 @@
           "src": "assets/photos/2011/2021-03-27-3-28f14d18.webp",
           "alt": "Personal photo from the 2011 folder",
           "width": 449,
-          "height": 606
+          "height": 606,
+          "caption": "The two of us, all dressed up."
         }
       ]
     },

@@ -537,8 +537,9 @@ async function loadJournal() {
           byId('wedding-story').append(node('p', '', paragraph));
         }
       }
-      photos.forEach((photo,i) => {
-        const host = firstDate ? 'date-print' : i < 2 ? 'ceremony' : 'wedding-prints';
+      const weddingHosts = {cover:'wedding-cover-photo', 'first-look':'wedding-first-look', vows:'wedding-vows'};
+      photos.forEach(photo => {
+        const host = firstDate ? 'date-print' : weddingHosts[photo.weddingPlacement] || 'wedding-prints';
         byId(host).append(photoButton(photo, photo.caption, '', photos));
       });
       spread = null;
