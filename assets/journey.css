@@ -316,25 +316,47 @@
   #alleia-proposal .album-photos { margin:0; }
 }
 
-#wedding-prelude {
-  scroll-margin-top:var(--bar);
-  display:grid; justify-items:center; gap:12px;
-  padding:clamp(28px,4vw,60px) 6%;
-  background:#efe5d7; color:#422d33; text-align:center;
-  border-block:1px solid #c6b598;
+#wedding-prelude { height:168svh; scroll-margin-top:var(--bar); background:#302328; }
+.invitation-stage {
+  --turn:0; --seal:1; position:sticky; top:var(--bar); height:calc(100svh - var(--bar));
+  display:grid; place-content:center; justify-items:center; gap:clamp(14px,3vh,34px);
+  overflow:hidden; background:radial-gradient(ellipse at 50% 40%,#69484b,#38262d 65%,#302328);
 }
-#wedding-prelude p { margin:0; font:500 clamp(23px,2.4vw,38px)/1.22 var(--serif); }
-#wedding-prelude em { color:#914f40; }
-.wedding-bands { position:relative; width:72px; height:40px; }
-.wedding-bands::before,.wedding-bands::after {
-  content:''; position:absolute; top:4px; width:36px; height:30px;
-  border:3px double #987137; border-radius:50%;
+.invitation { position:relative; isolation:isolate; width:min(82vw,1080px,110svh); aspect-ratio:1.85; perspective:1800px; box-shadow:0 22px 55px #180e129c; }
+.invitation-reveal,.invitation-leaf { position:absolute; inset:0; }
+.invitation-reveal { overflow:hidden; background:#302328; }
+.invitation-reveal img,.invitation-left img { width:100%;height:100%;object-fit:cover; display:block; }
+.invitation-reveal img { object-position:60% 12%; transform:scale(calc(1.09 - .09 * var(--turn))); }
+.invitation-reveal::after,.invitation-leaf::after { content:''; position:absolute; inset:12px; border:1px solid #f4dba694; pointer-events:none; }
+.invitation-vows { position:absolute; inset:0; display:flex; flex-direction:column; justify-content:flex-end; align-items:flex-start; padding:5%; color:#fff5df; background:linear-gradient(0deg,#24161bce,transparent 52%); }
+.invitation small { font:600 clamp(10px,.85vw,14px)/1.3 var(--sans); text-transform:uppercase; letter-spacing:.15em; }
+.invitation strong { font:500 clamp(48px,7vw,115px)/.96 var(--serif); letter-spacing:-.055em; }
+.invitation-vows strong { font-style:italic; }
+.invitation-leaf { width:50%; backface-visibility:hidden; background:#f4ecdb; overflow:hidden; }
+.invitation-left { right:auto;transform-origin:left center;transform:rotateY(calc(var(--turn) * -118deg)); }
+.invitation-left img { object-position:center 15%;filter:sepia(.28); }
+.invitation-right { left:50%; display:grid; place-items:center; text-align:center; color:#52363c;
+  transform-origin:right center;transform:rotateY(calc(var(--turn) * 118deg)); background:linear-gradient(102deg,#d9ccb5,#f8f1e3 10%,#f0e4cc); }
+.invitation-right::after { border:3px double #af9264; }
+.invitation-right strong,.invitation-signature { display:block; margin-top:.18em; }
+.invitation-right em { color:#9f654d; }
+.invitation-signature { font:600 clamp(17px,2.4vw,38px)/1.5 var(--hand); margin-top:.65em; }
+.invitation-seal { position:absolute; left:50%;top:50%;display:grid;grid-auto-flow:column;align-items:center;justify-content:center;
+  width:clamp(40px,5.7vw,80px); aspect-ratio:1; border-radius:50% 48% 46% 51%; background:radial-gradient(at 35% 22%,#a65753,#702c36 72%);
+  border:4px double #d38f78; box-shadow:0 3px 8px #30202777; color:#ffddae; font:italic 500 clamp(18px,2.3vw,34px) var(--serif);
+  opacity:var(--seal); transform:translate(-50%,-50%) rotate(-12deg) scale(calc(.8 + .2 * var(--seal))); }
+.invitation-seal span { font-size:.6em; }
+.invitation-next { color:#f5dfbb; font:600 13px var(--sans); padding:8px 0; border-bottom:1px solid #b59774; }
+@media(max-width:740px) {
+  .invitation { width:89vw; aspect-ratio:1.16; }
+  .invitation-right strong { font-size:clamp(30px,9vw,60px); }
+  .invitation-leaf::after,.invitation-reveal::after { inset:6px; }
 }
-.wedding-bands::before { left:6px; transform:rotate(-24deg); }
-.wedding-bands::after { right:6px; transform:rotate(24deg); }
-@media (prefers-reduced-motion:no-preference) {
-  #wedding-prelude.in-view .wedding-bands::before { animation:band-left .95s ease-out both; }
-  #wedding-prelude.in-view .wedding-bands::after { animation:band-right .95s ease-out both; }
-  @keyframes band-left { from { transform:translateX(-32px) rotate(-85deg); } }
-  @keyframes band-right { from { transform:translateX(32px) rotate(85deg); } }
+@media(prefers-reduced-motion:reduce) {
+  #wedding-prelude { height:auto; }
+  .invitation-stage { position:relative; top:0; height:auto; padding:clamp(32px,5vw,70px) 0; }
+  .invitation-reveal img { transform:none; }
+  .invitation-left,.invitation-seal { display:none; }
+  .invitation-right { transform:none; left:0; width:41%; }
+  .invitation-reveal { left:41%; }
 }

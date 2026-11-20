@@ -300,10 +300,27 @@ function renderCover(bar) {
   drawRoute(compact.matches ? 1 : reduced.matches ? cut : progress);
 }
 
+const prelude = byId('wedding-prelude');
+const invitationStage = prelude.querySelector('.invitation-stage');
+
+function turnInvitation(bar) {
+  if (reduced.matches) return;
+  const bounds = prelude.getBoundingClientRect();
+  if (bounds.bottom < 0 || bounds.top > innerHeight) return;
+  const travel = bounds.height - invitationStage.offsetHeight;
+  const progress = clamp((bar - bounds.top) / Math.max(1, travel));
+  const turn = clamp((progress - .08) / .8);
+  // Ease the leaves apart and let the photograph settle before the next spread.
+  const eased = turn * turn * (3 - 2 * turn);
+  invitationStage.style.setProperty('--turn', eased);
+  invitationStage.style.setProperty('--seal', 1 - clamp(progress / .24));
+}
+
 function render() {
   pending = false;
   const bar = document.querySelector('.folio-bar').offsetHeight;
   if (road.getBoundingClientRect().bottom > 0) renderCover(bar);
+  turnInvitation(bar);
   const trigger = bar + Math.min(innerHeight * .19, 140);
   // In a two-column spread, follow the left memory first and the right halfway down.
   let low = 0, high = readingStops.length;
@@ -512,7 +529,6 @@ async function loadJournal() {
   readingStops.push({chapter:'road', row:road, place:trip});
   const dateScene = byId('lincoln');
   const weddingScene = byId('wedding');
-  const prelude = byId('wedding-prelude');
   prelude.remove();
   dateScene.remove();
   weddingScene.remove();
@@ -530,18 +546,7 @@ async function loadJournal() {
     if (place.id === 'started-dating' || place.id === 'wedding') {
       const firstDate = place.id === 'started-dating';
       row = firstDate ? dateScene : weddingScene;
-      if (!firstDate) {
-        chapter.append(prelude);
-        if ('IntersectionObserver' in window) {
-          const reveal = new IntersectionObserver(([entry]) => {
-            if (entry.isIntersecting) {
-              prelude.classList.add('in-view');
-              reveal.disconnect();
-            }
-          }, {threshold: 0.35});
-          reveal.observe(prelude);
-        }
-      }
+      if (!firstDate) chapter.append(prelude);
       chapter.append(row);
       row.querySelector('.dateline span').replaceWith(locationLabel(place));
       if (firstDate) {

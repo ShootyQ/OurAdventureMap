@@ -2801,6 +2801,38 @@
           "caption": "A May outing in the St. Croix Valley."
         }
       ]
+    },
+    {
+      "id": "oliver-2010",
+      "type": "favorite",
+      "title": "Meet Oliver",
+      "date": "2010",
+      "story": "Savannah got Oliver in 2010. He was a loving cat, with one small exception. Your ears were fair game.",
+      "photos": [
+        {
+          "src": "assets/photos/2010/oliver.webp",
+          "width": 960,
+          "height": 720,
+          "alt": "Oliver, a striped tabby, sleeping with his face tucked against his paw.",
+          "caption": "A sweetheart when your ears were out of reach."
+        }
+      ]
+    },
+    {
+      "id": "hattie-2016",
+      "type": "favorite",
+      "title": "Meet Hattie",
+      "date": "2016-05",
+      "story": "In May, my students gave me Hattie. In all my years of teaching, that gift gets a category of its own.",
+      "photos": [
+        {
+          "src": "assets/photos/2016/hattie.webp",
+          "width": 960,
+          "height": 720,
+          "alt": "Hattie peeking over the edge of a carpeted stair.",
+          "caption": "Hattie, the little gift from my students."
+        }
+      ]
     }
   ]
 }
