@@ -439,3 +439,71 @@
   .unveiled .invitation-leaf,.unveiled .invitation-seal,.unveiled .arrival-sleeve,.unveiled .arrival-prints .print { animation:none; }
   .arrival-sleeve,.replay-reveal { display:none; }
 }
+
+/* The closing album spread */
+#little-things {
+  background:#f2e9db;
+  padding-bottom:clamp(48px,7vw,108px);
+}
+#little-things .chapter-head {
+  display:block;
+  padding-block:clamp(45px,6vw,90px) clamp(24px,3vw,42px);
+}
+#little-things [id] { scroll-margin-top:calc(var(--bar) + 16px); }
+.little-things-spread {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:clamp(22px,3vw,46px);
+  padding-top:clamp(28px,4vw,60px);
+}
+.little-things-card {
+  --card-paper:#fff8ec;
+  display:grid;
+  grid-template-rows:1fr auto;
+  gap:clamp(24px,3vw,40px);
+  min-width:0;
+  padding:clamp(26px,4vw,54px);
+  background:var(--card-paper);
+  border:1px solid #b8a18575;
+  box-shadow:0 10px 26px #42351e0d;
+}
+.little-things-card:first-child {
+  --card-paper:#f1e0dc;
+  grid-column:1/-1;
+  grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);
+  grid-template-rows:auto;
+  align-items:center;
+}
+.little-things-card:last-child { --card-paper:#e9eddf; }
+.little-things-card h3 {
+  font:500 clamp(30px,3.3vw,54px)/1.05 var(--serif);
+  letter-spacing:-.045em;
+  text-wrap:balance;
+}
+.little-things-card:first-child h3 { font-size:clamp(38px,4.5vw,72px); }
+.little-things-card ul { margin:22px 0 0; padding:0; list-style:none; }
+.little-things-card li {
+  position:relative;
+  padding:8px 0 8px 21px;
+  border-bottom:1px solid #7560442c;
+  font:500 clamp(14px,1.25vw,18px)/1.5 var(--sans);
+}
+.little-things-card li::before {
+  content:'';
+  position:absolute;
+  top:1.1em;
+  left:3px;
+  width:5px;
+  height:5px;
+  background:var(--red);
+  transform:rotate(45deg);
+}
+.little-things-card .print { width:100%; margin:auto; transform:rotate(-1.5deg); }
+.little-things-card:first-child .print { width:min(78%,280px); transform:rotate(3deg); }
+.little-things-card:last-child .print { transform:rotate(1.5deg); }
+.little-things-card .print span { font-size:clamp(17px,1.6vw,23px); }
+@media(max-width:740px) {
+  .little-things-spread,.little-things-card:first-child { grid-template-columns:minmax(0,1fr); }
+  .little-things-card { padding:24px; }
+  .little-things-card:first-child .print { width:min(80%,245px); }
+}

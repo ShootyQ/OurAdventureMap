@@ -47,6 +47,50 @@
       "spotifyUrl": "https://open.spotify.com/track/0qcr5FMsEO85NAQjrlDRKo"
     }
   ],
+  "littleThings": [
+    {
+      "id": "about-savannah",
+      "title": "What I love about you",
+      "photo": "assets/photos/2024/cruise-evening-portrait.webp",
+      "items": [
+        "Your hair and your legs. Still, obviously.",
+        "Your smile and the sound of your laugh.",
+        "How much you put into your work.",
+        "What a great mom you are to our kids.",
+        "How loyal you are.",
+        "How you’re always excited to hear my next idea."
+      ]
+    },
+    {
+      "id": "minnesota-overnights",
+      "title": "What I love doing with you",
+      "photo": "assets/photos/2022/aug22-e8f85dda.webp",
+      "items": [
+        "Going out to eat, whenever we get the chance.",
+        "Taking the kids somewhere fun and playing together as a family.",
+        "Going on cruises.",
+        "Sneaking away for a night at a B&B or a downtown hotel.",
+        "Going to plays.",
+        "Playing games.",
+        "Cuddling up to watch a movie or a show.",
+        "Talking about our future."
+      ]
+    },
+    {
+      "id": "takeout-favorites",
+      "title": "What we love to eat",
+      "photo": "assets/photos/2020/november-breakfast-for-two.webp",
+      "items": [
+        "Chocolate. I always have to buy you more.",
+        "Thai.",
+        "Indian.",
+        "Mexican.",
+        "Red Robin burgers.",
+        "Crappy nachos.",
+        "Mediterranean."
+      ]
+    }
+  ],
   "chapterIntroductions": {
     "2007": [
       "Savannah and I both headed to Union College in 2007, each looking for something different. I wanted a fresh start and found a place where people made me feel welcome right away. Both of Savannah’s parents had ties to Union, and her family had friends in Lincoln. We came for different reasons, and that fall we found each other."

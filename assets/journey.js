@@ -371,14 +371,14 @@ function render() {
   if (!stop || stop === activeStop) return;
   activeStop = stop;
   picker.value = stop.chapter;
-  mapToggle.hidden = ['someday', 'letter'].includes(stop.chapter);
+  mapToggle.hidden = ['little-things', 'someday', 'letter'].includes(stop.chapter);
   for (const link of document.querySelectorAll('.folio-bar nav a')) {
     if (link.hash === '#' + stop.row.id || (link.hash === '#wedding-prelude' && stop.place?.id === 'wedding')) link.setAttribute('aria-current', 'location');
     else link.removeAttribute('aria-current');
   }
   if (stop.place) cueMusic?.(stop.place);
   if (mapDialog.open && !compact.matches) {
-    if (stop.chapter === 'someday' || stop.chapter === 'letter') mapDialog.close();
+    if (mapToggle.hidden) mapDialog.close();
     else updatePlace(stop.place);
   }
 }
@@ -547,6 +547,24 @@ function addClosing(journal) {
   }
 }
 
+function addLittleThings(chapter, groups, entries) {
+  const photos = entries.flatMap(place => place.photos || []);
+  const spread = node('div', 'little-things-spread album-inner');
+  for (const group of groups) {
+    const card = node('article', 'little-things-card');
+    card.id = group.id;
+    const copy = node('div', 'little-things-copy');
+    const list = node('ul');
+    for (const item of group.items) list.append(node('li', '', item));
+    copy.append(node('h3', '', group.title), list);
+    card.append(copy);
+    const photo = photos.find(print => print.src === group.photo);
+    if (photo) card.append(photoButton(photo, photo.caption));
+    spread.append(card);
+  }
+  chapter.append(spread);
+}
+
 async function loadJournal() {
   const journal = await readJson('data/journal.json');
   const entries = journal.places.filter(place => !['dream','secret'].includes(place.type))
@@ -571,8 +589,12 @@ async function loadJournal() {
       year = nextYear;
       chapter = createChapter(year, journal.chapterIntroductions?.[year]);
       readingStops.push({chapter:chapter.id, row:chapter, place});
+      if (year === '9999' && journal.littleThings?.length) {
+        addLittleThings(chapter, journal.littleThings, entries);
+      }
       spread = null;
     }
+    if (year === '9999' && journal.littleThings?.some(group => group.id === place.id)) continue;
     let row;
     const photos = place.photos || [];
     if (place.id === 'started-dating' || place.id === 'wedding') {
