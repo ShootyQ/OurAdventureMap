@@ -344,13 +344,21 @@
         -96.6996
       ],
       "date": "2011-04",
-      "story": "I visited Savannah in Lincoln in April 2011, and that’s when we started dating. For our first date, we went to the Nebraska State Capitol and got ice cream downtown.",
+      "story": "I visited Savannah in Lincoln in April 2011, and that’s when we started dating. For our first date, we went to the Nebraska State Capitol and got ice cream at Ivanna Cone in downtown Lincoln.",
       "photos": [
         {
           "src": "assets/photos/2011/firstdateapril-a92652be.webp",
           "alt": "A photo from our first date in Lincoln",
+          "caption": "Our first date in Lincoln",
           "width": 720,
           "height": 540
+        },
+        {
+          "src": "assets/photos/2011/ivanna-cone-lincoln.webp",
+          "alt": "The colorful Ivanna Cone ice cream counter in downtown Lincoln",
+          "caption": "Ivanna Cone, our first-date ice cream stop · Google Maps",
+          "width": 1226,
+          "height": 740
         }
       ]
     },

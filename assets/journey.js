@@ -447,7 +447,8 @@ async function loadJournal() {
       byId(firstDate ? 'date-story' : 'wedding-story').textContent = place.story || '';
       photos.forEach((photo,i) => {
         const host = firstDate ? 'date-print' : i < 2 ? 'ceremony' : 'wedding-prints';
-        byId(host).append(photoButton(photo, firstDate && !i ? 'Our first date in Lincoln' : '', '', photos));
+        const caption = firstDate ? photo.caption : '';
+        byId(host).append(photoButton(photo, caption, '', photos));
       });
       spread = null;
     } else {

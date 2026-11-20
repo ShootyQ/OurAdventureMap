@@ -55,8 +55,9 @@
 #road-route { position: absolute; bottom: calc(100svh - var(--bar)); scroll-margin-top: var(--bar); }
 .lincoln { background: #253f36; color: #fff4de; padding: clamp(80px,9vw,170px) 8vw; }
 .scene-inner { max-width: 1100px; margin: auto; display: grid; grid-template-columns: 1.15fr 1fr; gap: 10%; align-items: center; }
-.lincoln-picture { transform: rotate(-3deg); padding: 5%; }
-.lincoln .print { padding: 14px 14px 10px; }
+.lincoln-picture { display: grid; gap: 18px; padding: 5%; }
+.lincoln .print { padding: 14px 14px 10px; transform: rotate(-3deg); }
+.lincoln .print + .print { width: 78%; justify-self: end; transform: rotate(2deg); }
 .lincoln em { color: #dfbd88; }
 .lincoln .dateline { color: #e3cfa5; }
 .wedding { background: #f8f4eb; padding: clamp(60px,7vw,120px) 7vw 24px; }
