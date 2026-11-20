@@ -70,8 +70,8 @@
       "That summer we spent time together while I was staying with my parents in North Carolina, and we visited California. By Christmas I was already planning to propose."
     ],
     "2013": [
-      "Once Savannah said yes in February, there were engagement photos, bridal showers, a wedding to plan, and a honeymoon to dream about. The wedding came together, and then we were off to New Zealand.",
-      "We drove the coast, went sightseeing, made time for a spa and date nights, and even caught a Hunger Games movie. We loved the chais, and I was always on the lookout for fish and chips and another mince pie. Then we flew to Sydney for a second wedding with Savannah’s Australian family."
+      "Savannah said yes in February, and the months that followed were full of engagement photos, bridal showers, and wedding plans. In November, we got married in California.",
+      "We honeymooned in New Zealand, celebrated again with Savannah’s family in Sydney, and started making a home together in Georgia."
     ],
     "2014": [
       "Our first year married, we both worked at Atlanta North School. I taught fifth and sixth grade, and Savannah was the registrar. We went out to eat, played games, walked Lucy, and spent time with family in North Carolina and California.",
@@ -199,6 +199,13 @@
           "alt": "Three friends in formalwear, one reaching a hand between the other two as they pose.",
           "width": 600,
           "height": 420
+        },
+        {
+          "src": "assets/photos/2009/behind-the-flowers.webp",
+          "alt": "Savannah and a friend leaning together behind a red rose and white flowers",
+          "caption": "Savannah and a friend at a banquet before graduation.",
+          "width": 1600,
+          "height": 902
         }
       ]
     },
@@ -1002,9 +1009,10 @@
       "photos": [
         {
           "src": "assets/photos/2011/2011hendonc-ff1374e4.webp",
-          "alt": "Personal photo from Hendersonville",
+          "alt": "Savannah and Andy together at the piano at Andy’s parents’ house",
           "width": 1600,
-          "height": 957
+          "height": 957,
+          "caption": "Playing piano together at my parents’ house. I was the bench."
         }
       ],
       "place": "Hendersonville, North Carolina",
@@ -1057,7 +1065,8 @@
       "coordinates": [
         35.5406,
         -82.552
-      ]
+      ],
+      "story": "While we were in North Carolina, Savannah and I spent some time at the Biltmore Estate in Asheville."
     },
     {
       "id": "cades-cove-2012",
@@ -2551,13 +2560,6 @@
           "alt": "Personal photo from the 2011 folder",
           "width": 449,
           "height": 606
-        },
-        {
-          "src": "assets/photos/2011/behind-the-flowers.webp",
-          "alt": "Savannah and Andy leaning together behind a red rose and white flowers.",
-          "caption": "July 2011, peeking out from behind the flowers.",
-          "width": 1600,
-          "height": 902
         }
       ]
     },
