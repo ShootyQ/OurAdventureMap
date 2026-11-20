@@ -1528,7 +1528,23 @@
       ],
       "sortDate": "2017-07",
       "dateLabel": "Summer 2017",
-      "story": "We spent a week that summer in Springfield, Illinois, with Savannah’s parents."
+      "story": "We spent a week around the Fourth of July in Springfield, Illinois, with Savannah’s parents. We made the rounds of the Abraham Lincoln sites, including a stop at the Berry–Lincoln Store in New Salem. After all that time in Lincoln’s day, we came back to the present for a Fourth of July selfie with fireworks going off behind us.",
+      "photos": [
+        {
+          "src": "assets/photos/2017/springfield-berry-lincoln-store.webp",
+          "alt": "Andy in sunglasses outside the First Berry–Lincoln Store at New Salem.",
+          "width": 1080,
+          "height": 1080,
+          "caption": "I stopped by Lincoln’s old store. Abe was out."
+        },
+        {
+          "src": "assets/photos/2017/springfield-fourth-of-july.webp",
+          "alt": "Andy, Savannah, and Savannah’s parents taking a selfie with fireworks overhead.",
+          "width": 1080,
+          "height": 1080,
+          "caption": "The four of us on the Fourth in Springfield."
+        }
+      ]
     },
     {
       "id": "renfest-2017",
@@ -1562,6 +1578,20 @@
           "height": 752
         },
         {
+          "src": "assets/photos/2018/violets-crib.webp",
+          "alt": "Andy giving a thumbs-up behind Violet’s assembled crib.",
+          "width": 960,
+          "height": 720,
+          "caption": "Crib assembled. Dad reporting for duty."
+        },
+        {
+          "src": "assets/photos/2018/savannah-getting-nursery-ready.webp",
+          "alt": "Savannah holding a paintbrush beside a wooden cabinet in Violet’s nursery.",
+          "width": 960,
+          "height": 720,
+          "caption": "Savannah getting Violet’s room ready, paintbrush in hand."
+        },
+        {
           "src": "assets/photos/2018/may2018violetalmosthere-3e385fcd.webp",
           "alt": "Savannah and Andy with Lucy while they were waiting for Violet",
           "width": 1067,
@@ -1571,7 +1601,7 @@
       ],
       "dateLabel": "January–May 2018",
       "sortDate": "2018-01",
-      "story": "With Violet on the way, we started getting the house ready. My office moved for the first of what turned out to be many times so that room could become her nursery. Somewhere in all that excitement I dropped a bombshell. I was burned out and didn’t want to be principal anymore, so I resigned to stay home with Violet.",
+      "story": "In January we started turning my office into Violet’s nursery. It was the first of what turned out to be many moves for my office. We put the crib together, Savannah got to work with a paintbrush, and suddenly there was a room in the house that felt like Violet’s. Somewhere in all that excitement I dropped a bombshell. I was burned out and didn’t want to be principal anymore, so I resigned to stay home with Violet.",
       "place": "Twin Cities area, Minnesota",
       "coordinates": [
         44.955,
