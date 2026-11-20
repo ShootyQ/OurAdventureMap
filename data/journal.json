@@ -58,7 +58,8 @@
       "During the 2009–2010 school year we were both busy with different groups of friends. We still had our occasional coffee dates, just the two of us catching up."
     ],
     "2010": [
-      "We were still friends when we graduated from Union College. Lincoln gave us a place to come back to, and there were still friends there to see."
+      "We stood up in Wael and Kristy’s wedding and graduated from Union College together that May.",
+      "By fall I was teaching in Michigan and Savannah was still in Lincoln. I don’t think we talked much that fall. We were both getting settled in our own lives."
     ],
     "2011": [
       "We had so much fun together in Michigan that we wanted more time together. Spring break gave us a road trip, April gave us a first date, and by summer we were getting to know each other’s families.",
@@ -201,6 +202,15 @@
       ]
     },
     {
+      "id": "wael-and-kristys-wedding",
+      "type": "adventure",
+      "title": "Wael and Kristy’s wedding",
+      "photos": [],
+      "sortDate": "2010-04",
+      "dateLabel": "Before graduation",
+      "story": "Before we graduated, Savannah and I got to spend some time together at Wael and Kristy’s wedding. She was a bridesmaid and I was a groomsman."
+    },
+    {
       "id": "graduation",
       "type": "milestone",
       "title": "Graduation day",
@@ -210,15 +220,47 @@
         -96.7026
       ],
       "date": "2010-05",
-      "story": "We graduated from Union College together in 2010. We were still friends then.",
+      "story": "Savannah and I graduated from Union College together in May 2010.",
       "photos": [
         {
           "src": "assets/photos/2010/lincolngrad2010may-d9cac77d.webp",
-          "alt": "Our graduation in Lincoln",
+          "alt": "Andy and Savannah at their Union College graduation in Lincoln",
           "width": 720,
           "height": 478
+        },
+        {
+          "src": "assets/photos/2010/marchtogether2010beforeevendatinglincoln-370bf59f.webp",
+          "alt": "Another photo of Andy and Savannah at their graduation in May 2010",
+          "width": 720,
+          "height": 540
         }
       ]
+    },
+    {
+      "id": "teaching-in-owosso-2010",
+      "type": "milestone",
+      "title": "My first fall in Owosso",
+      "sortDate": "2010-09",
+      "dateLabel": "Fall 2010",
+      "place": "Owosso, Michigan",
+      "coordinates": [
+        42.9978,
+        -84.1766
+      ],
+      "story": "After graduation, I took a teaching job in Owosso, Michigan, where I taught the upper grades."
+    },
+    {
+      "id": "off-campus-lincoln-2010",
+      "type": "favorite",
+      "title": "Off campus with Brenda and April",
+      "sortDate": "2010-09",
+      "dateLabel": "Fall 2010",
+      "place": "Lincoln, Nebraska",
+      "coordinates": [
+        40.8136,
+        -96.7026
+      ],
+      "story": "Savannah stayed in Lincoln and lived off campus with her friends Brenda and April as she finished out her time there."
     },
     {
       "id": "owosso-visit",
@@ -888,25 +930,6 @@
       "dateLabel": "Hoping for 2027",
       "story": "Savannah hopes to go to Vietnam on a mission trip in 2027.",
       "photos": []
-    },
-    {
-      "id": "lincoln-friends",
-      "type": "adventure",
-      "title": "Friends in Lincoln",
-      "date": "2010-03",
-      "photos": [
-        {
-          "src": "assets/photos/2010/marchtogether2010beforeevendatinglincoln-370bf59f.webp",
-          "alt": "Personal photo from Friends in Lincoln",
-          "width": 720,
-          "height": 540
-        }
-      ],
-      "place": "Lincoln, Nebraska",
-      "coordinates": [
-        40.8136,
-        -96.7026
-      ]
     },
     {
       "id": "hendersonville-2011",
