@@ -554,7 +554,15 @@
         174.7633
       ],
       "story": "We flew into Auckland so early that we ended up getting breakfast something like four times. We kept joking about it for the rest of the honeymoon.",
-      "photos": [],
+      "photos": [
+        {
+          "src": "assets/photos/2013/auckland-honeymoon-breakfast.webp",
+          "alt": "Andy holding breakfast wrapped in paper at a counter",
+          "caption": "One of our many honeymoon breakfasts.",
+          "width": 720,
+          "height": 960
+        }
+      ],
       "sortDate": "2013-11-24",
       "dateLabel": "Honeymoon"
     },
@@ -598,6 +606,30 @@
       "coordinates": [
         -41.2,
         172.5
+      ]
+    },
+    {
+      "id": "new-zealand-honeymoon-food",
+      "type": "favorite",
+      "title": "A taste of New Zealand",
+      "place": "New Zealand",
+      "sortDate": "2013-11-24",
+      "dateLabel": "Honeymoon",
+      "photos": [
+        {
+          "src": "assets/photos/2013/honeymoon-fish-and-chips.webp",
+          "alt": "A storefront with a sign for fresh fish and fish and chips",
+          "caption": "I was always on the lookout for fish and chips.",
+          "width": 960,
+          "height": 720
+        },
+        {
+          "src": "assets/photos/2013/honeymoon-bakery-stop.webp",
+          "alt": "Savannah at an outdoor table with baked goods spread out on paper",
+          "caption": "A bakery stop on the honeymoon.",
+          "width": 960,
+          "height": 720
+        }
       ]
     },
     {
@@ -1158,7 +1190,30 @@
         -81.3145
       ],
       "date": "2014-03",
-      "story": "For our first spring break as a married couple, we went to St. Augustine. It was cold, and the Airbnb was the size of a postage stamp."
+      "story": "For our first spring break as a married couple, we went to St. Augustine. It was cold, and the Airbnb was the size of a postage stamp.",
+      "photos": [
+        {
+          "src": "assets/photos/2014/st-augustine-chilly-beach.webp",
+          "alt": "Andy and Savannah bundled up in winter hats at the beach",
+          "caption": "So much for warm Florida weather.",
+          "width": 480,
+          "height": 640
+        },
+        {
+          "src": "assets/photos/2014/st-augustine-greek-dinner.webp",
+          "alt": "Andy and Savannah taking a photo together at a restaurant",
+          "caption": "We warmed up over Greek food.",
+          "width": 480,
+          "height": 640
+        },
+        {
+          "src": "assets/photos/2014/st-augustine-fireworks-night.webp",
+          "alt": "Andy and Savannah smiling under a purple umbrella",
+          "caption": "Under the umbrella on fireworks night.",
+          "width": 480,
+          "height": 640
+        }
+      ]
     },
     {
       "id": "port-charlotte-2014",
