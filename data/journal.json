@@ -3633,7 +3633,23 @@
       "date": "2026-11-21",
       "featured": true,
       "story": "And today, as we celebrate our 13th anniversary, I just want you to know, I can’t wait to keep adding to this timeline.",
-      "note": "Love you."
+      "note": "Love you.",
+      "photos": [
+        {
+          "src": "assets/photos/2011/summer-kiss-black-and-white.webp",
+          "alt": "Black-and-white photo of Andy dipping Savannah as they kiss.",
+          "width": 1448,
+          "height": 1086,
+          "caption": "One of my favorite photos of us, summer 2011."
+        },
+        {
+          "src": "assets/photos/2026/taylors-falls-picnic-selfie.webp",
+          "alt": "Andy and Savannah smiling together in sunglasses under a covered patio.",
+          "width": 1600,
+          "height": 1200,
+          "caption": "The two of us at our Taylors Falls picnic in May 2026."
+        }
+      ]
     },
     {
       "id": "photo-roll-2011",
