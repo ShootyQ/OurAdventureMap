@@ -164,7 +164,8 @@
       "There was plenty to celebrate, from my fortieth birthday to Violet’s kindergarten graduation. Then we piled into the van for a July road trip. Nearly 50 hours of driving with two three-year-olds took us through North Carolina, Florida, and Tennessee to see family and friends."
     ],
     "2026": [
-      "We went to North Carolina in March and Seattle in April. Back in Minnesota, August brought a Minneapolis date night and a Twins game, and October brought the corn maze."
+      "We had a couple of trips early in the year, to North Carolina in March and Seattle in April. There was no giant summer road trip this time, but there was plenty to do. We had picnics, camped with friends, and spent a few days in Wisconsin with Lolli and Pops.",
+      "August was especially busy. Savannah had workers’ meetings in Brainerd, Violet got baptized, and she and I both got to race in Maple Grove. Somewhere in there we made it to a Twins game, the Mall of America, and Munsinger Gardens."
     ]
   },
   "places": [
@@ -3204,6 +3205,46 @@
       "story": "On the way back, we drove to Tennessee to see the Bonjours. The kids got time to play together before we piled back into the van for the last stretch home. It was a good way to end the trip."
     },
     {
+      "id": "leaf-pile-2025",
+      "type": "favorite",
+      "title": "All three in the leaves",
+      "date": "2025-11-12",
+      "place": "Brooklyn Park area, Minnesota",
+      "coordinates": [
+        45.0941,
+        -93.3563
+      ],
+      "photos": [
+        {
+          "src": "assets/photos/2025/november-leaf-pile.webp",
+          "alt": "Violet, Max, and Ellie sitting behind a pile of fall leaves.",
+          "caption": "This pile had three volunteers for the final inspection.",
+          "width": 1600,
+          "height": 900
+        }
+      ]
+    },
+    {
+      "id": "november-night-out-2025",
+      "type": "favorite",
+      "title": "A November night out",
+      "date": "2025-11-22",
+      "place": "Minneapolis, Minnesota",
+      "coordinates": [
+        44.9778,
+        -93.265
+      ],
+      "photos": [
+        {
+          "src": "assets/photos/2025/november-night-out-minneapolis.webp",
+          "alt": "Andy in a white shirt and Savannah in red smiling together.",
+          "caption": "A night downtown and a photo of just the two of us.",
+          "width": 1600,
+          "height": 900
+        }
+      ]
+    },
+    {
       "id": "nc-trip-2026",
       "type": "favorite",
       "title": "March trip to North Carolina",
@@ -3272,6 +3313,199 @@
       ]
     },
     {
+      "id": "living-room-duet-2026",
+      "type": "favorite",
+      "title": "A living-room duet",
+      "date": "2026-05-11",
+      "place": "Brooklyn Park area, Minnesota",
+      "coordinates": [
+        45.0941,
+        -93.3563
+      ],
+      "photos": [
+        {
+          "src": "assets/photos/2026/may-living-room-duet.webp",
+          "alt": "Max and Ellie standing together in the living room.",
+          "caption": "Max and Ellie have the living room to themselves for this one.",
+          "width": 1600,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "id": "back-seat-three-2026",
+      "type": "favorite",
+      "title": "The backseat crew",
+      "date": "2026-05-16",
+      "place": "Brooklyn Park area, Minnesota",
+      "coordinates": [
+        45.0941,
+        -93.3563
+      ],
+      "photos": [
+        {
+          "src": "assets/photos/2026/may-back-seat-crew.webp",
+          "alt": "Ellie, Violet, and Max sitting side by side across a car’s back seat.",
+          "caption": "All three across the back seat, snacks included.",
+          "width": 1600,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "id": "phelps-airbnb-2026",
+      "type": "adventure",
+      "title": "A few days in Phelps",
+      "date": "2026-06-16",
+      "place": "Phelps area, Wisconsin",
+      "coordinates": [
+        46.0617,
+        -89.0885
+      ],
+      "photos": [
+        {
+          "src": "assets/photos/2026/ellie-vikings-blanket-phelps.webp",
+          "alt": "Ellie tucked into a bed under a purple Minnesota Vikings blanket.",
+          "caption": "Ellie found her spot in the Phelps Airbnb. Vikings blanket included.",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "assets/photos/2026/phelps-family-by-the-water.webp",
+          "alt": "Violet and family standing on a grassy bank overlooking the water.",
+          "caption": "Out by the water on our Wisconsin trip with Lolli and Pops.",
+          "width": 1200,
+          "height": 1600
+        }
+      ],
+      "story": "We rented an Airbnb near Phelps with Lolli and Pops. Ellie got cozy under a Vikings blanket, and we spent time outside by the water together."
+    },
+    {
+      "id": "ready-at-the-door-2026",
+      "type": "favorite",
+      "title": "Ready at the front door",
+      "date": "2026-06-27",
+      "place": "Brooklyn Park area, Minnesota",
+      "coordinates": [
+        45.0941,
+        -93.3563
+      ],
+      "photos": [
+        {
+          "src": "assets/photos/2026/june-ready-at-the-door.webp",
+          "alt": "Violet and the twins gathered on the steps in dress clothes.",
+          "caption": "All dressed up and in the same frame for a second.",
+          "width": 1200,
+          "height": 1600
+        }
+      ]
+    },
+    {
+      "id": "duluth-camping-2026",
+      "type": "adventure",
+      "title": "Camping near Duluth",
+      "date": "2026-07-23",
+      "place": "Duluth area, Minnesota",
+      "coordinates": [
+        46.6573,
+        -92.3716
+      ],
+      "photos": [
+        {
+          "src": "assets/photos/2026/duluth-area-campsite.webp",
+          "alt": "A child in a camping chair with a dog beside him at a wooded campsite.",
+          "caption": "A camp chair, a snack, and a dog who’d like to know more about the snack.",
+          "width": 1200,
+          "height": 1600
+        }
+      ],
+      "story": "We went camping near Duluth with friends in July. This is one of those camp pictures I like best, with a kid in a folding chair and a dog keeping him company."
+    },
+    {
+      "id": "brainerd-workers-meetings-2026",
+      "type": "favorite",
+      "title": "Tagging along to Brainerd",
+      "date": "2026-08-03",
+      "place": "Brainerd, Minnesota",
+      "coordinates": [
+        46.3874,
+        -94.1649
+      ],
+      "photos": [
+        {
+          "src": "assets/photos/2026/brainerd-meetings-family-walk.webp",
+          "alt": "Savannah and the three kids walking away across the grass.",
+          "caption": "A little time outside together in Brainerd.",
+          "width": 1200,
+          "height": 1600
+        }
+      ],
+      "story": "Savannah had workers’ meetings in Brainerd, and the rest of us came along. I got this picture of her and the three kids out for a walk."
+    },
+    {
+      "id": "violet-baptism-2026",
+      "type": "milestone",
+      "title": "Violet got baptized",
+      "date": "2026-08-08",
+      "place": "Minnetonka area, Minnesota",
+      "coordinates": [
+        44.9458,
+        -93.4763
+      ],
+      "photos": [
+        {
+          "src": "assets/photos/2026/violet-baptism.webp",
+          "alt": "Violet and an adult standing in the water in matching baptism shirts.",
+          "caption": "Violet in the water on her baptism day.",
+          "width": 1600,
+          "height": 1200
+        }
+      ],
+      "story": "August 8 was a big day for Violet and for us. We got to be there as she went into the water to be baptized. It was a day we’ll remember.",
+      "featured": true
+    },
+    {
+      "id": "munsinger-gardens-2026",
+      "type": "adventure",
+      "title": "Munsinger Gardens with friends",
+      "date": "2026-08-14",
+      "place": "Munsinger Gardens, St. Cloud, Minnesota",
+      "coordinates": [
+        45.5512,
+        -94.1434
+      ],
+      "photos": [
+        {
+          "src": "assets/photos/2026/munsinger-gardens-fountain.webp",
+          "alt": "Ellie and Max sitting in front of flowers and a fountain.",
+          "caption": "Ellie and Max taking a break by the fountain.",
+          "width": 1200,
+          "height": 1600
+        }
+      ],
+      "story": "We visited Munsinger Gardens in St. Cloud with family friends. The twins sat together at the fountain long enough for a picture."
+    },
+    {
+      "id": "mall-of-america-2026",
+      "type": "adventure",
+      "title": "A day at the Mall of America",
+      "date": "2026-08-17",
+      "place": "Mall of America, Bloomington, Minnesota",
+      "coordinates": [
+        44.8552,
+        -93.242
+      ],
+      "photos": [
+        {
+          "src": "assets/photos/2026/mall-of-america-with-the-kids.webp",
+          "alt": "Andy and all three kids leaning together for a selfie at the Mall of America.",
+          "caption": "Managed to get all three kids into this Mall of America selfie.",
+          "width": 1600,
+          "height": 1200
+        }
+      ]
+    },
+    {
       "id": "twins-game-2026",
       "type": "adventure",
       "title": "A Twins game in August",
@@ -3290,6 +3524,13 @@
           "width": 1600,
           "height": 1200,
           "caption": "Stadium lights on, kids still smiling."
+        },
+        {
+          "src": "assets/photos/2026/target-field-family-selfie.webp",
+          "alt": "All five of us leaning together for a selfie at Target Field after dark.",
+          "caption": "Everybody in the frame for one more photo under the lights.",
+          "width": 1600,
+          "height": 1200
         }
       ],
       "place": "Minneapolis, Minnesota",
@@ -3297,7 +3538,72 @@
         44.9778,
         -93.265
       ],
-      "story": "We brought all three kids out to see the Twins. In the first picture you can see the rows of seats behind us. In the next, the stadium lights are on and we’ve somehow got everybody looking at the camera again."
+      "story": "We brought all three kids out to see the Twins. In the first picture you can see the rows of seats behind us. In the next, the stadium lights are on and we’ve somehow got everybody looking at the camera again.",
+      "sortDate": "2026-08-17"
+    },
+    {
+      "id": "maple-grove-triathlon-2026",
+      "type": "adventure",
+      "title": "A triathlon and a Splash & Dash",
+      "date": "2026-08-21",
+      "place": "Weaver Lake Park, Maple Grove, Minnesota",
+      "coordinates": [
+        45.108,
+        -93.4962
+      ],
+      "photos": [
+        {
+          "src": "assets/photos/2026/violet-ready-for-splash-and-dash.webp",
+          "alt": "Violet smiling in a bright green swim cap.",
+          "caption": "Violet ready for her Splash & Dash, green swim cap and all.",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "assets/photos/2026/maple-grove-triathlon-medals.webp",
+          "alt": "Andy and Violet holding up their race medals.",
+          "caption": "Two races, two medals.",
+          "width": 1205,
+          "height": 1600
+        }
+      ],
+      "story": "Violet and I both got to race in Maple Grove. She did the Splash & Dash, and I did the triathlon. My favorite bit was getting a picture with both of our medals afterward.",
+      "dateLabel": "August 21–22, 2026"
+    },
+    {
+      "id": "northwoods-birthday-camping-2026",
+      "type": "adventure",
+      "title": "Birthday camping way up north",
+      "date": "2026-09-05",
+      "place": "Crane Lake area, northern Minnesota",
+      "coordinates": [
+        48.3346,
+        -92.4783
+      ],
+      "photos": [
+        {
+          "src": "assets/photos/2026/northwoods-camping-sunset.webp",
+          "alt": "Violet standing with her arms out on the rocky shore at sunset.",
+          "caption": "Violet showing us the sunset, as if we could possibly miss it.",
+          "width": 1600,
+          "height": 1200
+        },
+        {
+          "src": "assets/photos/2026/northwoods-camping-max.webp",
+          "alt": "Max holding a snack near camp chairs on the lakeshore.",
+          "caption": "Max and his shore-side snack.",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "assets/photos/2026/northwoods-camping-ellie.webp",
+          "alt": "Ellie holding a bag of chips near the camp chairs.",
+          "caption": "Ellie brought her own sunset snacks.",
+          "width": 1200,
+          "height": 1600
+        }
+      ],
+      "story": "We headed way up north to camp for a friend’s birthday. By evening we were down on the rocks by the lake, with camp chairs, snacks, and a sunset worth staying out for."
     },
     {
       "id": "corn-maze-2026",
@@ -3503,7 +3809,7 @@
     {
       "id": "st-croix-outing-2026",
       "type": "favorite",
-      "title": "An outing in the St. Croix Valley",
+      "title": "A picnic near Taylors Falls",
       "date": "2026-05-25",
       "place": "St. Croix Valley · Taylors Falls area",
       "coordinates": [
@@ -3517,8 +3823,16 @@
           "width": 1600,
           "height": 1200,
           "caption": "A May outing in the St. Croix Valley."
+        },
+        {
+          "src": "assets/photos/2026/taylors-falls-picnic-selfie.webp",
+          "alt": "Andy and Savannah smiling under the patio roof with sunglasses on.",
+          "caption": "The two of us at our Taylors Falls picnic.",
+          "width": 1600,
+          "height": 1200
         }
-      ]
+      ],
+      "story": "We went up to the Taylors Falls area for a picnic. Savannah and I took a couple of pictures together under the covered patio while we were there."
     },
     {
       "id": "oliver-2010",
