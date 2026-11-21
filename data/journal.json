@@ -1532,7 +1532,7 @@
           "alt": "Savannah preaching at a wooden pulpit in Red Wing, Minnesota.",
           "width": 1200,
           "height": 900,
-          "caption": "Savannah’s first sermon in Red Wing on March 18, 2017."
+          "caption": "One of Savannah’s many times preaching."
         }
       ]
     },
@@ -1556,6 +1556,20 @@
         -93.4687
       ],
       "story": "That December we bundled up and went skating in Minnetonka. Looking at our hats in this picture, I’d say we were getting the hang of dressing for Minnesota."
+    },
+    {
+      "id": "cohutta-christmas-2016",
+      "type": "favorite",
+      "title": "Christmas at Cohutta Springs Camp",
+      "date": "2016-12",
+      "dateLabel": "Christmas 2016",
+      "sortDate": "2016-12-25",
+      "place": "Cohutta Springs, Georgia",
+      "coordinates": [
+        34.94,
+        -84.745
+      ],
+      "story": "We spent Christmas at Cohutta Springs Camp in Georgia. Both our families came together, including my sister and brother-in-law, and we stayed in the lodges. It was good to have everyone in one place for the holiday."
     },
     {
       "id": "florida-wedding-2017",
