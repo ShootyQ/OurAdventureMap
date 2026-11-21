@@ -161,7 +161,7 @@
       "We started the year with a Caribbean cruise. There were evenings aboard together, a sunny stop at Half Moon Cay, a kiss by the water on Grand Turk, and a photo at the I Love Aruba sign. A few months later we headed to San Diego."
     ],
     "2025": [
-      "There was plenty to celebrate, from my fortieth birthday to Violet’s kindergarten graduation. By July we were making summer memories in Cedar Key."
+      "There was plenty to celebrate, from my fortieth birthday to Violet’s kindergarten graduation. Then we piled into the van for a July road trip. Nearly 50 hours of driving with two three-year-olds took us through North Carolina, Florida, and Tennessee to see family and friends."
     ],
     "2026": [
       "We went to North Carolina in March and Seattle in April. Back in Minnesota, August brought a Minneapolis date night and a Twins game, and October brought the corn maze."
@@ -2766,7 +2766,7 @@
         35.3187,
         -82.461
       ],
-      "story": "We spent Christmas with my parents in Hendersonville. The pictures from that week are a good little slice of the trip, from a ride on a toy tractor to looking through wooden trays together and winding down with bath toys at the end of the day.",
+      "story": "We spent Christmas with my parents in Hendersonville. There was a ride on a toy tractor, an outing where we looked through wooden trays together, and a bath that Ellie decided wasn’t over yet. We’d already gotten her out and into her jammies when she climbed right back in.",
       "photos": [
         {
           "src": "assets/photos/2023/christmas-week-toy-tractor.webp",
@@ -2784,8 +2784,8 @@
         },
         {
           "src": "assets/photos/2023/christmas-week-bath-toys.webp",
-          "alt": "Kids playing with colorful bath toys in a white tub",
-          "caption": "Bath toys at the end of the day.",
+          "alt": "Ellie back in the bathtub in her pajamas with colorful bath toys.",
+          "caption": "We got Ellie out and into her jammies. She got right back in.",
           "width": 1600,
           "height": 900
         }
@@ -3008,6 +3008,135 @@
       "story": "It feels like we were just getting Violet ready for her first day of Pre-K at MCA. Now here she was at kindergarten graduation, in a blue cap, with two generations of family lined up behind her."
     },
     {
+      "id": "hibachi-dinner-2025",
+      "type": "favorite",
+      "title": "Dinner at the grill",
+      "date": "2025-06-16",
+      "place": "Maple Grove, Minnesota",
+      "coordinates": [
+        45.094,
+        -93.43
+      ],
+      "photos": [
+        {
+          "src": "assets/photos/2025/june-dinner-at-the-grill.webp",
+          "alt": "Savannah smiling in a tall red paper hat beside a hibachi grill.",
+          "caption": "Savannah came for dinner and got the chef’s hat.",
+          "width": 1600,
+          "height": 900
+        }
+      ]
+    },
+    {
+      "id": "kids-in-the-wagon-2025",
+      "type": "favorite",
+      "title": "A wagon full of kids",
+      "date": "2025-06-23",
+      "place": "Brooklyn Park area, Minnesota",
+      "coordinates": [
+        45.0941,
+        -93.3563
+      ],
+      "photos": [
+        {
+          "src": "assets/photos/2025/june-wagon-ride.webp",
+          "alt": "Violet, Max, and Ellie sitting together in a covered wagon.",
+          "caption": "Full wagon, excellent shade, and room for the toy.",
+          "width": 1600,
+          "height": 900
+        }
+      ]
+    },
+    {
+      "id": "como-park-2025",
+      "type": "favorite",
+      "title": "A break at Como Park",
+      "date": "2025-06-28",
+      "place": "Como Park, Saint Paul, Minnesota",
+      "coordinates": [
+        44.9824,
+        -93.155
+      ],
+      "photos": [
+        {
+          "src": "assets/photos/2025/june-como-park-bench.webp",
+          "alt": "Savannah sitting on a park bench holding one of the twins.",
+          "caption": "A good bench and an even better lap.",
+          "width": 900,
+          "height": 1600
+        }
+      ]
+    },
+    {
+      "id": "backyard-snacks-2025",
+      "type": "favorite",
+      "title": "Snack time outside",
+      "date": "2025-07-01",
+      "place": "Brooklyn Park area, Minnesota",
+      "coordinates": [
+        45.0941,
+        -93.3563
+      ],
+      "photos": [
+        {
+          "src": "assets/photos/2025/july-kids-snacking-outside.webp",
+          "alt": "Violet, Max, and Ellie sitting outside with snacks surrounded by greenery.",
+          "caption": "The snacks have moved outside. So have all three kids.",
+          "width": 1600,
+          "height": 900
+        }
+      ]
+    },
+    {
+      "id": "july-road-trip-hendersonville-2025",
+      "type": "adventure",
+      "title": "First stop, Grandma and Grandpa’s",
+      "date": "2025-07-07",
+      "place": "Hendersonville, North Carolina",
+      "coordinates": [
+        35.3187,
+        -82.461
+      ],
+      "photos": [
+        {
+          "src": "assets/photos/2025/road-trip-hendersonville.webp",
+          "alt": "Two of the kids leaning in close on a couch.",
+          "caption": "A little couch time at Grandma and Grandpa’s.",
+          "width": 1600,
+          "height": 900
+        }
+      ],
+      "story": "We loaded the five of us into the van and drove down to my parents’ place near Hendersonville. We spent three days with them before getting back in the van for Florida. Nearly 50 hours of driving by the time we got home, with two three-year-olds along for all of it. That counts as a big trip in our book."
+    },
+    {
+      "id": "carlson-family-reunion-2025",
+      "type": "adventure",
+      "title": "Fifty years and a family reunion",
+      "date": "2025-07-10",
+      "place": "Orlando area, Florida",
+      "coordinates": [
+        28.5383,
+        -81.3792
+      ],
+      "photos": [
+        {
+          "src": "assets/photos/2025/carlson-reunion-kids.webp",
+          "alt": "Max and Ellie walking in front of a Carlson Family Reunion sign.",
+          "caption": "Max and Ellie making their entrance at the Carlson family reunion.",
+          "width": 1600,
+          "height": 900
+        },
+        {
+          "src": "assets/photos/2025/carlson-reunion-couch.webp",
+          "alt": "Max and Ellie sitting on a couch with another child during the reunion.",
+          "caption": "The kids found a spot on the couch, snacks close at hand.",
+          "width": 1600,
+          "height": 900
+        }
+      ],
+      "story": "From North Carolina we drove to Orlando for the Carlson family reunion and to celebrate my parents’ 50th wedding anniversary. We got to spend time with family and the kids had plenty of company. The twins even made it into a picture with the reunion sign."
+    },
+    {
       "id": "cedar-key-2025",
       "type": "adventure",
       "title": "July in Cedar Key",
@@ -3019,6 +3148,13 @@
           "width": 1600,
           "height": 900,
           "caption": "Palm trees and a July afternoon in Cedar Key."
+        },
+        {
+          "src": "assets/photos/2025/cedar-key-family-breakfast.webp",
+          "alt": "Savannah and the kids at a table by windows overlooking the water.",
+          "caption": "Breakfast at the Cedar Key Airbnb, just the five of us.",
+          "width": 1600,
+          "height": 900
         }
       ],
       "place": "Cedar Key, Florida",
@@ -3026,7 +3162,29 @@
         29.1386,
         -83.0351
       ],
-      "story": "July took us down to Cedar Key. Between the palm trees behind Savannah and the grin on my face, this one pretty much sums up how I feel about a summer day in Florida with her."
+      "story": "After the reunion, we drove over to Cedar Key and stayed three nights at an Airbnb with just the five of us. After all that time in the van and the big family get-together, breakfast together with a view of the water was a pretty good change of pace.",
+      "sortDate": "2025-07-14"
+    },
+    {
+      "id": "bonjours-tennessee-2025",
+      "type": "adventure",
+      "title": "One more stop with the Bonjours",
+      "date": "2025-07-17",
+      "place": "Middle Tennessee",
+      "coordinates": [
+        36.02,
+        -86.2
+      ],
+      "photos": [
+        {
+          "src": "assets/photos/2025/bonjours-tennessee-visit.webp",
+          "alt": "Kids and adults sitting together with books and games spread out on the floor.",
+          "caption": "A last stop to play with friends before the drive home.",
+          "width": 1600,
+          "height": 900
+        }
+      ],
+      "story": "On the way back, we drove to Tennessee to see the Bonjours. The kids got time to play together before we piled back into the van for the last stretch home. It was a good way to end the trip."
     },
     {
       "id": "nc-trip-2026",
