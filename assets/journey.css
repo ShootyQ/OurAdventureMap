@@ -407,6 +407,10 @@
 @media(max-width:540px) {
   .arrival-gallery { grid-template-columns:repeat(2,minmax(0,1fr)); }
 }
+.violet .arrival-gallery { grid-template-columns:repeat(4,minmax(0,1fr)); }
+@media(max-width:740px) {
+  .violet .arrival-gallery { grid-template-columns:repeat(2,minmax(0,1fr)); }
+}
 .arrival-sleeve {
   position:absolute; inset:0; display:grid; place-items:center; pointer-events:none;
   background:linear-gradient(148deg,transparent 49.8%,var(--rim) 50%,transparent 50.2%) left top/50% 96% no-repeat,

@@ -830,14 +830,43 @@
       "type": "milestone",
       "title": "We became parents. Violet arrived!",
       "date": "2018-06-01",
-      "story": "June 1 was the last day of school. I’d gone in that morning, and Savannah’s parents must have called me half a dozen times. “Come home now!” Then, “It’s okay, come home, but it’s not as urgent.” Then, “Get here!” And then, “Wait, it’s okay.” Violet was born that afternoon, and we absolutely fell in love with her.",
+      "story": "June 1 was the last day of school. I’d gone in that morning, and Savannah’s parents must have called me half a dozen times. “Come home now!” Then, “It’s okay, come home, but it’s not as urgent.” Then, “Get here!” And then, “Wait, it’s okay.” Violet was born that afternoon, and we absolutely fell in love with her.\n\nThe first few weeks gave us a lot to remember, from Lucy leaning in to meet Violet in her car seat to the morning we caught Violet’s first smile.",
       "photos": [
         {
           "src": "assets/photos/2018/june1violetborn-67ef34f0.webp",
           "alt": "Andy and Savannah with newborn Violet on June 1, 2018",
           "width": 1200,
           "height": 1600,
-          "caption": "The three of us, just a few hours into being a family."
+          "caption": "The three of us, just a few hours into being a family.",
+          "announcement": true
+        },
+        {
+          "src": "assets/photos/2018/violet-first-weight.webp",
+          "alt": "A hospital scale display showing 8 pounds, 1 ounce.",
+          "caption": "Violet’s first weigh-in. 8 lb 1 oz.",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "assets/photos/2018/violet-meets-lucy.webp",
+          "alt": "Lucy leaning toward newborn Violet in her car seat.",
+          "caption": "Lucy meets Violet for the first time.",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "assets/photos/2018/violet-white-bonnet.webp",
+          "alt": "Violet looking to the side in a white bonnet and dress.",
+          "caption": "All dressed up in her little white bonnet.",
+          "width": 1600,
+          "height": 1200
+        },
+        {
+          "src": "assets/photos/2018/violet-first-smile.webp",
+          "alt": "Violet looking up with a wide smile in a yellow outfit.",
+          "caption": "Violet’s first smile, caught on camera.",
+          "width": 1200,
+          "height": 1600
         }
       ],
       "featured": true,
