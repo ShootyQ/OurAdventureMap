@@ -901,6 +901,49 @@
           "alt": "Newborn Max and Ellie shortly after their birth",
           "caption": "Just after they were born",
           "width": 900,
+          "height": 1600,
+          "announcement": true
+        },
+        {
+          "src": "assets/photos/2022/max-first-weight.webp",
+          "alt": "Hospital scale display showing a weight of 5 pounds, 8 ounces.",
+          "caption": "Max’s first weigh-in. 5 lb 8 oz.",
+          "width": 900,
+          "height": 1600
+        },
+        {
+          "src": "assets/photos/2022/ellie-first-weight.webp",
+          "alt": "Hospital scale display showing a weight of 4 pounds, 12 ounces.",
+          "caption": "Ellie’s first weigh-in. 4 lb 12 oz.",
+          "width": 900,
+          "height": 1600
+        },
+        {
+          "src": "assets/photos/2022/ellie-pink-bow.webp",
+          "alt": "A swaddled newborn in a pink bow hat with a green pacifier.",
+          "caption": "A big bow for a very little baby.",
+          "width": 900,
+          "height": 1600
+        },
+        {
+          "src": "assets/photos/2022/savannah-holding-newborn.webp",
+          "alt": "Savannah looking down at one of the twins, wrapped in a hospital blanket.",
+          "caption": "A quiet moment with Mom at the hospital.",
+          "width": 900,
+          "height": 1600
+        },
+        {
+          "src": "assets/photos/2022/newborn-tiny-toes.webp",
+          "alt": "An adult hand gently holding a newborn’s tiny foot.",
+          "caption": "Tiny toes, two days old.",
+          "width": 900,
+          "height": 1600
+        },
+        {
+          "src": "assets/photos/2022/newborn-car-seat.webp",
+          "alt": "A newborn buckled into a car seat with a blanket tucked around them.",
+          "caption": "Buckled up for the ride home.",
+          "width": 900,
           "height": 1600
         },
         {
@@ -908,7 +951,8 @@
           "alt": "Max and Ellie at home a few days after their birth",
           "caption": "Home in the Brooklyn Park area a few days later.",
           "width": 900,
-          "height": 1600
+          "height": 1600,
+          "announcement": true
         }
       ],
       "featured": true,

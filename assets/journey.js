@@ -340,7 +340,10 @@ function birthAnnouncement(place) {
   button.type = 'button';
   copy.append(button);
   const prints = node('div', 'arrival-prints');
-  for (const photo of place.photos) prints.append(photoButton(photo, photo.caption, '', place.photos));
+  const covers = place.photos.filter(photo => photo.announcement);
+  for (const photo of covers.length ? covers : place.photos) {
+    prints.append(photoButton(photo, photo.caption, '', place.photos));
+  }
   for (const initial of (twins ? ['M', 'E'] : ['V'])) {
     const sleeve = node('div', 'arrival-sleeve');
     sleeve.setAttribute('aria-hidden', 'true');
@@ -348,6 +351,12 @@ function birthAnnouncement(place) {
     prints.append(sleeve);
   }
   scene.append(copy, prints);
+  const additionalPhotos = covers.length ? place.photos.filter(photo => !photo.announcement) : [];
+  if (additionalPhotos.length) {
+    const gallery = node('div', 'arrival-gallery album-photos');
+    for (const photo of additionalPhotos) gallery.append(photoButton(photo, photo.caption, '', place.photos));
+    scene.append(gallery);
+  }
   prepareReveal(scene, prints, 'Replay birth announcement');
   return scene;
 }

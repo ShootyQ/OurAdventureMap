@@ -393,6 +393,20 @@
 .twins .arrival-prints .print { width:50%; transform:translateY(-12px) rotate(-4deg); }
 .twins .arrival-prints .print + .print { transform:translateY(16px) rotate(4deg); }
 .arrival-prints .print span { font-size:clamp(16px,1.5vw,23px); }
+.arrival-gallery {
+  grid-column:1/-1;
+  grid-template-columns:repeat(6,minmax(0,1fr));
+  align-items:start;
+  margin:clamp(26px,4vw,56px) 0 0;
+  padding-top:clamp(20px,3vw,42px);
+  border-top:1px solid var(--rim);
+}
+@media(max-width:1100px) {
+  .arrival-gallery { grid-template-columns:repeat(3,minmax(0,1fr)); }
+}
+@media(max-width:540px) {
+  .arrival-gallery { grid-template-columns:repeat(2,minmax(0,1fr)); }
+}
 .arrival-sleeve {
   position:absolute; inset:0; display:grid; place-items:center; pointer-events:none;
   background:linear-gradient(148deg,transparent 49.8%,var(--rim) 50%,transparent 50.2%) left top/50% 96% no-repeat,
