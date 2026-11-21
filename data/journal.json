@@ -1989,6 +1989,86 @@
       ]
     },
     {
+      "id": "violet-puddle-2020",
+      "type": "favorite",
+      "title": "Pink boots and a puddle",
+      "date": "2020-09-12",
+      "place": "Twin Cities area, Minnesota",
+      "coordinates": [
+        44.955,
+        -93.2
+      ],
+      "photos": [
+        {
+          "src": "assets/photos/2020/violet-september-puddle.webp",
+          "alt": "Violet in pink rain boots standing at the edge of a puddle, with her reflection in the water.",
+          "width": 800,
+          "height": 1600,
+          "caption": "Pink boots, deep puddle, and two Violets."
+        }
+      ]
+    },
+    {
+      "id": "violet-fall-leaves-2020",
+      "type": "favorite",
+      "title": "Violet in the fall leaves",
+      "date": "2020-10-14",
+      "place": "Twin Cities area, Minnesota",
+      "coordinates": [
+        44.955,
+        -93.2
+      ],
+      "photos": [
+        {
+          "src": "assets/photos/2020/violet-october-leaves.webp",
+          "alt": "Violet holding two stuffed animals while sitting among fallen leaves.",
+          "width": 1600,
+          "height": 900,
+          "caption": "Nobody gets left inside when there are fall leaves to sit in."
+        }
+      ]
+    },
+    {
+      "id": "violet-couch-companions-2020",
+      "type": "favorite",
+      "title": "Couch companions",
+      "date": "2020-10-29",
+      "place": "Twin Cities area, Minnesota",
+      "coordinates": [
+        44.955,
+        -93.2
+      ],
+      "photos": [
+        {
+          "src": "assets/photos/2020/violet-october-dog.webp",
+          "alt": "Violet reaching over to pet a dog sitting beside her on the couch.",
+          "width": 1600,
+          "height": 900,
+          "caption": "The best seat on the couch is next to the dog."
+        }
+      ]
+    },
+    {
+      "id": "savannah-violet-hammock-2020",
+      "type": "favorite",
+      "title": "A hammock for two",
+      "date": "2020-11-07",
+      "place": "Twin Cities area, Minnesota",
+      "coordinates": [
+        44.955,
+        -93.2
+      ],
+      "photos": [
+        {
+          "src": "assets/photos/2020/savannah-violet-november-hammock.webp",
+          "alt": "Savannah holding Violet in a colorful hammock, both laughing.",
+          "width": 1600,
+          "height": 900,
+          "caption": "November sunshine and a laugh with Mom."
+        }
+      ]
+    },
+    {
       "id": "breakfast-for-two-2020",
       "type": "favorite",
       "title": "Anniversary breakfast for two in Stillwater",
