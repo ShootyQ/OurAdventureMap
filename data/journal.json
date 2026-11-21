@@ -219,8 +219,8 @@
           "src": "assets/photos/2008/jumping-in-puddles.webp",
           "alt": "Andy and Savannah mid-jump in a rain puddle, with parked cars behind them.",
           "caption": "The walk back from The Mill. We were already soaked.",
-          "width": 451,
-          "height": 600
+          "width": 1448,
+          "height": 1086
         }
       ]
     },
@@ -1270,6 +1270,23 @@
       ],
       "dateLabel": "July–August 2011",
       "story": "After we started dating, we spent time at each other’s homes that summer. I flew to California to meet Savannah’s family and got introduced to every family friend for a thorough “inspection.”"
+    },
+    {
+      "id": "summer-kiss-2011",
+      "type": "favorite",
+      "title": "A kiss that summer",
+      "date": "2011",
+      "dateLabel": "Summer 2011",
+      "sortDate": "2011-08",
+      "photos": [
+        {
+          "src": "assets/photos/2011/summer-kiss-black-and-white.webp",
+          "alt": "Black-and-white photo of Andy dipping Savannah as they kiss.",
+          "width": 1448,
+          "height": 1086,
+          "caption": "Still one of my favorite photos of us."
+        }
+      ]
     },
     {
       "id": "biltmore-2011",
