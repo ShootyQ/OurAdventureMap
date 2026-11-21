@@ -1987,7 +1987,30 @@
       ],
       "sortDate": "2020-07",
       "dateLabel": "Summer 2020",
-      "story": "My parents came to visit that summer. We also took a trip with Savannah’s parents to Minot and Bottineau for her cousin Kelly’s wedding. In a year when we spent so much time at home, it was good to have a wedding to celebrate with family."
+      "story": "My parents came to visit that summer. We also took a trip with Savannah’s parents to Minot and Bottineau for her cousin Kelly’s wedding. Along the way we stopped for a picnic, visited the Scandinavian Heritage Park in Minot, and got lunch together. In a year when we spent so much time at home, it was good to have a wedding to celebrate with family.",
+      "photos": [
+        {
+          "src": "assets/photos/2020/kelly-wedding-trip-picnic.webp",
+          "alt": "Violet and an adult sitting at an outdoor picnic table with fruit and sandwiches.",
+          "caption": "A roadside picnic with Violet on the way to Kelly’s wedding.",
+          "width": 1600,
+          "height": 900
+        },
+        {
+          "src": "assets/photos/2020/kelly-wedding-trip-minot-park.webp",
+          "alt": "Savannah with her arms around a bronze statue, with a windmill in the background.",
+          "caption": "Savannah made a new friend at Minot’s Scandinavian Heritage Park.",
+          "width": 1600,
+          "height": 900
+        },
+        {
+          "src": "assets/photos/2020/kelly-wedding-trip-minot-lunch.webp",
+          "alt": "Andy taking a selfie while everyone sits around a restaurant table.",
+          "caption": "Lunch together in Minot after a morning out.",
+          "width": 1600,
+          "height": 900
+        }
+      ]
     },
     {
       "id": "date-near-home-2020",
