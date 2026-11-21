@@ -1868,7 +1868,28 @@
       "title": "Hunkering down with game nights",
       "sortDate": "2020-03",
       "dateLabel": "2020",
-      "story": "COVID made for a lot more time at home. We hunkered down, and playing games with the Bonjours was one of the bright spots of a pretty quiet year."
+      "story": "When COVID shut everything down, we decided the Bonjours would be our COVID friends. We hunkered down and spent a lot of time playing games together. The nights around the table gave us something to look forward to when there wasn’t much else on the calendar.",
+      "place": "Twin Cities area, Minnesota",
+      "coordinates": [
+        44.955,
+        -93.2
+      ],
+      "photos": [
+        {
+          "src": "assets/photos/2020/dnd-at-the-table-2021.webp",
+          "alt": "An open Dungeon Master’s screen, a Monster Manual, and a game map on a screen across the table.",
+          "width": 1600,
+          "height": 900,
+          "caption": "Behind the Dungeon Master’s screen in 2021."
+        },
+        {
+          "src": "assets/photos/2020/friends-around-the-table-2023.webp",
+          "alt": "Savannah taking a selfie with friends and kids around a dining table.",
+          "width": 1600,
+          "height": 900,
+          "caption": "Back around the table together in 2023."
+        }
+      ]
     },
     {
       "id": "swing-day-2020",
@@ -2107,6 +2128,28 @@
           "caption": "Christmas morning at Cohutta Springs.",
           "width": 1600,
           "height": 900
+        }
+      ]
+    },
+    {
+      "id": "saturday-dnd-2020",
+      "type": "favorite",
+      "title": "D&D every Saturday",
+      "sortDate": "2020-12-31",
+      "dateLabel": "2020",
+      "story": "With everything shut down, we didn’t have much else to do on Saturdays, so we played D&D. Every Saturday night. Years later, this is the whole crew together around one table.",
+      "place": "Twin Cities area, Minnesota",
+      "coordinates": [
+        44.955,
+        -93.2
+      ],
+      "photos": [
+        {
+          "src": "assets/photos/2020/saturday-dnd-group-2026.webp",
+          "alt": "The full D&D group gathered around a dining table with food.",
+          "width": 1600,
+          "height": 900,
+          "caption": "Our Saturday-night D&D crew, all together in February 2026."
         }
       ]
     },
