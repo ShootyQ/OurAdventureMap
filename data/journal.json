@@ -2948,6 +2948,48 @@
       "story": "The three of us went to Clifton E. French Regional Park for a family photo shoot. I think it was in May. Violet was still little enough for us to hold her between us."
     },
     {
+      "id": "shelinas-birthday-2020",
+      "type": "favorite",
+      "title": "Shelina’s birthday",
+      "date": "2020-09",
+      "story": "That September, Savannah and I got dressed up to celebrate our friend Shelina’s birthday. Somewhere in the evening we stopped long enough to get this picture of the two of us.",
+      "photos": [
+        {
+          "src": "assets/photos/2021/sept-60916727.webp",
+          "alt": "Savannah and Andy posing in dress clothes outdoors.",
+          "width": 1600,
+          "height": 900,
+          "caption": "Dressed up for Shelina’s birthday."
+        }
+      ],
+      "place": "Twin Cities area, Minnesota",
+      "coordinates": [
+        44.955,
+        -93.2
+      ]
+    },
+    {
+      "id": "bucs-super-bowl-2021",
+      "type": "favorite",
+      "title": "The Bucs win the Super Bowl!",
+      "date": "2021-02-07",
+      "story": "As a diehard Bucs fan, this was a big day for me. Tampa Bay won Super Bowl LV, and I got to celebrate it with Savannah and Violet. I think the grin in this picture says it all.",
+      "photos": [
+        {
+          "src": "assets/photos/2021/bucswin-e7503d62.webp",
+          "alt": "Andy, Savannah, and Violet smiling in Bucs colors.",
+          "width": 1600,
+          "height": 900,
+          "caption": "Celebrating a Super Bowl win with my favorite Bucs fans."
+        }
+      ],
+      "place": "Twin Cities area, Minnesota",
+      "coordinates": [
+        44.955,
+        -93.2
+      ]
+    },
+    {
       "id": "photo-roll-2021",
       "type": "favorite",
       "title": "From the 2021 photo roll",
@@ -2955,25 +2997,11 @@
       "dateLabel": "2021 folder",
       "photos": [
         {
-          "src": "assets/photos/2021/bucswin-e7503d62.webp",
-          "alt": "Andy, Savannah, and Violet smiling in Bucs colors.",
-          "width": 1600,
-          "height": 900,
-          "caption": "Three happy faces after a Bucs win."
-        },
-        {
           "src": "assets/photos/2021/justathome-58bcd780.webp",
           "alt": "Andy and Savannah leaning their heads together at home.",
           "width": 1600,
           "height": 900,
           "caption": "A little time at home together."
-        },
-        {
-          "src": "assets/photos/2021/sept-60916727.webp",
-          "alt": "Savannah and Andy posing in dress clothes outdoors.",
-          "width": 1600,
-          "height": 900,
-          "caption": "Dressed up and standing still long enough for a photo."
         }
       ],
       "place": "Twin Cities area, Minnesota",
