@@ -332,7 +332,10 @@ function birthAnnouncement(place) {
   copy.append(node('p', 'dateline', displayDate(place)),
     node('h3', '', twins ? 'Max & Ellie' : 'Violet'),
     node('p', 'arrival-line', twins ? 'And then there were five.' : 'The day we became parents.'),
-    locationLabel(place), node('p', 'memory-story', place.story));
+    locationLabel(place));
+  for (const paragraph of (place.story || '').split('\n\n').filter(Boolean)) {
+    copy.append(node('p', 'memory-story', paragraph));
+  }
   const button = node('button', 'replay-reveal', 'Open birth announcement');
   button.type = 'button';
   copy.append(button);

@@ -280,6 +280,7 @@ nav a[aria-current="page"] {
 .story-entry .entry-place { display: block; margin-bottom: 5px; }
 .story-location { color: #536750; margin: 8px 0; font-size: 13px; font-weight: 700; }
 .story-excerpt { margin: 8px 0; max-width: 55ch; }
+.story-excerpt, #memory-story { white-space: pre-line; }
 .story-entry .handwritten { margin: 8px 0; }
 
 .story-entry.current-memory::before { background: #946e3d; box-shadow: 0 0 0 4px #b18a4f22; }
