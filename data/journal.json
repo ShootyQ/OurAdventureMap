@@ -869,6 +869,26 @@
       ]
     },
     {
+      "id": "violet-making-music-2022",
+      "type": "favorite",
+      "title": "Violet makes some music",
+      "date": "2022-03-12",
+      "photos": [
+        {
+          "src": "assets/photos/2022/violet-making-music.webp",
+          "alt": "Violet with an instrument on a striped shoulder strap, her hand on the fretboard.",
+          "caption": "Violet had the strap on and the stage was hers.",
+          "width": 900,
+          "height": 1600
+        }
+      ],
+      "place": "Twin Cities area, Minnesota",
+      "coordinates": [
+        44.955,
+        -93.2
+      ]
+    },
+    {
       "id": "new-car-2022",
       "type": "favorite",
       "title": "A new car in May",
@@ -2473,6 +2493,20 @@
           "caption": "All five of us in downtown Hendersonville."
         },
         {
+          "src": "assets/photos/2023/the-kids-outside-hendersonville.webp",
+          "alt": "Violet standing behind Max and Ellie as the twins sit in the grass.",
+          "caption": "Violet and the twins out on the grass during our North Carolina trip.",
+          "width": 900,
+          "height": 1600
+        },
+        {
+          "src": "assets/photos/2023/andy-savannah-outside-hendersonville.webp",
+          "alt": "Savannah and Andy leaning in for a selfie outdoors.",
+          "caption": "A little spring sunshine and a picture of just the two of us.",
+          "width": 1600,
+          "height": 900
+        },
+        {
           "src": "assets/photos/2023/andy-savannah-north-carolina.webp",
           "alt": "Andy and Savannah smiling together in front of a brick wall",
           "caption": "A photo of just the two of us on our March trip to North Carolina.",
@@ -2485,7 +2519,28 @@
         35.3187,
         -82.461
       ],
-      "story": "We went back to Hendersonville in March. We got a picture of all five of us downtown, and there’s one of just Savannah and me from the same North Carolina trip. I’m glad we got both."
+      "story": "We went back to Hendersonville in March. We got a picture of all five of us downtown and one of Violet with the twins out on the grass. Savannah and I even got a couple of pictures of just the two of us, one outside and one in front of a brick wall.",
+      "sortDate": "2023-03-21"
+    },
+    {
+      "id": "max-and-ellie-april-2023",
+      "type": "favorite",
+      "title": "Max and Ellie, cheek to cheek",
+      "date": "2023-04-02",
+      "photos": [
+        {
+          "src": "assets/photos/2023/max-and-ellie-april.webp",
+          "alt": "Max and Ellie sitting close together on the carpet beside their toys.",
+          "caption": "A two-baby hug and a big grin.",
+          "width": 900,
+          "height": 1600
+        }
+      ],
+      "place": "Brooklyn Park area, Minnesota",
+      "coordinates": [
+        45.0941,
+        -93.3563
+      ]
     },
     {
       "id": "june-afternoon-2023",
