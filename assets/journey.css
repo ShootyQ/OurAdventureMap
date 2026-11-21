@@ -189,6 +189,7 @@
 .milestone-spread .inscription { color:#e2be8d; }
 .milestone-spread h3 { font-size:clamp(40px,4.3vw,68px); }
 .milestone-spread .album-photos { margin-inline:0; }
+.milestone-spread:not(:has(.album-photos)) { display:block; }
 .album-someday { background:#233c32; color:#faf1da; padding:clamp(60px,7vw,110px) 0; }
 .album-someday em,.album-someday .dateline,.album-someday .album-location::before { color:#e3be8c; }
 #dreams { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:32px 8%; margin-top:48px; }
@@ -445,7 +446,7 @@
   .contact-sheet .album-photos { grid-template-columns:repeat(var(--columns),minmax(0,1fr)); margin:28px 0 0; }
   .contact-sheet .memory-story { max-width:80ch; }
   .album-memory:not(:has(.album-photos)):not(#lincoln-roommates) { align-self:center; }
-  .album-memory:only-child:not(:has(.album-photos)):not(#lincoln-roommates) {
+  .album-memory:only-child:not(:has(.album-photos)):not(.milestone-spread):not(#lincoln-roommates) {
     display:block; max-width:760px; border-inline-start:2px solid #ad9273; padding-inline-start:4%;
   }
 }
